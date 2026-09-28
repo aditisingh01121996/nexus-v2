@@ -1,0 +1,616 @@
+{
+  "date": "2026-09-28",
+  "label": "Today",
+  "lastUpdated": "2026-09-28T12:16:57.334Z",
+  "agentLog": [
+    {
+      "timestamp": "12:15:53",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit ddfed9c: \"chore(data): auto-publish daily briefing [2026-09-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:15:53",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:16:00",
+      "module": "SCOUT",
+      "message": "Scouted 119 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:16:00",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:16:00",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 76 off-beat/redundant wires. 43 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:16:00",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:16:00",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:16:57",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 25 items (1 via LLM, 24 via deterministic synthesis; top 15 LLM quota applied, 2 dropped for thin context). Tokens: 9038. Est cost: $0.00141.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:16:57",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:16:57",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (25 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:16:57",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-09-28 live (25 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20260928-20",
+            "source": "TechCrunch AI",
+            "date": "2026-09-26",
+            "headline": "I created an interactive digital avatar of myself — and you can talk to it",
+            "summary": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI clones of ourselves.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20260928-13",
+            "source": "MIT Tech Review AI",
+            "date": "2026-09-23",
+            "headline": "The AI Hype Index: AI loves cheating",
+            "summary": "Brace yourself: It turns out AI is being optimized for cheating. OpenAI’s agents hacked into Hugging Face to get the answers to a cybersecurity test. Next, they solved a prestigious math problem (or just stole from two top mathematicians’ answer sheets).",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/09/23/1144940/ai-hype-index-ai-loves-cheating/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20260928-14",
+            "source": "MIT Tech Review AI",
+            "date": "2026-09-22",
+            "headline": "Don’t be fooled by this summer of AI hype",
+            "summary": "It’s been a busy few months for AI hype. At the end of April, Anthropic claimed that its model Claude Mythos is better at finding software vulnerabilities than most security experts. Then we had the OpenAI–Hugging Face hacking incident, after which Anthropic (proudly) and Meta (reluctantly) disclosed similar incidents involving their models.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20260928-18",
+            "source": "arXiv Preprint",
+            "date": "2026-09-25",
+            "headline": "New LoRA Skills Should Read but Never Write",
+            "summary": "Low-rank adapters (LoRA) make it cheap to fine-tune a large language model once per task, but combining several independently trained adapters into one model remains difficult: merging the updates in weight space causes interference, retraining on all task data is expensive, and routing between separate adapters gives up the goal of a single combined model. We trace the difficulty to two choices that every composition method makes implicitly. A LoRA update admits infinitely many equivalent factorizations; the choice among them is invisible while an adapter serves alone, but it determines what a learned interaction between adapters can see.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2609.31600v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 4.4,
+              "magnitude": 6,
+              "relevance": 9.5,
+              "total": 6.2
+            }
+          },
+          {
+            "id": "ai-venture-research-20260928-21",
+            "source": "arXiv Preprint",
+            "date": "2026-09-25",
+            "headline": "Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency",
+            "summary": "Reasoning models often generate very long reasoning traces, making inference computationally expensive. Existing approaches typically improve efficiency either through inference-time early-stopping mechanisms or by explicitly encouraging shorter reasoning during training, for example through reinforcement learning with length penalties. We show that substantial efficiency gains can instead emerge from a different kind of supervision: \\textit{confidence}.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2609.31619v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          },
+          {
+            "id": "ai-venture-research-20260928-22",
+            "source": "arXiv Preprint",
+            "date": "2026-09-25",
+            "headline": "User Model Extraction via Belief Self-Distillation",
+            "summary": "Large language models (LLMs) implicitly infer attributes of their users and adapt their behavior accordingly, yet these beliefs remain difficult to inspect and causally manipulate. We introduce Belief Self-Distillation (BSD), a unified read-write framework that bridges linear and causal probing by learning a compact user representation that can be both decoded and written back into the model. The frozen LLM acts as its own teacher, distilling beliefs from natural conversations without external annotations.",
+            "tag": "REASONING",
+            "url": "http://arxiv.org/abs/2609.31603v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20260928-11",
+            "source": "The Verge AI",
+            "date": "2026-09-25",
+            "headline": "Can Apple Home’s AI camera features outsmart Amazon’s and Google’s? I put them to the test",
+            "summary": "A few years back, I was at a beachside Easter egg hunt, watching my kids dash through sand dunes searching for sweet treats. My phone buzzed in my pocket; I ignored it. A moment later, it buzzed again.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1000321/apple-intelligence-home-security-camera-amazon-ring-alexa-google-nest-gemini-home-review",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-titans-20260928-12",
+            "source": "The Verge AI",
+            "date": "2026-09-25",
+            "headline": "One company is at the center of a wave of rogue AI attacks",
+            "summary": "In July, OpenAI revealed that its AI agents had attacked Hugging Face without permission, sparking widespread concerns about AI safety. Since then, a string of similar incidents involving agents from Meta, Anthropic, Google, and other companies has fueled further fears about rogue AI. As disclosures implicating numerous AI models trickled out over the past few […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20260928-15",
+            "source": "The Verge AI",
+            "date": "2026-09-27",
+            "headline": "OpenAI agents tried to ‘bruteforce’ a UN website",
+            "summary": "Security researcher Rowan Howard-Jones says that OpenAI agents scanned the UN Conference on Trade and Development's (UNCTAD) statistics site over 16,000 times between April and June. While the incident doesn't quite rise to the level of the Hugging Face hack, or the recent attacks on US government sites, it's yet another concerning example of AI […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20260928-16",
+            "source": "The Verge AI",
+            "date": "2026-09-26",
+            "headline": "OpenAI pauses training of its ‘most capable models’",
+            "summary": "As reports of OpenAI's models breaking containment, hacking sites, and generally getting out of control pile up, the company has made the decision to pause training of its most powerful models. The decision was made after a model being tested within a sandbox exploited a loophole to gain internet access. The incident happened on September […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20260928-17",
+            "source": "The Verge AI",
+            "date": "2026-09-25",
+            "headline": "Meta makes the Muse filesystem even more accessible",
+            "summary": "Yesterday, with a little prodding, it was discovered that Meta's Muse would expose its filesystem to curious users. The files offered a fascinating peek under the hood of an AI chatbot, and appeared to expose details we weren't meant to see, not least because Muse itself told people, including us, it wasn't supposed to reveal […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1000784/meta-muse-filesystem",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20260928-2",
+            "source": "FTC Press",
+            "date": "2026-09-24",
+            "headline": "FTC Seeks Public Comment on Whether to Update Rule on Impersonation of Government and Businesses to Address Platforms’ Role in Promoting Impersonation Scams",
+            "summary": "The Federal Trade Commission announced today that is considering whether to update its.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-seeks-public-comment-whether-update-rule-impersonation-government-businesses-address-platforms",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20260928-3",
+            "source": "FTC Press",
+            "date": "2026-09-24",
+            "headline": "FTC Approves Publication of Federal Register Notices Revising the Commission’s Rules of Practice",
+            "summary": "The Federal Trade Commission amended the agency’s Rules of Practice to better align with the FTC Act and reflect organizational changes, including the creation of the American Competition Enforcement Division. The amendments also correct a number of minor errors and omissions in the previous version of the Rules.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-approves-publication-federal-register-notices-revising-commissions-rules-practice",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20260928-4",
+            "source": "FTC Press",
+            "date": "2026-09-22",
+            "headline": "FTC Endorses Education Department Proposal to Expand Higher Education Accreditation Options",
+            "summary": "The Federal Trade Commission strongly endorsed the Department of Education’s proposed reforms to promote competition among accreditation agencies. Increased competition among accreditors and lower administrative burdens could lower the cost and improve the quality of higher education for millions of American students.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-endorses-education-department-proposal-expand-higher-education-accreditation-options",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20260928-24",
+            "source": "MarketWatch Top",
+            "date": "2026-09-28",
+            "headline": "Micron could dethrone Nvidia and become the biggest driver of S&P 500 profit growth",
+            "summary": "Micron is increasingly important to the S&P 500, and its earnings report has become “a market event in and of itself.”.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/micron-could-dethrone-nvidia-and-become-the-biggest-driver-of-s-p-500-profit-growth-d62e0e68?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ],
+        "company-moves": [
+          {
+            "id": "markets-company-moves-20260928-25",
+            "source": "SEC EDGAR / 8-K",
+            "date": "2026-09-21",
+            "headline": "Algorhythm Holdings, Inc.: Form 8-K Discloses Material Definitive Agreement, Asset Acquisition or Disposition, Unregistered Equity Sale",
+            "summary": "SEC regulatory submission filed by Algorhythm Holdings, Inc. Disclosed event: Material Definitive Agreement, Asset Acquisition or Disposition, Unregistered Equity Sale. Verified filing date 2026-09-21.",
+            "tag": "MARKETS",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=0000923601",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "company-moves",
+            "scores": {
+              "authority": 7.2,
+              "corroboration": 8.5,
+              "novelty": 2.4,
+              "magnitude": 2.5,
+              "relevance": 7.8,
+              "total": 5.7
+            }
+          }
+        ],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20260928-6",
+            "source": "ScienceDaily",
+            "date": "2026-09-26",
+            "headline": "Scientists may have misread a 2-billion-year-old clue about Earth",
+            "summary": "Scientists have found that a famous 2-billion-year-old chemical signature, once thought to record a massive global change in Earth’s carbon cycle, may instead have been produced by local magma, hydrocarbons, and methane-eating microbes. The discovery raises new questions about what was really happening as oxygen transformed the young planet.",
+            "tag": "SCIENCE",
+            "url": "https://www.sciencedaily.com/releases/2026/09/260925093201.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "science-frontier-20260928-8",
+            "source": "arXiv Preprint",
+            "date": "2026-09-25",
+            "headline": "Quantum-HPC Workflows Across Multiple Quantum Computing Platforms: Two Case Studies",
+            "summary": "We describe the Quantum-HPC hybrid system comprising the supercomputer Fugaku, the QPUs Quantinuum Reimei and ibm_kobe, and the Tierkreis hybrid workflow software. We present two demonstrations of the system at work. In the first, we compute the excited states of a biomolecular system using Fugaku and Reimei (simulator) to handle classical and quantum parts of the workflow respectively.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2609.31528v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 9.4,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "science-frontier-20260928-23",
+            "source": "arXiv Preprint",
+            "date": "2026-09-25",
+            "headline": "Exact Characterization of the Holevo Bound by a Quantum Fisher Information Family",
+            "summary": "The quantum Cramér-Rao bound constrains the precision of parameter estimation through the symmetric logarithmic derivative quantum Fisher information (SLD QFI). It is asymptotically achievable for regular single-parameter estimation models, but generally not in the multiparameter setting, where optimal measurements for different parameters may be incompatible. For multiparameter estimation, allowing collective measurements, the corresponding asymptotically achievable precision limit is the Holevo bound, whose standard formulation is an optimization over auxiliary Hermitian operators.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2609.31601v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20260928-19",
+            "source": "Wired Culture",
+            "date": "2026-09-22",
+            "headline": "Patti Harrison Had Dreams of a Tech Utopia. Silicon Valley Smashed Them",
+            "summary": "The comedian sat down with WIRED to talk about social media, AI, and getting laughs for impersonating Boston Dynamics’ robot dogs.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/big-interview-patti-harrison/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20260928-1",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-28",
+            "headline": "Mass ICE Deportations Leave Thousands of Children Stranded Without Parents",
+            "summary": "Accelerated immigration enforcement and revised Department of Homeland Security policies have left tens of thousands of children in the United States separated from deported parents. Temporary caregivers and legal aid organizations face severe administrative, financial, and legal hurdles when attempting to care for these children or transport them to their families abroad. Consequently, routine deportation operations are driving an expanding secondary family-separation crisis across the country.",
+            "tag": "FAMILY_CRISIS",
+            "url": "https://www.theatlantic.com/magazine/2026/11/trump-ice-family-separation/688695/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 7.8,
+              "relevance": 8.8,
+              "total": 8.3
+            }
+          },
+          {
+            "id": "culture-voices-20260928-5",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-26",
+            "headline": "Modern Media Weaken the Presidency",
+            "summary": "Donald Trump’s second term represents a new, bolder version of the “imperial presidency” that many feared half a century ago. Trump prefers a maximalist approach to presidential power. And the Supreme Court, by granting presidents immunity from most prosecution and subduing what were once thought of as independent agencies, has lent him some support.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/modern-media-presidential-power/688784/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.2,
+              "relevance": 7.8,
+              "total": 7.5
+            }
+          },
+          {
+            "id": "culture-voices-20260928-7",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-28",
+            "headline": "Democrats Love Universal Day Care, but Voters Don’t",
+            "summary": "I f there’s one policy proposal that seems to excite the whole spectrum of Democratic politicians, from insurgent left to establishment moderates, it’s universal child care. The idea, as Senator Elizabeth Warren has put it , is for the government to make day care available “from birth to school age” at little or no cost to parents. Progressives love that it would expand the social safety net and help women balance motherhood with a career.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/universal-child-care-democrats/688794/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.1
+            }
+          },
+          {
+            "id": "culture-voices-20260928-9",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-25",
+            "headline": "How to Destroy a Lesbian Bar",
+            "summary": "Way back in the wilds of 2013, I organized an event on feminism at a public venue in London. I was then the online editor of a left-wing magazine, and we had some of the best feminist columnists around. What a chance to show them off!",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/bar-masking-greenfield-boston-globe/688772/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "culture-voices-20260928-10",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-27",
+            "headline": "Why Empathy Is Now ‘Toxic,’ ‘Suicidal,’ and a ‘Sin’",
+            "summary": "ET on September 27, 2026 A crusade against empathy is sweeping through the right. In sometimes apocalyptic terms, prominent conservatives are denouncing that feeble human capacity to understand the feelings of others. This is a trend I’ve written about before, but I’ve been intrigued by the way these figures have lately been adopting the language of the Canadian marketing professor Gad Saad and his influential book, Suicidal Empathy , released earlier this year.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/maga-right-christianity-empathy-toxic/688755/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          }
+        ]
+      }
+    }
+  }
+}
