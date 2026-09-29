@@ -1,0 +1,715 @@
+{
+  "date": "2026-09-29",
+  "label": "Today",
+  "lastUpdated": "2026-09-29T11:45:53.251Z",
+  "agentLog": [
+    {
+      "timestamp": "11:45:01",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 02e7923: \"chore(data): auto-publish daily briefing [2026-09-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:45:01",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:45:08",
+      "module": "SCOUT",
+      "message": "Scouted 117 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:45:08",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:45:08",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 73 off-beat/redundant wires. 44 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:45:08",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:45:08",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:45:53",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 30 items (15 via LLM, 15 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 22227. Est cost: $0.00405.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:45:53",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:45:53",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (30 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:45:53",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-09-29 live (30 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20260929-8",
+            "source": "TechCrunch AI",
+            "date": "2026-09-28",
+            "headline": "AMD acquires Fei-Fei Li's World Labs for $8.2 billion",
+            "summary": "AMD is set to acquire World Labs, a startup founded by Fei-Fei Li, in a deal valued at $8.2 billion. As part of the acquisition, Li will join AMD to serve as executive vice president and chief scientist.",
+            "tag": "AI-VENTURE",
+            "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 7.5,
+              "novelty": 5.2,
+              "magnitude": 9.5,
+              "relevance": 9.5,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "ai-venture-venture-20260929-6",
+            "source": "TechCrunch AI",
+            "date": "2026-09-28",
+            "headline": "Modal Labs Nears $750 Million Funding Round at $15.75 Billion Valuation",
+            "summary": "Inference provider Modal Labs is closing in on a $750 million financing round. This new investment is expected to more than triple the AI infrastructure startup's valuation from just four months ago.",
+            "tag": "AI-VENTURE",
+            "url": "https://techcrunch.com/2026/09/28/source-inference-provider-modal-labs-closing-in-on-750m-round-at-15-75b-valuation/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.8,
+              "relevance": 9.5,
+              "total": 7.7
+            }
+          },
+          {
+            "id": "ai-venture-venture-20260929-10",
+            "source": "TechCrunch AI",
+            "date": "2026-09-29",
+            "headline": "Peak XV Increases Surge Seed Investment Ceiling to $5 Million",
+            "summary": "Peak XV has raised its Surge seed investment ceiling to $5 million and unveiled its latest 18-startup cohort. Thirteen of the participating startups are targeting global markets, with over half based in India.",
+            "tag": "AI-VENTURE",
+            "url": "https://techcrunch.com/2026/09/28/peak-xv-goes-bigger-at-seed-with-new-surge-cohort-as-series-a-bar-rises/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 5.2,
+              "relevance": 9.5,
+              "total": 7.3
+            }
+          },
+          {
+            "id": "ai-venture-venture-20260929-20",
+            "source": "TechCrunch AI",
+            "date": "2026-09-28",
+            "headline": "The AI boom took over Climate Week and not everyone is happy about it",
+            "summary": "Just like the rest of the U.S., data centers and AI are dividing climate tech founders and investors.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/09/28/the-ai-boom-took-over-climate-week-and-not-everyone-is-happy-about-it/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-venture-20260929-26",
+            "source": "TechCrunch AI",
+            "date": "2026-09-29",
+            "headline": "Anthropic’s prospectus details losses, growth, and, yes, a warning that its AI could end humanity",
+            "summary": "In its prospectus, Anthropic just told investors it's losing tens of billions of dollars a year, but also growing like crazy, and — oh yeah — its own AI might pose an existential risk to humanity.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/09/28/anthropics-prospectus-details-losses-growth-and-yes-a-warning-that-its-ai-could-end-humanity/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20260929-13",
+            "source": "arXiv Preprint",
+            "date": "2026-09-28",
+            "headline": "MGFlow framework achieves state-of-the-art results in one-step visual generation",
+            "summary": "A unified theoretical framework for distributional training connects global objectives to pointwise feature updates through Wasserstein gradient flow, recovering existing methods like FD-Loss and Gaussian-kernel Drifting. This motivates MGFlow, which uses Gaussian mixtures and addresses mode collapse with mass-constrained sample assignment and paired component updates. On ImageNet 256x256 and text-to-image generation tasks, MGFlow surpasses baselines and the original multi-step models.",
+            "tag": "AI-VENTURE",
+            "url": "http://arxiv.org/abs/2609.35763v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20260929-17",
+            "source": "MIT Tech Review AI",
+            "date": "2026-09-29",
+            "headline": "Making AI an asset, not an expense",
+            "summary": "When customers talk about AI costs, the conversation usually starts with token prices and ends with access to the latest, most capable model in the cloud. Do they always need that level of capability? But that is often where the conversation goes.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/09/29/1145186/making-ai-an-asset-not-an-expense/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20260929-18",
+            "source": "MIT Tech Review AI",
+            "date": "2026-09-23",
+            "headline": "The AI Hype Index: AI loves cheating",
+            "summary": "Brace yourself: It turns out AI is being optimized for cheating. OpenAI’s agents hacked into Hugging Face to get the answers to a cybersecurity test. Next, they solved a prestigious math problem (or just stole from two top mathematicians’ answer sheets).",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/09/23/1144940/ai-hype-index-ai-loves-cheating/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20260929-19",
+            "source": "MIT Tech Review AI",
+            "date": "2026-09-22",
+            "headline": "Don’t be fooled by this summer of AI hype",
+            "summary": "It’s been a busy few months for AI hype. At the end of April, Anthropic claimed that its model Claude Mythos is better at finding software vulnerabilities than most security experts. Then we had the OpenAI–Hugging Face hacking incident, after which Anthropic (proudly) and Meta (reluctantly) disclosed similar incidents involving their models.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20260929-28",
+            "source": "arXiv Preprint",
+            "date": "2026-09-28",
+            "headline": "Telescopic Language Models",
+            "summary": "One deployed language model must often serve many compute budgets, yet serving each budget still means a separate training or compression run per point. We train a Telescopic Language Model (TLM) to be that continuum: a nested-capacity Transformer supervised by stochastic prefix supervision with a full anchor. At every step, one randomly truncated prefix of the capacity axis is trained against the full next-token target, alongside one full-capacity pass, so the trained artifact is a valid language model at every depth.",
+            "tag": "ARCHITECTURE",
+            "url": "http://arxiv.org/abs/2609.35769v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20260929-16",
+            "source": "The Verge AI",
+            "date": "2026-09-28",
+            "headline": "Nvidia says its new AI safety platform can contain rogue agents within ‘milliseconds’",
+            "summary": "Nvidia is launching a new safety platform designed to contain and monitor AI agents, a move that comes in response to a wave of rogue hacking incidents, as reported earlier by Reuters. In an announcement on Monday, Nvidia says its new Open Agent Safety Platform can quarantine agents that attempt to escape their boundaries within […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 7.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-titans-20260929-21",
+            "source": "The Verge AI",
+            "date": "2026-09-28",
+            "headline": "OpenAI’s AI agents need to catch up",
+            "summary": "OpenAI popularized the modern generative AI chatbot, but as its 2026 DevDay event approaches, it's fallen behind in one of the industry's hottest categories: continuously running, consumer-facing AI agents. On Tuesday, it will likely try to capture the lead in that race. Rumors abound that OpenAI will release its own AI agent, dubbed Aeon - […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1001590/openai-devday-2026-aeon-ai-agent",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20260929-22",
+            "source": "The Verge AI",
+            "date": "2026-09-28",
+            "headline": "OpenAI keeps bulldozing mathematicians",
+            "summary": "In a chaotic few months, OpenAI has demonstrated it can do two things with remarkable consistency: make impressive breakthroughs in mathematics, then colossally screw up announcing them. OpenAI is now trying to do better. Somehow, it has botched that too.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1001477/openai-math-advisory-group",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20260929-27",
+            "source": "The Verge AI",
+            "date": "2026-09-28",
+            "headline": "Florida seeks a ban on ChatGPT acting like a person",
+            "summary": "Florida Attorney General James Uthmeier is calling for a judge to block OpenAI from \"giving ChatGPT false human attributes,\" a few months after Florida sued the AI company over safety concerns. According to Uthmeier, users are lulled into a false sense of security by the AI bot, as \"ChatGPT's use of language, including first-person pronouns […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1001527/chatgpt-florida-ban-first-person-human-attributes-kids",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20260929-1",
+            "source": "FTC Press",
+            "date": "2026-09-28",
+            "headline": "FTC and States Secure Settlement Against Corteva to Lower Pesticide Prices",
+            "summary": "The Federal Trade Commission and a coalition of state attorneys general have secured a settlement with pesticide manufacturer Corteva Inc. The antitrust case successfully establishes protections aimed at lowering pesticide prices for American farmers.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-states-win-protections-lower-pesticide-prices-american-farmers-antitrust-case-against-corteva",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 9.2,
+              "total": 8.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20260929-4",
+            "source": "FTC Press",
+            "date": "2026-09-24",
+            "headline": "FTC Seeks Public Comments on Updating Rule Targeting Impersonation Scams",
+            "summary": "The Federal Trade Commission is considering updates to its rule regarding the impersonation of government and businesses. The proposed review aims to address the specific role that platforms play in promoting these impersonation scams.",
+            "tag": "REGULATION",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-seeks-public-comment-whether-update-rule-impersonation-government-businesses-address-platforms",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9,
+              "total": 8
+            }
+          },
+          {
+            "id": "politics-regulatory-20260929-5",
+            "source": "FTC Press",
+            "date": "2026-09-22",
+            "headline": "FTC Endorses Education Department Proposal to Expand Accreditation Options",
+            "summary": "The Federal Trade Commission strongly endorsed the Department of Education's proposed reforms aimed at promoting competition among accreditation agencies. According to the context, increased competition and lower administrative burdens could reduce costs and improve higher education quality for millions of students.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-endorses-education-department-proposal-expand-higher-education-accreditation-options",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9,
+              "total": 8
+            }
+          },
+          {
+            "id": "politics-regulatory-20260929-3",
+            "source": "FTC Press",
+            "date": "2026-09-24",
+            "headline": "FTC Approves Rules of Practice Revisions to Align with Act",
+            "summary": "The Federal Trade Commission amended its Rules of Practice to align better with the FTC Act and reflect organizational changes, such as creating the American Competition Enforcement Division. These amendments also correct minor errors and omissions from the previous version of the rules.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-approves-publication-federal-register-notices-revising-commissions-rules-practice",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.9
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20260929-30",
+            "source": "MarketWatch Top",
+            "date": "2026-09-29",
+            "headline": "Morgan Stanley’s Mike Wilson says an S&P 500 correction may be exactly what the market needs",
+            "summary": "equity strategist at the investment bank favors large-capitalization quality companies.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/morgan-stanleys-mike-wilson-says-an-s-p-500-correction-may-be-exactly-what-the-market-needs-a6baf54e?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20260929-9",
+            "source": "Nature News",
+            "date": "2026-09-29",
+            "headline": "A new chapter in targeting kinase enzymes in cancer",
+            "summary": "Research details a new chapter in targeting kinase enzymes within cancer treatment. The findings highlight advancements in how these specific enzymes can be addressed therapeutically.",
+            "tag": "ONCOLOGY",
+            "url": "https://www.nature.com/articles/d41586-026-02776-y",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 9.8,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9,
+              "total": 7.5
+            }
+          },
+          {
+            "id": "science-frontier-20260929-14",
+            "source": "ScienceDaily",
+            "date": "2026-09-28",
+            "headline": "Blood tests show spaceflight alters gut bacteria and digestion",
+            "summary": "Spaceflight can dramatically alter the gut within weeks, causing bacteria to break down more protein as food moves slower. This shift helps explain astronaut constipation and presents health concerns for future Mars missions.",
+            "tag": "SPACEFLIGHT",
+            "url": "https://www.sciencedaily.com/releases/2026/09/260927225030.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "science-frontier-20260929-24",
+            "source": "arXiv Preprint",
+            "date": "2026-09-28",
+            "headline": "Multilevel Plaquette-Space Sampling for Lattice Gauge Theories with Local Constraint Solves",
+            "summary": "Lattice gauge theories are an important class of physical models with high-dimensional structured distributions that underpin first-principles calculations in particle, nuclear, and condensed-matter physics. Recent advances in generative modeling have opened new avenues for sampling Boltzmann distributions in lattice gauge theories, offering the potential to alleviate limitations of traditional Monte Carlo methods, including critical slowing down and topological freezing. However, generative samplers for lattice gauge theories are typically constructed in link space, where correlations become increasingly long-ranged toward weak coupling, posing a challenge for learning.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2609.35722v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          },
+          {
+            "id": "science-frontier-20260929-25",
+            "source": "arXiv Preprint",
+            "date": "2026-09-28",
+            "headline": "A Si-on-SiC Platform for Interfacing with Vanadium Dopants in the Telecom O-Band",
+            "summary": "Vanadium color centers in silicon carbide (SiC) offer telecom O-band emission, sub-microsecond optical lifetimes, and second-scale spin relaxation times, rendering them promising candidates for quantum network nodes. However, efficient photon extraction from the high-refractive-index SiC host remains challenging. Here, we introduce a silicon-on-SiC heterogeneous photonic platform in which silicon nanocavities evanescently couple to shallow vanadium dopants in commercial 4H-SiC, enabling efficient zero-phonon line (ZPL) collection under resonant excitation.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2609.35702v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          },
+          {
+            "id": "science-frontier-20260929-29",
+            "source": "arXiv Preprint",
+            "date": "2026-09-28",
+            "headline": "Speed-Fisher Information: Chaos and Irreversibility in Classical and Quantum Dynamics",
+            "summary": "We propose a unified perspective on classical and quantum chaos based on the sensitivity of a system's stationary states to slow driving. We probe this sensitivity via the system's susceptibility to the average protocol speed, which we call the ``speed-Fisher information,\" and relate it to irreversible entropy production in the system. We show that chaotic dynamics manifests as a divergence of the speed-Fisher information with the protocol time, and that this response is controlled by the perturbation's low-frequency spectral weight.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2609.35687v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20260929-23",
+            "source": "Wired Culture",
+            "date": "2026-09-22",
+            "headline": "Patti Harrison Had Dreams of a Tech Utopia. Silicon Valley Smashed Them",
+            "summary": "The comedian sat down with WIRED to talk about social media, AI, and getting laughs for impersonating Boston Dynamics’ robot dogs.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/big-interview-patti-harrison/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20260929-2",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-28",
+            "headline": "Mass Deportations Create a Growing Family-Separation Crisis for Children Left Behind",
+            "summary": "Under the second Trump administration, an acceleration of ICE arrests is separating thousands of children from their detained or deported parents. As of April, the Brookings Institution estimated that 205,000 children have been affected, with over 35,000 left without any parent. Many parents face agonizing choices, and the resulting legal and logistical hurdles leave tens of thousands of children stranded with temporary caregivers or in state custody.",
+            "tag": "IMMIGRATION",
+            "url": "https://www.theatlantic.com/magazine/2026/11/trump-ice-family-separation/688695/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 7.8,
+              "relevance": 9.5,
+              "total": 8.4
+            }
+          },
+          {
+            "id": "culture-voices-20260929-7",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-26",
+            "headline": "Changes in modern media and journalism actively weaken the presidency",
+            "summary": "While Donald Trump prefers a maximalist approach to presidential power, structural changes in the news industry this century have actually tended to weaken the presidency. Forces like media fragmentation, declining prime-time television audiences, and social media intermediation limit a president's ability to broadcast messages effectively and shape public opinion. Additionally, the nationalization of news and the rise of a partisan press make consensus-building difficult and complicate governance.",
+            "tag": "MEDIA_CRITIQUE",
+            "url": "https://www.theatlantic.com/ideas/2026/09/modern-media-presidential-power/688784/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.2,
+              "relevance": 8.5,
+              "total": 7.7
+            }
+          },
+          {
+            "id": "culture-voices-20260929-11",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-28",
+            "headline": "Universal child care may alienate ordinary voters and overlook parents' preferences.",
+            "summary": "Democratic politicians widely champion universal child care to expand the safety net and support working parents, but the policy offers nothing to stay-at-home parents. Most parents of young children do not use center-based care and prefer to care for kids themselves or rely on relatives. Consequently, the policy primarily benefits affluent, urban voters while reinforcing perceptions that Democrats are out of touch.",
+            "tag": "POLITICS",
+            "url": "https://www.theatlantic.com/ideas/2026/09/universal-child-care-democrats/688794/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "culture-voices-20260929-15",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-27",
+            "headline": "Prominent conservatives crusade against empathy, framing it as a destructive force",
+            "summary": "A growing movement among prominent conservatives and figures like Gad Saad, Paul Bloom, Allie Beth Stuckey, and Joe Rigney has emerged to denounce empathy as toxic, sinful, and suicidal. These writers argue that progressive compassion undermines Western civilization, providing a theoretical framework and justification for conservatives struggling with the morality of harsh political policies like welfare cuts and strict immigration enforcement.",
+            "tag": "CULTURE",
+            "url": "https://www.theatlantic.com/ideas/2026/09/maga-right-christianity-empathy-toxic/688755/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "culture-voices-20260929-12",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-25",
+            "headline": "A Massachusetts lesbian bar faces severe backlash over a mask-optional policy.",
+            "summary": "The Last Ditch Bar and Arts Venue in Greenfield, Massachusetts, faced intense criticism and financial strain after announcing a mask-optional night on Saturdays. Critics accused the bar of engaging in a mass disabling event and failing to uphold purity leftism standards. Despite mediation and apologies from the proprietor, detractors continued demanding leadership changes and financial compensation.",
+            "tag": "CULTURE",
+            "url": "https://www.theatlantic.com/ideas/2026/09/bar-masking-greenfield-boston-globe/688772/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 6.7
+            }
+          }
+        ]
+      }
+    }
+  }
+}
