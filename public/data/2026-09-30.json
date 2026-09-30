@@ -1,0 +1,675 @@
+{
+  "date": "2026-09-30",
+  "label": "Today",
+  "lastUpdated": "2026-09-30T11:31:52.621Z",
+  "agentLog": [
+    {
+      "timestamp": "11:31:19",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit eb3292a: \"chore(data): auto-publish daily briefing [2026-09-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:19",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:26",
+      "module": "SCOUT",
+      "message": "Scouted 112 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:26",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:26",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 68 off-beat/redundant wires. 44 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:26",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:26",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:52",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 28 items (2 via LLM, 26 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 687. Est cost: $0.00018.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:52",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:52",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (28 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:52",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-09-30 live (28 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20260930-6",
+            "source": "TechCrunch AI",
+            "date": "2026-09-29",
+            "headline": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+            "summary": "The new round is anticipated to be the company's last before its delayed 2027 public debut.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.8,
+              "relevance": 9.5,
+              "total": 7.7
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20260930-10",
+            "source": "arXiv Preprint",
+            "date": "2026-09-29",
+            "headline": "Cropland PAtteRNS: Parallel Dimensional Attention Networks and Attention to Dataset Disparity for Crop Segmentation in Satellite Imagery Time Series Data",
+            "summary": "The landscape of satellite imagery time series datasets and boundary-pushing architectures for cropland segmentation has never been richer. However, in this gold rush, important truths are being missed on both fronts, as a drive for the most novel concepts or the largest datasets pushes finer details to the side. In this paper, we present our hybrid transformer-convolutional model, Cropland Parallel Attention and Refinement Network for Segmentation (PAtteRNS), the first model to use self-attention mechanisms separately for each of the temporal, spectral, and spatial aspects of Sentinel-2 multispectral SITS data.",
+            "tag": "ARCHITECTURE",
+            "url": "http://arxiv.org/abs/2609.38165v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20260930-13",
+            "source": "arXiv Preprint",
+            "date": "2026-09-29",
+            "headline": "Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering",
+            "summary": "Reasoning about the 3D world from multi-view images remains a fundamental challenge for Multimodal Large Language Models (MLLMs). While modern MLLMs handle single-image inputs effectively, they struggle to integrate evidence across viewpoints into a coherent 3D understanding. A growing body of work attempts to close this gap by injecting 3D awareness into MLLMs, either by boosting fine-grained pixel-level cross-view correspondence or by fusing features from 3D geometry foundation models, yet a substantial gap to human reasoning persists.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2609.38177v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-research-20260930-14",
+            "source": "arXiv Preprint",
+            "date": "2026-09-29",
+            "headline": "Pretraining Latent Information Feedback Transformers with Teacher Supervision",
+            "summary": "Transformer language models (LMs) are feed-forward: deep-layer representations are never fed back to shallower layers, and the only pathway for information to flow downward across generation steps is the decoded token. This narrow channel forces models to recompute intermediate results and to discard alternative continuations. In this work, we remove this bottleneck during pretraining, introducing the LIFT (Latent Information Feedback Transformer) architecture and training method which enable LMs to propagate state across generation.",
+            "tag": "REASONING",
+            "url": "http://arxiv.org/abs/2609.38149v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-research-20260930-15",
+            "source": "arXiv Preprint",
+            "date": "2026-09-29",
+            "headline": "STEPQuant: When and Where Errors Matter in Delta-Rule Recurrent State Quantization",
+            "summary": "Linear attention replaces growing KV caches with fixed-size recurrent states, yet these persistent states can become a substantial memory bottleneck under concurrent serving. Directly quantizing recurrent states to low precision often leads to severe accuracy degradation, as quantization errors propagate through successive state updates. We discover that the impact of these errors depends on two complementary dimensions: temporally, errors in long-lived memory can persist across many decoding steps; spatially, errors in different key rows affect model outputs differently, while state magnitudes vary substantially along both rows and columns.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2609.38169v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20260930-18",
+            "source": "MIT Tech Review AI",
+            "date": "2026-09-29",
+            "headline": "Making AI an asset, not an expense",
+            "summary": "When customers talk about AI costs, the conversation usually starts with token prices and ends with access to the latest, most capable model in the cloud. Do they always need that level of capability? But that is often where the conversation goes.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/09/29/1145186/making-ai-an-asset-not-an-expense/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20260930-2",
+            "source": "The Verge AI",
+            "date": "2026-09-29",
+            "headline": "OpenAI Launches Dots Always-On AI Assistants to Compete With Meta Muse",
+            "summary": "OpenAI announced Dots during its DevDay keynote as always-on AI assistants responding to Meta's Muse AI. Powered by the GPT-6 Astra model, Dots operate in the background across connected apps while learning user preferences over time.",
+            "tag": "AGENTIC_AI",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 7.5,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9,
+              "total": 8.5
+            }
+          },
+          {
+            "id": "ai-venture-titans-20260930-16",
+            "source": "The Verge AI",
+            "date": "2026-09-29",
+            "headline": "AI researchers put out videos saying superintelligence is ‘exactly as dangerous as it sounds’",
+            "summary": "\"The chance of human extinction is about a coin flip, in my view,\" Geoffrey Irving, a former OpenAI and Google DeepMind employee, said in a new interview. It's one of a dozen interviews with AI researchers, including current and former employees at OpenAI, Google, and Anthropic. Palisade Research, which says it's a nonprofit studying AIs' […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1002238/openai-google-anthropic-ai-researchers-safety-interviews",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20260930-17",
+            "source": "The Verge AI",
+            "date": "2026-09-29",
+            "headline": "OpenAI DevDay 2026: The biggest news and announcements",
+            "summary": "It’s OpenAI’s turn in the fall tech events calendar. The company is hosting its annual DevDay on September 29th in San Francisco, and during a live keynote featuring CEO Sam Altman, it revealed several notable updates, including Dots, its AI agent product that rivals Meta’s recently-launched Muse. However, unlike Muse, which is available for free, […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1001681/openai-devday-2026-biggest-news-announcements",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20260930-20",
+            "source": "The Verge AI",
+            "date": "2026-09-30",
+            "headline": "Sam Altman says OpenAI won’t go public until its models are safe",
+            "summary": "For months, people have wondered when OpenAI will go public. CEO Sam Altman says it won't happen until the company can make better promises about model safety, with no firm timeline in sight. \"We intend to continue with AI progress … but as the models have had this surge forward in capability, and we see […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20260930-21",
+            "source": "The Verge AI",
+            "date": "2026-09-29",
+            "headline": "Protesters gather at OpenAI’s DevDay",
+            "summary": "On Tuesday, OpenAI's annual DevDay event began with protests, flyers, and chants. \"Sam Altman, get off it, put people over profit,\" said a group of protesters marching in a circle in front of a series of signs that spelled out \"PEOPLE OVER PROFIT.\" More than a dozen organizations came together to sponsor a rally outside […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1002201/openai-sam-altman-openai-devday-protests-ice-data-centers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20260930-1",
+            "source": "FTC Press",
+            "date": "2026-09-28",
+            "headline": "FTC and States Secure Settlement to Lower Pesticide Prices for Farmers",
+            "summary": "The Federal Trade Commission and a coalition of state attorneys general secured a settlement agreement with Corteva Inc. The antitrust case settlement will lower pesticide prices for American farmers.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-states-win-protections-lower-pesticide-prices-american-farmers-antitrust-case-against-corteva",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 9,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20260930-4",
+            "source": "FTC Press",
+            "date": "2026-09-24",
+            "headline": "FTC Seeks Public Comment on Whether to Update Rule on Impersonation of Government and Businesses to Address Platforms’ Role in Promoting Impersonation Scams",
+            "summary": "The Federal Trade Commission announced today that is considering whether to update its.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-seeks-public-comment-whether-update-rule-impersonation-government-businesses-address-platforms",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20260930-5",
+            "source": "FTC Press",
+            "date": "2026-09-24",
+            "headline": "FTC Approves Publication of Federal Register Notices Revising the Commission’s Rules of Practice",
+            "summary": "The Federal Trade Commission amended the agency’s Rules of Practice to better align with the FTC Act and reflect organizational changes, including the creation of the American Competition Enforcement Division. The amendments also correct a number of minor errors and omissions in the previous version of the Rules.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-approves-publication-federal-register-notices-revising-commissions-rules-practice",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20260930-22",
+            "source": "MarketWatch Top",
+            "date": "2026-09-30",
+            "headline": "He’s been badmouthing Treasury bonds since 2020, but now ‘the big fat cushion’ of 5.25% yields is turning this strategist bullish",
+            "summary": "Investors have become accustomed to returns distorted by artificially low interest rates. 5% on bonds and 6% on stocks are more realistic and Bianco finds value in U.S.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/hes-been-badmouthing-treasury-bonds-since-2020-but-now-the-big-fat-cushion-of-5-25-yields-is-turning-this-strategist-bullish-376fafba?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          },
+          {
+            "id": "markets-macro-20260930-23",
+            "source": "MarketWatch Top",
+            "date": "2026-09-30",
+            "headline": "One group of funds is holding up the stock market. Barclays says oil prices have to fall to drive a year-end rally.",
+            "summary": "Strategists at the bank said a rally at the end of the year would likely depend on oil prices lowering or stabilizing even as the historically best-performing quarter approaches.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/one-group-of-funds-is-holding-up-the-stock-market-barclays-says-oil-prices-have-to-fall-to-drive-a-year-end-rally-c6d551f9?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20260930-11",
+            "source": "ScienceDaily",
+            "date": "2026-09-28",
+            "headline": "Blood tests reveal why astronauts get constipated in space",
+            "summary": "Spaceflight may dramatically change the gut within weeks, causing bacteria to break down more protein as food moves more slowly through the intestines. The shift could help explain astronaut constipation and may have wider effects on health, making it an important concern for future missions to Mars.",
+            "tag": "AEROSPACE",
+            "url": "https://www.sciencedaily.com/releases/2026/09/260927225030.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "science-frontier-20260930-24",
+            "source": "arXiv Preprint",
+            "date": "2026-09-29",
+            "headline": "The exact strong converse exponent for private communication over quantum channels",
+            "summary": "We determine the exact strong converse exponent for secret-key transmission and generation over general finite-dimensional quantum wiretap channels, measuring reliability and secrecy jointly by squared fidelity to an ideal secret key. We introduce a novel Renyi private information whose regularization characterizes this exponent. An exact integral representation in terms of ordinary private information gives a uniform continuity bound, showing that the regularized quantity converges to private capacity as the Renyi order approaches one.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2609.38144v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20260930-25",
+            "source": "arXiv Preprint",
+            "date": "2026-09-29",
+            "headline": "Local autonomous inference machines for quantum LDPC codes",
+            "summary": "We introduce a local and distributed framework for decoding quantum LDPC codes. Built atop belief propagation (BP), the architecture combines strictly local processing of syndrome information, local feedback, autonomous operation, and highly parallelized decoding. We establish the framework at two complementary levels.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2609.38139v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20260930-26",
+            "source": "arXiv Preprint",
+            "date": "2026-09-29",
+            "headline": "Resource Compatibility in Optimal Quantum Symmetry Testing",
+            "summary": "Can a symmetry be tested optimally without using the quantum resource naturally associated with it? For parallel subgroup-versus-Haar testing, we derive a quantitative representation-theoretic converse for every protocol with zero type-I error: the excess type-II error is bounded below by the sum of two nonnegative penalties, one for weight on suboptimal subgroup types and one for deviations of within-type Schur profiles from their typewise extremal profiles. At optimality, both penalties vanish, yielding support and weight locking for every optimal system marginal.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2609.38134v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20260930-27",
+            "source": "arXiv Preprint",
+            "date": "2026-09-29",
+            "headline": "Learning quantum symmetries",
+            "summary": "Quantum algorithms are powerful tools for finding symmetries of classical objects, most famously through Shor's algorithm and the framework of the Hidden Subgroup Problem (HSP). In this work, we study quantum algorithms for learning symmetries of quantum objects. Our starting point is the recently introduced State Hidden Subgroup Problem (StateHSP), a quantum generalisation of HSP in which the task is to learn the symmetry subgroup of a quantum state.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2609.38085v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20260930-19",
+            "source": "Wired Culture",
+            "date": "2026-09-30",
+            "headline": "Black Twitter Is Thriving—on Threads",
+            "summary": "From outrage over Nolan Wells’ death to analysis of HBO Max’s Lanterns, Threads has transformed into a vital artery of the Black social media ecosystem.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/threads-is-black-twitters-unlikely-spiritual-successor/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "culture-industry-20260930-28",
+            "source": "Ars Technica",
+            "date": "2026-09-29",
+            "headline": "Protests against OpenAI get increasingly creative",
+            "summary": "New sculpture depicts AI leaders escaping a sinking ship.",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/ai/2026/09/what-iceberg-bay-area-artists-target-openai-with-titanic-themed-protest-art/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.7
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20260930-3",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-28",
+            "headline": "The Babies Left Behind in America",
+            "summary": "Photographs by Meridith Kohut Estela Díaz and 2-year-old Eber repeat their routine every morning: Around 8 a.m., he rustles her awake in the bed they share. She picks him up, changes his diaper, and pulls out a fresh set of tiny clothes. While Estela dresses him, Eber coos, “Mama, mama.” She smiles and strokes his cheeks, trying to hide her sadness at his confusion.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/magazine/2026/11/trump-ice-family-separation/688695/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 7.8,
+              "relevance": 6.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "culture-voices-20260930-7",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-26",
+            "headline": "Modern Media Weaken the Presidency",
+            "summary": "Donald Trump’s second term represents a new, bolder version of the “imperial presidency” that many feared half a century ago. Trump prefers a maximalist approach to presidential power. And the Supreme Court, by granting presidents immunity from most prosecution and subduing what were once thought of as independent agencies, has lent him some support.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/modern-media-presidential-power/688784/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.2,
+              "relevance": 7.8,
+              "total": 7.5
+            }
+          },
+          {
+            "id": "culture-voices-20260930-8",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-29",
+            "headline": "Why Did Wallace Shawn Liken Israelis to Nazis?",
+            "summary": "T his past weekend, a deplorable minute-long video appeared on my X feed. In it, the instantly recognizable actor and playwright Wallace Shawn, most famous for his role as Vizzini in the classic 1987 film The Princess Bride , delivers a hateful rant belied by his grandfatherly demeanor and dulcet tones. He says, The Israelis invaded somebody else’s territory, they took people’s homes, and they did many of the things that the Nazis did to the Jews.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/wallace-shawn-israel-palestine/688822/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "culture-voices-20260930-9",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-28",
+            "headline": "The Problem With Democrats’ Favorite Policy Proposal",
+            "summary": "I f there’s one policy proposal that seems to excite the whole spectrum of Democratic politicians, from insurgent left to establishment moderates, it’s universal child care. The idea, as Senator Elizabeth Warren has put it , is for the government to make day care available “from birth to school age” at little or no cost to parents. Progressives love that it would expand the social safety net and help women balance motherhood with a career.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/universal-child-care-democrats/688794/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.1
+            }
+          },
+          {
+            "id": "culture-voices-20260930-12",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-27",
+            "headline": "Why Empathy Is Now ‘Toxic,’ ‘Suicidal,’ and a ‘Sin’",
+            "summary": "ET on September 27, 2026 A crusade against empathy is sweeping through the right. In sometimes apocalyptic terms, prominent conservatives are denouncing that feeble human capacity to understand the feelings of others. This is a trend I’ve written about before, but I’ve been intrigued by the way these figures have lately been adopting the language of the Canadian marketing professor Gad Saad and his influential book, Suicidal Empathy , released earlier this year.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/maga-right-christianity-empathy-toxic/688755/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          }
+        ]
+      }
+    }
+  }
+}
