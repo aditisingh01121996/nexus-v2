@@ -1,0 +1,655 @@
+{
+  "date": "2026-10-01",
+  "label": "Today",
+  "lastUpdated": "2026-10-01T12:00:21.402Z",
+  "agentLog": [
+    {
+      "timestamp": "11:59:49",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 6784b52: \"chore(data): auto-publish daily briefing [2026-09-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:59:49",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:59:55",
+      "module": "SCOUT",
+      "message": "Scouted 114 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:59:55",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:59:55",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 73 off-beat/redundant wires. 41 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:59:55",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:59:55",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:00:21",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 27 items (4 via LLM, 23 via deterministic synthesis; top 15 LLM quota applied, 1 dropped for thin context). Tokens: 2577. Est cost: $0.00058.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:00:21",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:00:21",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (27 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:00:21",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-01 live (27 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261001-6",
+            "source": "TechCrunch AI",
+            "date": "2026-09-30",
+            "headline": "AI voice startup ElevenLabs doubles valuation to $22B",
+            "summary": "The $300 million employee tender was co-led by Wellington and T.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.8,
+              "relevance": 9.5,
+              "total": 7.7
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261001-9",
+            "source": "TechCrunch AI",
+            "date": "2026-09-30",
+            "headline": "Valor, Atreides, and Sequoia back AI startup Flow Engineering at $750M valuation",
+            "summary": "Flow Engineering, which is bringing AI agents to hardware design, also landed Roelof Botha as an angel investor and board member.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 8.8,
+              "relevance": 9.5,
+              "total": 7.5
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261001-5",
+            "source": "arXiv Preprint",
+            "date": "2026-09-30",
+            "headline": "EvoDuet: Bilevel Co-Evolution of Web Searching and Task Solving for Scientific Discovery",
+            "summary": "Evolutionary search with large language models (LLMs) can stall when progress requires external knowledge the model lacks. Supplying relevant documents helps, but simply adding web search tool can keep returning the same pages as solutions change. We introduce EvoDuet, a bi-level optimization method that co-evolves solutions and search queries with fixed model parameters.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2609.40340v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 8.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261001-13",
+            "source": "arXiv Preprint",
+            "date": "2026-09-30",
+            "headline": "Ranking-Aware Prompt Optimization for Multimodal Clinical Diagnosis",
+            "summary": "Multimodal large language models (MLLMs) are rapidly advancing clinical diagnosis, yet their adaptation pipelines remain anchored to accuracy-based objectives. Clinical data are heavily class-imbalanced: a constant-majority predictor can score above 90% accuracy while being clinically useless. We therefore evaluate and optimize for AUROC, a threshold-free score that ranks positives above negatives and is invariant to class balance.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2609.40361v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261001-14",
+            "source": "arXiv Preprint",
+            "date": "2026-09-30",
+            "headline": "Image Classifiers are Efficient Self-Supervised Video Representation Learners",
+            "summary": "We introduce VideoMSN, a Masked Siamese Network framework for efficient self-supervised spatio-temporal representation learning in videos. Instead of relying on heavy 3D architectures or reconstruction-based autoencoders for learning with unlabeled data, we repurpose standard image Vision Transformers by representing videos as super images which are grids composed of frames sampled from videos. From each super image, we construct two views: one with spatial patch masking and the other with temporal frame masking, ensuring no information leakage across frames.",
+            "tag": "ARCHITECTURE",
+            "url": "http://arxiv.org/abs/2609.40347v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261001-16",
+            "source": "arXiv Preprint",
+            "date": "2026-09-30",
+            "headline": "Turbo Harness: Instance-Adaptive Harness Optimization",
+            "summary": "Automating the search for effective harnesses is an important step toward enabling agents to recursively self-improve. Existing harness optimizations typically produce a single global harness that is applied uniformly across task instances. However, a harness that works well on average may not be optimal for every instance.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2609.40330v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261001-18",
+            "source": "MIT Tech Review AI",
+            "date": "2026-09-29",
+            "headline": "Making AI an asset, not an expense",
+            "summary": "When customers talk about AI costs, the conversation usually starts with token prices and ends with access to the latest, most capable model in the cloud. Do they always need that level of capability? But that is often where the conversation goes.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/09/29/1145186/making-ai-an-asset-not-an-expense/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261001-7",
+            "source": "The Verge AI",
+            "date": "2026-09-30",
+            "headline": "Google announces Gemini 4 and says it’s so capable that only ‘trusted cyber defenders’ can have it right now",
+            "summary": "Google today revealed its next AI frontier model, which it's calling Gemini 4 Argon. The new model delivers \"frontier performance in complex workflows across real-world software engineering, enterprise knowledge work like legal and finance, and cybersecurity defense,\" according to chief AI architect and Google DeepMind SVP Koray Kavukcuoglu. But the company is limiting access at […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 9.4,
+              "relevance": 6.5,
+              "total": 7.6
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261001-17",
+            "source": "The Verge AI",
+            "date": "2026-09-30",
+            "headline": "The AI Tamagotchis are coming",
+            "summary": "While AI has made plenty of inroads on people's phones and computers, it's largely failed in dedicated devices. But over the next year, two major AI companies, Meta and OpenAI, will attempt to change that. And they're apparently betting on a similar path: testing appetites for physical hardware with their cutesy software agents.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1002779/openai-dots-meta-muse-ai-agents-hardware-devices",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261001-20",
+            "source": "The Verge AI",
+            "date": "2026-09-30",
+            "headline": "All the latest news on Meta’s cute, creepy Muse AI agent",
+            "summary": "Meta launched a new Muse AI agent it claims can help you with everything from firing off emails to buying stuff online. Muse can be surprisingly effective at delivering on those promises — if you’re willing to trust Meta with your data and hand Muse your credit card. Since the launch, Meta’s also announced plans […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1002671/meta-muse-ai",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261001-27",
+            "source": "Hacker News Dispatch",
+            "date": "2026-09-30",
+            "headline": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
+            "summary": "Hey HN, Anders and Tom here. We're building Magnitude, an inference engine for agents that optimizes itself to run as fast as possible on your hardware. It works on Mac, Linux, and Windows on any hardware and is up to 2x faster than llama.cpp.",
+            "tag": "INFRASTRUCTURE",
+            "url": "https://github.com/magnitudedev/magnitude",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 5.8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 5.4
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261001-1",
+            "source": "FTC Press",
+            "date": "2026-09-28",
+            "headline": "FTC and States Secure Settlement With Corteva to Lower Pesticide Prices",
+            "summary": "The Federal Trade Commission and a coalition of state attorneys general secured a settlement agreement with Corteva Inc. in an antitrust case. The agreement establishes protections intended to lower pesticide prices for American farmers.",
+            "tag": "ANTITRUST",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-states-win-protections-lower-pesticide-prices-american-farmers-antitrust-case-against-corteva",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 8.8,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261001-3",
+            "source": "FTC Press",
+            "date": "2026-09-24",
+            "headline": "FTC Considers Updating Rule on Government and Business Impersonation Scams",
+            "summary": "The Federal Trade Commission is seeking public comment on whether to update its rule regarding the impersonation of government and businesses. The agency is considering changes to address the role platforms play in promoting these impersonation scams. The announcement initiates a review process to determine potential updates to the existing regulation.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-seeks-public-comment-whether-update-rule-impersonation-government-businesses-address-platforms",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "politics-regulatory-20261001-4",
+            "source": "FTC Press",
+            "date": "2026-09-24",
+            "headline": "FTC Revises Rules of Practice to Align With Agency Act",
+            "summary": "The Federal Trade Commission amended its Rules of Practice to align with the FTC Act and reflect recent organizational changes. The revisions accommodate updates such as the establishment of the American Competition Enforcement Division. The amendments also address and correct minor errors and omissions in the prior rules.",
+            "tag": "FTC_RULES",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-approves-publication-federal-register-notices-revising-commissions-rules-practice",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.9
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261001-21",
+            "source": "MarketWatch Top",
+            "date": "2026-10-01",
+            "headline": "France’s bond market is stumbling. Should Americans care?",
+            "summary": "As French bond yields rise, is it a threat to the U.S.?",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/frances-bond-market-is-stumbling-should-americans-care-202ea2af?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 5.9
+            }
+          },
+          {
+            "id": "markets-macro-20261001-22",
+            "source": "MarketWatch Top",
+            "date": "2026-10-01",
+            "headline": "Retail investors are aggressively piling into this bold contrarian bet through one ETF.",
+            "summary": "After a harrowing third quarter for Treasurys and as the stock market stalls , bond yields at multi-decade highs are attracting retail investors into fixed-income ETFs..",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/retail-investors-are-aggressively-piling-into-this-bold-contrarian-bet-through-one-etf-da26f208?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 5.9
+            }
+          },
+          {
+            "id": "markets-macro-20261001-26",
+            "source": "MarketWatch Top",
+            "date": "2026-10-01",
+            "headline": "The stock market is a hollow tree that could be about to snap, warns bond king Gundlach",
+            "summary": "Stocks are facing a lot of issues right now, even if investors think everything looks great on the surface warns DoubleLine Capital’s Jeffrey Gundlach.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/the-stock-market-is-a-hollow-tree-that-could-be-about-to-snap-warns-bond-king-gundlach-215134f0?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261001-8",
+            "source": "ScienceDaily",
+            "date": "2026-09-29",
+            "headline": "Quantum teleportation breakthrough: Scientists crack a 25-year entanglement challenge",
+            "summary": "Scientists have developed and experimentally demonstrated a long-sought method for identifying W states, an important form of multi-photon quantum entanglement. The technique could make complex entangled systems much easier to measure, opening new possibilities for quantum teleportation, communication, and computing.",
+            "tag": "PHYSICS",
+            "url": "https://www.sciencedaily.com/releases/2026/09/260929053550.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.6
+            }
+          },
+          {
+            "id": "science-frontier-20261001-15",
+            "source": "ScienceDaily",
+            "date": "2026-09-30",
+            "headline": "Watch Live: NASA’s Crew-13 could make the fastest U.S. trip to the ISS ever",
+            "summary": "NASA’s SpaceX Crew-13 mission is scheduled to launch four astronauts to the International Space Station on October 1. The Dragon could reach the orbiting laboratory in just 7 hours and 50 minutes, making it the fastest U.S. spacecraft journey to the ISS in history.",
+            "tag": "AEROSPACE",
+            "url": "https://www.sciencedaily.com/releases/2026/09/260930020312.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261001-23",
+            "source": "arXiv Preprint",
+            "date": "2026-09-30",
+            "headline": "Quantum hypothesis testing of non-mixed-unitarity: A multifaceted hierarchy of quantum channel discrimination",
+            "summary": "Given multiple uses of an unknown quantum channel, we determine whether it is a specified non-mixed-unitary channel or belongs to the set of mixed-unitary channels. Formulating this as a composite channel hypothesis testing problem, we characterize the Stein exponents achievable by parallel strategies under progressively weaker restrictions on probe states and auxiliary memory. In particular, we consider block-i.i.d.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2609.40355v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261001-24",
+            "source": "arXiv Preprint",
+            "date": "2026-09-30",
+            "headline": "All Unitaries Have Constant Depth Quantum Circuits",
+            "summary": "It is well-known that every $n$-qubit unitary can be implemented by a $2^{O(n)}$-depth quantum circuit using single- and two-qubit gates. It has been open whether exponential depth is \\emph{necessary} for general unitaries, even when allowing for unlimited number of ancilla qubits. We show, perhaps surprisingly, that all unitaries can be approximated to operator norm $ε$ by a circuit of one- and two-qubit gates of depth $\\poly(n,\\log 1/ε)$ with $2^{O(n)}$ ancilla qubits.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2609.40351v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261001-25",
+            "source": "arXiv Preprint",
+            "date": "2026-09-30",
+            "headline": "On The Simplest Quantum-Secure Block Cipher",
+            "summary": "Pseudorandom permutations are ubiquitous in theoretical and applied cryptography. PRPs that offer security even against adversaries making quantum queries are of increasing interest, and used in applications ranging from constructing pseudorandom unitaries to separating SZK from BQP. A successful framework for constructing classically-secure PRPs is the key-alternating Even-Mansour approach, which interleaves applications of public permutations with additions of round keys.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2609.40350v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261001-19",
+            "source": "Wired Culture",
+            "date": "2026-09-30",
+            "headline": "Black Twitter Is Thriving—on Threads",
+            "summary": "From outrage over Nolan Wells’ death to analysis of HBO Max’s Lanterns, Threads has transformed into a vital artery of the Black social media ecosystem.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/threads-is-black-twitters-unlikely-spiritual-successor/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.4
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261001-2",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-30",
+            "headline": "Trump Criticizes Supreme Court Justices While Calling Public Attacks on Jurists Illegal",
+            "summary": "Donald Trump claimed criticizing judges should be punishable by fines, yet he publicly attacked Supreme Court justices after they rejected his mail-in voting executive order. Experts warned Trump's USPS voting restriction threatened to disenfranchise millions of voters, though Justices Samuel Alito and Clarence Thomas dissented. Despite occasional high-profile losses, analysis shows Trump maintained a 62 percent win rate at the Supreme Court in his second term.",
+            "tag": "SUPREME_COURT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/trump-supreme-court-justices/688830/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.2,
+              "relevance": 8.2,
+              "total": 8.4
+            }
+          },
+          {
+            "id": "culture-voices-20261001-11",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-30",
+            "headline": "How the Culture War Put Public Schools at Risk",
+            "summary": "For more than half a century after Milton Friedman proposed using taxpayer money to support students in private schools, the libertarian economist’s idea went almost nowhere. Republican presidents, including Ronald Reagan and George W. Bush, pushed vouchers—which help parents enroll their children in schools of their choice, including private and religious schools, at taxpayer expense — as a way to liberate poor children from failing big-city school districts.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/trump-school-vouchers-teachers-ideology/688816/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 2.4,
+              "magnitude": 9.8,
+              "relevance": 9.5,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "culture-voices-20261001-10",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-29",
+            "headline": "Why Did Wallace Shawn Liken Israelis to Nazis?",
+            "summary": "T his past weekend, a deplorable minute-long video appeared on my X feed. In it, the instantly recognizable actor and playwright Wallace Shawn, most famous for his role as Vizzini in the classic 1987 film The Princess Bride , delivers a hateful rant belied by his grandfatherly demeanor and dulcet tones. He says, The Israelis invaded somebody else’s territory, they took people’s homes, and they did many of the things that the Nazis did to the Jews.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/wallace-shawn-israel-palestine/688822/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "culture-voices-20261001-12",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-30",
+            "headline": "A Near Disaster on Flydubai",
+            "summary": "Today, somewhere over Saudi Arabia, the co-pilot of an Israel-bound Flydubai Boeing 737 stabbed the other pilot and pitched the nose of the plane toward the desert below. The jet descended 17,000 feet in two minutes, at an acceleration violent enough to make your phone and in-flight snack jump off your tray and be pinned to the ceiling. Other crew members and at least one Israeli passenger broke into the cockpit and subdued the assailant.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/flydubai-plane-attack-israel/688848/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.9
+            }
+          }
+        ]
+      }
+    }
+  }
+}
