@@ -1,0 +1,534 @@
+{
+  "date": "2026-10-02",
+  "label": "Today",
+  "lastUpdated": "2026-10-02T11:33:16.913Z",
+  "agentLog": [
+    {
+      "timestamp": "11:31:29",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit f8100fd: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:29",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:36",
+      "module": "SCOUT",
+      "message": "Scouted 108 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:36",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:36",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 74 off-beat/redundant wires. 34 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:36",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:36",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:33:16",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 21 items (12 via LLM, 9 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 11163. Est cost: $0.00233.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:33:16",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:33:17",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (21 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:33:17",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-02 live (21 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [],
+        "research": [
+          {
+            "id": "ai-venture-research-20261002-6",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "RPG framework enables autonomous self-improvement for embodied robotic agents",
+            "summary": "The Reconstruct, Practice, Go Real (RPG) framework allows robots to autonomously improve execution systems without model weight updates by leveraging offline datasets, simulation practice, and failure diagnosis. Through iterative practice rounds, RPG develops reusable symbolic skills and refines system prompts, improving task success rates from 28.6% to 95.0% across 22 manipulation tasks. Furthermore, the frozen system successfully completed all 30 physical hardware trials following calibration.",
+            "tag": "ROBOTICS",
+            "url": "http://arxiv.org/abs/2610.02204v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9.2,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261002-12",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "FERPO Introduces Entropy-Regularized Policy Optimization Without Critic Action Differentiation",
+            "summary": "Researchers propose Forward Entropy-Regularized Policy Optimization (FERPO), an on-policy maximum entropy reinforcement learning algorithm for continuous control. The method uses critic values to derive an optimal target action distribution without differentiating the critic with respect to actions, fitting the actor via a forward-KL objective estimated using self-normalized importance sampling. Experiments on MuJoCo Playground and ManiSkill demonstrate competitive performance, sample-efficiency gains, and faster actor updates compared to REPPO.",
+            "tag": "AI_RESEARCH",
+            "url": "http://arxiv.org/abs/2610.02198v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261002-15",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+            "summary": "We show that multimodal models possess strong reasoning abilities and that an appropriate harness can unlock their potential to solve tasks across diverse interactive environments. We introduce VISTA, a visual harness that gives a general-purpose multimodal model long-horizon vision. VISTA allows the model to directly perceive the environment through visual observations and maintains a lossless visual memory that preserves past observations in their original form.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.02200v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-research-20261002-17",
+            "source": "MIT Tech Review AI",
+            "date": "2026-09-29",
+            "headline": "Making AI an asset, not an expense",
+            "summary": "When customers talk about AI costs, the conversation usually starts with token prices and ends with access to the latest, most capable model in the cloud. Do they always need that level of capability? But that is often where the conversation goes.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/09/29/1145186/making-ai-an-asset-not-an-expense/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261002-20",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars",
+            "summary": "3D Gaussian avatars support fast rendering, however, their real-time animation is often challenged by the costly neural inference. We address this bottleneck and show that the animation of pretrained avatar models can be closely approximated by a linear combination of identity-independent blendshapes. Building on this finding, we introduce GALA (Gaussian Animation via Linear Approximation), a distillation method that replaces per-frame heavy neural decoding with a shallow coefficient predictor and a linear blend.",
+            "tag": "REASONING",
+            "url": "http://arxiv.org/abs/2610.02207v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261002-3",
+            "source": "The Verge AI",
+            "date": "2026-10-01",
+            "headline": "OpenAI Unveils Dots Agent Powered by GPT-6 Astra at DevDay",
+            "summary": "At its annual DevDay conference, OpenAI announced Dots, a new AI agent powered by GPT-6 Astra. The release serves as a direct competitor to rival platforms like Meta's Muse AI agent, which has experienced early runaway success.",
+            "tag": "AI-VENTURE",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9.5,
+              "total": 8.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261002-7",
+            "source": "The Verge AI",
+            "date": "2026-09-30",
+            "headline": "Google unveils Gemini 4 Argon with restricted cyber defense access",
+            "summary": "Google has announced its next frontier AI model, Gemini 4 Argon, designed to deliver performance in complex software engineering, enterprise work, and cybersecurity. However, Google is currently limiting access to the model, making it available only to trusted cyber defenders.",
+            "tag": "AI-VENTURE",
+            "url": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 9.4,
+              "relevance": 9.5,
+              "total": 8.1
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261002-16",
+            "source": "The Verge AI",
+            "date": "2026-09-30",
+            "headline": "The AI Tamagotchis are coming",
+            "summary": "While AI has made plenty of inroads on people's phones and computers, it's largely failed in dedicated devices. But over the next year, two major AI companies, Meta and OpenAI, will attempt to change that. And they're apparently betting on a similar path: testing appetites for physical hardware with their cutesy software agents.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1002779/openai-dots-meta-muse-ai-agents-hardware-devices",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261002-1",
+            "source": "FTC Press",
+            "date": "2026-09-28",
+            "headline": "FTC and States Secure Settlement Against Corteva to Lower Pesticide Prices",
+            "summary": "The Federal Trade Commission and a coalition of state attorneys general have secured a settlement agreement with pesticide manufacturer Corteva Inc. The antitrust case and resulting agreement are designed to lower pesticide prices for American farmers.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-states-win-protections-lower-pesticide-prices-american-farmers-antitrust-case-against-corteva",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 9.2,
+              "total": 8.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261002-21",
+            "source": "MarketWatch Top",
+            "date": "2026-10-02",
+            "headline": "Brazil is holding an election — and for the stock market, there’s more to gain than to lose, says fund manager",
+            "summary": "Were Flavio Bolsonaro to outperform current polling Sunday, an emerging-market fund manager see the opportunity for a sharp rally in stocks.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/brazil-is-holding-an-election-and-for-the-stock-market-theres-more-to-gain-than-to-lose-says-fund-manager-fa29f26e?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 5.9
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261002-2",
+            "source": "ScienceDaily",
+            "date": "2026-10-01",
+            "headline": "Superfluid helium qubit proposal aims to reduce error rates significantly",
+            "summary": "A proposed qubit utilizing superfluid helium could reduce quantum computing error rates by approximately 100 times by shielding information from electromagnetic noise. If confirmed by experiments, this technology could complement superconducting qubits or function as a novel form of quantum memory.",
+            "tag": "QUANTUM",
+            "url": "https://www.sciencedaily.com/releases/2026/09/260930020309.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9.2,
+              "total": 8.9
+            }
+          },
+          {
+            "id": "science-frontier-20261002-11",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "Deterministic classical algorithm estimates shallow quantum circuit output probabilities in polynomial time",
+            "summary": "Researchers developed a deterministic classical algorithm that estimates output probabilities for constant-depth quantum circuits with an additive error in polynomial time. This improves significantly upon previous state-of-the-art algorithms, which required quasipolynomial or specific geometric constraints to achieve similar tasks. The method applies to circuits with bounded fan-in and arbitrary connectivity.",
+            "tag": "QUANTUM",
+            "url": "http://arxiv.org/abs/2610.02146v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "science-frontier-20261002-10",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "New method evaluates state preparation complexity in dense quantum spin glasses",
+            "summary": "Researchers introduce a method to study state preparation complexity in dense quantum p-spin Hamiltonians using effective profile complexity derived from Pauli profiles. The framework demonstrates that attaining near-ground-state energy requires $\\Omega(n^2/\\log n)$ gates and yields various circuit depth-width and entanglement lower bounds. Additionally, the analysis shows that Clifford+$T$ circuits with sublinear $T$-gates lack leading-order energy advantages over product stabilizer states.",
+            "tag": "QUANTUM",
+            "url": "http://arxiv.org/abs/2610.02166v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "science-frontier-20261002-13",
+            "source": "ScienceDaily",
+            "date": "2026-10-01",
+            "headline": "Alzheimer’s risk gene APOE4 may have a reversible weakness",
+            "summary": "The Alzheimer’s risk gene APOE4 may actively damage brain blood vessels and sabotage the cellular systems that remove harmful proteins. Researchers were able to reverse some of these effects in experiments, revealing promising new targets for Alzheimer’s, Parkinson’s, and other neurodegenerative diseases.",
+            "tag": "BIOTECH",
+            "url": "https://www.sciencedaily.com/releases/2026/09/260930225450.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261002-14",
+            "source": "ScienceDaily",
+            "date": "2026-09-30",
+            "headline": "Watch Live: NASA’s Crew-13 could make the fastest U.S. trip to the ISS ever",
+            "summary": "NASA’s SpaceX Crew-13 mission is scheduled to launch four astronauts to the International Space Station on October 1. The Dragon could reach the orbiting laboratory in just 7 hours and 50 minutes, making it the fastest U.S. spacecraft journey to the ISS in history.",
+            "tag": "AEROSPACE",
+            "url": "https://www.sciencedaily.com/releases/2026/09/260930020312.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261002-18",
+            "source": "Wired Culture",
+            "date": "2026-09-30",
+            "headline": "Black Twitter Is Thriving—on Threads",
+            "summary": "From outrage over Nolan Wells’ death to analysis of HBO Max’s Lanterns, Threads has transformed into a vital artery of the Black social media ecosystem.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/threads-is-black-twitters-unlikely-spiritual-successor/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "culture-industry-20261002-19",
+            "source": "Wired Culture",
+            "date": "2026-10-01",
+            "headline": "Tim Heidecker Is Bringing His Joe Rogan Parody Show to The Onion",
+            "summary": "Five years after the comedian went viral with a 12-hour blabberthon mocking the king of bro podcasting, he’s back in character to shill a supplement called “Crab Salts.”.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/tim-heidecker-is-bringing-his-joe-rogan-parody-show-to-the-onion/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261002-4",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-01",
+            "headline": "Tennessee botched execution of Christa Pike highlights lethal injection flaws",
+            "summary": "Following the Supreme Court lifting a stay, Tennessee prison officials carried out a botched lethal injection of Christa Pike, who reported a burning sensation and remained conscious after the administration of pentobarbital. Witnesses observed Pike in respiratory distress and contorting before officials closed the curtains, and Pike was ultimately transferred to an off-site hospital. The incident adds to a broader pattern of failed lethal injections driven by factors such as the absence of qualified medical personnel, drug expiration or contamination, and protocol defects.",
+            "tag": "EXECUTION",
+            "url": "https://www.theatlantic.com/ideas/2026/10/christa-pike-tennessee-lethal-injection/688859/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.2,
+              "relevance": 9,
+              "total": 8.6
+            }
+          },
+          {
+            "id": "culture-voices-20261002-5",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-30",
+            "headline": "Trump argues that public criticism of Supreme Court justices should be illegal",
+            "summary": "President Trump stated on the campaign trail that criticizing Supreme Court justices should be punishable by serious fines and beyond, while frequently criticizing the Court himself when rulings do not favor him. His recent attacks followed a majority of justices rejecting his effort to restrict voting by mail in the midterms. Despite some high-profile losses, Trump maintains a high win rate at the Supreme Court during his second term.",
+            "tag": "SUPREME_COURT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/trump-supreme-court-justices/688830/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.2,
+              "relevance": 9.2,
+              "total": 8.6
+            }
+          },
+          {
+            "id": "culture-voices-20261002-8",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-30",
+            "headline": "Culture War Exploitation Fuels Proliferation of School Vouchers and Threatens Public Education",
+            "summary": "Voucher advocates have successfully capitalized on deepening political polarization and progressive overreach in public schools to expand publicly funded private-school-choice programs. By embracing culture war critiques regarding curricula and ideological positioning, lawmakers have rapidly increased universal voucher programs and private school enrollment. To protect their legitimacy and secure cross-partisan support, traditional public schools must adopt a neutral ideological posture and reclaim their role in unifying a multicultural democracy.",
+            "tag": "EDUCATION",
+            "url": "https://www.theatlantic.com/ideas/2026/09/trump-school-vouchers-teachers-ideology/688816/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 2.4,
+              "magnitude": 9.8,
+              "relevance": 9.2,
+              "total": 7.3
+            }
+          },
+          {
+            "id": "culture-voices-20261002-9",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-30",
+            "headline": "Co-pilot stabs pilot and attempts to crash Israel-bound Flydubai jet",
+            "summary": "An Israel-bound Flydubai Boeing 737 experienced a near-disaster over Saudi Arabia when a co-pilot allegedly attacked the captain and pitched the plane into a rapid descent before being subdued by crew and passengers. The incident poses severe political and public-relations implications for the UAE-Israel corridor, depending on whether the attacker acted alone or under external direction.",
+            "tag": "AVIATION",
+            "url": "https://www.theatlantic.com/ideas/2026/09/flydubai-plane-attack-israel/688848/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 7.2
+            }
+          }
+        ]
+      }
+    }
+  }
+}
