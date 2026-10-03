@@ -1,0 +1,595 @@
+{
+  "date": "2026-10-03",
+  "label": "Today",
+  "lastUpdated": "2026-10-03T10:46:56.432Z",
+  "agentLog": [
+    {
+      "timestamp": "10:46:12",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit c940aeb: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:46:12",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:46:17",
+      "module": "SCOUT",
+      "message": "Scouted 111 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:46:17",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:46:17",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 67 off-beat/redundant wires. 44 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:46:17",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:46:17",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:46:56",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 24 items (3 via LLM, 21 via deterministic synthesis; top 15 LLM quota applied, 2 dropped for thin context). Tokens: 1077. Est cost: $0.00030.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:46:56",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:46:56",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (24 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:46:56",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-03 live (24 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [],
+        "research": [
+          {
+            "id": "ai-venture-research-20261003-6",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+            "summary": "Building reliable robot capabilities across diverse tasks requires substantial human effort to develop and maintain skills, design rewards, and integrate perception with control. We present Reconstruct, Practice, Go Real (RPG), a framework for autonomous improvement of robot execution systems without updating model weights. RPG identifies manipulation capabilities in an offline dataset and constructs related practice tasks in simulation.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.02204v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261003-12",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "FERPO: Forward Entropy-Regularized Policy Optimization",
+            "summary": "Several state-of-the-art methods for online reinforcement learning in continuous control improve policies using action gradients of a learned critic. However, critics are typically trained to predict returns, and accurate value predictions do not necessarily yield accurate action derivatives, potentially leading to unreliable policy updates. We propose Forward Entropy-Regularized Policy Optimization (FERPO), an on-policy maximum entropy reinforcement learning algorithm that performs policy improvement using critic values without differentiating the critic with respect to actions.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.02198v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261003-14",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+            "summary": "We show that multimodal models possess strong reasoning abilities and that an appropriate harness can unlock their potential to solve tasks across diverse interactive environments. We introduce VISTA, a visual harness that gives a general-purpose multimodal model long-horizon vision. VISTA allows the model to directly perceive the environment through visual observations and maintains a lossless visual memory that preserves past observations in their original form.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.02200v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-research-20261003-16",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-02",
+            "headline": "Redefining enterprise intelligence with autonomous AI",
+            "summary": "Enterprise AI is no longer a future ambition. It is in full operational flight. Model capabilities are advancing faster than most organizations can absorb, while the cost of performance continues to fall.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261003-17",
+            "source": "MIT Tech Review AI",
+            "date": "2026-09-29",
+            "headline": "Making AI an asset, not an expense",
+            "summary": "When customers talk about AI costs, the conversation usually starts with token prices and ends with access to the latest, most capable model in the cloud. Do they always need that level of capability? But that is often where the conversation goes.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/09/29/1145186/making-ai-an-asset-not-an-expense/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261003-15",
+            "source": "The Verge AI",
+            "date": "2026-10-02",
+            "headline": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
+            "summary": "It's a tale as old as last week: OpenAI's new agent platform, called Dots, is full of cute little guys who can do your bidding. But unlike the ultra-approachable Meta Muse, Dots feel very much like using workplace software that happens to be able to order you a burrito - emphasis on work.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261003-19",
+            "source": "The Verge AI",
+            "date": "2026-10-02",
+            "headline": "Meta open sources code to let you make Muse AI gadgets",
+            "summary": "Meta now lets you make your own Muse gadgets that feature the company's new AI agent with code that the company open sourced. The company suggests projects like loading Muse on a color E Ink display to show reminders, adding it to an HDMI stick so you can display Muse on a big screen, or […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261003-20",
+            "source": "The Verge AI",
+            "date": "2026-10-02",
+            "headline": "Apple will limit Mac disk access as AI agents ‘substantially’ increase risk",
+            "summary": "Apple will add new limits for \"full disk access\" on Mac in response to risks posed by AI agents, as reported earlier by TechCrunch. In an update on Friday, Apple says it's rolling out new controls to \"ensure that users who genuinely wish to grant an app this extraordinary level of access can only do […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261003-21",
+            "source": "The Verge AI",
+            "date": "2026-10-02",
+            "headline": "Amazon writes scary blog warning communities not to block data centers",
+            "summary": "Amazon is calling for people to support AI data center projects, or risk irreparable harm to the US economy and national security. In a more than 3,000 word blog posted today, Amazon web services CEO Matt Garman pushed back on public concerns around the impact that data centers may have on jobs, power demands, and […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1003929/amazon-ai-data-center-blog-warning",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261003-1",
+            "source": "FTC Press",
+            "date": "2026-10-02",
+            "headline": "FTC Secures Settlement With Southern Glazer's Over Illegal Price Discrimination",
+            "summary": "The Federal Trade Commission secured a settlement agreement with Southern Glazer's Wine and Spirits LLC to redress allegedly illegal price discrimination practices. The agreement aims to level the playing field for small businesses competing against large chain retailers. It also intends to facilitate consumer access to lower-priced wine and spirits at local retail locations.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-protects-small-businesses-illegal-price-discrimination",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 9,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261003-2",
+            "source": "FTC Press",
+            "date": "2026-09-28",
+            "headline": "FTC and States Secure Settlement with Corteva to Lower Farmers' Pesticide Prices",
+            "summary": "The Federal Trade Commission and a coalition of state attorneys general secured a settlement agreement with Corteva Inc. The agreement resolves an antitrust case against the pesticide manufacturing giant and aims to lower pesticide prices for American farmers.",
+            "tag": "ANTITRUST",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-states-win-protections-lower-pesticide-prices-american-farmers-antitrust-case-against-corteva",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 8.5,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261003-7",
+            "source": "FTC Press",
+            "date": "2026-10-02",
+            "headline": "FTC, States Sue Lens.com for Misrepresenting the Price of Contact Lenses in Search Ads and on Its Website",
+            "summary": "Lens.com hides bogus ‘taxes & fees’ charge that often doubles the price of contact lenses for consumers, the FTC and states allege Today, the Federal Trade Commission, joined by the Utah and Nevada Attorneys General, sued to stop a long-running deceptive pricing scheme run by contact lens retailer Lens.com Inc.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-states-sue-lenscom-misrepresenting-price-contact-lenses-search-ads-its-website",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261003-23",
+            "source": "MarketWatch Top",
+            "date": "2026-10-02",
+            "headline": "Falling wages, soaring energy prices and inflation: It’s beginning to look a lot like the 1970s",
+            "summary": "Is it time to dust off the financial playbook from that dismal decade?",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/falling-wages-soaring-energy-prices-and-inflation-its-beginning-to-look-a-lot-like-the-1970s-d645cbca?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ],
+        "company-moves": [
+          {
+            "id": "markets-company-moves-20261003-24",
+            "source": "SEC EDGAR / 8-K",
+            "date": "2026-10-02",
+            "headline": "Hall Chadwick Acquisition Corp: Form 8-K Discloses Material Definitive Agreement, Unregistered Equity Sale",
+            "summary": "SEC regulatory submission filed by Hall Chadwick Acquisition Corp (8-K). Disclosed event: Material Definitive Agreement, Unregistered Equity Sale. Verified filing date 2026-10-02.",
+            "tag": "MARKETS",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=0002079013",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "company-moves",
+            "scores": {
+              "authority": 7.2,
+              "corroboration": 7.5,
+              "novelty": 2.4,
+              "magnitude": 2.5,
+              "relevance": 7.8,
+              "total": 5.4
+            }
+          }
+        ],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261003-3",
+            "source": "ScienceDaily",
+            "date": "2026-10-01",
+            "headline": "Proposed superfluid helium qubit cuts quantum computing error rates hundredfold",
+            "summary": "A proposed qubit made with superfluid helium could reduce quantum computing error rates by around 100 times by shielding information from common electromagnetic noise. If confirmed experimentally, the technology could work alongside existing superconducting qubits or serve as quantum memory.",
+            "tag": "QUANTUM_TECH",
+            "url": "https://www.sciencedaily.com/releases/2026/09/260930020309.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9,
+              "total": 8.8
+            }
+          },
+          {
+            "id": "science-frontier-20261003-10",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "Beyond Light Cones: State Preparation Complexity in Quantum Spin Glasses",
+            "summary": "We introduce a method for studying state preparation complexity in dense quantum $p$-spin Hamiltonians on $n$ qubits, going beyond bounds based only on circuit lightcones. The key input is the class's effective profile complexity, which is derived from the metric entropy of its Pauli profiles. These profiles record expectations of all Pauli operators supported on exactly $p$ qubits.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.02166v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261003-11",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "Polynomial-time additive-error estimation of output probabilities for shallow quantum circuits",
+            "summary": "We give a deterministic classical algorithm that estimates $|\\langle x|U|0^n\\rangle|^2$ to additive error $\\varepsilon$ in $\\mathrm{poly}(n, 1/\\varepsilon)$ time, where $U$ is a constant-depth quantum circuit comprised of gates with bounded fan-in and arbitrary connectivity, and $x$ is an arbitrary $n$-bit output string. This improves over prior state-of-the-art algorithms that takes $n^{O(log(n))}$ time for the same task, $n^{O(log(log(n))}$ when $U$ is geometrically local, and $n^{O(1)}$ for 2D geometrically-local circuits.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.02146v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261003-18",
+            "source": "Wired Culture",
+            "date": "2026-09-30",
+            "headline": "Black Twitter Is Thriving—on Threads",
+            "summary": "From outrage over Nolan Wells’ death to analysis of HBO Max’s Lanterns, Threads has transformed into a vital artery of the Black social media ecosystem.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/threads-is-black-twitters-unlikely-spiritual-successor/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "culture-industry-20261003-22",
+            "source": "Wired Culture",
+            "date": "2026-10-01",
+            "headline": "Tim Heidecker Is Bringing His Joe Rogan Parody Show to The Onion",
+            "summary": "Five years after the comedian went viral with a 12-hour blabberthon mocking the king of bro podcasting, he’s back in character to shill a supplement called “Crab Salts.”.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/tim-heidecker-is-bringing-his-joe-rogan-parody-show-to-the-onion/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261003-4",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-01",
+            "headline": "A Terrible Way to Die, a Terrifying Way to Survive",
+            "summary": "last night, the Supreme Court lifted a temporary stay placed on the execution of Christa Pike, a Tennessee woman who was found guilty of joining two accomplices in murdering a classmate in 1995, when Pike was 18 years old. Roughly an hour and a half later, Pike, who has spent 30 years on death row, was strapped to a gurney in Tennessee’s death chamber for lethal injection. When the execution staff began administering the barbiturate pentobarbital, the single drug the state uses in such executions, Pike turned to her spiritual adviser and mentioned a burning sensation.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/christa-pike-tennessee-lethal-injection/688859/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.2,
+              "relevance": 6.5,
+              "total": 8.2
+            }
+          },
+          {
+            "id": "culture-voices-20261003-5",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-30",
+            "headline": "Only Trump Gets to Criticize the Supreme Court",
+            "summary": "President Trump thinks it should be illegal for people to criticize the Supreme Court. “I believe it’s illegal what they do,” Trump said on the campaign trail in 2024, about those who criticized judges’ decisions. “I believe they are playing the ref.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/trump-supreme-court-justices/688830/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.2,
+              "relevance": 6.5,
+              "total": 8.2
+            }
+          },
+          {
+            "id": "culture-voices-20261003-8",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-30",
+            "headline": "How the Culture War Put Public Schools at Risk",
+            "summary": "For more than half a century after Milton Friedman proposed using taxpayer money to support students in private schools, the libertarian economist’s idea went almost nowhere. Republican presidents, including Ronald Reagan and George W. Bush, pushed vouchers—which help parents enroll their children in schools of their choice, including private and religious schools, at taxpayer expense — as a way to liberate poor children from failing big-city school districts.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/trump-school-vouchers-teachers-ideology/688816/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 2.4,
+              "magnitude": 9.8,
+              "relevance": 9.5,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "culture-voices-20261003-9",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-30",
+            "headline": "A Near Disaster on Flydubai",
+            "summary": "Today, somewhere over Saudi Arabia, the co-pilot of an Israel-bound Flydubai Boeing 737 stabbed the other pilot and pitched the nose of the plane toward the desert below. The jet descended 17,000 feet in two minutes, at an acceleration violent enough to make your phone and in-flight snack jump off your tray and be pinned to the ceiling. Other crew members and at least one Israeli passenger broke into the cockpit and subdued the assailant.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/flydubai-plane-attack-israel/688848/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "culture-voices-20261003-13",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-02",
+            "headline": "Time to Consider Becoming a Bricklayer",
+            "summary": "Imagine that you’re one of the 3.8 million American teenagers on track to graduate from high school next spring. You have been told your whole life that knowledge work is the future and that a college degree is a high-speed ticket to the middle class. The average worker with a B.A.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/young-people-job-market-choice/688845/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 5.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          }
+        ]
+      }
+    }
+  }
+}
