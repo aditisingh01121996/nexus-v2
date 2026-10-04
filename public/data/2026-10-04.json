@@ -1,0 +1,655 @@
+{
+  "date": "2026-10-04",
+  "label": "Today",
+  "lastUpdated": "2026-10-04T11:29:05.695Z",
+  "agentLog": [
+    {
+      "timestamp": "11:28:08",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 8437904: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:28:08",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:28:14",
+      "module": "SCOUT",
+      "message": "Scouted 111 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:28:14",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:28:14",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 66 off-beat/redundant wires. 45 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:28:14",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:28:14",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:29:05",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 27 items (3 via LLM, 24 via deterministic synthesis; top 15 LLM quota applied, 2 dropped for thin context). Tokens: 2443. Est cost: $0.00052.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:29:05",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:29:05",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (27 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:29:05",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-04 live (27 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [],
+        "research": [
+          {
+            "id": "ai-venture-research-20261004-5",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+            "summary": "Building reliable robot capabilities across diverse tasks requires substantial human effort to develop and maintain skills, design rewards, and integrate perception with control. We present Reconstruct, Practice, Go Real (RPG), a framework for autonomous improvement of robot execution systems without updating model weights. RPG identifies manipulation capabilities in an offline dataset and constructs related practice tasks in simulation.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.02204v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261004-12",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "FERPO: Forward Entropy-Regularized Policy Optimization",
+            "summary": "Several state-of-the-art methods for online reinforcement learning in continuous control improve policies using action gradients of a learned critic. However, critics are typically trained to predict returns, and accurate value predictions do not necessarily yield accurate action derivatives, potentially leading to unreliable policy updates. We propose Forward Entropy-Regularized Policy Optimization (FERPO), an on-policy maximum entropy reinforcement learning algorithm that performs policy improvement using critic values without differentiating the critic with respect to actions.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.02198v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261004-14",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+            "summary": "We show that multimodal models possess strong reasoning abilities and that an appropriate harness can unlock their potential to solve tasks across diverse interactive environments. We introduce VISTA, a visual harness that gives a general-purpose multimodal model long-horizon vision. VISTA allows the model to directly perceive the environment through visual observations and maintains a lossless visual memory that preserves past observations in their original form.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.02200v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-research-20261004-17",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-02",
+            "headline": "Redefining enterprise intelligence with autonomous AI",
+            "summary": "Enterprise AI is no longer a future ambition. It is in full operational flight. Model capabilities are advancing faster than most organizations can absorb, while the cost of performance continues to fall.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261004-18",
+            "source": "MIT Tech Review AI",
+            "date": "2026-09-29",
+            "headline": "Making AI an asset, not an expense",
+            "summary": "When customers talk about AI costs, the conversation usually starts with token prices and ends with access to the latest, most capable model in the cloud. Do they always need that level of capability? But that is often where the conversation goes.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/09/29/1145186/making-ai-an-asset-not-an-expense/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261004-15",
+            "source": "The Verge AI",
+            "date": "2026-10-03",
+            "headline": "An OpenAI safety employee has quit and is sounding the alarm",
+            "summary": "David Robinson used to write the safety reports that accompanied every major model release at OpenAI. This week, he resigned from his position and is now speaking out in an editorial in The Atlantic. It's understandable if you're feeling a bit cynical about everyone suddenly coming out of the woodwork to warn about how dangerous […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 7.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261004-16",
+            "source": "The Verge AI",
+            "date": "2026-10-02",
+            "headline": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
+            "summary": "It's a tale as old as last week: OpenAI's new agent platform, called Dots, is full of cute little guys who can do your bidding. But unlike the ultra-approachable Meta Muse, Dots feel very much like using workplace software that happens to be able to order you a burrito - emphasis on work.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261004-20",
+            "source": "The Verge AI",
+            "date": "2026-10-02",
+            "headline": "Meta open sources code to let you make Muse AI gadgets",
+            "summary": "Meta now lets you make your own Muse gadgets that feature the company's new AI agent with code that the company open sourced. The company suggests projects like loading Muse on a color E Ink display to show reminders, adding it to an HDMI stick so you can display Muse on a big screen, or […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261004-21",
+            "source": "The Verge AI",
+            "date": "2026-10-02",
+            "headline": "Apple will limit Mac disk access as AI agents ‘substantially’ increase risk",
+            "summary": "Apple will add new limits for \"full disk access\" on Mac in response to risks posed by AI agents, as reported earlier by TechCrunch. In an update on Friday, Apple says it's rolling out new controls to \"ensure that users who genuinely wish to grant an app this extraordinary level of access can only do […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261004-1",
+            "source": "FTC Press",
+            "date": "2026-10-02",
+            "headline": "FTC Secures Settlement With Southern Glazer's Over Illegal Price Discrimination",
+            "summary": "The Federal Trade Commission secured a settlement agreement with Southern Glazer’s Wine and Spirits LLC to address allegedly illegal price discrimination practices. As the nation's largest wine and spirits distributor, the settlement aims to level the playing field for small businesses against large chain retailers. The agreement will also facilitate consumer access to lower-priced products at local retailers.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-protects-small-businesses-illegal-price-discrimination",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 8.8,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261004-2",
+            "source": "FTC Press",
+            "date": "2026-09-28",
+            "headline": "FTC and States Secure Settlement with Corteva to Lower Pesticide Prices",
+            "summary": "The Federal Trade Commission and a coalition of state attorneys general secured a settlement agreement with pesticide manufacturer Corteva Inc. The antitrust settlement will lead to lower pesticide prices for American farmers.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-states-win-protections-lower-pesticide-prices-american-farmers-antitrust-case-against-corteva",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 8.8,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261004-6",
+            "source": "FTC Press",
+            "date": "2026-10-02",
+            "headline": "FTC, States Sue Lens.com for Misrepresenting the Price of Contact Lenses in Search Ads and on Its Website",
+            "summary": "Lens.com hides bogus ‘taxes & fees’ charge that often doubles the price of contact lenses for consumers, the FTC and states allege Today, the Federal Trade Commission, joined by the Utah and Nevada Attorneys General, sued to stop a long-running deceptive pricing scheme run by contact lens retailer Lens.com Inc.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-states-sue-lenscom-misrepresenting-price-contact-lenses-search-ads-its-website",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261004-23",
+            "source": "MarketWatch Top",
+            "date": "2026-10-03",
+            "headline": "Falling wages, soaring energy prices and inflation: It’s beginning to look a lot like the 1970s",
+            "summary": "Is it time to dust off the financial playbook from that dismal decade?",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/falling-wages-soaring-energy-prices-and-inflation-its-beginning-to-look-a-lot-like-the-1970s-d645cbca?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "markets-macro-20261004-24",
+            "source": "MarketWatch Top",
+            "date": "2026-10-03",
+            "headline": "These bond strategies can help you get a safe 5% return on your cash",
+            "summary": "Treasury yields on the rise, financial planners say they’re seeing a growing interest in bonds, especially among investors looking to secure fixed income in retirement.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "markets-macro-20261004-25",
+            "source": "MarketWatch Top",
+            "date": "2026-10-03",
+            "headline": "A tough job market is pushing more young Americans to make a big bet: on themselves",
+            "summary": "There has been a rise in entrepreneurship among young Americans as the entry-level labor market has become tougher to join.",
+            "tag": "MARKETS",
+            "url": "https://www.marketwatch.com/story/a-tough-job-market-is-pushing-more-young-americans-to-make-a-big-bet-on-themselves-1aaddeca?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          },
+          {
+            "id": "markets-macro-20261004-26",
+            "source": "MarketWatch Top",
+            "date": "2026-10-03",
+            "headline": "Switching jobs to get higher pay works best in these industries",
+            "summary": "Finding a new job is one way to get a pay increase at a time when inflation has been outpacing wage growth.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/the-best-industry-to-change-jobs-to-get-paid-more-money-and-the-worst-ae33a3a7?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ],
+        "company-moves": [
+          {
+            "id": "markets-company-moves-20261004-27",
+            "source": "SEC EDGAR / 8-K",
+            "date": "2026-10-02",
+            "headline": "Hall Chadwick Acquisition Corp: Form 8-K Discloses Material Definitive Agreement, Unregistered Equity Sale",
+            "summary": "SEC regulatory submission filed by Hall Chadwick Acquisition Corp (8-K). Disclosed event: Material Definitive Agreement, Unregistered Equity Sale. Verified filing date 2026-10-02.",
+            "tag": "MARKETS",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=0002079013",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "company-moves",
+            "scores": {
+              "authority": 7.2,
+              "corroboration": 7.5,
+              "novelty": 2.4,
+              "magnitude": 2.5,
+              "relevance": 7.8,
+              "total": 5.4
+            }
+          }
+        ],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261004-8",
+            "source": "ScienceDaily",
+            "date": "2026-10-03",
+            "headline": "This protective enzyme could help stop fatty liver disease from getting worse",
+            "summary": "Scientists have identified an enzyme that may act as a natural defense against the worsening of fatty liver disease, which affects an estimated 100 million Americans. The enzyme, called UBE2N, helps liver cells clear away damaged mitochondria and break down fat, potentially preventing the inflammation, scarring, and cell damage associated with the more dangerous condition MASH.",
+            "tag": "SCIENCE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261002080020.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "science-frontier-20261004-9",
+            "source": "ScienceDaily",
+            "date": "2026-10-02",
+            "headline": "NASA’s Roman telescope just opened its planet-hunting eye",
+            "summary": "NASA’s Roman Space Telescope has demonstrated remarkable pointing stability and given its powerful planet-imaging coronagraph its first look at the cosmos. The telescope can already stay locked on a target with precision comparable to aiming a laser at a dime from about 150 miles away. Its coronagraph also captured stars in the Large Magellanic Cloud, confirming that the instrument can produce focused images.",
+            "tag": "AEROSPACE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261001214057.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "science-frontier-20261004-11",
+            "source": "arXiv Preprint",
+            "date": "2026-10-01",
+            "headline": "Beyond Light Cones: State Preparation Complexity in Quantum Spin Glasses",
+            "summary": "We introduce a method for studying state preparation complexity in dense quantum $p$-spin Hamiltonians on $n$ qubits, going beyond bounds based only on circuit lightcones. The key input is the class's effective profile complexity, which is derived from the metric entropy of its Pauli profiles. These profiles record expectations of all Pauli operators supported on exactly $p$ qubits.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.02166v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261004-19",
+            "source": "Wired Culture",
+            "date": "2026-09-30",
+            "headline": "Black Twitter Is Thriving—on Threads",
+            "summary": "From outrage over Nolan Wells’ death to analysis of HBO Max’s Lanterns, Threads has transformed into a vital artery of the Black social media ecosystem.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/threads-is-black-twitters-unlikely-spiritual-successor/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "culture-industry-20261004-22",
+            "source": "Wired Culture",
+            "date": "2026-10-01",
+            "headline": "Tim Heidecker Is Bringing His Joe Rogan Parody Show to The Onion",
+            "summary": "Five years after the comedian went viral with a 12-hour blabberthon mocking the king of bro podcasting, he’s back in character to shill a supplement called “Crab Salts.”.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/tim-heidecker-is-bringing-his-joe-rogan-parody-show-to-the-onion/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261004-3",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-01",
+            "headline": "Christa Pike survives botched lethal injection execution in Tennessee",
+            "summary": "Following the Supreme Court lifting a stay of execution, Tennessee prison officials botched the lethal injection of Christa Pike, who reported a burning sensation and remained conscious after receiving pentobarbital. Witnesses observed Pike experiencing respiratory distress and contortions before officials closed the observation curtains, and the execution ultimately concluded before Pike was transferred to an off-site hospital. The incident reflects a broader pattern of failed lethal-injection attempts driven by factors such as executioner incompetence, a lack of qualified medical personnel, and compromised drug supplies.",
+            "tag": "EXECUTION",
+            "url": "https://www.theatlantic.com/ideas/2026/10/christa-pike-tennessee-lethal-injection/688859/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.2,
+              "relevance": 9.5,
+              "total": 8.6
+            }
+          },
+          {
+            "id": "culture-voices-20261004-4",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-30",
+            "headline": "Only Trump Gets to Criticize the Supreme Court",
+            "summary": "President Trump thinks it should be illegal for people to criticize the Supreme Court. “I believe it’s illegal what they do,” Trump said on the campaign trail in 2024, about those who criticized judges’ decisions. “I believe they are playing the ref.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/trump-supreme-court-justices/688830/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.2,
+              "relevance": 6.5,
+              "total": 8.2
+            }
+          },
+          {
+            "id": "culture-voices-20261004-7",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-30",
+            "headline": "A Near Disaster on Flydubai",
+            "summary": "Today, somewhere over Saudi Arabia, the co-pilot of an Israel-bound Flydubai Boeing 737 stabbed the other pilot and pitched the nose of the plane toward the desert below. The jet descended 17,000 feet in two minutes, at an acceleration violent enough to make your phone and in-flight snack jump off your tray and be pinned to the ceiling. Other crew members and at least one Israeli passenger broke into the cockpit and subdued the assailant.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/09/flydubai-plane-attack-israel/688848/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "culture-voices-20261004-10",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-03",
+            "headline": "The Mainstreaming of Anti-Indian Bigotry",
+            "summary": "C hristopher Rufo, the conservative activist best known for his opposition to critical race theory, has portrayed his career as one devoted to upholding meritocracy. “The principle, first promised by the Declaration and supported today by a large majority of Americans, would mean that the state would treat all Americans equally, regardless of ancestry, and leave as much discretion as possible to individuals to determine their own futures, without the government imposing or requiring racial favoritism of any kind,” Rufo wrote two years ago in City Journal , a magazine published by the Manhattan Institute, where he is a senior fellow. “Rather than pit ourselves against one another, we should aspire to a higher standard that subordinates racial faction to a broader national identity.” He has urged Republicans to grasp the allure of this ideal, writing last year in The Free Press : “The right now has the winning argument.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/french-rufo-meritocracy-race/688870/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "culture-voices-20261004-13",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-02",
+            "headline": "Time to Consider Becoming a Bricklayer",
+            "summary": "Imagine that you’re one of the 3.8 million American teenagers on track to graduate from high school next spring. You have been told your whole life that knowledge work is the future and that a college degree is a high-speed ticket to the middle class. The average worker with a B.A.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/young-people-job-market-choice/688845/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 5.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          }
+        ]
+      }
+    }
+  }
+}
