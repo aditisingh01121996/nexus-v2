@@ -1,0 +1,715 @@
+{
+  "date": "2026-10-05",
+  "label": "Today",
+  "lastUpdated": "2026-10-05T12:56:38.945Z",
+  "agentLog": [
+    {
+      "timestamp": "12:55:49",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 94510b6: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:55:49",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:55:56",
+      "module": "SCOUT",
+      "message": "Scouted 109 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:55:56",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:55:56",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 62 off-beat/redundant wires. 47 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:55:56",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:55:56",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:56:38",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 30 items (15 via LLM, 15 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 21948. Est cost: $0.00406.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:56:38",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:56:39",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (30 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:56:39",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-05 live (30 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [],
+        "research": [
+          {
+            "id": "ai-venture-research-20261005-5",
+            "source": "arXiv Preprint",
+            "date": "2026-10-02",
+            "headline": "Queen 4B Chess-Language Model Achieves Grandmaster Play and Explains Moves",
+            "summary": "Researchers introduced Queen, a 4B-parameter chess-language model that combines a silent expert chess encoder with an instruction-tuned LM to play at a Grandmaster level while explaining its moves. Through an iterative distillation algorithm, the model gained over 900 Elo points across seven iterations to reach 2697 Elo, surpassing frontier models in both playing strength and puzzle accuracy. The architecture's success suggests a broader recipe for applying language models to domains featuring silent expert encoders.",
+            "tag": "AI_RESEARCH",
+            "url": "http://arxiv.org/abs/2610.03695v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261005-17",
+            "source": "arXiv Preprint",
+            "date": "2026-10-02",
+            "headline": "Transcriptome-informed multi-modal AI for predicting neoadjuvant therapy response from breast cancer biopsies",
+            "summary": "Scarcity of labeled data limits development of deep learning biomarkers in oncology. We develop a two-stage AI model predicting pathological complete response (pCR) to neoadjuvant therapy in breast cancer. The first stage learns the transcriptome from histopathology using 8,742 patients across 32 cancer types, corroborated by pathologist review and spatial agreement with measured expression.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.03693v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261005-19",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-02",
+            "headline": "Redefining enterprise intelligence with autonomous AI",
+            "summary": "Enterprise AI is no longer a future ambition. It is in full operational flight. Model capabilities are advancing faster than most organizations can absorb, while the cost of performance continues to fall.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261005-20",
+            "source": "MIT Tech Review AI",
+            "date": "2026-09-29",
+            "headline": "Making AI an asset, not an expense",
+            "summary": "When customers talk about AI costs, the conversation usually starts with token prices and ends with access to the latest, most capable model in the cloud. Do they always need that level of capability? But that is often where the conversation goes.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/09/29/1145186/making-ai-an-asset-not-an-expense/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261005-22",
+            "source": "arXiv Preprint",
+            "date": "2026-10-02",
+            "headline": "Simulation-Free Learning of Population Dynamics with Wasserstein Lagrangian Residuals",
+            "summary": "The dynamics of cells, organisms, and fluids are often modeled as probability distributions evolving over time. Reconstructing and extrapolating this evolution from unpaired snapshots requires assumptions about the underlying process. Wasserstein gradient flows are a common choice, but they cannot describe conservative or periodic dynamics.",
+            "tag": "REASONING",
+            "url": "http://arxiv.org/abs/2610.03679v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261005-4",
+            "source": "The Verge AI",
+            "date": "2026-10-04",
+            "headline": "AI bots tie in StarSkirmish but fail to defeat top human-made bot",
+            "summary": "StarSkirmish features AI-made StarCraft-playing bots competing against each other and human-made bots. OpenAI's GPT-6 Astra and Claude Opus 5.5 tied as the best-performing AI bots, but both failed to surpass Stardust, the top-rated human-made bot.",
+            "tag": "AI_GAMING",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 8.5,
+              "total": 8.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261005-16",
+            "source": "The Verge AI",
+            "date": "2026-10-03",
+            "headline": "An OpenAI safety employee has quit and is sounding the alarm",
+            "summary": "David Robinson used to write the safety reports that accompanied every major model release at OpenAI. This week, he resigned from his position and is now speaking out in an editorial in The Atlantic. It's understandable if you're feeling a bit cynical about everyone suddenly coming out of the woodwork to warn about how dangerous […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 7.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261005-23",
+            "source": "The Verge AI",
+            "date": "2026-10-02",
+            "headline": "Meta open sources code to let you make Muse AI gadgets",
+            "summary": "Meta now lets you make your own Muse gadgets that feature the company's new AI agent with code that the company open sourced. The company suggests projects like loading Muse on a color E Ink display to show reminders, adding it to an HDMI stick so you can display Muse on a big screen, or […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261005-24",
+            "source": "The Verge AI",
+            "date": "2026-10-02",
+            "headline": "Apple will limit Mac disk access as AI agents ‘substantially’ increase risk",
+            "summary": "Apple will add new limits for \"full disk access\" on Mac in response to risks posed by AI agents, as reported earlier by TechCrunch. In an update on Friday, Apple says it's rolling out new controls to \"ensure that users who genuinely wish to grant an app this extraordinary level of access can only do […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261005-26",
+            "source": "The Verge AI",
+            "date": "2026-10-05",
+            "headline": "Our minds aren’t equipped to handle AI",
+            "summary": "Norbert Wiener, godfather of cybernetics, once said, \"The thought of every age is reflected in its technique.\" For the past century, our thought has been reflected in our computers, including by those in the AI industry. Google's Demis Hassabis calls the brain \"a biological approximation to a Turing machine.\" Elon Musk puts it more bluntly, […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1003794/ai-education-computational-model-thought",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261005-2",
+            "source": "FTC Press",
+            "date": "2026-09-28",
+            "headline": "FTC and States Secure Settlement Against Corteva to Lower Pesticide Prices",
+            "summary": "The Federal Trade Commission and a coalition of state attorneys general have reached a settlement with pesticide manufacturer Corteva Inc. The antitrust case and resulting agreement are designed to lower pesticide prices for American farmers.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-states-win-protections-lower-pesticide-prices-american-farmers-antitrust-case-against-corteva",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 9.5,
+              "total": 8.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261005-1",
+            "source": "FTC Press",
+            "date": "2026-10-02",
+            "headline": "FTC Secures Settlement With Southern Glazer's Over Price Discrimination",
+            "summary": "The Federal Trade Commission secured a settlement agreement with Southern Glazer’s Wine and Spirits LLC to address allegedly illegal price discrimination practices. The agreement aims to level the playing field for small businesses competing against large chain retailers. Additionally, the settlement will facilitate consumer access to lower-priced wine and spirits at local retailers.",
+            "tag": "REGULATION",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-protects-small-businesses-illegal-price-discrimination",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 8.8,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261005-7",
+            "source": "FTC Press",
+            "date": "2026-10-02",
+            "headline": "FTC and States Sue Lens.com Over Deceptive Contact Lens Pricing",
+            "summary": "The Federal Trade Commission and the Attorneys General of Utah and Nevada have filed a lawsuit against Lens.com Inc. The action targets a long-running scheme involving hidden taxes and fees that frequently doubled the advertised price of contact lenses in search ads and on its website.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-states-sue-lenscom-misrepresenting-price-contact-lenses-search-ads-its-website",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 8.1
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261005-12",
+            "source": "MarketWatch Top",
+            "date": "2026-10-05",
+            "headline": "Treasury Secretary Bessent defends bond market record and walks back remarks",
+            "summary": "During a televised interview with Axios, Treasury Secretary Bessent defended the Treasury's record in the bond market. He also walked back his previous \"I am the house\" declaration made a month prior.",
+            "tag": "MARKETS",
+            "url": "https://www.marketwatch.com/story/what-bessent-is-now-saying-after-bond-yields-didnt-stop-rising-on-i-am-the-house-remark-0ab359f8?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "markets-macro-20261005-27",
+            "source": "MarketWatch Top",
+            "date": "2026-10-05",
+            "headline": "The bond selloff is opening up rare opportunities for investors. Here is where to look, says one major bank.",
+            "summary": "The chief investment office at Standard Chartered said bond and money markets have been overly hawkish on the Federal Reserve.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/bond-selloff-is-opening-up-rare-opportunities-for-investors-here-is-where-to-look-says-major-bank-463447c7?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 5.9
+            }
+          },
+          {
+            "id": "markets-macro-20261005-28",
+            "source": "MarketWatch Top",
+            "date": "2026-10-05",
+            "headline": "An AI ‘reality check’ may take the S&P 500 to 5,000. Here are the trades to make, this strategist says.",
+            "summary": "Keep an eye on artificial-intelligence spending in the upcoming earnings season, Panmure Liberum’s Joachim Klement said.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/an-ai-reality-check-may-take-the-s-p-500-to-5-000-heres-the-trades-to-make-this-strategist-says-263cf0e9?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "markets-macro-20261005-29",
+            "source": "MarketWatch Top",
+            "date": "2026-10-05",
+            "headline": "‘People in the U.S. need to wake up’: As a mortgage loan officer, I rejected wealthy couples due to overspending. We’re all heading for trouble.",
+            "summary": "“We’d better get real quick or we’re going to have a financial crisis that makes the Great Recession of 2008 look like a picnic.”.",
+            "tag": "MARKETS",
+            "url": "https://www.marketwatch.com/story/people-in-the-u-s-need-to-wake-up-as-a-mortgage-loan-officer-i-rejected-wealthy-couples-due-to-overspending-were-all-heading-for-trouble-6a52e04e?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ],
+        "company-moves": [
+          {
+            "id": "markets-company-moves-20261005-30",
+            "source": "SEC EDGAR / 8-K",
+            "date": "2026-10-02",
+            "headline": "Hall Chadwick Acquisition Corp: Form 8-K Discloses Material Definitive Agreement, Unregistered Equity Sale",
+            "summary": "SEC regulatory submission filed by Hall Chadwick Acquisition Corp (8-K). Disclosed event: Material Definitive Agreement, Unregistered Equity Sale. Verified filing date 2026-10-02.",
+            "tag": "MARKETS",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=0002079013",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "company-moves",
+            "scores": {
+              "authority": 7.2,
+              "corroboration": 7.5,
+              "novelty": 2.4,
+              "magnitude": 2.5,
+              "relevance": 7.8,
+              "total": 5.4
+            }
+          }
+        ],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261005-8",
+            "source": "Nature News",
+            "date": "2026-10-02",
+            "headline": "Author Hernan Diaz discusses physics and his new novel Ply",
+            "summary": "Author Hernan Diaz explores how learning about physics changed his life in relation to his new novel Ply. The Nature News feature examines the intersection of scientific concepts and the author's creative writing process.",
+            "tag": "SCIENCE_ARTS",
+            "url": "https://www.nature.com/articles/d41586-026-03057-4",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 9.8,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "science-frontier-20261005-9",
+            "source": "Nature News",
+            "date": "2026-10-02",
+            "headline": "World leaders must recognize the legal rights of nature",
+            "summary": "Nature requires legal recognition of its rights to ensure global environmental protection. The international community should adopt these principles to safeguard natural ecosystems.",
+            "tag": "ENVIRONMENT",
+            "url": "https://www.nature.com/articles/d41586-026-03145-5",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 9.8,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "science-frontier-20261005-13",
+            "source": "ScienceDaily",
+            "date": "2026-10-03",
+            "headline": "Enzyme UBE2N identified as natural defense against fatty liver disease",
+            "summary": "Scientists have identified the UBE2N enzyme as a potential natural defense against the worsening of fatty liver disease. The enzyme assists liver cells in clearing damaged mitochondria and breaking down fat, which may prevent inflammation, scarring, and cell damage tied to MASH.",
+            "tag": "BIOLOGY",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261002080020.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 7
+            }
+          },
+          {
+            "id": "science-frontier-20261005-15",
+            "source": "ScienceDaily",
+            "date": "2026-10-05",
+            "headline": "Epithelial cell adhesive protein E-cadherin discovers surprising role engulfing cellular debris",
+            "summary": "Scientists utilizing live zebrafish and mouse embryos have discovered that the cell-glue protein E-cadherin possesses a second function in helping epithelial cells swallow nearby dead cells. Researchers observed that cells can reshape their lower surfaces to engulf debris while keeping upper surfaces stable, maintaining sealed protective barriers.",
+            "tag": "BIOLOGY",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261002080023.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "science-frontier-20261005-18",
+            "source": "arXiv Preprint",
+            "date": "2026-10-02",
+            "headline": "Unitary complexity in polynomial space",
+            "summary": "We show that if quantum commitments exist, then either there is no polynomial-time solution to the unitary synthesis problem, or $\\mathsf{BPP} \\neq \\mathsf{NEXP}$. Thus, showing unconditionally that quantum commitments exist would require answering at least one of two longstanding open questions in complexity theory. We prove our main result as a consequence of a more general lemma, which shows that every unitary in $\\mathsf{unitaryPSPACE}$ either cannot be synthesized efficiently relative to any classical oracle, or can be synthesized efficiently with an oracle for $\\mathsf{NEXP}$ search problems.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.03705v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261005-21",
+            "source": "Wired Culture",
+            "date": "2026-09-30",
+            "headline": "Black Twitter Is Thriving—on Threads",
+            "summary": "From outrage over Nolan Wells’ death to analysis of HBO Max’s Lanterns, Threads has transformed into a vital artery of the Black social media ecosystem.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/threads-is-black-twitters-unlikely-spiritual-successor/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "culture-industry-20261005-25",
+            "source": "Wired Culture",
+            "date": "2026-10-01",
+            "headline": "Tim Heidecker Is Bringing His Joe Rogan Parody Show to The Onion",
+            "summary": "Five years after the comedian went viral with a 12-hour blabberthon mocking the king of bro podcasting, he’s back in character to shill a supplement called “Crab Salts.”.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/tim-heidecker-is-bringing-his-joe-rogan-parody-show-to-the-onion/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261005-3",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-01",
+            "headline": "Christa Pike survives botched lethal injection execution in Tennessee",
+            "summary": "Following a Supreme Court decision lifting a stay, Tennessee prison officials attempted to execute Christa Pike via lethal injection, during which she reported severe burning and remained conscious through prolonged distress. The procedure was ultimately halted after repeated complications, leaving Pike in critical condition and prompting Governor Bill Lee to halt future executions pending an independent review.",
+            "tag": "JUSTICE",
+            "url": "https://www.theatlantic.com/ideas/2026/10/christa-pike-tennessee-lethal-injection/688859/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.2,
+              "relevance": 9.2,
+              "total": 8.6
+            }
+          },
+          {
+            "id": "culture-voices-20261005-6",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-05",
+            "headline": "The Evolution and Contested Legacy of Zionism Since 1890",
+            "summary": "Coined in the 1890s to establish a Jewish state, Zionism achieved its goal in 1948 with the founding of Israel, though the term has since faced severe global backlash and toxic rhetoric, particularly after the October 7, 2023, Hamas attack and subsequent conflict in Gaza. While 88 percent of North American Jews surveyed believe Israel has the right to exist, only 37 percent identify as Zionists due to the term's tarnished reputation and association with state policies. The century-old conflict between Jewish national aspirations and Palestinian resistance remains deadlocked, with the survival of Israel dependent on military power while its future rests on achieving peaceful coexistence.",
+            "tag": "ZIONISM",
+            "url": "https://www.theatlantic.com/ideas/2026/10/zionism-israel-palestine-history/688834/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.5,
+              "relevance": 9.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "culture-voices-20261005-10",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-05",
+            "headline": "Trump administration exploits federal agencies and public power to influence elections",
+            "summary": "The Trump administration has systematically leveraged federal institutions—including the Department of Homeland Security, the FCC, and the USPS—to tilt electoral outcomes and protect its political power. Officials have repeatedly violated the Hatch Act by campaigning for Republicans, while the FCC has applied pressure on broadcasters to control speech and media coverage. Meanwhile, administration efforts to restrict mail-in voting via postal service regulations were ultimately halted by the Supreme Court.",
+            "tag": "EXECUTIVE_POWER",
+            "url": "https://www.theatlantic.com/ideas/2026/10/government-neutrality-elections/688877/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 2.4,
+              "magnitude": 9.2,
+              "relevance": 9.5,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "culture-voices-20261005-11",
+            "source": "The Atlantic Ideas",
+            "date": "2026-09-30",
+            "headline": "Co-pilot attacks captain and plunges Flydubai jet toward Saudi desert",
+            "summary": "A Flydubai co-pilot allegedly stabbed the captain and pitched an Israel-bound Boeing 737 into a rapid descent over Saudi Arabia before crew and passengers subdued him. The aircraft landed safely in Tabuk, while the incident's motive and potential geopolitical implications remain under investigation.",
+            "tag": "AVIATION",
+            "url": "https://www.theatlantic.com/ideas/2026/09/flydubai-plane-attack-israel/688848/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "culture-voices-20261005-14",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-03",
+            "headline": "Christopher Rufo shifts stance on meritocracy amid rising anti-Indian sentiment",
+            "summary": "Conservative activist Christopher Rufo has moved away from his previous defense of color-blind meritocracy as anti-Indian bigotry gains traction within mainstream Republican politics. Following social media attacks by right-wing figures against South Asian students and immigrants, Rufo and publisher Jonathan Keeperman argued on a podcast that the resulting demographic changes and academic success of Indian Americans pose a threat to American culture. Consequently, Rufo has dismissed the concept of meritocracy that he once championed, aligning with populist resentment within the party.",
+            "tag": "CULTURE",
+            "url": "https://www.theatlantic.com/ideas/2026/10/french-rufo-meritocracy-race/688870/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 6.8
+            }
+          }
+        ]
+      }
+    }
+  }
+}
