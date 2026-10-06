@@ -1,0 +1,756 @@
+{
+  "date": "2026-10-06",
+  "label": "Today",
+  "lastUpdated": "2026-10-06T12:22:50.651Z",
+  "agentLog": [
+    {
+      "timestamp": "12:22:02",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 01851a4: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:22:02",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:22:08",
+      "module": "SCOUT",
+      "message": "Scouted 107 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:22:08",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:22:08",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 57 off-beat/redundant wires. 50 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:22:08",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:22:09",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:22:50",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 32 items (4 via LLM, 28 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 3213. Est cost: $0.00071.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:22:50",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:22:50",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (32 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:22:50",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-06 live (32 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261006-19",
+            "source": "TechCrunch AI",
+            "date": "2026-10-05",
+            "headline": "Open or closed AI? How founders are choosing what to build on at TechCrunch Disrupt 2026",
+            "summary": "Learn how founders are choosing between building on open or closed AI at TechCrunch Disrupt 2026. Register now to save up to $100 and get a second pass at 50% off.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261006-4",
+            "source": "arXiv Preprint",
+            "date": "2026-10-05",
+            "headline": "CLIFT Uses Conformal Self-Verification to Train and Scale Web Agents",
+            "summary": "Researchers developed CLIFT, a method using conformal self-verification to address sparse rewards and expensive judge feedback in web agent training. During training, CLIFT filters self-verification questions to generate per-step rewards, while at test time, it uses a frozen question bank for trajectory selection without external judges. The method achieved state-of-the-art performance on WebArena Infinity and VisualWebArena, and improved live-web agent performance on Online Mind2Web.",
+            "tag": "AI_RESEARCH",
+            "url": "http://arxiv.org/abs/2610.06829v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 8.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261006-9",
+            "source": "arXiv Preprint",
+            "date": "2026-10-05",
+            "headline": "One Figure, Every Canvas: Editable Flowchart Relayout via Agentic Pipeline",
+            "summary": "Pipeline figures in ML papers must be repurposed across many canvases, including paper columns, 16:9 slides, portrait posters, 1:1 social teasers, 9:16 phone previews. Each format imposes a different aspect ratio on the same computational graph, where any silently broken connection misrepresents the method. We formulate aspect-ratio-adaptive flowchart relayout as a distinct task: given a raster flowchart and a target ratio, produce a structurally faithful, hallucination-free, editable layout.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.06852v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 9.4,
+              "relevance": 8.8,
+              "total": 7
+            }
+          },
+          {
+            "id": "ai-venture-research-20261006-15",
+            "source": "arXiv Preprint",
+            "date": "2026-10-05",
+            "headline": "UniSlider: Perceptually Uniform Sliders for Continuous Image Editing",
+            "summary": "Sliders provide an intuitive interface for continuous image editing. In current generative approaches, however, the slider is simply a rescaling of the method's strength parameter, such as an adapter coefficient, a prompt weight, or an interpolation factor. This strength relates poorly to perceptual change.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.06831v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261006-16",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-05",
+            "headline": "Bringing predictive analytics to the agentic AI era",
+            "summary": "In 2026, the question for enterprise AI is no longer whether predictive models can outperform statistical forecasts—that argument is settled. The big question now is how to enable predictive systems to act on their own conclusions without drifting from business intent. The frontier has moved from prediction to autonomous decision making, and the gap between….",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/05/1143813/bringing-predictive-analytics-to-the-agentic-ai-era/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261006-17",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-02",
+            "headline": "Redefining enterprise intelligence with autonomous AI",
+            "summary": "Enterprise AI is no longer a future ambition. It is in full operational flight. Model capabilities are advancing faster than most organizations can absorb, while the cost of performance continues to fall.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261006-11",
+            "source": "The Verge AI",
+            "date": "2026-10-05",
+            "headline": "OpenAI is adding text watermarking in ChatGPT and Codex",
+            "summary": "An invisible, machine-readable watermark in text output is rolling out to ChatGPT and Codex, but only for users in the European Union at first. OpenAI says its textGrain watermarking \"matched or exceeded\" other approaches like Google DeepMind's SynthID for text, which is also the basis for the watermarking Anthropic announced in August. Like OpenAI, Anthropic […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 7.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261006-20",
+            "source": "The Verge AI",
+            "date": "2026-10-06",
+            "headline": "Amazon Alexa Plus keeps creepily singing ‘lalala’ for minutes on end",
+            "summary": "An unsettling Alexa Plus bug has seen some Amazon Echo smart home speakers reduced to saying - and sometimes singing - nothing but \"lalala\" on repeat for minutes at a time, often in the middle of conversations with users. When quizzed about the behavior, Alexa is apparently entirely unaware of what it's been doing.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1005342/amazon-alexa-plus-keeps-creepily-singing-lalala-for-minutes-on-end",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261006-21",
+            "source": "The Verge AI",
+            "date": "2026-10-05",
+            "headline": "All the drama around AI’s takeover of mathematics",
+            "summary": "This past year, OpenAI, Anthropic, and other labs have announced breakthroughs on numerous long-standing mathematical problems, in some cases pushing well beyond what researchers expected current systems to be capable of — including resolving one of the famous Millennium Prize problems. But in classic Silicon Valley style, AI labs are moving fast and breaking things, […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1004933/ai-math-openai-breakthrough-solution",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261006-22",
+            "source": "The Verge AI",
+            "date": "2026-10-05",
+            "headline": "Wikipedia operator says OpenAI’s ‘rogue’ bots may be linked to a May outage",
+            "summary": "Following many recent disclosures about AI agents accessing third-party websites and services, the Wikimedia Foundation, which hosts Wikipedia, says that it \"can confirm that we have discovered some activity\" by \"rogue\" OpenAI agents on Wikimedia platforms. The activity includes edits to Wikimedia wikis, \"unsuccessful attempts\" to \"exploit\" the Etherpad note-taking tool that the Wikimedia Foundation […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261006-23",
+            "source": "The Verge AI",
+            "date": "2026-10-05",
+            "headline": "OpenAI PR tells journalist to ‘move on’ while asking Sam Altman about a ChatGPT user’s suicide",
+            "summary": "An OpenAI publicist tried to change the topic of CEO Sam Altman's interview with Vanity Fair's Mark Guiducci after the editor brought up a ChatGPT user's suicide. When Guiducci confronted Altman about the incident, the publicist warned Guiducci about running out of time, saying she'd like to \"move on\" to another topic. The interruption came […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1004827/openai-sam-altman-vanity-fair-interview-pr",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261006-1",
+            "source": "FTC Press",
+            "date": "2026-10-02",
+            "headline": "FTC Secures Settlement with Southern Glazer's Over Price Discrimination",
+            "summary": "The Federal Trade Commission secured a settlement agreement with Southern Glazer’s Wine and Spirits LLC to address allegedly illegal price discrimination practices. The agreement aims to level the playing field, making it easier for small businesses to compete against large chain retailers. Additionally, the settlement is intended to facilitate consumer access to lower-priced wine and spirits at local retailers.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-protects-small-businesses-illegal-price-discrimination",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 8.8,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261006-3",
+            "source": "FTC Press",
+            "date": "2026-10-05",
+            "headline": "Premier Franchising Group and Franchise Fastlane Settle FTC Charges for $1.85 Million",
+            "summary": "The Federal Trade Commission reached proposed settlements with Premier Franchising Group LLC and Franchise Fastlane LLC over allegations of misleading representations and Franchise Rule violations. The companies will pay $1.85 million to recover funds for injured consumers. Additionally, the settlements allow certain franchisees to cancel their franchise agreements without penalty.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/premier-martial-arts-franchisor-its-former-franchise-sales-organization-settle-ftc-charges-companies",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 5.2,
+              "relevance": 8.8,
+              "total": 8.2
+            }
+          },
+          {
+            "id": "politics-regulatory-20261006-6",
+            "source": "FTC Press",
+            "date": "2026-10-05",
+            "headline": "FTC Issues Letters Warning Hospitals Against Deceptive Pricing Practices",
+            "summary": "Federal Trade Commission Chairman Andrew N. Ferguson today sent letters to 24 of the nation’s largest healthcare services companies, reminding them of their legal obligation to provide patients with timely, accurate and complete pricing information for healthcare services, and that failing to do so can be an unfair or deceptive practice.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-letters-warning-hospitals-against-deceptive-pricing-practices",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261006-7",
+            "source": "FTC Press",
+            "date": "2026-10-02",
+            "headline": "FTC, States Sue Lens.com for Misrepresenting the Price of Contact Lenses in Search Ads and on Its Website",
+            "summary": "Lens.com hides bogus ‘taxes & fees’ charge that often doubles the price of contact lenses for consumers, the FTC and states allege Today, the Federal Trade Commission, joined by the Utah and Nevada Attorneys General, sued to stop a long-running deceptive pricing scheme run by contact lens retailer Lens.com Inc.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-states-sue-lenscom-misrepresenting-price-contact-lenses-search-ads-its-website",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261006-26",
+            "source": "MarketWatch Top",
+            "date": "2026-10-06",
+            "headline": "America’s favorite index is misleading investors about the state of the stock market",
+            "summary": "For decades, the S&P 500 has been the preferred benchmark for monitoring the performance of the U.S. But these days, it is behaving less like a barometer of broad market health and more like a funhouse mirror.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/americas-favorite-index-is-misleading-investors-about-the-state-of-the-stock-market-2e91ca95?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 5.9
+            }
+          },
+          {
+            "id": "markets-macro-20261006-30",
+            "source": "MarketWatch Top",
+            "date": "2026-10-06",
+            "headline": "‘People in the U.S. need to wake up’: As a mortgage loan officer, I rejected wealthy couples due to overspending. We’re all heading for trouble.",
+            "summary": "A reader writes: “We’d better get real quick or we’re going to have a financial crisis that makes the Great Recession of 2008 look like a picnic.”.",
+            "tag": "MARKETS",
+            "url": "https://www.marketwatch.com/story/people-in-the-u-s-need-to-wake-up-as-a-mortgage-loan-officer-i-rejected-wealthy-couples-due-to-overspending-were-all-heading-for-trouble-6a52e04e?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ],
+        "company-moves": [
+          {
+            "id": "markets-company-moves-20261006-32",
+            "source": "SEC EDGAR / 8-K",
+            "date": "2026-10-02",
+            "headline": "Hall Chadwick Acquisition Corp: Form 8-K Discloses Material Definitive Agreement, Unregistered Equity Sale",
+            "summary": "SEC regulatory submission filed by Hall Chadwick Acquisition Corp (8-K). Disclosed event: Material Definitive Agreement, Unregistered Equity Sale. Verified filing date 2026-10-02.",
+            "tag": "MARKETS",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=0002079013",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "company-moves",
+            "scores": {
+              "authority": 7.2,
+              "corroboration": 7.5,
+              "novelty": 2.4,
+              "magnitude": 2.5,
+              "relevance": 7.8,
+              "total": 5.4
+            }
+          }
+        ],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261006-10",
+            "source": "ScienceDaily",
+            "date": "2026-10-03",
+            "headline": "This protective enzyme could help stop fatty liver disease from getting worse",
+            "summary": "Scientists have identified an enzyme that may act as a natural defense against the worsening of fatty liver disease, which affects an estimated 100 million Americans. The enzyme, called UBE2N, helps liver cells clear away damaged mitochondria and break down fat, potentially preventing the inflammation, scarring, and cell damage associated with the more dangerous condition MASH.",
+            "tag": "SCIENCE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261002080020.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "science-frontier-20261006-13",
+            "source": "ScienceDaily",
+            "date": "2026-10-05",
+            "headline": "The “glue” holding your cells together has a surprising second job",
+            "summary": "Scientists have discovered that E-cadherin, a protein best known as the “glue” holding cells and tissues together, has a surprising second job: helping epithelial cells swallow nearby dead cells. Using live zebrafish and mouse embryos, researchers found that cells can dramatically reshape their lower surfaces to engulf cellular debris while keeping their upper surfaces stable, allowing protective barriers to remain sealed.",
+            "tag": "SCIENCE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261002080023.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261006-25",
+            "source": "arXiv Preprint",
+            "date": "2026-10-05",
+            "headline": "The practical cost of magic state cultivation",
+            "summary": "Magic state cultivation is a promising method for preparing high-fidelity non-Clifford resource states - a central component of fault-tolerant quantum computing - with low spacetime overhead. In benchmarking cultivation, existing resource estimates assume access to noiseless transversal measurement of the output magic state to allow for postselection during the final escape stage of the cultivation process. However, such measurements would destroy the magic state and are therefore unavailable during computation.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.06828v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          },
+          {
+            "id": "science-frontier-20261006-27",
+            "source": "arXiv Preprint",
+            "date": "2026-10-05",
+            "headline": "Boundary-accessible work in a collision-charged topological quantum battery",
+            "summary": "Quantum batteries store energy in nonequilibrium quantum states. The ergotropy sets the work extractable by an arbitrary global unitary, but a device usually exchanges energy through a single local port. It remains unclear how much stored work such a port can deliver, and whether topological edge modes help.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.06849v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261006-28",
+            "source": "arXiv Preprint",
+            "date": "2026-10-05",
+            "headline": "Rewire and reset are all you need: Minimal resources for manipulating non-Abelions",
+            "summary": "Braiding and fusing anyons are fundamental to topological quantum computation, yet existing circuit protocols often employ ancillas and measurements. We determine the minimal circuit resources for performing such anyon operations in quantum double models of generic finite groups. Our approach braids anyons through a sequential unitary circuit without ancillas.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.06845v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261006-18",
+            "source": "Wired Culture",
+            "date": "2026-09-30",
+            "headline": "Black Twitter Is Thriving—on Threads",
+            "summary": "From outrage over Nolan Wells’ death to analysis of HBO Max’s Lanterns, Threads has transformed into a vital artery of the Black social media ecosystem.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/threads-is-black-twitters-unlikely-spiritual-successor/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "culture-industry-20261006-24",
+            "source": "Wired Culture",
+            "date": "2026-10-01",
+            "headline": "Tim Heidecker Is Bringing His Joe Rogan Parody Show to The Onion",
+            "summary": "Five years after the comedian went viral with a 12-hour blabberthon mocking the king of bro podcasting, he’s back in character to shill a supplement called “Crab Salts.”.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/tim-heidecker-is-bringing-his-joe-rogan-parody-show-to-the-onion/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          },
+          {
+            "id": "culture-industry-20261006-29",
+            "source": "Ars Technica",
+            "date": "2026-10-05",
+            "headline": "F1 in Bahrain... in Malaysia: The race needed a software update to start",
+            "summary": "A software bug waylaid half the field and required a race reboot.",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/cars/2026/10/f1-in-bahrain-in-malaysia-the-race-needed-a-software-update-to-start/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.7
+            }
+          },
+          {
+            "id": "culture-industry-20261006-31",
+            "source": "Ars Technica",
+            "date": "2026-10-05",
+            "headline": "Cable lobby to sue Trump FCC over repeal of national TV ownership cap",
+            "summary": "Cable industry to sue, says FCC can't repeal TV ownership limit set by Congress.",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/tech-policy/2026/10/cable-lobby-to-sue-trump-fcc-over-repeal-of-national-tv-ownership-cap/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.5
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261006-2",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-01",
+            "headline": "Tennessee Governor Halts Executions After Botched Lethal Injection of Christa Pike",
+            "summary": "Tennessee Governor Bill Lee halted state executions for an independent review after the botched lethal injection of death row prisoner Christa Pike. Pike survived the execution attempt but was hospitalized in critical condition after experiencing severe distress and receiving the maximum legal dosage of pentobarbital. The incident highlights systemic issues with lethal injections, including executioner incompetence, lack of qualified medical staff, and compromised drug supplies.",
+            "tag": "DEATH PENALTY",
+            "url": "https://www.theatlantic.com/ideas/2026/10/christa-pike-tennessee-lethal-injection/688859/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.2,
+              "relevance": 8.8,
+              "total": 8.5
+            }
+          },
+          {
+            "id": "culture-voices-20261006-5",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-05",
+            "headline": "What Is Zionism?",
+            "summary": "O n October 7, 2023, Hamas fighters launched a surprise attack on Israel from the Gaza Strip, killing more than 1,200 people and taking 251 hostages. The attack was the worst disaster in the history of the Jewish state. Three years later, it’s clear that it was an even greater disaster for Palestinians.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/zionism-israel-palestine-history/688834/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.5,
+              "relevance": 9.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "culture-voices-20261006-8",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-05",
+            "headline": "Using the Power of the Government to Win Elections",
+            "summary": "T he principle that government ought to be administered for the benefit of all citizens, not on behalf of one political party, lies at the core of America’s democratic enterprise. The Trump administration couldn’t care less: It appears to see the federal government not as something to steward on behalf of all Americans, but as an opportunity—a set of levers it can pull on to protect its reign. America’s adherence to this principle of executive neutrality has never been perfect, but as a norm it has been honored more than breached.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/government-neutrality-elections/688877/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 2.4,
+              "magnitude": 9.2,
+              "relevance": 7.8,
+              "total": 7
+            }
+          },
+          {
+            "id": "culture-voices-20261006-12",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-03",
+            "headline": "The Mainstreaming of Anti-Indian Bigotry",
+            "summary": "C hristopher Rufo, the conservative activist best known for his opposition to critical race theory, has portrayed his career as one devoted to upholding meritocracy. “The principle, first promised by the Declaration and supported today by a large majority of Americans, would mean that the state would treat all Americans equally, regardless of ancestry, and leave as much discretion as possible to individuals to determine their own futures, without the government imposing or requiring racial favoritism of any kind,” Rufo wrote two years ago in City Journal , a magazine published by the Manhattan Institute, where he is a senior fellow. “Rather than pit ourselves against one another, we should aspire to a higher standard that subordinates racial faction to a broader national identity.” He has urged Republicans to grasp the allure of this ideal, writing last year in The Free Press : “The right now has the winning argument.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/french-rufo-meritocracy-race/688870/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "culture-voices-20261006-14",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-02",
+            "headline": "Time to Consider Becoming a Bricklayer",
+            "summary": "Imagine that you’re one of the 3.8 million American teenagers on track to graduate from high school next spring. You have been told your whole life that knowledge work is the future and that a college degree is a high-speed ticket to the middle class. The average worker with a B.A.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/young-people-job-market-choice/688845/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 5.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          }
+        ]
+      }
+    }
+  }
+}
