@@ -1,0 +1,715 @@
+{
+  "date": "2026-10-07",
+  "label": "Today",
+  "lastUpdated": "2026-10-07T12:15:30.364Z",
+  "agentLog": [
+    {
+      "timestamp": "12:14:29",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 785eb90: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:14:29",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:14:34",
+      "module": "SCOUT",
+      "message": "Scouted 117 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:14:34",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:14:34",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 73 off-beat/redundant wires. 44 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:14:34",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:14:34",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:15:30",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 30 items (15 via LLM, 15 via deterministic synthesis; top 15 LLM quota applied, 1 dropped for thin context). Tokens: 25402. Est cost: $0.00460.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:15:30",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:15:30",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (30 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "12:15:30",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-07 live (30 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261007-8",
+            "source": "TechCrunch AI",
+            "date": "2026-10-06",
+            "headline": "Nvidia-backed AI computing startup Lambda seeks $4 billion ahead of planned IPO",
+            "summary": "Lambda is raising up to $4 billion at a $14.5 billion pre-money valuation. The funding round is led by Coatue and Blackstone, positioning the AI computing startup for a planned 2027 IPO.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.5,
+              "relevance": 9.5,
+              "total": 7.6
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261007-14",
+            "source": "TechCrunch AI",
+            "date": "2026-10-06",
+            "headline": "Ex-Ramp engineers secure $20M for Melius to build creative asset tools",
+            "summary": "Former Ramp engineers have raised $20 million for their platform, Melius, after abandoning their initial product. The company has shifted its focus from helping marketers manage and optimize ad spend to building tools that generate creative assets and campaigns.",
+            "tag": "AI-VENTURE",
+            "url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 6.5,
+              "relevance": 9.5,
+              "total": 7
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261007-22",
+            "source": "TechCrunch AI",
+            "date": "2026-10-06",
+            "headline": "Anthropic is giving startups a free year of Claude Team and $1,000 in credits",
+            "summary": "\"We created this program because we believe the benefits of AI will reach most people through the companies that build on top of models, rather than through the models alone.\".",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261007-25",
+            "source": "TechCrunch AI",
+            "date": "2026-10-06",
+            "headline": "Mirror Particle is building a ‘world model’ of human behavior",
+            "summary": "Mirror Particle will launch at TechCrunch Disrupt's Startup Battlefield 200 with a world model built from scratch to predict human behavior, arguing that LLM role-play falls short for market research and brand strategy.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/06/mirror-particle-is-building-a-world-model-of-human-behavior/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261007-12",
+            "source": "arXiv Preprint",
+            "date": "2026-10-06",
+            "headline": "4D-HOF Reconstructs Hand-Object Interactions Using Flow Matching",
+            "summary": "Researchers introduce 4D-HOF, a feed-forward framework that reconstructs 4D hand-object interactions by using a conditional flow matching model to transport vision foundation model estimates toward an interaction manifold. The method enables test-time guidance through physical interaction constraints and observed 2D evidence, achieving state-of-the-art performance on out-of-domain benchmarks.",
+            "tag": "AI_RESEARCH",
+            "url": "http://arxiv.org/abs/2610.08782v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261007-19",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-05",
+            "headline": "Bringing predictive analytics to the agentic AI era",
+            "summary": "In 2026, the question for enterprise AI is no longer whether predictive models can outperform statistical forecasts—that argument is settled. The big question now is how to enable predictive systems to act on their own conclusions without drifting from business intent. The frontier has moved from prediction to autonomous decision making, and the gap between….",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/05/1143813/bringing-predictive-analytics-to-the-agentic-ai-era/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261007-20",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-02",
+            "headline": "Redefining enterprise intelligence with autonomous AI",
+            "summary": "Enterprise AI is no longer a future ambition. It is in full operational flight. Model capabilities are advancing faster than most organizations can absorb, while the cost of performance continues to fall.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261007-27",
+            "source": "arXiv Preprint",
+            "date": "2026-10-06",
+            "headline": "IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas",
+            "summary": "Scientific research often begins by synthesizing ideas from a set of related papers to identify gaps and formulate new directions. However, training language models to perform this form of literature-grounded ideation remains challenging, as existing approaches based on prompting or feedback lack structured supervision for how papers should be synthesized. We introduce IdeaAnchor, a paradigm for training LLMs to perform research ideation using structured specifications as privileged signals.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.08781v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261007-28",
+            "source": "arXiv Preprint",
+            "date": "2026-10-06",
+            "headline": "DepthWorld: 3D World Model for Robot Manipulation",
+            "summary": "World models offer a data-driven alternative to traditional simulators for robotics, with applications spanning policy evaluation, improvement, and planning. All of these uses depend on faithful 3D geometry, yet current video-based world models are trained on RGB alone and produce rollouts that look correct frame-by-frame but do not compose into a consistent 3D world. Closing this gap requires progress on two fronts: large-scale 3D supervision for manipulation, and an architecture that can absorb it without disturbing strong pretrained video priors.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.08780v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261007-10",
+            "source": "The Verge AI",
+            "date": "2026-10-06",
+            "headline": "OpenAI Unveils Mathematical Breakthroughs From Unreleased Frontier Model",
+            "summary": "OpenAI revealed solutions to long-standing mathematics problems across 722 manuscripts produced by an unreleased frontier model. This development extends a series of breakthroughs that have both impressed and unsettled the mathematical community while raising ethical questions.",
+            "tag": "AI-VENTURE",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.4,
+              "relevance": 9.2,
+              "total": 7.5
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261007-23",
+            "source": "The Verge AI",
+            "date": "2026-10-06",
+            "headline": "Amazon Alexa Plus keeps creepily singing ‘lalala’ for minutes on end",
+            "summary": "An unsettling Alexa Plus bug has seen some Amazon Echo smart home speakers reduced to saying - and sometimes singing - nothing but \"lalala\" on repeat for minutes at a time, often in the middle of conversations with users. When quizzed about the behavior, Alexa is apparently entirely unaware of what it's been doing.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1005342/amazon-alexa-plus-keeps-creepily-singing-lalala-for-minutes-on-end",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261007-26",
+            "source": "The Verge AI",
+            "date": "2026-10-07",
+            "headline": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media",
+            "summary": "Common Sense Media, a nonprofit that offers reviews of apps, services, and entertainment with a focus on youth safety, today said that OpenAI's ChatGPT for Teens is an \"unacceptable risk.\" ChatGPT for Teens, introduced in August, has guardrails for teens and is designed to help students learn, but Common Sense Media says that the teen […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261007-1",
+            "source": "FTC Press",
+            "date": "2026-10-02",
+            "headline": "FTC Secures Settlement With Southern Glazer's Over Price Discrimination",
+            "summary": "The Federal Trade Commission reached a settlement agreement with Southern Glazer’s Wine and Spirits LLC to address allegedly illegal price discrimination practices. The deal aims to help small businesses compete against large chain retailers while facilitating consumer access to lower-priced wine and spirits.",
+            "tag": "REGULATION",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-protects-small-businesses-illegal-price-discrimination",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 9,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261007-2",
+            "source": "FTC Press",
+            "date": "2026-10-06",
+            "headline": "FTC issues over $100,000 in refunds to deceived GOAT consumers",
+            "summary": "The Federal Trade Commission is sending more than $100,000 in redress payments to consumers deceived by the online marketplace GOAT. These refunds are part of a settlement addressing allegations that the company failed to honor its refund policies. Additionally, the settlement resolves allegations that GOAT violated an FTC rule requiring companies to maintain reasonable shipping practices.",
+            "tag": "REGULATION",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-redress-payments-consumers-impacted-goats-deceptive-shipping-refund-policies",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 8.2,
+              "total": 8.6
+            }
+          },
+          {
+            "id": "politics-regulatory-20261007-3",
+            "source": "FTC Press",
+            "date": "2026-10-05",
+            "headline": "Premier Franchising Group and Franchise Fastlane Settle FTC Charges for $1.85 Million",
+            "summary": "Premier Franchising Group LLC and Franchise Fastlane LLC will pay $1.85 million to settle Federal Trade Commission allegations of making misleading representations and violating the Franchise Rule. The proposed settlements will recover funds for injured consumers and allow certain franchisees to cancel their agreements without penalty. The allegations stemmed from deceptive claims regarding the Premier Martial Arts franchise opportunity.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/premier-martial-arts-franchisor-its-former-franchise-sales-organization-settle-ftc-charges-companies",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 5.2,
+              "relevance": 8,
+              "total": 8.1
+            }
+          },
+          {
+            "id": "politics-regulatory-20261007-5",
+            "source": "FTC Press",
+            "date": "2026-10-05",
+            "headline": "FTC Warns Major Healthcare Companies Against Deceptive Pricing Practices",
+            "summary": "FTC Chairman Andrew N. Ferguson sent warning letters to 24 of the nation's largest healthcare services companies. The letters remind these firms of their legal obligation to provide accurate, timely, and complete pricing information to patients.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-letters-warning-hospitals-against-deceptive-pricing-practices",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 8.1
+            }
+          },
+          {
+            "id": "politics-regulatory-20261007-6",
+            "source": "FTC Press",
+            "date": "2026-10-02",
+            "headline": "FTC and States Sue Lens.com Over Deceptive Contact Lens Pricing",
+            "summary": "The Federal Trade Commission and the Attorneys General of Utah and Nevada have filed a lawsuit against contact lens retailer Lens.com Inc. The action targets a deceptive pricing scheme involving hidden 'taxes & fees' that frequently doubled the cost of lenses for consumers in search ads and on its website.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-states-sue-lenscom-misrepresenting-price-contact-lenses-search-ads-its-website",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 8.1
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [],
+        "company-moves": [
+          {
+            "id": "markets-company-moves-20261007-30",
+            "source": "SEC EDGAR / 8-K",
+            "date": "2026-10-02",
+            "headline": "Hall Chadwick Acquisition Corp: Form 8-K Discloses Material Definitive Agreement, Unregistered Equity Sale",
+            "summary": "SEC regulatory submission filed by Hall Chadwick Acquisition Corp (8-K). Disclosed event: Material Definitive Agreement, Unregistered Equity Sale. Verified filing date 2026-10-02.",
+            "tag": "MARKETS",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=0002079013",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "company-moves",
+            "scores": {
+              "authority": 7.2,
+              "corroboration": 7.5,
+              "novelty": 2.4,
+              "magnitude": 2.5,
+              "relevance": 7.8,
+              "total": 5.4
+            }
+          }
+        ],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261007-7",
+            "source": "arXiv Preprint",
+            "date": "2026-10-06",
+            "headline": "Researchers observe magic Mpemba effect on digital quantum computers",
+            "summary": "Scientists have uncovered interaction-induced dephasing as a mechanism driving the magic Mpemba effect, where states with less initial quantum magic overtake those with more. Using exact simulations and IBM superconducting quantum processors, the team demonstrated this anomalous relaxation behavior. These findings establish dephasing as a pathway to quantum-resource relaxation beyond transport-driven thermalizing dynamics.",
+            "tag": "QUANTUM",
+            "url": "http://arxiv.org/abs/2610.08769v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9.2,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "science-frontier-20261007-13",
+            "source": "ScienceDaily",
+            "date": "2026-10-06",
+            "headline": "Researchers capture key steps of efficient natural energy transfer",
+            "summary": "Using ultrafast X-rays, researchers captured key steps in a chemical reaction that allows nature to transfer energy efficiently. The observations reveal how electron and proton changes link to surrounding water molecule rearrangements. This technique could aid in developing improved catalysts, fuel cells, and flow batteries.",
+            "tag": "SCIENCE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261004001841.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "science-frontier-20261007-16",
+            "source": "ScienceDaily",
+            "date": "2026-10-06",
+            "headline": "Goodbye joint replacements? Stanford scientists found a way to regrow cartilage and stop arthritis",
+            "summary": "Scientists have found a surprising way to regrow damaged knee cartilage by blocking a protein that becomes more abundant with age. In old mice, the treatment restored naturally lost cartilage and also helped prevent osteoarthritis after ACL-like knee injuries, while human cartilage taken from knee replacement patients began producing new, functional joint cartilage after exposure to the same inhibitor.",
+            "tag": "SCIENCE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261005011249.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261007-17",
+            "source": "ScienceDaily",
+            "date": "2026-10-06",
+            "headline": "Physicists just saw quarks make waves in the Big Bang’s primordial soup",
+            "summary": "Physicists at CERN’s Large Hadron Collider have captured the clearest evidence yet that quark-gluon plasma, the scorching-hot matter that filled the newborn universe, behaves like a true liquid. By tracking individual quarks as they blasted through the plasma, researchers saw them leave behind ripples, splashes, and swirling wakes much like a duck moving through water. The finding suggests this primordial “soup” is so dense that it can slow speeding quarks and respond collectively as a fluid.",
+            "tag": "SCIENCE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261004002556.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261007-29",
+            "source": "arXiv Preprint",
+            "date": "2026-10-06",
+            "headline": "No-Disturbance-without-Uncertainty generates the Quantum set in the simplest Bell scenario",
+            "summary": "Characterizing the set of quantum nonlocal correlations through information-theoretic constraints is a central problem in quantum foundations. We show that the convex hull of no-signalling behaviors in a bipartite Bell experiment satisfying a common-overlap no-disturbance-without-uncertainty condition is exactly the finite-dimensional quantum set whenever one party has two binary measurements and the other has an arbitrary finite number of settings, each with an arbitrary finite number of outcomes. In the simplest binary input-output Bell scenario, this characterizes the full eight-dimensional set of quantum behaviors, including the local marginals.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.08749v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261007-21",
+            "source": "Wired Culture",
+            "date": "2026-09-30",
+            "headline": "Black Twitter Is Thriving—on Threads",
+            "summary": "From outrage over Nolan Wells’ death to analysis of HBO Max’s Lanterns, Threads has transformed into a vital artery of the Black social media ecosystem.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/threads-is-black-twitters-unlikely-spiritual-successor/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "culture-industry-20261007-24",
+            "source": "Wired Culture",
+            "date": "2026-10-01",
+            "headline": "Tim Heidecker Is Bringing His Joe Rogan Parody Show to The Onion",
+            "summary": "Five years after the comedian went viral with a 12-hour blabberthon mocking the king of bro podcasting, he’s back in character to shill a supplement called “Crab Salts.”.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/tim-heidecker-is-bringing-his-joe-rogan-parody-show-to-the-onion/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261007-9",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-07",
+            "headline": "Three years after October 7, a Nahal Oz family returns home",
+            "summary": "Nearly three years after surviving the October 7 Hamas attack, a family has moved back to Kibbutz Nahal Oz near the Gaza border. However, their future in the community and the country depends heavily on the upcoming October 27 election and the potential defeat of Prime Minister Benjamin Netanyahu's government. Many educated professionals, including doctors and tech workers, are considering leaving Israel amid concerns over institutional decay, government corruption, and a looming political divide.",
+            "tag": "CULTURE",
+            "url": "https://www.theatlantic.com/ideas/2026/10/nahal-oz-israel-elections-netanyahu/688902/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.2,
+              "relevance": 8.5,
+              "total": 7.7
+            }
+          },
+          {
+            "id": "culture-voices-20261007-4",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-05",
+            "headline": "The Evolution and Contested Legacy of Zionism",
+            "summary": "Following the October 7, 2023 Hamas attacks and Israel's subsequent military response in Gaza, the term \"Zionism\" has undergone a profound transformation in Western public opinion and political discourse. While most American and Canadian Jews continue to believe Israel has the right to exist, a significantly smaller percentage are willing to identify as Zionists due to the term's increasing toxicity. The ongoing conflict highlights the deep historical complexities of Jewish statehood, Arab resistance, and the persistent struggle for peaceful coexistence between Jews and Arabs in the region.",
+            "tag": "CULTURE",
+            "url": "https://www.theatlantic.com/ideas/2026/10/zionism-israel-palestine-history/688834/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.5,
+              "relevance": 8.5,
+              "total": 7.7
+            }
+          },
+          {
+            "id": "culture-voices-20261007-11",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-05",
+            "headline": "Trump administration exploits federal agencies and public power to influence elections",
+            "summary": "The Trump administration has systematically used federal agencies, including the Department of Homeland Security, the FCC, and the USPS, to tilt the electoral scales in favor of Republicans. Officials have routinely disregarded the Hatch Act by campaigning for GOP candidates, while the FCC has pressured broadcasters and targeted media companies like ABC. Additionally, executive actions aimed at restricting mail-in balloting through USPS regulations were ultimately blocked by the Supreme Court.",
+            "tag": "POLITICS",
+            "url": "https://www.theatlantic.com/ideas/2026/10/government-neutrality-elections/688877/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 2.4,
+              "magnitude": 9.2,
+              "relevance": 9.2,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "culture-voices-20261007-15",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-03",
+            "headline": "Christopher Rufo and MAGA Allies Rationalize Anti-Indian Bigotry",
+            "summary": "Following social media backlash and posts targeting South Asian students at a University of Texas football game, conservative activist Christopher Rufo and other right-wing figures pivoted away from defending race-blind meritocracy. Rufo and publisher Jonathan Keeperman argued on a podcast that resentment toward successful Indian Americans stems from a legitimate cultural clash. President Trump's intervention and subsequent social media activity signaled that figures condemning anti-South Asian racism do not belong in the MAGA coalition.",
+            "tag": "CULTURE",
+            "url": "https://www.theatlantic.com/ideas/2026/10/french-rufo-meritocracy-race/688870/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "culture-voices-20261007-18",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-06",
+            "headline": "Churches Are Finally Making the Moral Case Against Sports Betting",
+            "summary": "One of the puzzling things about the online sports-betting boom that has swept through American culture over the past decade is the relative slowness of religious leaders to articulate a moral case against the vice. In the past, churches were among the leading voices warning against gambling. Jerry Falwell denounced it as a sinful habit that preyed on the poor and left “little children” to pay the price.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/gambling-betting-religious-leaders/688893/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 4.4,
+              "magnitude": 6,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          }
+        ]
+      }
+    }
+  }
+}
