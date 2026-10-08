@@ -1,0 +1,836 @@
+{
+  "date": "2026-10-08",
+  "label": "Today",
+  "lastUpdated": "2026-10-08T02:58:36.559Z",
+  "agentLog": [
+    {
+      "timestamp": "02:58:01",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 252a449: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "02:58:01",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "02:58:08",
+      "module": "SCOUT",
+      "message": "Scouted 116 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "02:58:08",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "02:58:08",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 62 off-beat/redundant wires. 54 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "02:58:08",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "02:58:08",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "02:58:36",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 36 items (5 via LLM, 31 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 1834. Est cost: $0.00050.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "02:58:36",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "02:58:36",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (36 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "02:58:36",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-08 live (36 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261008-4",
+            "source": "TechCrunch AI",
+            "date": "2026-10-07",
+            "headline": "Nous Research Hits $1.5B Valuation and Launches Business AI Agents",
+            "summary": "Nous Research, the developer of Hermes Agent, has confirmed achieving a $1.5 billion valuation following a $90 million Series B round. The company is also launching AI agents targeted at business users.",
+            "tag": "AI_VENTURE",
+            "url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 9,
+              "relevance": 9.2,
+              "total": 8
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261008-15",
+            "source": "TechCrunch AI",
+            "date": "2026-10-07",
+            "headline": "Healthleap raises $38M for its AI that flags hospital patients who may need a closer look",
+            "summary": "The financing includes an $8M seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 6.5,
+              "relevance": 9.5,
+              "total": 7
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261008-17",
+            "source": "arXiv Preprint",
+            "date": "2026-10-07",
+            "headline": "SciExam for ENSO: Can AI Agents Build Climate Models?",
+            "summary": "Language-model agents are increasingly asked to carry out open-ended scientific research, yet their results are usually graded against a known answer, a rubric, or a language-model reviewer, none of which can tell whether a new scientific model is valid. The AI Science Exam for El Nino-Southern Oscillation (SciExam for ENSO) is a benchmark in which agents build low-order stochastic models of ENSO, the dominant mode of interannual climate variability, from real observations. Within a six-hour budget, agents process the observations, write their own diagnostics, which are then frozen, and develop a model using only these diagnostics as feedback.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.10513v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261008-22",
+            "source": "arXiv Preprint",
+            "date": "2026-10-07",
+            "headline": "Decoupling Exploration from Optimization in RLVR",
+            "summary": "Modern language models undergo reinforcement learning with verifiable rewards (RLVR) on top of already-trained checkpoints. A key promise of RLVR is the discovery of new reasoning strategies. In principle, a model can sample novel ideas absent from its prior training data.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.10536v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-research-20261008-24",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-05",
+            "headline": "Bringing predictive analytics to the agentic AI era",
+            "summary": "In 2026, the question for enterprise AI is no longer whether predictive models can outperform statistical forecasts—that argument is settled. The big question now is how to enable predictive systems to act on their own conclusions without drifting from business intent. The frontier has moved from prediction to autonomous decision making, and the gap between….",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/05/1143813/bringing-predictive-analytics-to-the-agentic-ai-era/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261008-25",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-02",
+            "headline": "Redefining enterprise intelligence with autonomous AI",
+            "summary": "Enterprise AI is no longer a future ambition. It is in full operational flight. Model capabilities are advancing faster than most organizations can absorb, while the cost of performance continues to fall.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261008-27",
+            "source": "arXiv Preprint",
+            "date": "2026-10-07",
+            "headline": "EngramEdit: Decoupled Knowledge Updates in LLMs through Conditional Memory",
+            "summary": "Conditional memory architectures such as DeepSeek Engram use input n-grams to look up learned embeddings, expanding the capacity of large language models (LLMs) with limited additional computation. Beyond model scaling, this architecture has demonstrated the potential to decouple factual knowledge storage from general-purpose computation, offering a promising route to updating factual knowledge while keeping the Transformer backbone fixed. Realizing this potential is challenging because different expressions of a fact may activate different n-gram embeddings, while updating shared embeddings can unintentionally change the model's predictions about other facts.",
+            "tag": "REASONING",
+            "url": "http://arxiv.org/abs/2610.10533v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261008-5",
+            "source": "The Verge AI",
+            "date": "2026-10-07",
+            "headline": "OpenAI Launches Intelligent UI Feature with Interactive Visuals for ChatGPT",
+            "summary": "OpenAI is rolling out a new Intelligent UI feature in ChatGPT alongside GPT-6 for all users. The update enables the chatbot to combine text responses with interactive elements like diagrams, charts, forms, and tappable buttons.",
+            "tag": "CHATGPT_UPDATE",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9.2,
+              "total": 8.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261008-13",
+            "source": "The Verge AI",
+            "date": "2026-10-07",
+            "headline": "Muse launches on the iPad",
+            "summary": "After launching nearly a month ago and spending several weeks as the top free app in Apple's App Store, the latest update to Meta's Muse iOS app introduces native support for the iPad. A Mac version of Meta's agentic AI tool (designed to compete with OpenClaw, ChatGPT's Dots, and Grok Bot) was released about a […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 7.5,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 7.8,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261008-14",
+            "source": "The Verge AI",
+            "date": "2026-10-07",
+            "headline": "Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’",
+            "summary": "Google DeepMind, Meta, and AI drug discovery startup Isomorphic Labs are jointly investing $300 million into an initiative to create a \"virtual cell\" that researchers can use to combat disease, as reported earlier by Reuters. The project is led by Biohub, a nonprofit biomedical research organization founded by Mark Zuckerberg and his wife, Priscilla Chan.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1006766/google-meta-biohub-investment-virtual-cell",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 8.2,
+              "relevance": 7.8,
+              "total": 7.1
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261008-23",
+            "source": "The Verge AI",
+            "date": "2026-10-07",
+            "headline": "Everything announced at Microsoft’s Surface Laptop Ultra event",
+            "summary": "Microsoft just wrapped up a big Windows and Surface-focused keynote in San Francisco. The biggest announcement was arguably the release details about the Surface Laptop Ultra, its new laptop that’s powered by Nvidia’s RTX Spark Arm-based chip. The machine will start at $2,599 for a configuration with an 8-core CPU, 24GB of RAM, and 512GB […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261008-26",
+            "source": "The Verge AI",
+            "date": "2026-10-07",
+            "headline": "Microsoft is giving Copilot more control over Windows and your files",
+            "summary": "At today's Windows and Surface event, Microsoft showed off an upgrade to its Copilot AI system that will give it access to local files on your PC and the ability to take actions across the OS. It's part of an idea Microsoft is calling \"Hybrid Intelligence,\" where apps and tools rely on a mix of […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261008-2",
+            "source": "FTC Press",
+            "date": "2026-10-06",
+            "headline": "FTC Issues $100,000 in Refunds to GOAT Customers Over Shipping Violations",
+            "summary": "The Federal Trade Commission is sending more than $100,000 in redress payments to consumers deceived by online marketplace GOAT. The refunds stem from a settlement over allegations that the company violated FTC shipping rules and failed to honor its refund policies.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-redress-payments-consumers-impacted-goats-deceptive-shipping-refund-policies",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 8.5,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261008-1",
+            "source": "FTC Press",
+            "date": "2026-10-02",
+            "headline": "FTC Secures Settlement With Southern Glazer's Over Price Discrimination",
+            "summary": "The Federal Trade Commission reached a settlement agreement with Southern Glazer’s Wine and Spirits LLC to redress allegedly illegal price discrimination practices. The agreement aims to level the playing field for small businesses competing against large chain retailers and improve consumer access to lower-priced products.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-protects-small-businesses-illegal-price-discrimination",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 9,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261008-3",
+            "source": "FTC Press",
+            "date": "2026-10-05",
+            "headline": "PFG and Franchise Fastlane Pay $1.85 Million to Settle FTC Deception Charges",
+            "summary": "Premier Franchising Group and Franchise Fastlane agreed to pay $1.85 million to settle FTC allegations of making deceptive claims and violating the Franchise Rule. The proposed settlements recover funds for injured consumers and allow certain franchisees to cancel their franchise agreements without penalty.",
+            "tag": "FTC_SETTLEMENT",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/premier-martial-arts-franchisor-its-former-franchise-sales-organization-settle-ftc-charges-companies",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 5.2,
+              "relevance": 8.8,
+              "total": 8.2
+            }
+          },
+          {
+            "id": "politics-regulatory-20261008-7",
+            "source": "FTC Press",
+            "date": "2026-10-07",
+            "headline": "FTC and USDA Seek Public Comment on Agricultural Equipment Manufacturing and Distribution Market Practices",
+            "summary": "The Federal Trade Commission and the U.S. Department of Agriculture launched a joint public inquiry regarding issues affecting agricultural equipment manufacturing and distribution markets, including potential anticompetitive conduct.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-usda-seek-public-comment-agricultural-equipment-manufacturing-distribution-market-practices",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261008-8",
+            "source": "FTC Press",
+            "date": "2026-10-05",
+            "headline": "FTC Issues Letters Warning Hospitals Against Deceptive Pricing Practices",
+            "summary": "Federal Trade Commission Chairman Andrew N. Ferguson today sent letters to 24 of the nation’s largest healthcare services companies, reminding them of their legal obligation to provide patients with timely, accurate and complete pricing information for healthcare services, and that failing to do so can be an unfair or deceptive practice.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-letters-warning-hospitals-against-deceptive-pricing-practices",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261008-28",
+            "source": "MarketWatch Top",
+            "date": "2026-10-07",
+            "headline": "Rising yields are quietly crashing the stock market’s earlier winners of 2026",
+            "summary": "Surging Treasury yields have begun to hammer parts of the stock market that might easily be overlooked, especially with the spotlight once again shining brightly on a small group of glamorous tech companies.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/rising-yields-are-quietly-crashing-the-stock-markets-earlier-winners-of-2026-a29f2863?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          },
+          {
+            "id": "markets-macro-20261008-29",
+            "source": "MarketWatch Top",
+            "date": "2026-10-07",
+            "headline": "Higher yields are taking their toll on all areas of the stock market, except the one that matters",
+            "summary": "Technology is the only one of the S&P 500’s 11 sectors that gained since Sept. 1, as Treasury yields have climbed to multi-decade highs.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/higher-yields-are-taking-their-toll-on-all-areas-of-the-stock-market-except-the-one-that-matters-69a90322?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          },
+          {
+            "id": "markets-macro-20261008-31",
+            "source": "MarketWatch Top",
+            "date": "2026-10-07",
+            "headline": "Fed’s minutes show no appetite for a series of interest-rate hikes",
+            "summary": "September’s rate hike was viewed by many officials as needed just in case inflation remains sticky.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/fed-minutes-show-no-appetite-for-a-series-of-interest-rate-hikes-8b1c6436?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 5.9
+            }
+          },
+          {
+            "id": "markets-macro-20261008-32",
+            "source": "MarketWatch Top",
+            "date": "2026-10-07",
+            "headline": "Options traders are betting on a dramatic drop in interest rates",
+            "summary": "Recent options activity points to bullish positioning for long-term bonds and utilities.",
+            "tag": "MARKETS",
+            "url": "https://www.marketwatch.com/story/options-traders-are-betting-on-a-dramatic-drop-in-interest-rates-141066fb?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "markets-macro-20261008-36",
+            "source": "MarketWatch Top",
+            "date": "2026-10-07",
+            "headline": "Stocks are increasingly their own best hedge. This chart shows why.",
+            "summary": "For decades, investors concerned about stocks sought succor in the bond market. But these days, the best shield against an outbreak of volatility might just be owning other stocks.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/stocks-are-increasingly-their-own-best-hedge-this-chart-shows-why-19a79b68?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ],
+        "company-moves": [
+          {
+            "id": "markets-company-moves-20261008-34",
+            "source": "SEC EDGAR / 8-K",
+            "date": "2026-10-02",
+            "headline": "Hall Chadwick Acquisition Corp: Form 8-K Discloses Material Definitive Agreement, Unregistered Equity Sale",
+            "summary": "SEC regulatory submission filed by Hall Chadwick Acquisition Corp (8-K). Disclosed event: Material Definitive Agreement, Unregistered Equity Sale. Verified filing date 2026-10-02.",
+            "tag": "MARKETS",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=0002079013",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "company-moves",
+            "scores": {
+              "authority": 7.2,
+              "corroboration": 8.5,
+              "novelty": 2.4,
+              "magnitude": 2.5,
+              "relevance": 7.8,
+              "total": 5.7
+            }
+          },
+          {
+            "id": "markets-company-moves-20261008-35",
+            "source": "SEC EDGAR / 8-K",
+            "date": "2026-10-01",
+            "headline": "NATIONAL FUEL GAS CO: Form 8-K Discloses Material Definitive Agreement, Asset Acquisition or Disposition",
+            "summary": "SEC regulatory submission filed by NATIONAL FUEL GAS CO (8-K). Disclosed event: Material Definitive Agreement, Asset Acquisition or Disposition. Verified filing date 2026-10-01.",
+            "tag": "MARKETS",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=0000070145",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "company-moves",
+            "scores": {
+              "authority": 7.2,
+              "corroboration": 8.5,
+              "novelty": 2.4,
+              "magnitude": 2.5,
+              "relevance": 7.8,
+              "total": 5.7
+            }
+          }
+        ],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261008-9",
+            "source": "arXiv Preprint",
+            "date": "2026-10-07",
+            "headline": "Black hole radial geometry from a quantum spin chain",
+            "summary": "We show that the radial differential equation for a scalar field in an anti-de Sitter black brane background can be encoded in an exactly solvable semi-infinite spin chain independent of dimensionality. The radial coordinate emerges as lattice quasimomentum. Spin coherence encodes the geometry, while the spectrum and response recover gravitational observables and yield exact screening-mass sum rules.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.10504v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 8.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "science-frontier-20261008-10",
+            "source": "arXiv Preprint",
+            "date": "2026-10-07",
+            "headline": "Standard estimators cannot represent fault-tolerant workloads at measured error rates: evaluated, evidence-based uncertainty for quantum resource estimation",
+            "summary": "Estimates of the quantum resources needed to run fault-tolerant algorithms are almost always reported as single numbers, even though they rest on uncertain hardware parameters and on cost models that disagree. We present an open, tool-agnostic framework that propagates evidence-based priors over fault-tolerant hardware parameters through five surface-code cost models, adds correlated-input sensitivity analysis, and evaluates the resulting intervals with a pre-registered three-layer protocol. Applied to RSA-2048, ECC-256, AES-256, and a Hubbard-model simulation on a superconducting surface-code architecture, it produces three coupled findings that together undermine the single-number convention.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.10490v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 8.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "science-frontier-20261008-11",
+            "source": "arXiv Preprint",
+            "date": "2026-10-07",
+            "headline": "Dynamically protected erasure qubit via low-frequency charge driving",
+            "summary": "Dynamical protection via strong driving can enable resilient quantum processing on imperfect physical hardware. However, the practical utility of such schemes is frequently limited by parasitic processes such as drive-induced dephasing and leakage. Here, we demonstrate that sub-GHz charge driving of superconducting Kerr oscillators (KOs) in the transmon regime circumvents this trade-off, simultaneously activating fast parametric interactions and protecting the encoded qubit from low-frequency noise.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.10432v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 7.8,
+              "total": 7.7
+            }
+          },
+          {
+            "id": "science-frontier-20261008-19",
+            "source": "ScienceDaily",
+            "date": "2026-10-07",
+            "headline": "NASA’s Webb finds signs of Mars-sized worlds smashing together",
+            "summary": "NASA’s James Webb Space Telescope is giving astronomers a glimpse of the kinds of violent collisions that may have shaped our own solar system, including the giant impact thought to have created the Moon. By studying 21 rare “extreme debris disks” around young stars, researchers found that their dust can reveal the scale and intensity of planetary collisions.",
+            "tag": "AEROSPACE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261007042108.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261008-20",
+            "source": "ScienceDaily",
+            "date": "2026-10-07",
+            "headline": "Scientists reprogram immune cells inside the body to fight cancer",
+            "summary": "Scientists at UC San Francisco have developed a way to create cancer-fighting CAR-T cells directly inside the body, potentially avoiding the slow and extremely expensive process of removing, engineering, and reinfusing a patient’s immune cells. Using a two-particle delivery system, the researchers sent CRISPR gene-editing tools and new cancer-targeting DNA specifically into T cells, where the DNA was inserted at a precise location in the genome.",
+            "tag": "BIOTECH",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261005071532.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261008-30",
+            "source": "Ars Technica",
+            "date": "2026-10-07",
+            "headline": "“Software is over”: Bold AI developer takes aim at Adobe with open source clones",
+            "summary": "Opus-built Creative Cloud alternatives are ambitious, free, and nowhere near finished.",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 5.9
+            }
+          },
+          {
+            "id": "culture-industry-20261008-33",
+            "source": "Ars Technica",
+            "date": "2026-10-08",
+            "headline": "Microsoft event debuts new AI-friendly hardware and Windows changes",
+            "summary": "Get ready for more AI in your Windows and more AI on the desktop.",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.7
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261008-6",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-05",
+            "headline": "What Is Zionism?",
+            "summary": "O n October 7, 2023, Hamas fighters launched a surprise attack on Israel from the Gaza Strip, killing more than 1,200 people and taking 251 hostages. The attack was the worst disaster in the history of the Jewish state. Three years later, it’s clear that it was an even greater disaster for Palestinians.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/zionism-israel-palestine-history/688834/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.5,
+              "relevance": 9.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "culture-voices-20261008-12",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-07",
+            "headline": "Three Years After October 7, I Moved Back to Nahal Oz",
+            "summary": "O n the morning of August 18 , shortly after 10 a.m., a moving truck stopped in front of our home in Kibbutz Nahal Oz, the closest Israeli community to the Gaza border. The driver and two assistants began unloading dozens of boxes containing our belongings—books, clothing, electronics, kitchen appliances. Fifty minutes later, everything was off the truck, the boxes piled in the center of our living room.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/nahal-oz-israel-elections-netanyahu/688902/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.2,
+              "relevance": 7.8,
+              "total": 7.5
+            }
+          },
+          {
+            "id": "culture-voices-20261008-16",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-05",
+            "headline": "Using the Power of the Government to Win Elections",
+            "summary": "T he principle that government ought to be administered for the benefit of all citizens, not on behalf of one political party, lies at the core of America’s democratic enterprise. The Trump administration couldn’t care less: It appears to see the federal government not as something to steward on behalf of all Americans, but as an opportunity—a set of levers it can pull on to protect its reign. America’s adherence to this principle of executive neutrality has never been perfect, but as a norm it has been honored more than breached.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/government-neutrality-elections/688877/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 2.4,
+              "magnitude": 9.2,
+              "relevance": 7.8,
+              "total": 7
+            }
+          },
+          {
+            "id": "culture-voices-20261008-18",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-03",
+            "headline": "The Mainstreaming of Anti-Indian Bigotry",
+            "summary": "C hristopher Rufo, the conservative activist best known for his opposition to critical race theory, has portrayed his career as one devoted to upholding meritocracy. “The principle, first promised by the Declaration and supported today by a large majority of Americans, would mean that the state would treat all Americans equally, regardless of ancestry, and leave as much discretion as possible to individuals to determine their own futures, without the government imposing or requiring racial favoritism of any kind,” Rufo wrote two years ago in City Journal , a magazine published by the Manhattan Institute, where he is a senior fellow. “Rather than pit ourselves against one another, we should aspire to a higher standard that subordinates racial faction to a broader national identity.” He has urged Republicans to grasp the allure of this ideal, writing last year in The Free Press : “The right now has the winning argument.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/french-rufo-meritocracy-race/688870/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "culture-voices-20261008-21",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-06",
+            "headline": "Churches Are Finally Making the Moral Case Against Sports Betting",
+            "summary": "One of the puzzling things about the online sports-betting boom that has swept through American culture over the past decade is the relative slowness of religious leaders to articulate a moral case against the vice. In the past, churches were among the leading voices warning against gambling. Jerry Falwell denounced it as a sinful habit that preyed on the poor and left “little children” to pay the price.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/gambling-betting-religious-leaders/688893/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 4.4,
+              "magnitude": 6,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          }
+        ]
+      }
+    }
+  }
+}
