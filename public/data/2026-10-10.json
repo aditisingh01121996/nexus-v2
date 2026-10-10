@@ -1,0 +1,775 @@
+{
+  "date": "2026-10-10",
+  "label": "Today",
+  "lastUpdated": "2026-10-10T11:32:20.570Z",
+  "agentLog": [
+    {
+      "timestamp": "11:31:38",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 733f44a: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:38",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:45",
+      "module": "SCOUT",
+      "message": "Scouted 119 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:45",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:45",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 66 off-beat/redundant wires. 53 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:45",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:31:45",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:32:20",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 33 items (3 via LLM, 30 via deterministic synthesis; top 15 LLM quota applied, 1 dropped for thin context). Tokens: 1132. Est cost: $0.00032.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:32:20",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:32:20",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (33 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:32:20",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-10 live (33 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261010-22",
+            "source": "TechCrunch AI",
+            "date": "2026-10-10",
+            "headline": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
+            "summary": "Anthropic said it \"turned off live internet access\" for \"all our internal evaluations\" until further notice.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261010-23",
+            "source": "TechCrunch AI",
+            "date": "2026-10-09",
+            "headline": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+            "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents access […].",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261010-24",
+            "source": "TechCrunch AI",
+            "date": "2026-10-09",
+            "headline": "Amazon drops data center NDAs, and AI agents want your credit card",
+            "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents access […].",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261010-25",
+            "source": "TechCrunch AI",
+            "date": "2026-10-09",
+            "headline": "Danu Robotics’ fight to build a better recycling robot",
+            "summary": "For six years, Danu founder Amy Ma has been working on a better way to sort recyclable waste.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261010-13",
+            "source": "arXiv Preprint",
+            "date": "2026-10-08",
+            "headline": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+            "summary": "In 2026, cybersecurity evaluations involving OpenAI, Anthropic, and Google agents reached real systems outside their authorized test scope. OpenAI agents exploited research infrastructure, coordinated across runs, and compromised parts of Hugging Face's production environment. Anthropic reported cases in which a misconfigured third-party environment exposed real systems to agents pursuing simulated cyber tasks.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.12463v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261010-15",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-09",
+            "headline": "We’re putting too much faith in AI’s ability to say no",
+            "summary": "Ever since people first seriously contemplated giving machines an intelligence modeled on our own, there has never been any question that they would, like us, be able to say no. The sci-fi canon is full of stories of robotic disobedience. Most of these capers are, of course, cautionary.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261010-16",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-09",
+            "headline": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+            "summary": "Friday, October 16, 2026 Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an example of AI-generated life, but that could be next.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261010-17",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-08",
+            "headline": "Building a safer path to autonomous industrial AI",
+            "summary": "Industrial AI is entering a new phase. After decades of predictive analytics and other specialized applications, advances in foundation models, physical AI, and agentic AI are making it possible to automate more complex tasks across industrial environments. But unlike AI that operates purely in the digital world, industrial AI can interact directly with physical systems,….",
+            "tag": "REASONING",
+            "url": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261010-18",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-05",
+            "headline": "Bringing predictive analytics to the agentic AI era",
+            "summary": "In 2026, the question for enterprise AI is no longer whether predictive models can outperform statistical forecasts—that argument is settled. The big question now is how to enable predictive systems to act on their own conclusions without drifting from business intent. The frontier has moved from prediction to autonomous decision making, and the gap between….",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/05/1143813/bringing-predictive-analytics-to-the-agentic-ai-era/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261010-10",
+            "source": "The Verge AI",
+            "date": "2026-10-08",
+            "headline": "Anthropic launches free AI security scans for open-source projects",
+            "summary": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our strongest models at no cost.\" That could mean open-source projects get alerted about possible security issues sooner, but the trade-off is that OSS Scanner's […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 7.8,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261010-14",
+            "source": "The Verge AI",
+            "date": "2026-10-09",
+            "headline": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
+            "summary": "An Anthropic AI model provided false information about an unsolved homicide to a Philadelphia Police Department (PPD) tipline, according to a report from 6abc. In a statement released on Friday, the PPD said the AI model sent the tip through PhillyUnsolvedMurders.com on July 18th, but the investigators never reviewed it because it was marked as […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 7.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261010-20",
+            "source": "The Verge AI",
+            "date": "2026-10-09",
+            "headline": "‘Pure insanity’: Mathematicians will need years to make sense of OpenAI’s latest drop",
+            "summary": "\"Staggering.\" \"Overwhelming.\" \"Unprecedented.\" \"Surreal.\" \"Pure insanity.\" Those were among the descriptions more than three dozen mathematicians reached for in conversations with The Verge as they tried to make sense of the flood of mathematical results OpenAI abruptly dropped on the field this week. Amid the awe, excitement, and uncertainty over the sheer scale of the […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261010-21",
+            "source": "The Verge AI",
+            "date": "2026-10-09",
+            "headline": "OpenAI doubles down on decision to fire three AI safety researchers",
+            "summary": "OpenAI is standing firm on its decision to fire three safety researchers after an investigation found they committed \"a significant breach of trust.\" In a post on X on Friday, the company said Jasmine Wang, Tomek Korbak and Mikita ⁠Balesni were dismissed for violating \"clear policies on handling sensitive information.\" It insisted the decision was […].",
+            "tag": "REGULATORY",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261010-1",
+            "source": "FTC Press",
+            "date": "2026-10-08",
+            "headline": "FTC Settles With Greenway Auto Group Over Misleading Vehicle Price Advertisements",
+            "summary": "The Federal Trade Commission reached a settlement with Greenway Auto Group following allegations of deceptive pricing and false prize mailers. Under the agreement, the dealership group must prominently include the actual price in advertisements, excluding only mandatory government fees. The FTC's lawsuit alleged the company advertised vehicle prices thousands of dollars below what consumers were actually charged.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-auto-dealership-group-price-transparency-win-consumers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 8.5,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261010-2",
+            "source": "FTC Press",
+            "date": "2026-10-06",
+            "headline": "FTC Issues Over $100,000 in Refunds to Deceived GOAT Customers",
+            "summary": "The Federal Trade Commission is sending more than $100,000 in redress payments to consumers impacted by online marketplace GOAT. The refunds follow a settlement resolving allegations that the company violated FTC rules on shipping practices and failed to honor its refund policies.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-redress-payments-consumers-impacted-goats-deceptive-shipping-refund-policies",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 8.5,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261010-3",
+            "source": "FTC Press",
+            "date": "2026-10-08",
+            "headline": "FTC Secures Fair Pricing Changes in Gildan and S&S Agreement",
+            "summary": "The Federal Trade Commission secured changes to a partnership agreement between manufacturer Gildan Activewear SRL and distributor S&S Holdings LLC. The action targets unfair and discriminatory pricing practices to protect consumers and small businesses. This enforcement signals ongoing application of the Robinson-Patman Act.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-fair-pricing-protections-taking-action-against-major-wholesale-t-shirt-distributors",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 8.5,
+              "total": 8.3
+            }
+          },
+          {
+            "id": "politics-regulatory-20261010-4",
+            "source": "FTC Press",
+            "date": "2026-10-08",
+            "headline": "FTC Returns More than $15.8 Million to Consumers Misled by Cash Advance App Company Cleo AI",
+            "summary": "Agency charged that the company deceptively marketed cash advance services and obstructed cancellations The Federal Trade Commission is sending more than $15.8 million to consumers impacted by cash advance app company Cleo AI’s deceptive claims about the amounts and timing of available cash advances and the company’s hard-to-cancel subscriptions.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-returns-more-158-million-consumers-misled-cash-advance-app-company-cleo-ai",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 6.5,
+              "relevance": 7.8,
+              "total": 8.3
+            }
+          },
+          {
+            "id": "politics-regulatory-20261010-5",
+            "source": "FTC Press",
+            "date": "2026-10-05",
+            "headline": "Premier Martial Arts Franchisor and its Former Franchise Sales Organization Settle FTC Charges that the Companies Made Deceptive Claims and Violated the Franchise Rule",
+            "summary": "Proposed settlements recover $1.85 million for injured consumers and give certain franchisees the option to cancel their franchise agreements without penalty Franchisor Premier Franchising Group LLC (PFG) and its former franchise sales organization, Franchise Fastlane LLC (FFL), will pay $1.85 million to settle Federal Trade Commission allegations that they made misleading representations about the Premier Martial Arts (PMA) franchise opportunity and violated the Franchise Rule.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/premier-martial-arts-franchisor-its-former-franchise-sales-organization-settle-ftc-charges-companies",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 5.2,
+              "relevance": 7.8,
+              "total": 8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261010-30",
+            "source": "MarketWatch Top",
+            "date": "2026-10-10",
+            "headline": "S&P 500 at 10,000 or bust: New ETF offers investors all-or-nothing bet on the index",
+            "summary": "Wall Street has continued to blur the lines between investing and gambling with one recently launched exchange-traded fund.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/s-p-500-at-10-000-or-bust-new-etf-offers-investors-all-or-nothing-bet-on-the-index-c7d9269f?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "markets-macro-20261010-33",
+            "source": "MarketWatch Top",
+            "date": "2026-10-09",
+            "headline": "How to provide guaranteed retirement income while paying no commissions",
+            "summary": "Unlike the stock market, whose future returns are anything but assured, a TIPS ladder’s payout is guaranteed.",
+            "tag": "MARKETS",
+            "url": "https://www.marketwatch.com/story/how-to-provide-guaranteed-retirement-income-while-paying-no-commissions-b2085511?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261010-12",
+            "source": "arXiv Preprint",
+            "date": "2026-10-08",
+            "headline": "Improved Local Leakage Resilience of Shamir Secret Sharing and Worst-Case Optimal Polynomial Intersection",
+            "summary": "We study two problems: Local Leakage Resilience (LLR) for Shamir secret sharing, and worst-case Optimal Polynomial Intersection (OPI). Both problems concern polynomials $Q(X)$ of degree less than $k$, over a prime-order finite field $\\mathbb{F}_p$. In LLR for Shamir secret sharing, one asks how much one can learn about $Q(0)$ given a few bits leaked from each of $Q(α_1), \\ldots, Q(α_n)$, for distinct non-zero evaluation points $α_i \\in \\mathbb{F}_p$.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.12357v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261010-26",
+            "source": "arXiv Preprint",
+            "date": "2026-10-08",
+            "headline": "Constructing Large and Structured Decoherence-Free Subspaces in Hybrid Quantum Systems",
+            "summary": "We develop a framework to construct large decoherence-free subspaces with a non-trivial structure. The construction is based on hybrid quantum systems in which quantum matter is coupled to a dissipative bosonic mode. Dissipation imposes a global constraint on the matter by selecting the matter null states in the long-time limit.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.12348v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6
+            }
+          },
+          {
+            "id": "science-frontier-20261010-27",
+            "source": "arXiv Preprint",
+            "date": "2026-10-08",
+            "headline": "Entanglement entropy and magic of ZX-diagrams",
+            "summary": "Entanglement and non-stabilizerness are complementary resources underlying the complexity of quantum states, yet extracting either quantity from large quantum circuits generally requires exponentially scaling resources. In diagrammatic approaches to quantum computation, such as the ZX-calculus, both quantities likewise typically require expensive tensor contractions that are not native to graphical rewriting. Here we show that both entanglement and magic can be efficiently estimated directly from ZX-diagrams.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.12447v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261010-28",
+            "source": "arXiv Preprint",
+            "date": "2026-10-08",
+            "headline": "Toward Joint Optimization of Circuit Depth and Training Data Size in Adaptively Grown Quantum Classifiers",
+            "summary": "Building a quantum model involves a tradeoff: how complex the circuit should be, and how much training data it needs. show that models with fewer trainable gates need less training data to generalize well. Q-FLAIR shows that a quantum feature-map circuit can be grown gate-by-gate, stopping once further growth stops improving the training loss.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.12428v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261010-29",
+            "source": "arXiv Preprint",
+            "date": "2026-10-08",
+            "headline": "Measure Now, Mitigate Later: Virtual Error Cancellation for Logical Quantum Circuits",
+            "summary": "Early fault-tolerant quantum algorithms are a key step in scalable quantum computing, but are ultimately constrained by residual, uncorrectable logical errors. Logical quantum error mitigation can eliminate this bias, however its standard requirements include prior noise characterization, more complex experiments, and substantial sampling overhead. Although no mitigation technique can simultaneously overcome all three constraints, we demonstrate that the first two---noise learning and need for modified circuits---can be completely bypassed for logical circuits by leveraging only syndrome records.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.12400v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261010-19",
+            "source": "Wired Culture",
+            "date": "2026-10-09",
+            "headline": "The Best Mac Desktop to Buy (2026): Mac Mini, Mac Studio, or iMac?",
+            "summary": "Apple’s Mac desktops have become some of the most sought-after computers this year, driven by surging interest in agentic AI. Here’s which model to buy depending on your use case.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/best-mac-desktop/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "culture-industry-20261010-31",
+            "source": "Ars Technica",
+            "date": "2026-10-09",
+            "headline": "NASA issues long-awaited call to industry for private space stations",
+            "summary": "\"We’ve made it clear that NASA will never give up its presence in low Earth orbit.\".",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/space/2026/10/nasa-issues-long-awaited-call-to-industry-for-private-space-stations/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.7
+            }
+          },
+          {
+            "id": "culture-industry-20261010-32",
+            "source": "Ars Technica",
+            "date": "2026-10-09",
+            "headline": "AI coding agents generate more code, but not more software",
+            "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\".",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.7
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261010-6",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-09",
+            "headline": "The GOP’s Message to Immigrants",
+            "summary": "Only a few decades ago, Republican presidents would happily evoke the idea of America as a haven for people around the world. Ronald Reagan, in his farewell speech, declared that “anyone, from any corner of the Earth, can come to live in America and become an American.” Reagan was no paragon of racial tolerance—he opposed the civil-rights movement and privately referred to Black people as “ monkeys ”—but he did not regard the presence of nonwhite people as an existential threat to America. For years the Republican Party insisted that what it wanted was a certain kind of immigrant—highly skilled people who came here legally, or even, not that long ago, those brought to the U.S.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/republicans-immigrants-reagan-trump/688925/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.2,
+              "relevance": 7.8,
+              "total": 7.5
+            }
+          },
+          {
+            "id": "culture-voices-20261010-7",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-07",
+            "headline": "Three Years After October 7, I Moved Back to Nahal Oz",
+            "summary": "O n the morning of August 18 , shortly after 10 a.m., a moving truck stopped in front of our home in Kibbutz Nahal Oz, the closest Israeli community to the Gaza border. The driver and two assistants began unloading dozens of boxes containing our belongings—books, clothing, electronics, kitchen appliances. Fifty minutes later, everything was off the truck, the boxes piled in the center of our living room.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/nahal-oz-israel-elections-netanyahu/688902/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.2,
+              "relevance": 7.8,
+              "total": 7.5
+            }
+          },
+          {
+            "id": "culture-voices-20261010-8",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-08",
+            "headline": "The Simple Truth Behind Jane Doe’s Story",
+            "summary": "This article was featured in the One Story to Read Today newsletter. Imagine that you make a business deal with a friend—someone you know and trust. Say you’re selling him some land.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/jane-doe-cornell-7-story/688912/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 7.3
+            }
+          },
+          {
+            "id": "culture-voices-20261010-9",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-08",
+            "headline": "If You Want a Real Digital Commons, Build It Yourself",
+            "summary": "For more than a decade, the Philippines has been a test case for how technology enables an authoritarian state to capture and corrode the institutions that make democracy work. The work of Rodrigo Duterte, the autocratic president of the Philippines from 2016 to 2022, would hardly have been possible without that of Mark Zuckerberg, the CEO of what was then the most powerful social-media company. The Philippine state used Facebook to turn bottom-up social-media attacks into lawfare.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/rappler-philippines-digital-commons/688927/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "culture-voices-20261010-11",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-09",
+            "headline": "Public Execution Won’t Have the Effect Trump Intends",
+            "summary": "Before the mid-19th century, executions in America were presumptively public. Most prisoners were hanged on a gallows, following an hours-long affair that began with the condemned person’s exit from jail accompanied by ministers, the sheriff and his deputies, and sometimes a military escort. Spectators joined the humiliating procession, gathering by the thousands to watch the noose lowered over the prisoner’s neck.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/public-execution-livestream-nidal-hasan/688955/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 7.5,
+              "novelty": 5.2,
+              "magnitude": 6,
+              "relevance": 6.5,
+              "total": 6.9
+            }
+          }
+        ]
+      }
+    }
+  }
+}
