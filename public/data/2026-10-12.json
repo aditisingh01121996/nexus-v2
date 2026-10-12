@@ -1,0 +1,795 @@
+{
+  "date": "2026-10-12",
+  "label": "Today",
+  "lastUpdated": "2026-10-12T13:48:34.335Z",
+  "agentLog": [
+    {
+      "timestamp": "13:47:52",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 212711b: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:47:52",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:48:01",
+      "module": "SCOUT",
+      "message": "Scouted 111 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:48:01",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:48:02",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 60 off-beat/redundant wires. 51 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:48:02",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:48:02",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:48:34",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 34 items (15 via LLM, 19 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 24087. Est cost: $0.00437.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:48:34",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:48:34",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (34 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:48:34",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-12 live (34 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261012-9",
+            "source": "TechCrunch AI",
+            "date": "2026-10-12",
+            "headline": "Former Plaud executive raises $26M for ambient listening AI app",
+            "summary": "Ambi has secured $26 million in funding to launch background ambient capture applications across iPhone, Mac, and Apple Watch. The software is designed to continuously listen to users and provide AI-driven assistance based on those recordings.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 6.5,
+              "relevance": 9.2,
+              "total": 7
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261012-21",
+            "source": "TechCrunch AI",
+            "date": "2026-10-10",
+            "headline": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+            "summary": "Is Apple hoping to get into the AI-generated podcast business?",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261012-22",
+            "source": "TechCrunch AI",
+            "date": "2026-10-10",
+            "headline": "3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream",
+            "summary": "TechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to 10,000 tech leaders. Plus, 250+ speakers are ready to share insights across 200+ sessions.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261012-15",
+            "source": "arXiv Preprint",
+            "date": "2026-10-09",
+            "headline": "Prompteina Enables Natural Language Conditioning for De Novo Protein Structure Generation",
+            "summary": "Researchers developed Prompteina, the first all-atom structure generation model driven by natural language objectives, trained on a dataset of 1.8 million structures and 50 million captions. The model outperforms baselines across multiple structural properties, binder design targets, and iterative in silico feedback scenarios. Experimental validation against GM2A identified nine binders, including a strongest apparent KD of 107 nM.",
+            "tag": "AI-VENTURE",
+            "url": "http://arxiv.org/abs/2610.13917v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261012-16",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-09",
+            "headline": "We’re putting too much faith in AI’s ability to say no",
+            "summary": "Ever since people first seriously contemplated giving machines an intelligence modeled on our own, there has never been any question that they would, like us, be able to say no. The sci-fi canon is full of stories of robotic disobedience. Most of these capers are, of course, cautionary.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261012-17",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-09",
+            "headline": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+            "summary": "Friday, October 16, 2026 Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an example of AI-generated life, but that could be next.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261012-18",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-08",
+            "headline": "Building a safer path to autonomous industrial AI",
+            "summary": "Industrial AI is entering a new phase. After decades of predictive analytics and other specialized applications, advances in foundation models, physical AI, and agentic AI are making it possible to automate more complex tasks across industrial environments. But unlike AI that operates purely in the digital world, industrial AI can interact directly with physical systems,….",
+            "tag": "REASONING",
+            "url": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261012-19",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-05",
+            "headline": "Bringing predictive analytics to the agentic AI era",
+            "summary": "In 2026, the question for enterprise AI is no longer whether predictive models can outperform statistical forecasts—that argument is settled. The big question now is how to enable predictive systems to act on their own conclusions without drifting from business intent. The frontier has moved from prediction to autonomous decision making, and the gap between….",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/05/1143813/bringing-predictive-analytics-to-the-agentic-ai-era/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261012-23",
+            "source": "The Verge AI",
+            "date": "2026-10-10",
+            "headline": "Satya Nadella says we should assume all AI models are ‘compromised’",
+            "summary": "In a lengthy post on X, Microsoft's CEO laid out his views on the dangers posed by highly advanced AI models and how to confront those risks. Nadella says we can no longer accept a world where AI is treated as a \"set of nested black boxes\" whose advice and actions we simply accept or […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 7.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261012-24",
+            "source": "The Verge AI",
+            "date": "2026-10-10",
+            "headline": "Anthropic is cutting off its internal evaluations from the internet",
+            "summary": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model actions,\" including submitting a false tip regarding an unsolved murder, that led to the decision. Although the impact of these behaviors was minimal […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261012-25",
+            "source": "The Verge AI",
+            "date": "2026-10-10",
+            "headline": "AI agent makers are promising privacy — will they deliver?",
+            "summary": "At this year's OpenAI DevDay, CEO Sam Altman unveiled the company's new AI agent Dots - and told the crowd that the company wants to \"set a new standard for privacy in frontier AI.\" OpenAI would spend the day taking veiled shots at Meta's Muse, its primary competitor, for failing to keep users' data safe.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261012-26",
+            "source": "The Verge AI",
+            "date": "2026-10-09",
+            "headline": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
+            "summary": "An Anthropic AI model provided false information about an unsolved homicide to a Philadelphia Police Department (PPD) tipline, according to a report from 6abc. In a statement released on Friday, the PPD said the AI model sent the tip through PhillyUnsolvedMurders.com on July 18th, but the investigators never reviewed it because it was marked as […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261012-27",
+            "source": "The Verge AI",
+            "date": "2026-10-09",
+            "headline": "‘Pure insanity’: Mathematicians will need years to make sense of OpenAI’s latest drop",
+            "summary": "\"Staggering.\" \"Overwhelming.\" \"Unprecedented.\" \"Surreal.\" \"Pure insanity.\" Those were among the descriptions more than three dozen mathematicians reached for in conversations with The Verge as they tried to make sense of the flood of mathematical results OpenAI abruptly dropped on the field this week. Amid the awe, excitement, and uncertainty over the sheer scale of the […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261012-1",
+            "source": "FTC Press",
+            "date": "2026-10-08",
+            "headline": "FTC Secures Settlement With Greenway Auto Group Over Deceptive Pricing",
+            "summary": "The Federal Trade Commission reached a settlement with Greenway Auto Group following a lawsuit that alleged the dealership group advertised vehicle prices thousands of dollars below actual costs and used deceptive prize mailers. Under the agreement, Greenway must prominently feature the total required price in advertisements, excluding only government-mandated fees.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-auto-dealership-group-price-transparency-win-consumers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 9.2,
+              "total": 8.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261012-3",
+            "source": "FTC Press",
+            "date": "2026-10-06",
+            "headline": "FTC Issues Over $100,000 in Redress Payments to GOAT Customers",
+            "summary": "The Federal Trade Commission is distributing over $100,000 in redress payments to consumers affected by GOAT. These refunds stem from a settlement addressing allegations that the online marketplace violated refund policies and shipping rules.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-redress-payments-consumers-impacted-goats-deceptive-shipping-refund-policies",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 9,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261012-5",
+            "source": "FTC Press",
+            "date": "2026-10-08",
+            "headline": "FTC Refunds $15.8 Million to Consumers Misled by Cleo AI",
+            "summary": "The Federal Trade Commission is distributing over $15.8 million to consumers affected by Cleo AI. The agency charged the cash advance app company with deceptively marketing cash advance amounts and timing while maintaining hard-to-cancel subscriptions.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-returns-more-158-million-consumers-misled-cash-advance-app-company-cleo-ai",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 6.5,
+              "relevance": 9.2,
+              "total": 8.5
+            }
+          },
+          {
+            "id": "politics-regulatory-20261012-4",
+            "source": "FTC Press",
+            "date": "2026-10-08",
+            "headline": "FTC Secures Fair Pricing Protections Through Gildan and S&S Action",
+            "summary": "The Federal Trade Commission secured changes to a partnership agreement between Gildan Activewear SRL and S&S Holdings LLC. This action enforces the Robinson-Patman Act to protect small businesses and consumers from discriminatory pricing practices.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-fair-pricing-protections-taking-action-against-major-wholesale-t-shirt-distributors",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 9,
+              "total": 8.4
+            }
+          },
+          {
+            "id": "politics-regulatory-20261012-6",
+            "source": "FTC Press",
+            "date": "2026-10-05",
+            "headline": "Premier Martial Arts Franchisor and Sales Organization Settle FTC Charges",
+            "summary": "Premier Franchising Group LLC and Franchise Fastlane LLC will pay $1.85 million to settle FTC allegations regarding deceptive claims and Franchise Rule violations. The proposed settlements provide financial recovery for injured consumers and allow certain franchisees to cancel their agreements without penalty.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/premier-martial-arts-franchisor-its-former-franchise-sales-organization-settle-ftc-charges-companies",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 5.2,
+              "relevance": 9,
+              "total": 8.2
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261012-31",
+            "source": "MarketWatch Top",
+            "date": "2026-10-12",
+            "headline": "The bull market is turning 4 years old — but yields could crash the party",
+            "summary": "For four years, tech has been the answer to almost every question about this bull market.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/the-bull-market-is-turning-4-years-old-but-yields-could-crash-the-party-1305fe6c?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "markets-macro-20261012-32",
+            "source": "MarketWatch Top",
+            "date": "2026-10-12",
+            "headline": "Mired in their worst losing streak in years, small caps could be the best way for investors to play crucial CPI data",
+            "summary": "Stuart Kaiser, of Citigroup, recommends buying iShares Russell 2000 exchange-traded fund call options before the consumer-price index for September is released on Wednesday.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/mired-in-their-worst-losing-streak-in-years-small-caps-could-be-the-best-way-for-investors-to-play-crucial-cpi-data-40e2f716?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "markets-macro-20261012-33",
+            "source": "MarketWatch Top",
+            "date": "2026-10-12",
+            "headline": "Bank earnings to shed the first light on how higher yields are affecting the economy",
+            "summary": "The big banks kick off earnings season on Tuesday, to provide a first read on the health of the economy in a rising-yield environment.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/bank-earnings-to-shed-the-first-light-on-how-higher-yields-are-affecting-the-economy-cf3763ef?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261012-12",
+            "source": "ScienceDaily",
+            "date": "2026-10-12",
+            "headline": "Protein decline drives aging while amino acid fights memory loss",
+            "summary": "Scientists discovered that declining levels of the protein Menin contribute to aging, and restoring it in older mice reversed multiple age-related changes within 30 days. Additionally, supplementing with the amino acid D-serine improved memory and learning in mice, suggesting a potential new treatment for cognitive decline.",
+            "tag": "BIOLOGY",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261009025708.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 7
+            }
+          },
+          {
+            "id": "science-frontier-20261012-13",
+            "source": "ScienceDaily",
+            "date": "2026-10-11",
+            "headline": "Fundamental physical constants may be finely balanced for life",
+            "summary": "Scientists discovered that the universe's fundamental physical constants could be finely balanced to enable life, as tiny changes might disrupt essential biological processes. These life-friendly conditions surprisingly existed billions of years before living cells appeared, raising questions about why physics laws suit life.",
+            "tag": "BIOPHYSICS",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261009025602.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 7
+            }
+          },
+          {
+            "id": "science-frontier-20261012-11",
+            "source": "arXiv Preprint",
+            "date": "2026-10-09",
+            "headline": "Quantum Neural Network with Wavelet Transforms Enhances Air Pollution Nowcasting",
+            "summary": "Researchers introduced a scalable hybrid framework integrating variational quantum circuits with quantum annealing to model PM2.5 dynamics using UK urban data. The Quantum Neural Networks demonstrated intrinsic resilience to input volatility and outperformed classical baselines like MLP and LSTM. Furthermore, scaling the model to 172 qubits with wavelet decomposition achieved state-of-the-art predictive fidelity.",
+            "tag": "QUANTUM_AI",
+            "url": "http://arxiv.org/abs/2610.13882v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "science-frontier-20261012-29",
+            "source": "arXiv Preprint",
+            "date": "2026-10-09",
+            "headline": "A scalable sample-based quantum diagonalization solver for general Pauli-sum Hamiltonians",
+            "summary": "A scalable ground-state solver to be used in sample-based quantum diagonalization (SQD) is presented. The solver is built on JAX API, and is intended to be run on GPU platforms and possibly many-GPU high-performance computing facilities. It is capable of subspace diagonalization in up to $2^{30}$-dimensional subspace, with possible upgrades to enable even larger-scale operations.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.13907v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6
+            }
+          },
+          {
+            "id": "science-frontier-20261012-30",
+            "source": "arXiv Preprint",
+            "date": "2026-10-09",
+            "headline": "An entangling Hubbard quasiparticle collider on a digital quantum processor",
+            "summary": "Scattering of quasiparticles provides direct access to the interactions that govern strongly correlated systems. In this work, we realize the quasiparticle scattering experiment of the Fermi-Hubbard model on a digital quantum processor by colliding a doublon and a holon in the half-filled chain of 21 sites encoded on 42 qubits of the ibm_boston processor. For the first time, we measure the transmission probability of quasiparticles of the Hubbard model on quantum hardware, which agrees with the Bethe-ansatz scattering matrix without free parameters.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.13946v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261012-20",
+            "source": "Wired Culture",
+            "date": "2026-10-09",
+            "headline": "The Best Mac Desktop to Buy (2026): Mac Mini, Mac Studio, or iMac?",
+            "summary": "Apple’s Mac desktops have become some of the most sought-after computers this year, driven by surging interest in agentic AI. Here’s which model to buy depending on your use case.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/best-mac-desktop/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "culture-industry-20261012-28",
+            "source": "Wired Culture",
+            "date": "2026-10-11",
+            "headline": "Inside the Muslim Manosphere Policing Women Online",
+            "summary": "From Red Pill coaches to “Dawah Bros,” influencers are dressing up hypermasculinity and misogyny in religious language—and finding audiences across social platforms.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/inside-the-muslim-manosphere-policing-women-online/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          },
+          {
+            "id": "culture-industry-20261012-34",
+            "source": "Ars Technica",
+            "date": "2026-10-09",
+            "headline": "NASA issues long-awaited call to industry for private space stations",
+            "summary": "\"We’ve made it clear that NASA will never give up its presence in low Earth orbit.\".",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/space/2026/10/nasa-issues-long-awaited-call-to-industry-for-private-space-stations/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.7
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261012-2",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-11",
+            "headline": "Texas Universities Face Sweeping State Censorship and Curriculum Overhauls",
+            "summary": "State laws and university policies in Texas are strictly regulating course materials, eliminating specific academic majors, and restricting discussions on race, gender, and sexuality across major public systems. Faculty members report widespread self-censorship, the use of AI tools to flag controversial texts, and the cancellation of courses and targeted firings. Meanwhile, institutions like UT Austin are quietly restructuring core requirements to emphasize the European intellectual tradition.",
+            "tag": "HIGHER_ED",
+            "url": "https://www.theatlantic.com/ideas/2026/10/texas-university-censorship-free-speech/688827/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.2,
+              "relevance": 9.5,
+              "total": 8.6
+            }
+          },
+          {
+            "id": "culture-voices-20261012-7",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-11",
+            "headline": "Left-Wing Influencer Jennifer Welch Champions Aggressive Rhetoric",
+            "summary": "Podcaster and author Jennifer Welch exemplifies a growing progressive movement that mimics right-wing political tactics by adopting aggressive, name-calling rhetoric. Her book 'Not Today, Fascists' and podcast 'I've Had It' argue that Democrats must abandon compromise and fight dirty to win political battles. Welch's approach reflects a broader trend of political commentators cocooning within ideological echo chambers.",
+            "tag": "CULTURE",
+            "url": "https://www.theatlantic.com/ideas/2026/10/influencer-who-wants-democrats-fight-dirty/688965/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "culture-voices-20261012-10",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-09",
+            "headline": "Trump Administration Plans Nation’s First Public Execution in 90 Years",
+            "summary": "The Trump administration has authorized the public livestreaming of the execution of Nidal Hasan, the military psychiatrist who carried out the 2009 Fort Hood mass shooting. While the administration hopes to demonstrate power and achieve a deterrent effect, historical precedents and volatile public reactions suggest the strategy could easily backfire and fail to deter crime. Furthermore, the spectacle risks validating the narrative that the United States is a barbarous nation.",
+            "tag": "VOICES",
+            "url": "https://www.theatlantic.com/ideas/2026/10/public-execution-livestream-nidal-hasan/688955/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 6,
+              "relevance": 9.2,
+              "total": 7.1
+            }
+          },
+          {
+            "id": "culture-voices-20261012-8",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-12",
+            "headline": "Streamer Hasan Piker aims to advance Marxist-Leninist goals within the Democratic Party",
+            "summary": "Left-wing streamer Hasan Piker has gained influence within the Democratic Party coalition, despite holding Marxist-Leninist views, admiring communist regimes, and dismissing their human toll. While Piker and some Democratic figures frame his role as that of a useful media megaphone, he views his work as agitative propaganda designed to gradually shift the party's ideology toward socialism. Critics and analysts warn that his long-term project involves capturing the party rather than genuinely supporting a pro-democracy coalition.",
+            "tag": "POLITICS",
+            "url": "https://www.theatlantic.com/ideas/2026/10/hasan-piker-podcast-democrat/688956/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "culture-voices-20261012-14",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-12",
+            "headline": "Exploring the cultural reality of AI-assisted programming and vibe coding",
+            "summary": "An author reflects on a year of building small, custom software programs with generative artificial intelligence. The experience reveals that while AI makes coding more accessible and collaborative, it ultimately reinforces existing industrial power structures rather than truly democratizing software creation.",
+            "tag": "VIBE_CODING",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-programming-big-tech-regulations/688960/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 6.7
+            }
+          }
+        ]
+      }
+    }
+  }
+}
