@@ -1,0 +1,695 @@
+{
+  "date": "2026-10-14",
+  "label": "Today",
+  "lastUpdated": "2026-10-14T10:48:36.861Z",
+  "agentLog": [
+    {
+      "timestamp": "10:47:49",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit adff5ea: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:47:49",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:47:55",
+      "module": "SCOUT",
+      "message": "Scouted 118 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:47:55",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:47:55",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 69 off-beat/redundant wires. 49 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:47:55",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:47:55",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:48:36",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 29 items (15 via LLM, 14 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 36149. Est cost: $0.00621.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:48:36",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:48:36",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (29 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:48:36",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-14 live (29 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261014-22",
+            "source": "TechCrunch AI",
+            "date": "2026-10-13",
+            "headline": "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
+            "summary": "Max Hodak, the former president and co-founder of Neuralink, detailed onstage at TechCrunch Disrupt how his company's work with PRIMA is part of its path toward a novel brain-computer interface (BCI).",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261014-23",
+            "source": "TechCrunch AI",
+            "date": "2026-10-13",
+            "headline": "Laplace Intelligence red-teams robots and self-driving cars before they hit the real world",
+            "summary": "University of Michigan spinout Laplace Intelligence uses AI agents and interactive simulation to stress-test robots and self-driving vehicles before deployment. The profitable startup is competing in Startup Battlefield at TechCrunch Disrupt, October 13-15 in San Francisco.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/13/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261014-7",
+            "source": "arXiv Preprint",
+            "date": "2026-10-13",
+            "headline": "AesCode Enhances Aesthetic Code Generation Using Decoupled Cross-Modal Rewards",
+            "summary": "Researchers introduce AesCode to generate structured code for information-rich visual artifacts by combining content prompts with aesthetic guidance from reference images. The framework uses a design graph and decoupled cross-modal rewards—combining deterministic verifiers and a Vision-Language Model judge—optimized through reinforcement learning. Evaluations show that AesCode-8B and AesCode-32B significantly improve visual quality compared to baselines, achieving performance comparable to closed-source frontier models.",
+            "tag": "RESEARCH",
+            "url": "http://arxiv.org/abs/2610.18860v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261014-10",
+            "source": "arXiv Preprint",
+            "date": "2026-10-13",
+            "headline": "Tev introduces dense progress rewards to scale long-horizon agentic environments",
+            "summary": "Researchers developed Tev-Gym, a dataset featuring 1,170 verified task environments across seven domains with dense progressive rewards derived from a latent-world approach. Using a progress-potential reward shaping training recipe, the resulting Tev-27B model matches GPT-6 Astra and Claude Opus 5 on computing and math sciences domains and generalizes to Terminal-Bench subsets.",
+            "tag": "AI_AGENTS",
+            "url": "http://arxiv.org/abs/2610.18868v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261014-11",
+            "source": "arXiv Preprint",
+            "date": "2026-10-13",
+            "headline": "ChunkAct Introduces Action Chunking to Improve Agentic Robotics Efficiency",
+            "summary": "Agentic robotics often suffers from high computational costs because every primitive requires a round of LLM reasoning over the interaction history. ChunkAct addresses this by compiling memory into chained primitive chunks offline, allowing autonomous execution online and reserving the planner for decisions requiring reasoning. On LIBERO-Pro, the method improves task success by 5.0 points while reducing LLM calls, input tokens, and output tokens.",
+            "tag": "ROBOTICS",
+            "url": "http://arxiv.org/abs/2610.18874v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 9.2,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261014-15",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-13",
+            "headline": "Defunct crypto startup monetizes digital archives by selling data to AI labs",
+            "summary": "Keelan Miskell successfully monetized his winding-down crypto startup by selling its digital archives, code base, and pending assets to artificial intelligence labs for training data. Miskell has already netted approximately $25,000 from the transaction despite the firm being only a few years old with anonymous users.",
+            "tag": "AI_DATA",
+            "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261014-14",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-13",
+            "headline": "Anthropic Report Raises Major Cyberattack Risks Concerning Model GLM-5.3",
+            "summary": "Anthropic recently released a report arguing that the model GLM-5.3 poses a major cyberattack risk. This highlights ongoing industry debates regarding whether the real benefits of open models outweigh their potential security risks.",
+            "tag": "AI-VENTURE",
+            "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 6.7
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261014-18",
+            "source": "The Verge AI",
+            "date": "2026-10-13",
+            "headline": "I don’t miss the camera on the Ray-Ban Meta Audio glasses",
+            "summary": "The other day I whizzed past several people while running in the park, my playlist blasting at full volume. The next morning, I smiled at a barista while ordering a caramel apple-flavored matcha latte. Afterward, I sat on a park bench reading a book, called up a pal to chat about her recent trip to […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1009128/ray-ban-meta-audio-glasses-review-smart-glasses-headphones-wearables",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261014-19",
+            "source": "The Verge AI",
+            "date": "2026-10-13",
+            "headline": "Google makes it easier to launch your vibe-coded apps",
+            "summary": "The next time you vibe-code a custom app with Google's AI Studio, you won't have to connect your phone to a computer to install it. On Tuesday, Google announced a new feature in the US that will allow you to launch personal apps directly through the Play Store. Google first launched the ability to vibe-code […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 7.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261014-20",
+            "source": "The Verge AI",
+            "date": "2026-10-13",
+            "headline": "OpenAI employee arrested for allegedly planting a bug in a conference room",
+            "summary": "An OpenAI engineer was arrested after the company said it discovered a \"sophisticated recording device\" hidden in one of its offices. The employee was identified as Abdulrahman Alfozan, a 35-year-old Saudi national. Alfozan is charged with using or endeavoring to use a device to intercept oral communications, according to a press release from the Department […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261014-24",
+            "source": "The Verge AI",
+            "date": "2026-10-13",
+            "headline": "Xbox is officially embracing the chaos of AI-powered game ports",
+            "summary": "Retro gaming is going through a wild time at the moment, thanks to decompilations and recompilations that are letting gamers port classic titles to new devices, or merge code from two different games into a single new experience. Microsoft has witnessed skateboarding being modded into Call of Duty and Halo being played in a web […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261014-25",
+            "source": "The Verge AI",
+            "date": "2026-10-13",
+            "headline": "Facebook will let you customize your feed algorithm using AI",
+            "summary": "Facebook's new \"Your Algorithm\" feature will let you directly add and manage topics you want to see in your feed and Facebook Reels. Meta says your recommendations \"respond right away\" after you make updates using the new feature by hitting \"interested\" or \"not interested\" for different topics. Your Algorithm previously launched on Instagram earlier this […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261014-1",
+            "source": "FTC Press",
+            "date": "2026-10-08",
+            "headline": "FTC Secures Settlement With Greenway Auto Group Over Price Deception",
+            "summary": "The Federal Trade Commission reached a settlement with Greenway Auto Group following a lawsuit that alleged the company deceived consumers through misleading price advertisements and false prize mailers. Under the agreement, Greenway must prominently display the actual vehicle price, excluding only government-required charges, in all future advertisements.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-auto-dealership-group-price-transparency-win-consumers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 9.2,
+              "total": 8.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261014-4",
+            "source": "FTC Press",
+            "date": "2026-10-08",
+            "headline": "FTC Refunds $15.8 Million to Consumers Misled by Cleo AI",
+            "summary": "The Federal Trade Commission is distributing over $15.8 million to consumers affected by Cleo AI. The agency charged the cash advance app company with deceptively marketing cash advance amounts and timing while obstructing subscription cancellations.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-returns-more-158-million-consumers-misled-cash-advance-app-company-cleo-ai",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 6.5,
+              "relevance": 9.2,
+              "total": 8.5
+            }
+          },
+          {
+            "id": "politics-regulatory-20261014-3",
+            "source": "FTC Press",
+            "date": "2026-10-08",
+            "headline": "FTC Secures Fair Pricing Protections Through Gildan and S&S Action",
+            "summary": "The Federal Trade Commission secured changes to a partnership agreement between Gildan Activewear and S&S Holdings. This action enforces the Robinson-Patman Act to protect small businesses and consumers from discriminatory pricing practices.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-fair-pricing-protections-taking-action-against-major-wholesale-t-shirt-distributors",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 9,
+              "total": 8.4
+            }
+          },
+          {
+            "id": "politics-regulatory-20261014-5",
+            "source": "FTC Press",
+            "date": "2026-10-13",
+            "headline": "FTC Halts Digital Forensics Sextortion Relief Scheme",
+            "summary": "A federal court has temporarily halted Digital Forensics Corporation LLC and its CEO after the FTC alleged they defrauded consumers of millions. The company falsely promised to identify criminals and end sextortion attacks while charging thousands of dollars without delivering services.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-operator-sextortion-relief-scheme-misleading-consumers-believing-it-would-identify",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9,
+              "total": 8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261014-8",
+            "source": "FTC Press",
+            "date": "2026-10-07",
+            "headline": "FTC and USDA Launch Joint Inquiry Into Ag Equipment Markets",
+            "summary": "The Federal Trade Commission and the U.S. Department of Agriculture initiated a joint public inquiry focusing on agricultural equipment manufacturing and distribution markets. The agencies are seeking public comment on potential anticompetitive conduct and other issues affecting these markets.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-usda-seek-public-comment-agricultural-equipment-manufacturing-distribution-market-practices",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9,
+              "total": 8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261014-28",
+            "source": "MarketWatch Top",
+            "date": "2026-10-14",
+            "headline": "‘I earn $110,000 a year’: I lost my home in the Great Recession. I’m renting in my 50s. Why is that judged as failure?",
+            "summary": "“I lost my job and eventually my home — and it’s still hard.”.",
+            "tag": "MARKETS",
+            "url": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261014-9",
+            "source": "arXiv Preprint",
+            "date": "2026-10-13",
+            "headline": "Researchers demonstrate deterministic and programmable generation of mechanical multipartite entangled states.",
+            "summary": "Scientists achieved deterministic and programmable preparation of multipartite entangled states among phonon modes in a high-overtone bulk acoustic wave resonator coupled to a superconducting transmon qubit. By using optimal-control-engineered isometries, the team generated matrix product states including W, GHZ, and cluster states, and certified genuine entanglement among up to four modes. This approach establishes a scalable method for mechanical systems with applications in multiparameter sensing and quantum mechanics tests.",
+            "tag": "QUANTUM",
+            "url": "http://arxiv.org/abs/2610.18778v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "science-frontier-20261014-16",
+            "source": "ScienceDaily",
+            "date": "2026-10-13",
+            "headline": "James Webb reveals a massive cosmic structure that challenges our understanding of the Universe",
+            "summary": "NASA’s James Webb Space Telescope has revealed an ancient galaxy cluster with an unexpectedly dense concentration of dark matter, challenging theories about how the universe developed. The discovery also uncovered a surprising connection between scattered starlight and invisible dark matter that could transform how astronomers study the early cosmos.",
+            "tag": "AEROSPACE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261012185021.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261014-26",
+            "source": "arXiv Preprint",
+            "date": "2026-10-13",
+            "headline": "Quantum-enhanced mechanical sensing with machine-learning estimation",
+            "summary": "Massive mechanical oscillators couple directly to forces, accelerations and gravity, making them attractive probes of new physics and of quantum mechanics at macroscopic scales. Pushing sensitivities beyond the standard quantum limit for signals of unknown phase requires non-Gaussian quantum states, whose metrological advantage has so far been confined to lighter systems such as trapped ions. Here we operate a microgram-scale acoustic mode of a high-overtone bulk acoustic wave resonator as a phase-insensitive quantum-enhanced sensor.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.18776v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6
+            }
+          },
+          {
+            "id": "science-frontier-20261014-27",
+            "source": "arXiv Preprint",
+            "date": "2026-10-13",
+            "headline": "Gaussian entanglement and quantum communication: geodesic optimization and multimode bounds",
+            "summary": "Loss and noise limit the use of light to distribute entanglement, transmit quantum information, and establish secret keys. Gaussian states have a compact description in terms of means and covariance matrices, but their entanglement still requires global optimization. We develop a framework for computing Gaussian-restricted versions of the relative entropy of entanglement and Rains entanglement.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.18827v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261014-29",
+            "source": "Phys.org",
+            "date": "2026-10-13",
+            "headline": "Ultrashort laser pulses offer a new way to probe electrons' quantum geometry",
+            "summary": "Researchers at Friedrich Schiller University Jena and the University of Regensburg have developed a method for determining, using light, a quantum property of electrons that has hitherto been difficult to access. The focus is on what is known as Berry curvature—a quantity that describes certain geometric properties of the quantum mechanical states of electrons. The researchers measured it in a layer of the semiconductor tungsten diselenide, just one atomic layer thick, using ultrashort laser pulses.",
+            "tag": "PHYSICS",
+            "url": "https://phys.org/news/2026-10-ultrashort-laser-pulses-probe-electrons.html",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 5.7
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261014-21",
+            "source": "Wired Culture",
+            "date": "2026-10-13",
+            "headline": "Alex Gibney’s ‘Musk’ Has a Unique Perspective on Daddy Issues",
+            "summary": "Elon Musk’s father, Errol Musk, agreed to be interviewed immediately.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/the-big-interview-podcast-alex-gibney-musk-doc/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261014-2",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-13",
+            "headline": "Jeff Bezos and Elon Musk race to vertically integrate the galaxy",
+            "summary": "Jeff Bezos and Elon Musk are engaged in a fierce, multi-decade competition to dominate the commercial space industry and build the infrastructure for an off-world economy. While SpaceX has achieved a commanding lead through rapid iteration and reusable rockets, Blue Origin is pursuing a slower, methodical approach backed by Bezos's long-term ambition for space colonization. Together, these two billionaires wield unprecedented private power over the future of human civilization without public mandate or government control.",
+            "tag": "SPACE_RACE",
+            "url": "https://www.theatlantic.com/magazine/2026/11/bezos-musk-billionaire-space-race/688690/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.8,
+              "relevance": 9.5,
+              "total": 8.8
+            }
+          },
+          {
+            "id": "culture-voices-20261014-6",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-13",
+            "headline": "Preserving the Endangered Archives of S. An-Sky in Wartime Ukraine",
+            "summary": "Scholars and archivists are working to digitize the surviving ethnographic collections of 20th-century writer S. An-sky amid ongoing conflict in Ukraine. An-sky's original expeditions documented Jewish folklore, music, and daily life in the Pale of Settlement before the civilization was largely destroyed. Despite archival damage, limited resources, and active wartime threats, the remaining materials offer vital insights into a lost cultural history.",
+            "tag": "CULTURE",
+            "url": "https://www.theatlantic.com/magazine/2026/11/an-sky-jewish-ethnography-ukraine/688697/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 7.8,
+              "relevance": 9.2,
+              "total": 8.3
+            }
+          },
+          {
+            "id": "culture-voices-20261014-13",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-13",
+            "headline": "AI-Driven Anxiety Sparks Existential Dread and Coping Strategies",
+            "summary": "Warnings from AI architects about potential human extinction have triggered widespread anxiety, psychic numbing, and despair. Drawing on historical frameworks from Viktor Frankl, Albert Camus, and C.S. Lewis, individuals seek meaning, human solidarity, and tragic optimism in the face of possible catastrophe.",
+            "tag": "AI_ANXIETY",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-end-of-world-meaning/688977/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "culture-voices-20261014-12",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-12",
+            "headline": "Left-Wing Streamer Hasan Piker Pursues a Strategy to Subvert the Democratic Party",
+            "summary": "Activist and Twitch streamer Hasan Piker has gained influence within the Democratic Party coalition, appearing with candidates on the stump and boasting of behind-the-scenes sway. However, a review of his commentary reveals that he rejects democracy in favor of a Marxist-Leninist dictatorship of the proletariat and admires authoritarian communist regimes. Rather than genuinely joining the pro-democracy coalition, Piker views the Democratic Party as a weak institution that his movement can exploit and ultimately seize.",
+            "tag": "POLITICS",
+            "url": "https://www.theatlantic.com/ideas/2026/10/hasan-piker-podcast-democrat/688956/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "culture-voices-20261014-17",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-12",
+            "headline": "The Tragedy of AI Coding",
+            "summary": "My family and I enjoy the occasional meal of delicious slow-cooked meat, but every time we visit a barbecue joint, we can’t remember whether we like the beans and slaw on offer. Some beans are sweet; others are spicy. Some slaw is vinegar based; others creamy.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-programming-big-tech-regulations/688960/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.5
+            }
+          }
+        ]
+      }
+    }
+  }
+}
