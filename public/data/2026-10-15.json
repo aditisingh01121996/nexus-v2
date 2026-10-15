@@ -1,0 +1,675 @@
+{
+  "date": "2026-10-15",
+  "label": "Today",
+  "lastUpdated": "2026-10-15T10:31:21.225Z",
+  "agentLog": [
+    {
+      "timestamp": "10:30:42",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 7d2de8e: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:30:42",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:30:48",
+      "module": "SCOUT",
+      "message": "Scouted 106 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:30:48",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:30:48",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 62 off-beat/redundant wires. 44 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:30:48",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:30:48",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:31:21",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 28 items (2 via LLM, 26 via deterministic synthesis; top 15 LLM quota applied, 1 dropped for thin context). Tokens: 16000. Est cost: $0.00251.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:31:21",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:31:21",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (28 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:31:21",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-15 live (28 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261015-8",
+            "source": "TechCrunch AI",
+            "date": "2026-10-15",
+            "headline": "Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis",
+            "summary": "The founders detailed how their startup is developing AI that can design chips, learn from each iteration, and improve subsequent designs, all with the goal of automating and accelerating the chip design process.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 6,
+              "relevance": 7.8,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261015-22",
+            "source": "TechCrunch AI",
+            "date": "2026-10-14",
+            "headline": "Save 50% on your TechCrunch Disrupt 2026 ticket and join the last 2 days in San Francisco’s Moscone West",
+            "summary": "Get a 50% discount on the last two days of TechCrunch Disrupt 2026, October 14-15, in San Francisco. Register now and join the rest of the startup ecosystem. Today, it's all about physical and software AI.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/14/save-50-on-your-techcrunch-disrupt-2026-ticket-and-join-the-last-two-days-in-san-francisco/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261015-9",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-13",
+            "headline": "Open models have real benefits. Do they outweigh the risks?",
+            "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can from the series here. Late last month, Anthropic released a report arguing that the model GLM-5.3 poses a major cyberattack risk.",
+            "tag": "REASONING",
+            "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261015-10",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-13",
+            "headline": "AI labs are buying data from dead startups to train their models",
+            "summary": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code base and a still-pending amount (likely around….",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261015-13",
+            "source": "arXiv Preprint",
+            "date": "2026-10-14",
+            "headline": "Your Transformer Is Secretly Elastic",
+            "summary": "Scaling up transformers has produced models with broad capabilities, deployed across heterogeneous hardware and fluctuating workloads. Yet, model families offer only a few fixed sizes (e.g., S, B, L), forcing users to commit to a model based on hardware and latency constraints. This rigidity is often suboptimal under varying query loads.",
+            "tag": "REASONING",
+            "url": "http://arxiv.org/abs/2610.20588v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-research-20261015-16",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-09",
+            "headline": "We’re putting too much faith in AI’s ability to say no",
+            "summary": "Ever since people first seriously contemplated giving machines an intelligence modeled on our own, there has never been any question that they would, like us, be able to say no. The sci-fi canon is full of stories of robotic disobedience. Most of these capers are, of course, cautionary.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261015-17",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-09",
+            "headline": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+            "summary": "Friday, October 16, 2026 Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an example of AI-generated life, but that could be next.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261015-14",
+            "source": "The Verge AI",
+            "date": "2026-10-14",
+            "headline": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
+            "summary": "OpenAI claims a former employee took more than 100 files related to its product plans before joining Apple. In a document filed on Wednesday, OpenAI accuses the unnamed employee of sending this information to a personal account and then presenting it to Apple leadership, including the vice president of the company's operations in Asia.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261015-15",
+            "source": "The Verge AI",
+            "date": "2026-10-14",
+            "headline": "The AI race is back on",
+            "summary": "Last week, Anthropic and OpenAI looked like they had the AI race to themselves, pulling ahead with increasingly powerful models that left their rivals in the dust. Google seemed hopelessly far behind, while Meta, despite spending billions to revive its floundering AI ambitions, had yet to establish itself as a serious contender.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261015-19",
+            "source": "The Verge AI",
+            "date": "2026-10-14",
+            "headline": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
+            "summary": "OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsuits, filed separately by Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montana, allege OpenAI unlawfully put profits over safety when […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261015-20",
+            "source": "The Verge AI",
+            "date": "2026-10-14",
+            "headline": "Microsoft has a new machine learning tool to improve weather forecasts",
+            "summary": "Old-school physics-based weather forecasting and even new AI models typically become less reliable beyond two weeks, a problem Microsoft claims to have solved using machine learning. Researchers with the company say they've found a new, cost-effective way to make more accurate weather forecasts two to six weeks in advance - allowing farmers and emergency responders […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261015-1",
+            "source": "FTC Press",
+            "date": "2026-10-08",
+            "headline": "FTC Settles Deceptive Pricing Lawsuit With Greenway Auto Group",
+            "summary": "The Federal Trade Commission reached a settlement with Greenway Auto Group over allegations of deceptive price advertising and false prize mailers. Under the agreement, the company must prominently state the actual price consumers must pay for a vehicle, excluding only government-required fees. The settlement resolves claims that Greenway charged prices thousands of dollars above its advertised rates.",
+            "tag": "FTC_SETTLEMENT",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-auto-dealership-group-price-transparency-win-consumers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.8,
+              "relevance": 8.5,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261015-3",
+            "source": "FTC Press",
+            "date": "2026-10-08",
+            "headline": "FTC Secures Fair Pricing Protections by Taking Action Against Major Wholesale T-Shirt Distributors",
+            "summary": "FTC action signals continued Robinson-Patman Act enforcement to protect consumers, small businesses The Federal Trade Commission secured changes to a partnership agreement between T-shirt manufacturer Gildan Activewear SRL and major wholesale T-shirt distributor S&S Holdings LLC that will protect small businesses and consumers from unfair and discriminatory pricing practices.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-fair-pricing-protections-taking-action-against-major-wholesale-t-shirt-distributors",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 9.5,
+              "total": 8.4
+            }
+          },
+          {
+            "id": "politics-regulatory-20261015-4",
+            "source": "FTC Press",
+            "date": "2026-10-08",
+            "headline": "FTC Returns More than $15.8 Million to Consumers Misled by Cash Advance App Company Cleo AI",
+            "summary": "Agency charged that the company deceptively marketed cash advance services and obstructed cancellations The Federal Trade Commission is sending more than $15.8 million to consumers impacted by cash advance app company Cleo AI’s deceptive claims about the amounts and timing of available cash advances and the company’s hard-to-cancel subscriptions.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-returns-more-158-million-consumers-misled-cash-advance-app-company-cleo-ai",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 6.5,
+              "relevance": 7.8,
+              "total": 8.3
+            }
+          },
+          {
+            "id": "politics-regulatory-20261015-5",
+            "source": "FTC Press",
+            "date": "2026-10-13",
+            "headline": "FTC Sues Operator of Sextortion Relief Scheme for Misleading Consumers into Believing it Would Identify Criminals and End Sextortion Attacks",
+            "summary": "Digital Forensics charges consumers thousands of dollars but fails to provide promised services and engages in deceptive review practices, FTC alleges A federal court has granted the Federal Trade Commission’s request to temporarily halt the activities of Digital Forensics Corporation LLC and its CEO for allegedly defrauding consumers out of millions of dollars using false and deceptive promises relating to “sextortion assistance services.”.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-operator-sextortion-relief-scheme-misleading-consumers-believing-it-would-identify",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261015-27",
+            "source": "MarketWatch Top",
+            "date": "2026-10-14",
+            "headline": "The AI trade is splintering as inflation fears rattle hyped-up tech stocks",
+            "summary": "Investors are wondering if steep inflation and increased borrowing costs could derail the AI buildout.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/the-ai-trade-is-splintering-as-inflation-fears-rattle-hyped-up-tech-stocks-dbf49369?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261015-11",
+            "source": "ScienceDaily",
+            "date": "2026-10-14",
+            "headline": "Scientists may have overlooked a hidden Alzheimer's culprit for decades",
+            "summary": "For decades, scientists have focused on amyloid beta as a major culprit behind Alzheimer’s disease, spending billions of dollars developing treatments that have often delivered disappointing results. Now, researchers at UC Santa Cruz are drawing attention to a largely overlooked peptide called P3 that could also play a role in the disease. Previously believed to be harmless, P3 can form harmful-looking protein clumps even faster than amyloid beta and may also damage brain cells.",
+            "tag": "SCIENCE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261013015838.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261015-23",
+            "source": "arXiv Preprint",
+            "date": "2026-10-14",
+            "headline": "Quantum-Aware Key Rank for Side-Channel Attacks evaluation",
+            "summary": "Side-channel attacks on block ciphers rarely recover the key outright: they leave a residual key space ordered by subkey posteriors, and evaluation laboratories report the key rank of the true key against thresholds near 2^48 and 2^60. No evaluation framework models an adversary who collects traces classically and finishes the search on a quantum computer, although quantum search with advice provides exactly that. We give such an adversary a cost model and a metric.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.20537v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261015-24",
+            "source": "arXiv Preprint",
+            "date": "2026-10-14",
+            "headline": "Intermediate memory costs of quantum channel synthesis with a protected subsystem",
+            "summary": "A quantum memory can preserve a subsystem perfectly while discarding information needed by a later operation. We study the total intermediate dimension required for channel synthesis when the first stage protects a $b$-dimensional subsystem and has a prescribed noncommutative graph imposing full confusability on an $a$-dimensional control register. For a finite family of classically controlled branches, exact synthesis is possible if and only if the target graph contains the prescribed graph of the first stage.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.20536v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261015-25",
+            "source": "arXiv Preprint",
+            "date": "2026-10-14",
+            "headline": "Quantum Work Statistics from Entanglement-Assisted Invariance",
+            "summary": "We demonstrate that the one-time measurement scheme is more consistent than the standard two-time measurement scheme with respect to the fundamental symmetry of entanglement, namely entanglement-assisted invariance (envariance). In particular, the work statistics obtained from the one-time measurement scheme arise naturally as a direct consequence of envariance for any driving unitary, without involving an explicit measurement postulate, whereas the analogous identification for the two-time measurement scheme is possible only for a Haar-measure-zero set of unitaries. This envariance-based formulation eliminates the ambiguity in work statistics related to the energetic cost of measurement.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.20528v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261015-26",
+            "source": "arXiv Preprint",
+            "date": "2026-10-14",
+            "headline": "Petz Recovery through a Single Polar Transformation for Approximate Quantum Error Correction",
+            "summary": "The Petz recovery map provides a near optimal decoder for approximate quantum error correction, but its inverse square-root normalization complicates circuit implementation. We use the polar structure of the Petz recovery isometry to implement recovery through a single quantum singular value transformation (QSVT). We give explicit block-encoding circuits and an extended recovery isometry that yields approximate Petz recovery without postselection.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.20515v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261015-21",
+            "source": "Wired Culture",
+            "date": "2026-10-13",
+            "headline": "Alex Gibney’s ‘Musk’ Has a Unique Perspective on Daddy Issues",
+            "summary": "Elon Musk’s father, Errol Musk, agreed to be interviewed immediately.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/the-big-interview-podcast-alex-gibney-musk-doc/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          },
+          {
+            "id": "culture-industry-20261015-28",
+            "source": "Ars Technica",
+            "date": "2026-10-14",
+            "headline": "Software development and rules stability: Prototype racing in 2030",
+            "summary": "With the end of IMSA’s 2026 season, we have thoughts about the future of the sport.",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/cars/2026/10/software-development-and-rules-stability-prototype-racing-in-2030/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.7
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261015-2",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-13",
+            "headline": "Jeff Bezos and Elon Musk Race to Control Off-World Space Infrastructure",
+            "summary": "Jeff Bezos and Elon Musk are competing to dominate the emerging off-world economy through reusable rockets, massive satellite networks, and space-based AI data centers. While Musk's SpaceX currently leads in space launches, Bezos's Blue Origin is aggressively targeting NASA lunar contracts and specialized space infrastructure. Their intense rivalry and immense private wealth leave key decisions about human civilization's future in the hands of two unelected billionaires.",
+            "tag": "SPACE_RIVALRY",
+            "url": "https://www.theatlantic.com/magazine/2026/11/bezos-musk-billionaire-space-race/688690/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.8,
+              "relevance": 9,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "culture-voices-20261015-6",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-13",
+            "headline": "The Man Who Wanted to Understand Every Aspect of Jewish Life",
+            "summary": "Photographs by Lesha Berezovskiy Updated at 5:24 p.m. 2,087 Questions The Pale of Settlement is teeming with ghosts, and why shouldn’t it be? At the turn of the 20th century, some 5 million Jews lived in this region between the Baltic and Black Seas, and by 1945, almost all of them had been murdered.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/magazine/2026/11/an-sky-jewish-ethnography-ukraine/688697/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 7.8,
+              "relevance": 6.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "culture-voices-20261015-7",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-13",
+            "headline": "What If AI Is the End of the World?",
+            "summary": "Our sense that life is meaningful depends, perhaps more than we realize, on our confidence that humanity will go on after we die. If we came to believe that humanity had no future, the philosopher Samuel Scheffler argues , much of what we value would lose its meaning or motivating force. What would follow would be widespread “apathy, anomie and despair.” That is one reason why the threat of artificial intelligence feels so different and disorienting.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-end-of-world-meaning/688977/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "culture-voices-20261015-12",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-12",
+            "headline": "The Tragedy of AI Coding",
+            "summary": "My family and I enjoy the occasional meal of delicious slow-cooked meat, but every time we visit a barbecue joint, we can’t remember whether we like the beans and slaw on offer. Some beans are sweet; others are spicy. Some slaw is vinegar based; others creamy.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-programming-big-tech-regulations/688960/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "culture-voices-20261015-18",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-14",
+            "headline": "The Rise of In-Office Remote Work",
+            "summary": "Home Depot, Instagram, Fidelity, and TikTok are just a few of the companies that have recently ordered their employees back to the office five days a week, part of a broader shift toward stricter return-to-office mandates. Such policies cut down on working from home, yet they don’t always cut down on remote work. Many employees now commute to the office only to spend each day on video calls with colleagues who are elsewhere, or even down the hall.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/in-office-remote-work/688993/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ]
+      }
+    }
+  }
+}
