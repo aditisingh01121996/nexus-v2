@@ -1,0 +1,675 @@
+{
+  "date": "2026-10-16",
+  "label": "Today",
+  "lastUpdated": "2026-10-16T10:18:23.914Z",
+  "agentLog": [
+    {
+      "timestamp": "10:17:52",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 57d0cc5: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:17:52",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:17:56",
+      "module": "SCOUT",
+      "message": "Scouted 109 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:17:56",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:17:57",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 68 off-beat/redundant wires. 41 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:17:57",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:17:57",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:18:23",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 28 items (3 via LLM, 25 via deterministic synthesis; top 15 LLM quota applied, 1 dropped for thin context). Tokens: 3397. Est cost: $0.00066.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:18:23",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:18:23",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (28 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:18:23",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-16 live (28 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261016-15",
+            "source": "TechCrunch AI",
+            "date": "2026-10-15",
+            "headline": "Last chance to save up to $200 on your TechCrunch Founder Summit pass: Early booking ends October 16",
+            "summary": "Savings of up to $200 end October 16 for TechCrunch Founder Summit. These savings for Founder and Investor Passes vanish after Friday. Join 1,000 founders and investors on November 4 at Boston’s SoWa Power Station.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/15/last-chance-to-save-up-to-200-on-techcrunch-founder-summit-early-booking-ends-oct-16/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.5
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261016-6",
+            "source": "arXiv Preprint",
+            "date": "2026-10-15",
+            "headline": "Discovering state-of-the-art quantum circuits with large language models",
+            "summary": "Significant efforts are currently being directed toward the implementation of large-scale quantum information processors, but realizing useful quantum advantage also requires the development of efficient quantum algorithms. While for many practical problems the dominant resource costs are associated with a small set of computational primitives, optimizing them in the quantum setting presents unique challenges, including a reversibility constraint absent from ordinary classical computation. Here we introduce an evolutionary framework in which large language models (LLMs) propose circuit designs and an independent evaluator verifies and scores them.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.22367v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261016-9",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-13",
+            "headline": "Open models have real benefits. Do they outweigh the risks?",
+            "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can from the series here. Late last month, Anthropic released a report arguing that the model GLM-5.3 poses a major cyberattack risk.",
+            "tag": "REASONING",
+            "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261016-10",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-13",
+            "headline": "AI labs are buying data from dead startups to train their models",
+            "summary": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code base and a still-pending amount (likely around….",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261016-12",
+            "source": "arXiv Preprint",
+            "date": "2026-10-15",
+            "headline": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
+            "summary": "Generative visual verifiers play a crucial role in advancing multimodal intelligence. To enhance the robustness of visual verifiers in complex multimodal scenarios involving compositional requirements, we move beyond conventional binary verifiers that produce only True/False discrete judgments and introduce a verifier that automatically decomposes complex prompts or environmental rules into fine-grained components and assigns pointwise scores to provide a continuous and more informative critique signal. Our experiments further demonstrate that these structured and interpretable outputs improve the verifier's generalization to out-of-domain multimodal critic tasks.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.22355v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-research-20261016-18",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-09",
+            "headline": "We’re putting too much faith in AI’s ability to say no",
+            "summary": "Ever since people first seriously contemplated giving machines an intelligence modeled on our own, there has never been any question that they would, like us, be able to say no. The sci-fi canon is full of stories of robotic disobedience. Most of these capers are, of course, cautionary.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261016-13",
+            "source": "The Verge AI",
+            "date": "2026-10-15",
+            "headline": "Meta and Apple team up to make Muse AI models run better on Macs",
+            "summary": "Meta announced the Muse Spark Open AI model today, claiming that it's the \"most capable US open-weight model to date.\" But the company also says that it's the \"the first model in its class\" that can \"run on your desktop using two Apple M5 Ultra Mac Studios with the latest MLX framework.\" Meta and Apple, […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261016-17",
+            "source": "The Verge AI",
+            "date": "2026-10-15",
+            "headline": "How Windows is being optimized for Nvidia’s RTX Spark laptops",
+            "summary": "Microsoft and Nvidia held a launch party for the first wave of RTX Spark laptops last week in San Francisco, where a new wave of AI PCs took center stage amid a packed crowd and a lively hands-on area. A day after the media event, I was invited to a quieter Nvidia event to hear […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261016-20",
+            "source": "The Verge AI",
+            "date": "2026-10-15",
+            "headline": "ChatGPT can peek at your Chrome tabs now",
+            "summary": "OpenAI's ChatGPT Atlas browser is gone, but now ChatGPT's Google Chrome extension is getting some upgrades that allow it to use the browser tabs you already have open. With the extension installed, OpenAI says ChatGPT can now view your browser tabs when you tag Chrome in ChatGPT's web or desktop app, posting a demo video […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261016-21",
+            "source": "The Verge AI",
+            "date": "2026-10-15",
+            "headline": "Friends don’t let friends feed their data to AI agents",
+            "summary": "There's a growing trend in the consumer tech world: gadgets designed to spy on everything and everyone around you, regardless of whether or not anyone else actually consented to it. Now, with the advent of \"AI personal assistants\" like Meta's Muse, you're being cheerfully asked not just to give up your own data, but also […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261016-2",
+            "source": "FTC Press",
+            "date": "2026-10-15",
+            "headline": "FTC Sends Over $9.8 Million to Consumers Affected by Walmart Scams",
+            "summary": "The Federal Trade Commission is issuing over $9.8 million in payments to consumers harmed by wire transfer scams. The action follows allegations that Walmart failed to stop scammers who stole hundreds of millions of dollars through its transfer services.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sends-more-98-million-consumers-harmed-walmarts-failure-stop-scammers-used-its-wire-transfer",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 5.2,
+              "relevance": 8.8,
+              "total": 8.2
+            }
+          },
+          {
+            "id": "politics-regulatory-20261016-4",
+            "source": "FTC Press",
+            "date": "2026-10-13",
+            "headline": "FTC Sues Operator of Sextortion Relief Scheme for Misleading Consumers into Believing it Would Identify Criminals and End Sextortion Attacks",
+            "summary": "Digital Forensics charges consumers thousands of dollars but fails to provide promised services and engages in deceptive review practices, FTC alleges A federal court has granted the Federal Trade Commission’s request to temporarily halt the activities of Digital Forensics Corporation LLC and its CEO for allegedly defrauding consumers out of millions of dollars using false and deceptive promises relating to “sextortion assistance services.”.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-operator-sextortion-relief-scheme-misleading-consumers-believing-it-would-identify",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261016-3",
+            "source": "FTC Press",
+            "date": "2026-10-15",
+            "headline": "FTC Sues REPS & Company for Unlawfully Bypassing Ticket Purchase Limits",
+            "summary": "The Federal Trade Commission has sued ticket broker REPS & Company Inc. for illegally circumventing event ticket purchase limits. The complaint alleges REPS bypassed security measures to buy millions of tickets to high-demand events. REPS subsequently resold these tickets at a significant profit, earning millions of dollars.",
+            "tag": "REGULATION",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-ticket-broker-over-unlawful-tactics-used-buy-millions-tickets-popular-live-events",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.9
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261016-26",
+            "source": "MarketWatch Top",
+            "date": "2026-10-16",
+            "headline": "Here are the key things Fed Chairman Kevin Warsh said — and didn’t say — while Americans were sleeping Thursday night",
+            "summary": "Federal Reserve Chair Kevin Warsh had an opportunity Thursday night to shape expectations heading into the central bank’s interest-rate-setting meeting in two week’s time — and in keeping with his practice of leaving markets guessing, he chose not to.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/here-are-the-key-things-fed-chairman-kevin-warsh-said-and-didnt-say-while-americans-were-sleeping-thursday-night-b82238a1?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "markets-macro-20261016-27",
+            "source": "MarketWatch Top",
+            "date": "2026-10-15",
+            "headline": "How a midterm sweep by Democrats could turn this tech selloff into a tech crash",
+            "summary": "Popular AI names are under pressure again this week — but the pain could worsen after the Nov.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/how-a-midterm-sweep-by-democrats-could-turn-this-tech-selloff-into-a-tech-crash-a1d1a82f?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261016-16",
+            "source": "arXiv Preprint",
+            "date": "2026-10-15",
+            "headline": "Magna: simulating magic state factories as cheaply as Clifford circuits",
+            "summary": "Classical simulation of magic state factories, including distillation, cultivation, and code switching, is challenging because of their substantial non-Clifford content. We introduce $\\texttt{magna}$ (magic-state-factory assessment via global network algebra), a classical simulator that simulates such protocols as cheaply as Clifford circuits. $\\texttt{magna}$ expresses the figures of merit of a protocol, namely the acceptance rate and the fidelity of the accepted states, as tensor networks, which it reduces globally by exploiting a structural correspondence with transversal gates on quantum codes.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.22315v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "science-frontier-20261016-22",
+            "source": "arXiv Preprint",
+            "date": "2026-10-15",
+            "headline": "Stability of Quantum LDPC States under Local Pauli Noise",
+            "summary": "Quantum low-density parity-check (qLDPC) codes have a canonical mixed state---the normalized projector onto the code space---that lies at the intersection of quantum error correction and quantum many-body physics, yet the stability of its information-theoretic structure under local noise remains poorly understood. Recent progress on mixed-state phases of matter has identified the spatial decay of conditional mutual information (CMI) $I(A:C|B)$ as a key diagnostic of such stability, analogous to the role of the spectral gap for quantum ground states. We prove that, for the normalized code-projector state of a $\\mathbb{Z}_d$ qLDPC stabilizer code under local Pauli noise, the CMI across a buffer $B$ separating $A$ from $C$ decays exponentially with the width of $B$ in two complementary noise regimes independent of system size.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.22357v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6
+            }
+          },
+          {
+            "id": "science-frontier-20261016-23",
+            "source": "arXiv Preprint",
+            "date": "2026-10-15",
+            "headline": "Magic in quantum trajectory unravelings of noisy random quantum circuits",
+            "summary": "The quantum-trajectory description of a noisy quantum circuit is not unique: every Kraus representation of the noise channel defines a different unraveling, i.e., a different ensemble of pure states that averages to the same density matrix. While all unravelings share the same expectation values of observables, they generally differ in the amount of quantum resources carried by the individual trajectories. Here we study non-stabilizerness, or magic, quantified by the stabilizer Rényi entropy, in quantum-trajectory unravelings of Haar-random and $T$-doped random Clifford brickwork circuits subject to local dephasing noise of strength $p$.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.22318v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261016-24",
+            "source": "arXiv Preprint",
+            "date": "2026-10-15",
+            "headline": "SynDebug: A Framework to Debug Logic Bugs in Fault-Tolerant Quantum Computing Programs",
+            "summary": "Fault-tolerant quantum computing (FTQC) introduces substantial systems-level complexity through quantum error correction (QEC), making debugging FTQC programs challenging. Existing quantum debugging approaches primarily target logical-level circuits and do not naturally support debugging within realistic FTQC execution flows. We present SynDebug, the first systems-level debugging framework for FTQC programs.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.22275v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261016-25",
+            "source": "arXiv Preprint",
+            "date": "2026-10-15",
+            "headline": "Constrained dissipation and the lifetime of quantum many-body scars",
+            "summary": "We investigate the fate of quantum many-body scars in the PXP model subject to Markovian dissipation. We show that when local jump operators respect the same symmetries of the Hamiltonian the full Liouvillian spectrum displays a tower of states with properties analogous to standard quantum scars: large overlaps with Néel states and equally spaced gaps in the imaginary part of the eigenvalues, set by a single frequency. Whether the long-time dynamics is dominated by scars is determined by the real parts of the eigenvalues, which are set by the ratio between the two relaxation rates $γ_{\\pm}$ describing spin flips down-to-up or up-to-down respectively.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.22223v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261016-14",
+            "source": "Wired Culture",
+            "date": "2026-10-15",
+            "headline": "Kids’ Content Is Deeply Broken. A New Platform Wants to Fix It",
+            "summary": "Low-quality AI-generated content currently dominates children’s media. Maka, a streaming platform run by child development experts, is offering an alternative.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/maka-streaming-platform-for-kids-fighting-against-ai-slop/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "culture-industry-20261016-19",
+            "source": "Wired Culture",
+            "date": "2026-10-16",
+            "headline": "The New Fan’s Guide to the Unreal World of Nathan Fielder",
+            "summary": "Surprised by the hype around yet another documentary on Theranos fraudster Elizabeth Holmes? It has everything to do with this experimental comedian.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/the-new-fans-guide-to-the-unreal-world-of-nathan-fielder/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          },
+          {
+            "id": "culture-industry-20261016-28",
+            "source": "Ars Technica",
+            "date": "2026-10-15",
+            "headline": "Plex now helps sell movie theater tickets",
+            "summary": "Discovery data from Plex users will help studios, advertisers.",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/gadgets/2026/10/plex-now-helps-sell-movie-theater-tickets/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.5
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261016-1",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-15",
+            "headline": "Judges Reject Trump Administration Lawsuits Seeking Access to State Voter Rolls",
+            "summary": "The Justice Department has lost 26 district court cases while attempting to force states to hand over sensitive voter information. Bipartisan judicial rulings cited a lack of legal authority under federal statutes and highlighted privacy law concerns. The losing streak underscores how America's decentralized election system and courts have limited federal efforts to obtain state voting records.",
+            "tag": "ELECTION_LAW",
+            "url": "https://www.theatlantic.com/ideas/2026/10/doj-lawsuits-voter-rolls-losing/689003/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.2,
+              "relevance": 8,
+              "total": 8.4
+            }
+          },
+          {
+            "id": "culture-voices-20261016-5",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-16",
+            "headline": "Don’t Let Big Tech Dictate Humanity’s Future",
+            "summary": "Should human beings remain in control of planet Earth? Or should we be replaced as the dominant species? As absurd as these questions may sound, and as obvious as the answers may seem, the Big Tech oligarchs funding the artificial-intelligence revolution have responded in ways that should alarm all of us.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-regulation-transhumanism-oligarchs/689013/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 9.5,
+              "total": 7.7
+            }
+          },
+          {
+            "id": "culture-voices-20261016-7",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-15",
+            "headline": "Invasion of the Self-Replicating AI-Malware Botnet",
+            "summary": "Have you ever counted the computers in your house? You’re probably including your desktop and laptop computers, if you own some. I bet you’re also including the smartphones and tablets.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-malware-botnet/688997/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 4.4,
+              "magnitude": 6,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "culture-voices-20261016-8",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-13",
+            "headline": "What If AI Is the End of the World?",
+            "summary": "Our sense that life is meaningful depends, perhaps more than we realize, on our confidence that humanity will go on after we die. If we came to believe that humanity had no future, the philosopher Samuel Scheffler argues , much of what we value would lose its meaning or motivating force. What would follow would be widespread “apathy, anomie and despair.” That is one reason why the threat of artificial intelligence feels so different and disorienting.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-end-of-world-meaning/688977/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "culture-voices-20261016-11",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-15",
+            "headline": "The Non-AI AI Jobs",
+            "summary": "Want to get a job in the Bay Area? The fastest-growing listings are for operations engineers, applied scientists, senior machine-learning engineers, principal cloud architects, forward-deployed engineers, and the like, according to Laura Ullrich, the director of economic research in North America at the Indeed Hiring Lab. “A year ago, people were very concerned about these types of jobs not coming to fruition,” she told me.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-new-job-creation/689000/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 4.4,
+              "magnitude": 6,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          }
+        ]
+      }
+    }
+  }
+}
