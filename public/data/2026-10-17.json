@@ -1,0 +1,715 @@
+{
+  "date": "2026-10-17",
+  "label": "Today",
+  "lastUpdated": "2026-10-17T09:52:02.791Z",
+  "agentLog": [
+    {
+      "timestamp": "09:51:29",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit c1788a5: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "09:51:29",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "09:51:34",
+      "module": "SCOUT",
+      "message": "Scouted 112 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "09:51:34",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "09:51:34",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 65 off-beat/redundant wires. 47 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "09:51:34",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "09:51:34",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "09:52:02",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 30 items (4 via LLM, 26 via deterministic synthesis; top 15 LLM quota applied, 2 dropped for thin context). Tokens: 3795. Est cost: $0.00077.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "09:52:02",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "09:52:02",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (30 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "09:52:02",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-17 live (30 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261017-5",
+            "source": "TechCrunch AI",
+            "date": "2026-10-16",
+            "headline": "Elorian’s first AI model wants to reason with images, not just about them",
+            "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 6.5,
+              "total": 8
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261017-24",
+            "source": "TechCrunch AI",
+            "date": "2026-10-16",
+            "headline": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
+            "summary": "Actor and angel investor Mark Wahlberg says he's OK with using AI in filmmaking, provided it's used \"to enhance what you're doing.\".",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261017-25",
+            "source": "TechCrunch AI",
+            "date": "2026-10-16",
+            "headline": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
+            "summary": "Counterfeiters are getting better at replicating brands' marks and passing off dupes, known as \"superfakes,\" as genuine items. A startup called Veritas wants to tackle the problem with its own chip that verifies goods.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261017-8",
+            "source": "arXiv Preprint",
+            "date": "2026-10-15",
+            "headline": "Discovering state-of-the-art quantum circuits with large language models",
+            "summary": "Significant efforts are currently being directed toward the implementation of large-scale quantum information processors, but realizing useful quantum advantage also requires the development of efficient quantum algorithms. While for many practical problems the dominant resource costs are associated with a small set of computational primitives, optimizing them in the quantum setting presents unique challenges, including a reversibility constraint absent from ordinary classical computation. Here we introduce an evolutionary framework in which large language models (LLMs) propose circuit designs and an independent evaluator verifies and scores them.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.22367v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261017-11",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-13",
+            "headline": "Open models have real benefits. Do they outweigh the risks?",
+            "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can from the series here. Late last month, Anthropic released a report arguing that the model GLM-5.3 poses a major cyberattack risk.",
+            "tag": "REASONING",
+            "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261017-12",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-13",
+            "headline": "AI labs are buying data from dead startups to train their models",
+            "summary": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code base and a still-pending amount (likely around….",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261017-15",
+            "source": "arXiv Preprint",
+            "date": "2026-10-15",
+            "headline": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
+            "summary": "Generative visual verifiers play a crucial role in advancing multimodal intelligence. To enhance the robustness of visual verifiers in complex multimodal scenarios involving compositional requirements, we move beyond conventional binary verifiers that produce only True/False discrete judgments and introduce a verifier that automatically decomposes complex prompts or environmental rules into fine-grained components and assigns pointwise scores to provide a continuous and more informative critique signal. Our experiments further demonstrate that these structured and interpretable outputs improve the verifier's generalization to out-of-domain multimodal critic tasks.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.22355v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-research-20261017-20",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-16",
+            "headline": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+            "summary": "Listen to the session or watch below Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an example of AI-generated life, but that could be next.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261017-16",
+            "source": "The Verge AI",
+            "date": "2026-10-16",
+            "headline": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
+            "summary": "Nvidia's RTX Spark N1X processor is finally here, and we've been collectively testing a small fortune's worth of powerful laptops sporting this new \"superchip.\" RTX Spark is designed to be a high-performing Arm-based SoC for laptops and small desktop computers, rivaling the best from Apple, Intel, AMD, and Qualcomm. It has loads of cores, Nvidia […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261017-17",
+            "source": "The Verge AI",
+            "date": "2026-10-15",
+            "headline": "Meta and Apple team up to make Muse AI models run better on Macs",
+            "summary": "Meta announced the Muse Spark Open AI model today, claiming that it's the \"most capable US open-weight model to date.\" But the company also says that it's the \"the first model in its class\" that can \"run on your desktop using two Apple M5 Ultra Mac Studios with the latest MLX framework.\" Meta and Apple, […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261017-22",
+            "source": "The Verge AI",
+            "date": "2026-10-16",
+            "headline": "Meta’s new terms may allow it to train AI on news sites for free",
+            "summary": "Meta's new terms appear to give it permission to crawl and scrape websites \"associated\" with the businesses that use its platforms - including online publishers, according to a report from Nieman Lab. The new terms, which go into effect on October 30th, say Meta can use this outside content to \"develop, improve, research,\" and \"train\" […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261017-26",
+            "source": "The Verge AI",
+            "date": "2026-10-15",
+            "headline": "ChatGPT can peek at your Chrome tabs now",
+            "summary": "OpenAI's ChatGPT Atlas browser is gone, but now ChatGPT's Google Chrome extension is getting some upgrades that allow it to use the browser tabs you already have open. With the extension installed, OpenAI says ChatGPT can now view your browser tabs when you tag Chrome in ChatGPT's web or desktop app, posting a demo video […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261017-30",
+            "source": "Hacker News Dispatch",
+            "date": "2026-10-14",
+            "headline": "Tell HN: Remember to migrate away from .name domain",
+            "summary": "If you have a third.level.name domain, it'll get permanently expunged next year. Have you successfully taken steps to migrate away? Did you move to a standard .com domain, or are you taking your chances with another .tld?",
+            "tag": "TITANS",
+            "url": "https://news.ycombinator.com/item?id=50089577",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 5.8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 4.9
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261017-2",
+            "source": "FTC Press",
+            "date": "2026-10-15",
+            "headline": "FTC sends $9.8 million to victims of Walmart wire transfer scams",
+            "summary": "The Federal Trade Commission is issuing over $9.8 million in payments to affected consumers. The action follows Walmart's alleged failure to stop scammers from using its wire transfer services to take hundreds of millions of dollars from U.S. customers.",
+            "tag": "FTC_REFUNDS",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sends-more-98-million-consumers-harmed-walmarts-failure-stop-scammers-used-its-wire-transfer",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 5.2,
+              "relevance": 8.8,
+              "total": 8.2
+            }
+          },
+          {
+            "id": "politics-regulatory-20261017-3",
+            "source": "FTC Press",
+            "date": "2026-10-15",
+            "headline": "FTC Sues REPS & Company Over Illegal Ticket Purchasing Tactics",
+            "summary": "The Federal Trade Commission filed a lawsuit against ticket broker REPS & Company Inc. for allegedly circumventing event purchasing limits. The complaint claims REPS unlawfully bypassed security measures to buy millions of tickets and resold them for significant profits.",
+            "tag": "FTC_ACTION",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-ticket-broker-over-unlawful-tactics-used-buy-millions-tickets-popular-live-events",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "politics-regulatory-20261017-4",
+            "source": "FTC Press",
+            "date": "2026-10-13",
+            "headline": "Federal Court Halts Digital Forensics Operations Following FTC Lawsuit",
+            "summary": "The Federal Trade Commission sued Digital Forensics Corporation LLC and its CEO for allegedly defrauding consumers out of millions of dollars with false sextortion relief promises. According to the FTC, the company charged thousands of dollars, failed to provide promised services, and engaged in deceptive review practices. A federal court subsequently granted a request to temporarily halt the activities of the company and its executive.",
+            "tag": "FTC_ACTION",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-operator-sextortion-relief-scheme-misleading-consumers-believing-it-would-identify",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.9
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261017-27",
+            "source": "MarketWatch Top",
+            "date": "2026-10-16",
+            "headline": "The bond market shrugged off two inflation shocks. Why stock investors should pay attention.",
+            "summary": "Hot CPI and PPI data should have pushed Treasury yields higher. Instead, bond buyers stepped in to suggest yields have risen high enough to become attractive for investors.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/the-bond-market-shrugged-off-two-inflation-shocks-why-stock-investors-should-pay-attention-5da4f771?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          },
+          {
+            "id": "markets-macro-20261017-28",
+            "source": "MarketWatch Top",
+            "date": "2026-10-16",
+            "headline": "Nowhere to hide: Tech selloff hits software and chip stocks alike",
+            "summary": "The software and semiconductor sectors haven’t been trading in tandem much this year, but they collectively fell Friday as AI and interest-rate fears hit the market.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/nowhere-to-hide-tech-selloff-hits-software-and-chip-stocks-alike-6d96773c?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "markets-macro-20261017-29",
+            "source": "MarketWatch Top",
+            "date": "2026-10-16",
+            "headline": "Don’t buy this dip: Several signs suggest there’s more pain ahead for tech stocks",
+            "summary": "Thinking of buying the dip in technology stocks? The Nasdaq Composite’s technical outlook suggests don’t do it — at least not yet.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/dont-buy-this-dip-several-signs-suggest-theres-more-pain-ahead-for-tech-stocks-83f971d7?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261017-7",
+            "source": "ScienceDaily",
+            "date": "2026-10-16",
+            "headline": "A protein that fuels cancer could also be the key to fighting it",
+            "summary": "Scientists have discovered how to turn a protein that normally fuels cancer growth into a weapon against it. By activating PPARD in immune cells, researchers made them better at burning fat and attacking tumors, slowing or stopping cancer growth in laboratory experiments. The approach showed promise against colorectal, breast, and ovarian cancers, as well as melanoma.",
+            "tag": "SCIENCE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261015073203.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "science-frontier-20261017-13",
+            "source": "ScienceDaily",
+            "date": "2026-10-16",
+            "headline": "Scientists discover how exercise reverses muscle aging",
+            "summary": "Scientists have uncovered a hidden biological mechanism that helps explain how exercise can reverse some of the damage caused by muscle aging. The key is a gene called DEAF1, which becomes overactive with age and interferes with the muscles’ ability to clear damaged proteins and repair themselves. Exercise can help restore this balance, allowing older muscles to rebuild and regain strength, although the benefits may diminish when the system becomes too disrupted.",
+            "tag": "BIOTECH",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261015003550.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261017-19",
+            "source": "arXiv Preprint",
+            "date": "2026-10-15",
+            "headline": "Magna: simulating magic state factories as cheaply as Clifford circuits",
+            "summary": "Classical simulation of magic state factories, including distillation, cultivation, and code switching, is challenging because of their substantial non-Clifford content. We introduce $\\texttt{magna}$ (magic-state-factory assessment via global network algebra), a classical simulator that simulates such protocols as cheaply as Clifford circuits. $\\texttt{magna}$ expresses the figures of merit of a protocol, namely the acceptance rate and the fidelity of the accepted states, as tensor networks, which it reduces globally by exploiting a structural correspondence with transversal gates on quantum codes.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.22315v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261017-18",
+            "source": "Wired Culture",
+            "date": "2026-10-15",
+            "headline": "Kids’ Content Is Deeply Broken. A New Platform Wants to Fix It",
+            "summary": "Low-quality AI-generated content currently dominates children’s media. Maka, a streaming platform run by child development experts, is offering an alternative.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/maka-streaming-platform-for-kids-fighting-against-ai-slop/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "culture-industry-20261017-21",
+            "source": "Wired Culture",
+            "date": "2026-10-16",
+            "headline": "AI-Generated Hot Girls Are Ripping Off Comedians to Boost Their Horny Content",
+            "summary": "A network of AI-generated models is using comics’ material to funnel views to their OnlyFans and Fanvue accounts—and there’s not much comedians can do about it.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/ai-generated-hot-girls-are-ripping-off-comedians-to-boost-their-horny-content/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "culture-industry-20261017-23",
+            "source": "Wired Culture",
+            "date": "2026-10-16",
+            "headline": "The New Fan’s Guide to the Unreal World of Nathan Fielder",
+            "summary": "Surprised by the hype around yet another documentary on Theranos fraudster Elizabeth Holmes? It has everything to do with this experimental comedian.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/the-new-fans-guide-to-the-unreal-world-of-nathan-fielder/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261017-1",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-15",
+            "headline": "Courts reject Department of Justice lawsuits seeking state voter rolls",
+            "summary": "The Justice Department has lost 26 district court lawsuits seeking to force states to hand over sensitive voter roll data to the federal government. Judges appointed by both major parties rejected the administration's claims, citing a lack of statutory authority and federal privacy concerns. The ongoing losses highlight how state officials and the judicial system are restricting federal attempts to collect voter files.",
+            "tag": "ELECTION_LAW",
+            "url": "https://www.theatlantic.com/ideas/2026/10/doj-lawsuits-voter-rolls-losing/689003/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.2,
+              "relevance": 8,
+              "total": 8.4
+            }
+          },
+          {
+            "id": "culture-voices-20261017-6",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-16",
+            "headline": "Big Tech Oligarchs Have a Terrible Plan for Humanity",
+            "summary": "Should human beings remain in control of planet Earth? Or should we be replaced as the dominant species? As absurd as these questions may sound, and as obvious as the answers may seem, the Big Tech oligarchs funding the artificial-intelligence revolution have responded in ways that should alarm all of us.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-regulation-transhumanism-oligarchs/689013/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 9.5,
+              "total": 7.7
+            }
+          },
+          {
+            "id": "culture-voices-20261017-9",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-16",
+            "headline": "What Newsrooms Should Know Before They Take Money From OpenAI",
+            "summary": "As a newsroom executive, I have long tried to resist appeals to vet donors to nonprofit journalism for their politics or even the savoriness of their business practices. When you do that, you raise questions about whether you could fairly cover any potential donors on your banned list, and you also run the risk of offering some sort of implicit endorsement to the rest. Both of those perceptions are antithetical to the independent stance that good journalism requires.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/newsrooms-journalism-openai-funding/689043/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 6.5,
+              "relevance": 6.5,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "culture-voices-20261017-10",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-15",
+            "headline": "Invasion of the Self-Replicating AI-Malware Botnet",
+            "summary": "Have you ever counted the computers in your house? You’re probably including your desktop and laptop computers, if you own some. I bet you’re also including the smartphones and tablets.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-malware-botnet/688997/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 4.4,
+              "magnitude": 6,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "culture-voices-20261017-14",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-15",
+            "headline": "The Non-AI AI Jobs",
+            "summary": "Want to get a job in the Bay Area? The fastest-growing listings are for operations engineers, applied scientists, senior machine-learning engineers, principal cloud architects, forward-deployed engineers, and the like, according to Laura Ullrich, the director of economic research in North America at the Indeed Hiring Lab. “A year ago, people were very concerned about these types of jobs not coming to fruition,” she told me.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-new-job-creation/689000/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 4.4,
+              "magnitude": 6,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          }
+        ]
+      }
+    }
+  }
+}
