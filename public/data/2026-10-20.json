@@ -1,0 +1,695 @@
+{
+  "date": "2026-10-20",
+  "label": "Today",
+  "lastUpdated": "2026-10-20T10:35:19.056Z",
+  "agentLog": [
+    {
+      "timestamp": "10:34:26",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit c245cdd: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:34:26",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:34:30",
+      "module": "SCOUT",
+      "message": "Scouted 118 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:34:30",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:34:30",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 72 off-beat/redundant wires. 46 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:34:30",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:34:30",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:35:19",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 29 items (3 via LLM, 26 via deterministic synthesis; top 15 LLM quota applied, 1 dropped for thin context). Tokens: 2739. Est cost: $0.00056.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:35:19",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:35:19",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (29 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:35:19",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-20 live (29 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261020-15",
+            "source": "TechCrunch AI",
+            "date": "2026-10-19",
+            "headline": "Tolan snags $30M for its AI companion that helps users navigate life",
+            "summary": "AI companion app Tolan has raised another $30 million after attracting more than 250,000 active users.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 6.5,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261020-21",
+            "source": "TechCrunch AI",
+            "date": "2026-10-19",
+            "headline": "Replika’s founder built the AI assistant she pitched at Disrupt 12 years ago",
+            "summary": "Eugenia Kuyda's newest startup Wabi is positioned to take advantage of an idea she had more than a decade ago. Wabi offers a personal AI assistant with a twist, free and downloadable to anyone today.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.5
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261020-6",
+            "source": "arXiv Preprint",
+            "date": "2026-10-19",
+            "headline": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+            "summary": "Multimodal large language models (MLLMs) have made rapid progress on visual reasoning, yet many tasks require evidence that is difficult to obtain through internal reasoning alone: our controlled study on 22 benchmarks shows that simply increasing the inference budget of the base model yields only modest gains. Such tasks demand grounded perception, external knowledge, and numerical measurements obtained through heterogeneous tools, whose outputs must be made interpretable to the model and retained across reasoning steps. We introduce OpenVLHarness, a multimodal reasoning harness organized around a capability layer and persistent multimodal memory.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.26860v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261020-12",
+            "source": "arXiv Preprint",
+            "date": "2026-10-19",
+            "headline": "Reinforcement Learning with Visually Attributable On-Policy Self-Distillation",
+            "summary": "Multimodal reinforcement learning with verifiable rewards (RLVR) provides reliable task-level supervision, yet offers limited guidance for localizing errors in visual reasoning. On-policy self-distillation (OPSD) complements this supervision with dense token-level corrections from a privileged teacher equipped with an evidence-centered visual view. However, the resulting corrections may conflate visual evidence with non-visual shifts induced by linguistic priors, response style, or the privileged view itself.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.26856v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261020-13",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-20",
+            "headline": "A visit to Samsung’s massive new semiconductor hub",
+            "summary": "Generative AI models run on powerful chips known as GPUs, which depend on stacks of specialized memory chips packaged with the processor. To meet growing demand for memory, Samsung is building a massive new semiconductor manufacturing complex in Pyeongtaek, South Korea. Three fabs already operate around the clock, and a fourth is coming online.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 6,
+              "relevance": 6.5,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261020-16",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-13",
+            "headline": "Open models have real benefits. Do they outweigh the risks?",
+            "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can from the series here. Late last month, Anthropic released a report arguing that the model GLM-5.3 poses a major cyberattack risk.",
+            "tag": "REASONING",
+            "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261020-17",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-13",
+            "headline": "AI labs are buying data from dead startups to train their models",
+            "summary": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code base and a still-pending amount (likely around….",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261020-23",
+            "source": "The Verge AI",
+            "date": "2026-10-17",
+            "headline": "Meta removes language that may have allowed it to scrape news sites",
+            "summary": "After backlash, Meta is updating its terms again to remove language that suggested it could scrape content from sites, including news sites, to train its AI. Specifically, the following language no longer appears on the commercial terms page: … Meta may use any content from such domains, web pages, or URLs to provide, develop, improve, […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261020-24",
+            "source": "The Verge AI",
+            "date": "2026-10-17",
+            "headline": "Websites are closing their doors to AI agents",
+            "summary": "Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation and cleaning out your inbox to buying new shoes. But what happens when the rest of the internet won't play nice?",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261020-3",
+            "source": "FTC Press",
+            "date": "2026-10-15",
+            "headline": "FTC Sends $9.8 Million to Consumers Harmed by Walmart Wire Transfer Scams",
+            "summary": "The Federal Trade Commission is distributing over $9.8 million to consumers harmed by wire transfer scams. The payments follow Walmart's alleged failure to prevent scammers from taking hundreds of millions of dollars using its transfer services.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sends-more-98-million-consumers-harmed-walmarts-failure-stop-scammers-used-its-wire-transfer",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 5.2,
+              "relevance": 8.8,
+              "total": 8.2
+            }
+          },
+          {
+            "id": "politics-regulatory-20261020-4",
+            "source": "FTC Press",
+            "date": "2026-10-15",
+            "headline": "FTC Sues Ticket Broker Over Unlawful Tactics Used to Buy Millions of Tickets to Popular Live Events",
+            "summary": "Complaint alleges REPS earned millions by unlawfully bypassing ticket-issuer security measures to exceed purchasing limits The Federal Trade Commission sued REPS & Company Inc., alleging the ticket broker illegally circumvents measures designed to limit the number of tickets that can be purchased for a single event, purchasing millions of tickets to high-demand events that it later resells at a significant profit.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-ticket-broker-over-unlawful-tactics-used-buy-millions-tickets-popular-live-events",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261020-5",
+            "source": "FTC Press",
+            "date": "2026-10-13",
+            "headline": "FTC Sues Operator of Sextortion Relief Scheme for Misleading Consumers into Believing it Would Identify Criminals and End Sextortion Attacks",
+            "summary": "Digital Forensics charges consumers thousands of dollars but fails to provide promised services and engages in deceptive review practices, FTC alleges A federal court has granted the Federal Trade Commission’s request to temporarily halt the activities of Digital Forensics Corporation LLC and its CEO for allegedly defrauding consumers out of millions of dollars using false and deceptive promises relating to “sextortion assistance services.”.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-operator-sextortion-relief-scheme-misleading-consumers-believing-it-would-identify",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261020-2",
+            "source": "FTC Press",
+            "date": "2026-10-19",
+            "headline": "FTC Submits Report to Congress on Protecting Older Adults From Fraud",
+            "summary": "The Federal Trade Commission issued its annual report to Congress detailing agency efforts to protect older adults from financial fraud. The report finds that older adults report losing far more money to investment scams than to any other fraud type. It highlights key fraud trends based on consumer submissions alongside FTC enforcement efforts.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-annual-report-congress-agencys-actions-protect-older-adults",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "politics-regulatory-20261020-7",
+            "source": "FTC Press",
+            "date": "2026-10-19",
+            "headline": "FTC Order Preserves Competition in Digital Advertising Ecosystem as Part of Publicis’s Acquisition of LiveRamp",
+            "summary": "Order addresses concerns that proposed deal would harm competition in markets for media agency services and audience data services The Federal Trade Commission has taken steps to preserve competition in the digital advertising ecosystem by requiring Publicis Groupe S.A.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-order-preserves-competition-digital-advertising-ecosystem-part-publiciss-acquisition-liveramp",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261020-18",
+            "source": "MarketWatch Top",
+            "date": "2026-10-20",
+            "headline": "Why smaller stocks face worse prospects than the S&P 500 in the coming years",
+            "summary": "The Value Line Median Appreciation Potential has a good record forecasting smaller stocks’ returns. And the next four years look bearish.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/why-smaller-stocks-face-worse-prospects-than-the-s-p-500-in-the-coming-years-f9f703ae?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "markets-macro-20261020-28",
+            "source": "MarketWatch Top",
+            "date": "2026-10-20",
+            "headline": "‘I’m naturally skeptical’: I receive 10 calls a day offering me $15,000 loans at 8% interest. Is this a scam?",
+            "summary": "“They insist that the details will be provided after they have carried out a soft credit check.”.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/im-naturally-skeptical-i-receive-10-calls-a-day-offering-me-15-000-loans-at-8-interest-is-this-a-scam-825c3431?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261020-14",
+            "source": "ScienceDaily",
+            "date": "2026-10-18",
+            "headline": "Physicists create a bizarre new quantum state called a fractional fermi sea",
+            "summary": "Physicists have discovered a strange new state of quantum matter in which ultracold atoms defy familiar organizational rules, forming a highly excited yet surprisingly orderly configuration called a \"fractional Fermi sea.\" The discovery challenges established quantum theories and hints at exotic quasiparticles that scientists have dubbed potential \"super-Fermions.\".",
+            "tag": "PHYSICS",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261018084644.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "science-frontier-20261020-19",
+            "source": "ScienceDaily",
+            "date": "2026-10-19",
+            "headline": "Just 3,000 steps a day may help slow Alzheimer's, scientists find",
+            "summary": "Walking just 3,000 steps a day could help slow Alzheimer’s-related brain changes, according to new research. Scientists discovered that physical activity was linked to less buildup of harmful tau proteins and nearly half the cognitive and functional decline, even in people already showing early signs of the disease. The strongest benefits appeared at 5,000 to 7,500 daily steps, suggesting that the popular 10,000-step goal may not be necessary.",
+            "tag": "SCIENCE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261018205058.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261020-20",
+            "source": "ScienceDaily",
+            "date": "2026-10-19",
+            "headline": "Why some people escape Alzheimer’s despite carrying a high-risk gene",
+            "summary": "Scientists have discovered why some people with a high genetic risk of Alzheimer’s remain mentally sharp into their 80s, uncovering a rare mutation that protects the brain from harmful protein buildup. The findings reveal a potential new way to prevent early brain damage and could pave the way for treatments that mimic this natural defense.",
+            "tag": "BIOTECH",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261018205044.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261020-27",
+            "source": "arXiv Preprint",
+            "date": "2026-10-19",
+            "headline": "ProteinGeoBench: Frontier Structural-Biology Agents Are Fluent at Lookup but Lost in Geometry",
+            "summary": "Frontier agents retrieve structural metadata well and compute geometry from coordinates less reliably. We ask how much of a benchmark score reflects that gap and how much reflects the evaluation configuration around the model. We study ProteinGeoBench, a suite of 131 protein-structure tasks, using 4,249 rollouts from four frontier models and 4,486 further trials across 26 models.",
+            "tag": "SCIENCE",
+            "url": "http://arxiv.org/abs/2610.26829v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.1
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261020-22",
+            "source": "Wired Culture",
+            "date": "2026-10-16",
+            "headline": "AI-Generated Hot Girls Are Ripping Off Comedians to Boost Their Horny Content",
+            "summary": "A network of AI-generated models is using comics’ material to funnel views to their OnlyFans and Fanvue accounts—and there’s not much comedians can do about it.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/ai-generated-hot-girls-are-ripping-off-comedians-to-boost-their-horny-content/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "culture-industry-20261020-25",
+            "source": "Wired Culture",
+            "date": "2026-10-20",
+            "headline": "Demi Adejuyigbe Thinks You Should Only Post 3 Times a Day",
+            "summary": "The comedian sees being online as similar to visiting the zoo. “I don’t need to interact with that,” he says. “It’s just a thing that I enjoy, and then I walk away.”.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/demi-adejuyigbe-user-behavior/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          },
+          {
+            "id": "culture-industry-20261020-26",
+            "source": "Wired Culture",
+            "date": "2026-10-16",
+            "headline": "The New Fan’s Guide to the Unreal World of Nathan Fielder",
+            "summary": "Surprised by the hype around yet another documentary on Theranos fraudster Elizabeth Holmes? It has everything to do with this experimental comedian.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/the-new-fans-guide-to-the-unreal-world-of-nathan-fielder/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          },
+          {
+            "id": "culture-industry-20261020-29",
+            "source": "Ars Technica",
+            "date": "2026-10-19",
+            "headline": "PSA: Patch your Plex media server before someone hacks it",
+            "summary": "A researcher says attacks chaining 4 vulnerabilities is hacking unpatched boxes.",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/security/2026/10/recently-fixed-plex-media-vulnerabilities-are-being-exploited-to-install-malware/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.7
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261020-1",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-18",
+            "headline": "The West Must Stand With Ukraine and Increase Sanctions on Russia",
+            "summary": "The Trump administration recently waived certain sanctions on Russia despite President Vladimir Putin's ongoing attacks against Ukrainian energy targets. The article contrasts Putin's authoritarian regime with Volodymyr Zelensky's democratic leadership, outlining how Russia actively threatens Western security. It concludes that the West should isolate Putin, provide military assistance to Ukraine, and seize roughly $300 billion in frozen Russian assets.",
+            "tag": "RUSSIA_POLICY",
+            "url": "https://www.theatlantic.com/ideas/2026/10/trump-putin/689067/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.8,
+              "relevance": 4.5,
+              "total": 8
+            }
+          },
+          {
+            "id": "culture-voices-20261020-8",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-18",
+            "headline": "Theranos-Style Fraud Has Become the Norm",
+            "summary": "Perhaps Elizabeth Holmes was simply ahead of her time: Today, the Theranos founder’s crimes look less notorious amid a pervasive culture of grift and graft. Her biotechnology company infamously promised to revolutionize medicine by conducting hundreds of tests on mere pinpricks of blood. A decade after it fell into disgrace, and three years after she began serving her 11-year federal-prison sentence for defrauding investors of hundreds of millions of dollars, Holmes is the subject of a new documentary.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/theranos-trump-nathan-fielder/689001/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9,
+              "relevance": 6.5,
+              "total": 7.3
+            }
+          },
+          {
+            "id": "culture-voices-20261020-9",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-18",
+            "headline": "America Is Now an Ally of Russia",
+            "summary": "In the past week, the president of the United States has conclusively turned America into an ally of the Russian Federation. Donald Trump has now abandoned pretense and is openly aiding the Kremlin in its war against a friend and partner of the U.S. The American commander in chief has abandoned the Western order, the most successful—and powerful—security arrangement in human history.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/america-now-ally-russia/689066/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 8.5,
+              "relevance": 6.5,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "culture-voices-20261020-10",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-18",
+            "headline": "How the Rabbit Revolution Went Too Far",
+            "summary": "T his is the moment I knew that the whole vibrator thing had gone too far: It was about a year ago, and I’d ordered a replacement rabbit, the model I’d fallen for around 2007, amid the vibrator renaissance brought about by Sex and the City . An early episode of that zeitgeist show features the prudish Charlotte, having reluctantly bought a “Rabbit Pearl” on the advice of her friend Miranda, becoming so addicted to her new toy that she stops leaving her apartment, thus turning the rabbit into a cultural icon for female pleasure. More than a quarter century had passed since that innocent moment, and the rabbit—once a battery-operated device with a clunky rotating shaft and dainty bunny ears that shivered with astonishing proficiency—had turned sleek and space-age.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/vibrators-sexuality-intimacy-loneliness/689004/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "culture-voices-20261020-11",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-19",
+            "headline": "How Corruption Got This Bad",
+            "summary": "“Isn’t that illegal?” That’s a question I get asked a lot as a former federal prosecutor. Donald Trump, his family, and members of his administration are most often the inspiration. Last year, the Qataris gave the U.S.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/constitution-trump-doj-supreme-court-corruption/689042/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 2.4,
+              "magnitude": 8.2,
+              "relevance": 9.5,
+              "total": 7
+            }
+          }
+        ]
+      }
+    }
+  }
+}
