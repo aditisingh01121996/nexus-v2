@@ -1,0 +1,634 @@
+{
+  "date": "2026-10-25",
+  "label": "Today",
+  "lastUpdated": "2026-10-25T10:20:32.977Z",
+  "agentLog": [
+    {
+      "timestamp": "10:19:54",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 6bad259: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:19:54",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:19:59",
+      "module": "SCOUT",
+      "message": "Scouted 117 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:19:59",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:19:59",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 70 off-beat/redundant wires. 47 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:19:59",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:19:59",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:20:32",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 26 items (2 via LLM, 24 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 7957. Est cost: $0.00130.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:20:32",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:20:32",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (26 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "10:20:32",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-25 live (26 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261025-12",
+            "source": "TechCrunch AI",
+            "date": "2026-10-23",
+            "headline": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
+            "summary": "Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, developing founder leadership, and scaling companies both inside and outside traditional startup hubs.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 4.4,
+              "magnitude": 6,
+              "relevance": 9.5,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261025-19",
+            "source": "TechCrunch AI",
+            "date": "2026-10-24",
+            "headline": "The AI graveyard: a running list of projects and startups that didn’t make it",
+            "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261025-23",
+            "source": "TechCrunch AI",
+            "date": "2026-10-23",
+            "headline": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia",
+            "summary": "The company plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261025-10",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-22",
+            "headline": "Designing an AI serving harness built to last",
+            "summary": "The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has centered on model capability: bigger models, better reasoning, larger context windows, higher benchmark scores.",
+            "tag": "BENCHMARK",
+            "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261025-13",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-22",
+            "headline": "AI’s hidden storage bill: What inference leaves behind",
+            "summary": "Ask most executives to picture the cost of AI and they’ll likely see GPUs—racks of accelerators with gigawatts of power—and a waitlist for silicon. But that picture leaves something out: Data storage costs. What happens to data after a model responds?",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/22/1146948/ais-hidden-storage-bill-what-inference-leaves-behind/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261025-11",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-20",
+            "headline": "A visit to Samsung’s massive new semiconductor hub",
+            "summary": "Generative AI models run on powerful chips known as GPUs, which depend on stacks of specialized memory chips packaged with the processor. To meet growing demand for memory, Samsung is building a massive new semiconductor manufacturing complex in Pyeongtaek, South Korea. Three fabs already operate around the clock, and a fourth is coming online.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 6,
+              "relevance": 6.5,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261025-17",
+            "source": "arXiv Preprint",
+            "date": "2026-10-22",
+            "headline": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
+            "summary": "Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of finding at least one correct solution. Running all candidate solutions to completion can be computationally demanding, so recent work prunes the candidate pool after generating only a short prefix, committing further computation only to the surviving candidates. Existing pruning strategies divide broadly into two categories: Quality-based methods assign a score to each partial solution and discard those predicted to ultimately lead to an incorrect final solution, while diversity-based methods select partial solutions that follow different reasoning trajectories and are therefore likely to cover different final solutions.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.31667v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-research-20261025-18",
+            "source": "arXiv Preprint",
+            "date": "2026-10-22",
+            "headline": "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning",
+            "summary": "Meta-reinforcement learning aims to train agents that adapt quickly to unseen tasks from limited interaction, but this requires representing task evidence over long interaction histories. Classical recurrent agents compress experience into hidden states, while transformer-based agents retrieve from past trajectories at quadratic memory and computation cost. In this work, we propose Memory-Enhanced Test-Time Adaptation (METTA) for meta-reinforcement learning.",
+            "tag": "REASONING",
+            "url": "http://arxiv.org/abs/2610.31656v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261025-20",
+            "source": "The Verge AI",
+            "date": "2026-10-23",
+            "headline": "OpenAI now trains its frontier AI models with no internet access",
+            "summary": "OpenAI is now training its most advanced AI models without internet access following a string of rogue hacking incidents. In a blog post on Friday, OpenAI says it built an offline testing environment where AI models can interact with indexed and cached web content \"without risk of affecting external systems.\" OpenAI paused training its frontier […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261025-21",
+            "source": "The Verge AI",
+            "date": "2026-10-23",
+            "headline": "Meta delays new business terms after publisher pushback on AI scraping",
+            "summary": "Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company. In a statement to The Verge, Meta spokesperson Daniel Roberts says the terms will go into effect on November 20th \"to allow […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261025-1",
+            "source": "FTC Press",
+            "date": "2026-10-22",
+            "headline": "Federal Court Permanently Shuts Down Illegal Debt Relief Operation",
+            "summary": "At the Federal Trade Commission's request, a federal court permanently banned operators of an alleged debt relief scheme that impersonated banks, credit card companies, and government agencies. The court entered a $106.8 million judgment and ordered the defendants to turn over assets. The operation specifically targeted seniors and veterans.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/court-permanently-shuts-down-illegal-debt-relief-operation-following-ftc-allegation-schemes",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 8.2,
+              "relevance": 8.8,
+              "total": 8.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261025-4",
+            "source": "FTC Press",
+            "date": "2026-10-19",
+            "headline": "FTC Issues Annual Report to Congress on Agency’s Actions to Protect Older Adults",
+            "summary": "Older adults continue to report losing far more money to investment scams than to any other fraud type, the FTC’s report finds The Federal Trade Commission issued its latest report to Congress on protecting older adults, which highlights key trends based on fraud reports submitted by older adults and the FTC’s efforts to combat the problem.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-annual-report-congress-agencys-actions-protect-older-adults",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 8.1
+            }
+          },
+          {
+            "id": "politics-regulatory-20261025-5",
+            "source": "FTC Press",
+            "date": "2026-10-22",
+            "headline": "FTC Sues Perpetrators of Government Impersonation Scheme Over Deceptive Ads, Misleading Promises and Fake Reviews",
+            "summary": "Agency alleges corporate and individual defendants deceived travelers seeking passport services by impersonating the federal government The Federal Trade Commission is taking action against GovAssist LLC, Entry LLC and Scott Zuckerman , for their alleged involvement in a government impersonation scheme that deceived consumers.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-perpetrators-government-impersonation-scheme-over-deceptive-ads-misleading-promises-fake",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261025-6",
+            "source": "FTC Press",
+            "date": "2026-10-19",
+            "headline": "FTC Order Preserves Competition in Digital Advertising Ecosystem as Part of Publicis’s Acquisition of LiveRamp",
+            "summary": "Order addresses concerns that proposed deal would harm competition in markets for media agency services and audience data services The Federal Trade Commission has taken steps to preserve competition in the digital advertising ecosystem by requiring Publicis Groupe S.A.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-order-preserves-competition-digital-advertising-ecosystem-part-publiciss-acquisition-liveramp",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261025-7",
+            "source": "FTC Press",
+            "date": "2026-10-19",
+            "headline": "FTC Sues to Block PlayPower’s Acquisition of Rival Playground Manufacturer Burke",
+            "summary": "FTC alleges the merger of close rivals would significantly reduce price and quality competition in already concentrated market for outdoor commercial playground equipment Today, the Federal Trade Commission sued to block Platinum Equity and its portfolio company PlayPower’s acquisition of BCI Burke, alleging the deal to combine two of the largest commercial outdoor playground equipment makers will drive up prices and decrease innovation and quality for equipment bought by schools, churches, parks and recreation departments and other organizations across the coun.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-block-playpowers-acquisition-rival-playground-manufacturer-burke",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261025-9",
+            "source": "Phys.org",
+            "date": "2026-10-24",
+            "headline": "Nanoscale alloy redesign tackles cold brittleness for potential deep-space and deep-sea applications",
+            "summary": "Metallic materials used in extremely cold environments must maintain high strength, ductility and fracture toughness to support applications in aerospace, clean energy, superconducting systems and deep-space exploration. However, traditional alloys often suffer performance degradation at ultralow temperatures because of the long-standing trade-off between strength, ductility and toughness. Although metals may become stronger at lower temperatures, they can also become more brittle and prone to fracture.",
+            "tag": "PHYSICS",
+            "url": "https://phys.org/news/2026-10-nanoscale-alloy-redesign-tackles-cold.html",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 6.5,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "science-frontier-20261025-16",
+            "source": "ScienceDaily",
+            "date": "2026-10-24",
+            "headline": "Astronomers uncover a mysterious magnetic web above the Sun",
+            "summary": "The Sun’s seemingly peaceful regions are hiding a surprisingly complex magnetic world. Using a balloon-borne telescope high above Earth, scientists discovered delicate, thread-like magnetic structures woven through the solar atmosphere, apparently shaped by twisting motions on the Sun’s surface. They also mapped magnetic fields inside towering jets of solar material, revealing how those fields change with height.",
+            "tag": "AEROSPACE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261023023723.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261025-24",
+            "source": "arXiv Preprint",
+            "date": "2026-10-22",
+            "headline": "What does quantum parameter estimation estimate? A no-go result for true quantity values",
+            "summary": "We examine the conditions under which quantum parameter estimation is compatible with the concept of a ``true'' quantity value: a unique value of the estimated quantity that exists prior to and independently of measurement. While quantum parameter estimation typically assumes that the quantity to be estimated is a parameter, we argue that this assumption can be lifted, opening the way to a more general formulation of estimation that may apply even in situations where the quantity to be estimated is no longer a parameter, but instead a quantum variable susceptible to quantum fluctuations. We identify three assumptions that characterize the way estimation is often presented in the quantum metrology literature, namely, as a procedure for inferring an unknown ``true value\", which is assumed to be unique and to exist prior to and independently of measurement.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.31632v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261025-25",
+            "source": "arXiv Preprint",
+            "date": "2026-10-22",
+            "headline": "Screening strongly correlated materials in solid oxide cells with quantum simulation",
+            "summary": "We develop an end-to-end framework for assessing a quantum-computing application in industrial materials science: the screening of strongly correlated oxygen-electrode materials for SOFCs and SOECs. We formulate the materials problem in terms of interface observables including oxygen-vacancy formation energies, vacancy migration barriers, and electronic conductivity. We describe how these observables can be obtained using a diagrammatic GW-based embedding, either GW+DMFT or self-energy embedding theory (SEET), applied to a DFT-screened shortlist.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.31591v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261025-26",
+            "source": "arXiv Preprint",
+            "date": "2026-10-22",
+            "headline": "Mixed State Deep Thermalization under Generic Quantum Errors",
+            "summary": "Pure-state deep thermalization predicts that, after sufficient scrambling, projected ensembles approach universal distributions that contain information beyond the reduced density matrix. In realistic quantum systems, however, noise is unavoidable and the projected states are generally mixed. Whether mixed-state deep thermalization admits an analogous universal limiting distribution has remained unclear.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.31580v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261025-22",
+            "source": "Wired Culture",
+            "date": "2026-10-20",
+            "headline": "Demi Adejuyigbe Thinks You Should Only Post 3 Times a Day",
+            "summary": "The comedian sees being online as similar to visiting the zoo. “I don’t need to interact with that,” he says. “It’s just a thing that I enjoy, and then I walk away.”.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/demi-adejuyigbe-user-behavior/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261025-2",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-22",
+            "headline": "Venezuelans Rebuild Local Communities Amid Opaque Foreign Oil Deals",
+            "summary": "Following the removal of Nicolás Maduro, Venezuelans contend with severe infrastructure failure, environmental degradation at Lake Maracaibo, and opaque U.S.-managed oil agreements. Opposition leaders and residents express deep skepticism regarding the political arrangement between the United States administration and Delcy Rodríguez's regime. In response to widespread state absence and devastating earthquakes, grassroots networks have mobilized locally to provide relief and demand democratic elections.",
+            "tag": "VENEZUELA",
+            "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 7.5,
+              "novelty": 9.4,
+              "magnitude": 9.8,
+              "relevance": 8,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "culture-voices-20261025-3",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-21",
+            "headline": "The Bill for Trumpism Comes Due",
+            "summary": "This article was featured in the One Story to Read Today newsletter. DJT” Donald Trump posted that promise on February 7, 2025, the 18th day of his current presidential term. During the 2024 campaign, he had promised even more: the elimination of the entire national debt in a single term of office.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/trump-budget-deficit-debt/689085/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.8,
+              "relevance": 6.5,
+              "total": 8.3
+            }
+          },
+          {
+            "id": "culture-voices-20261025-8",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-21",
+            "headline": "Like Ken Paxton, Without the Baggage",
+            "summary": "A crucial midterm contest is happening right now in Texas, one that could determine the future of the state and its influence on federal policy and national politics. Senate race—though everyone is watching that one, and with good reason. The Republican, Ken Paxton—who has served as Texas’s attorney general since 2015—is an unusually weak candidate, beset by personal and financial scandals and a reputation for using his office for right-wing culture-war fixations, and weighed down by a deeply unpopular president.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/texas-attorney-general-race/689061/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 5.2,
+              "relevance": 8.8,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "culture-voices-20261025-14",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-22",
+            "headline": "Why So Many Men Aren’t Working",
+            "summary": "This article was featured in the One Story to Read Today newsletter. Thirty years ago this summer, the sociologist William Julius Wilson published When Work Disappears , in which he attributed high unemployment in urban, largely Black neighborhoods to structural changes in the economy. Conservatives dismissed his argument, contending instead that the problem was a poor work ethic enabled by a welfare system in desperate need of reform.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/job-market-unemployment-men-screentime/689109/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "culture-voices-20261025-15",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-21",
+            "headline": "This Is Not a Cycle of Retribution",
+            "summary": "Donald Trump has spent nearly two years investigating, suing, or prosecuting anybody in politics, media, or government who ever defied him. Now, with Democrats poised to win control of one or both chambers of Congress, the administration and its allies are prepared to slip back into their familiar pose of victimhood. The putative evidence of imminent GOP persecution comes from Senator Elissa Slotkin of Michigan, who recently told the Vox journalist Astead Herndon during an event at the University of Chicago that Democrats should pursue accountability for the administration to, among other goals, deter new graduates from enlisting in corrupt schemes.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/slotkin-trump-investigations-corruption/689092/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          }
+        ]
+      }
+    }
+  }
+}
