@@ -1,0 +1,594 @@
+{
+  "date": "2026-10-26",
+  "label": "Today",
+  "lastUpdated": "2026-10-26T11:48:11.027Z",
+  "agentLog": [
+    {
+      "timestamp": "11:47:24",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 788dc75: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:47:24",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:47:28",
+      "module": "SCOUT",
+      "message": "Scouted 117 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:47:28",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:47:28",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 77 off-beat/redundant wires. 40 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:47:28",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:47:28",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:48:11",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 24 items (7 via LLM, 17 via deterministic synthesis; top 15 LLM quota applied, 1 dropped for thin context). Tokens: 12063. Est cost: $0.00218.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:48:11",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:48:11",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (24 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:48:11",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-26 live (24 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261026-18",
+            "source": "TechCrunch AI",
+            "date": "2026-10-24",
+            "headline": "The AI graveyard: a running list of projects and startups that didn’t make it",
+            "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261026-8",
+            "source": "arXiv Preprint",
+            "date": "2026-10-23",
+            "headline": "Flownomaly: Single-Step Conditional-Mean Recovery for Few-Shot Anomaly Detection",
+            "summary": "Few-shot industrial anomaly detection requires modeling category-specific normality from only a handful of defect-free images. Common approaches tie inference to stored exemplars, impose rigid linear structure, or risk reproducing anomalous content. Flownomaly instead casts the problem as normal-counterpart recovery in frozen DINOv2 feature space.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.32964v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261026-9",
+            "source": "arXiv Preprint",
+            "date": "2026-10-23",
+            "headline": "Knowledge Distillation across Item and Code Spaces for Parallel Generative Recommendation",
+            "summary": "Generative recommendation with semantic IDs represents each item as a sequence of discrete codes derived from its semantic representation and predicts these codes to generate recommendations. Existing semantic-ID recommenders are typically trained with hard labels for the observed next item. Although such supervision identifies the target, it provides no explicit distributional information about alternative items conditioned on the same user history.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.32943v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261026-10",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-22",
+            "headline": "Designing an AI serving harness built to last",
+            "summary": "The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has centered on model capability: bigger models, better reasoning, larger context windows, higher benchmark scores.",
+            "tag": "BENCHMARK",
+            "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261026-13",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-22",
+            "headline": "AI’s hidden storage bill: What inference leaves behind",
+            "summary": "Ask most executives to picture the cost of AI and they’ll likely see GPUs—racks of accelerators with gigawatts of power—and a waitlist for silicon. But that picture leaves something out: Data storage costs. What happens to data after a model responds?",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/22/1146948/ais-hidden-storage-bill-what-inference-leaves-behind/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261026-11",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-20",
+            "headline": "A visit to Samsung’s massive new semiconductor hub",
+            "summary": "Generative AI models run on powerful chips known as GPUs, which depend on stacks of specialized memory chips packaged with the processor. To meet growing demand for memory, Samsung is building a massive new semiconductor manufacturing complex in Pyeongtaek, South Korea. Three fabs already operate around the clock, and a fourth is coming online.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 6,
+              "relevance": 6.5,
+              "total": 6.8
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261026-19",
+            "source": "The Verge AI",
+            "date": "2026-10-23",
+            "headline": "OpenAI now trains its frontier AI models with no internet access",
+            "summary": "OpenAI is now training its most advanced AI models without internet access following a string of rogue hacking incidents. In a blog post on Friday, OpenAI says it built an offline testing environment where AI models can interact with indexed and cached web content \"without risk of affecting external systems.\" OpenAI paused training its frontier […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261026-1",
+            "source": "FTC Press",
+            "date": "2026-10-22",
+            "headline": "Federal Court Bans Illegal Debt Relief Scheme Following FTC Action",
+            "summary": "At the Federal Trade Commission's request, a federal court permanently banned the operators of an alleged debt relief scheme. The operation targeted seniors and veterans by impersonating banks, credit card companies, and government agencies. The court also entered a $106.8 million judgment and ordered the defendants to turn over assets.",
+            "tag": "FTC_ENFORCE",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/court-permanently-shuts-down-illegal-debt-relief-operation-following-ftc-allegation-schemes",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 8.2,
+              "relevance": 8.5,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261026-4",
+            "source": "FTC Press",
+            "date": "2026-10-22",
+            "headline": "FTC Sues GovAssist and Scott Zuckerman Over Passport Impersonation Scheme",
+            "summary": "The Federal Trade Commission is taking action against GovAssist LLC, Entry LLC, and Scott Zuckerman for an alleged government impersonation scheme. The agency alleges the defendants deceived travelers seeking passport services through deceptive ads, misleading promises, and fake reviews. According to the FTC, the corporate and individual defendants impersonated the federal government to deceive consumers.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-perpetrators-government-impersonation-scheme-over-deceptive-ads-misleading-promises-fake",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261026-5",
+            "source": "FTC Press",
+            "date": "2026-10-19",
+            "headline": "FTC Orders Publicis to Preserve Digital Advertising Competition in LiveRamp Deal",
+            "summary": "The Federal Trade Commission has taken action to preserve competition in the digital advertising ecosystem during Publicis Groupe S.A.'s acquisition of LiveRamp. The FTC's order addresses concerns that the transaction would harm competition in markets for media agency services and audience data services.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-order-preserves-competition-digital-advertising-ecosystem-part-publiciss-acquisition-liveramp",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261026-6",
+            "source": "FTC Press",
+            "date": "2026-10-19",
+            "headline": "FTC Sues to Block PlayPower Acquisition of Playground Manufacturer Burke",
+            "summary": "The Federal Trade Commission filed a lawsuit to block PlayPower's proposed acquisition of BCI Burke. The agency alleges that combining two of the largest commercial outdoor playground manufacturers would reduce competition, driving up prices while decreasing innovation and quality. The affected equipment is used by schools, churches, and local parks departments across the country.",
+            "tag": "REGULATION",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-block-playpowers-acquisition-rival-playground-manufacturer-burke",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9,
+              "total": 8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261026-3",
+            "source": "FTC Press",
+            "date": "2026-10-19",
+            "headline": "FTC Submits Annual Report to Congress on Protecting Older Adults",
+            "summary": "The Federal Trade Commission issued its latest report to Congress detailing efforts to protect older adults from fraud. Based on submitted reports, older adults continue to lose far more money to investment scams than any other fraud type. The document highlights these key trends along with agency actions to combat the problem.",
+            "tag": "FTC_REPORT",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-annual-report-congress-agencys-actions-protect-older-adults",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.2,
+              "total": 7.9
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261026-23",
+            "source": "MarketWatch Top",
+            "date": "2026-10-26",
+            "headline": "The stock market’s biggest test in weeks is here",
+            "summary": "Here’s what’s I’m watching this morning: A week chockablock with enough catalysts that we might finally get some answers about the direction of the market by the end of it.",
+            "tag": "MARKETS",
+            "url": "https://www.marketwatch.com/story/the-stock-markets-biggest-test-in-weeks-is-here-256f5a37?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "markets-macro-20261026-24",
+            "source": "MarketWatch Top",
+            "date": "2026-10-26",
+            "headline": "These four shocks could hand investors an unexpected buying window, strategists say",
+            "summary": "Yardeni Research said a surprise interest-rate decision by the Federal Reserve or increasing constraints in the artificial-intelligence trade could provide valuable entry points for investors.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/these-four-shocks-could-hand-investors-an-unexpected-buying-window-strategists-say-5ae7c4db?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261026-17",
+            "source": "Phys.org",
+            "date": "2026-10-26",
+            "headline": "Lumina simulation brings the early universe to life on a record-breaking scale",
+            "summary": "The James Webb Space Telescope (JWST) and Nancy Roman Space Telescope are revealing the universe's earliest chapters in detail. To help astronomers understand what they are seeing, researchers at the Center for Astrophysics | Harvard & Smithsonian have developed \"Lumina,\" one of the largest and most detailed simulations ever created of the early universe.",
+            "tag": "PHYSICS",
+            "url": "https://phys.org/news/2026-10-lumina-simulation-early-universe-life.html",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "science-frontier-20261026-16",
+            "source": "arXiv Preprint",
+            "date": "2026-10-23",
+            "headline": "Low-frustration block encodings by patch routing",
+            "summary": "Block-encoding has emerged as a core primitive in many quantum algorithms, including quantum simulation. In this work, we design efficient and extensible methods for generating low-frustration block encodings of frustrated lattice Hamiltonians built from repeated local interaction patches through a technique we call \"patch routing\". We construct block encodings for a full Hamiltonian by first block-encoding a small local patch and then using a SWAP-style routing network to coherently apply the local patch encoding across the lattice.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.32946v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "science-frontier-20261026-20",
+            "source": "arXiv Preprint",
+            "date": "2026-10-23",
+            "headline": "Distributed Quantum-Centric Supercomputing with Multi-Layered Generative Learning for Intermolecular Interactions",
+            "summary": "Quantum-centric supercomputing (QCSC) approaches, such as sample-based quantum diagonalization (SQD), combine quantum processors with high-performance computers (HPC), offering a promising route toward solving challenging electronic structure problems. However, implementation of QCSC approaches to large active space calculations is constrained by the associated number of qubits, deep quantum circuits, sampling cost, and large-scale Hamiltonian diagonalization. To overcome these limitations, we introduce a distributed QCSC framework that decomposes complex molecular problems into parallel sub-problems requiring fewer qubits, shallower circuits, and reduced shot budgets.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.32968v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6
+            }
+          },
+          {
+            "id": "science-frontier-20261026-21",
+            "source": "arXiv Preprint",
+            "date": "2026-10-23",
+            "headline": "Maximal Orbital Entanglement from Non-Interacting Fermions",
+            "summary": "Orbital rotations are used in quantum many-body physics and chemistry to reduce the complexity of quantum states by compressing their correlation into a small set of relevant orbitals. In striking contrast, quantum information processing strives for the opposite: orbitals that maximize entanglement as a resource. Motivated by this, we prove that Slater determinants of $N$ fermions on a lattice of $d_A + d_B = d$ sites, although free of particle correlation, can carry up to $\\min\\{d_A, d_B, N, d-N\\}$ ebits of orbital entanglement.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.32974v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261026-22",
+            "source": "arXiv Preprint",
+            "date": "2026-10-23",
+            "headline": "Certain Quantum States Already Require Quantum Time Evolution",
+            "summary": "Model-independent tests of quantum theory, such as Bell inequality violations, focus on static properties of the theory and do not rely on its dynamical aspects. Hence, this core part of quantum theory remains largely untested in a model-independent way. We show that the structure of quantum time evolution can be examined by testing the consistency between the state space and the dynamical laws.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.32937v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [],
+        "voices": [
+          {
+            "id": "culture-voices-20261026-2",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-22",
+            "headline": "Venezuelans Turn to Grassroots Organizing Amid Opaque Oil Deals and Disasters",
+            "summary": "Following the removal of Nicolás Maduro, the U.S. administration struck opaque oil agreements with Delcy Rodríguez's regime while ignoring opposition leader María Corina Machado. Meanwhile, severe infrastructure collapse, economic inflation, and deadly June 2026 earthquakes have left government aid largely non-existent. In response, ordinary Venezuelans increasingly rely on community-led voluntary networks to provide relief and organize civic life.",
+            "tag": "CIVIC_SOCIETY",
+            "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 7.5,
+              "novelty": 9.4,
+              "magnitude": 9.8,
+              "relevance": 8,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "culture-voices-20261026-7",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-21",
+            "headline": "Texas Candidates Lock in Close Race to Succeed Attorney General Ken Paxton",
+            "summary": "Democratic Senator Nathan Johnson and Republican Senator Mayes Middleton are locked in a dead heat to succeed Texas Attorney General Ken Paxton. Johnson proposes returning the office to its traditional focus on consumer protection and constitutional balance, while Middleton vows to continue conservative culture-war litigation. The race highlights competing voter appetites for maintaining aggressive right-wing legal policies versus stepping back from partisan litigation.",
+            "tag": "TEXAS_AG_RACE",
+            "url": "https://www.theatlantic.com/ideas/2026/10/texas-attorney-general-race/689061/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 5.2,
+              "relevance": 8.5,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "culture-voices-20261026-12",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-26",
+            "headline": "A Public Option for … Groceries?",
+            "summary": "Voters have consistently cited the cost of groceries as their top economic concern—and it isn’t hard to understand why. From 2015 to 2019, the average worker’s wages grew about 30 times faster than the price of groceries. From 2021 through the end of last year, grocery prices increased faster than both overall inflation and wages.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/grocery-prices-public-option/689132/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 4.4,
+              "magnitude": 6,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "culture-voices-20261026-14",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-25",
+            "headline": "A Mathematician Reads the AI Future",
+            "summary": ", and I’m walking around the house while my wife sleeps upstairs. I’m feeling disoriented and discombobulated, just as I have for months, since May, when AI came for math. The leaves are ablaze here in Ithaca, fiery reds and oranges, and I saw them swirling around in my backyard yesterday, following the streamlines of an eddy described by the Navier-Stokes equations.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "culture-voices-20261026-15",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-22",
+            "headline": "Why So Many Men Aren’t Working",
+            "summary": "This article was featured in the One Story to Read Today newsletter. Thirty years ago this summer, the sociologist William Julius Wilson published When Work Disappears , in which he attributed high unemployment in urban, largely Black neighborhoods to structural changes in the economy. Conservatives dismissed his argument, contending instead that the problem was a poor work ethic enabled by a welfare system in desperate need of reform.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/job-market-unemployment-men-screentime/689109/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          }
+        ]
+      }
+    }
+  }
+}
