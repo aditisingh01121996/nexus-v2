@@ -1,0 +1,654 @@
+{
+  "date": "2026-10-27",
+  "label": "Today",
+  "lastUpdated": "2026-10-27T11:14:29.579Z",
+  "agentLog": [
+    {
+      "timestamp": "11:13:00",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 3845a7c: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:13:00",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:13:06",
+      "module": "SCOUT",
+      "message": "Scouted 116 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:13:06",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:13:06",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 73 off-beat/redundant wires. 43 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:13:06",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:13:06",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:14:29",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 27 items (15 via LLM, 12 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 19058. Est cost: $0.00363.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:14:29",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:14:29",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (27 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:14:29",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-27 live (27 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261027-18",
+            "source": "TechCrunch AI",
+            "date": "2026-10-27",
+            "headline": "Nvidia backs Indian startup helping companies run AI models with fewer GPUs",
+            "summary": "Simplismart says its annualized revenue run rate has grown 14-fold in six months, with the U.S. accounting for more than half its revenue.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261027-22",
+            "source": "TechCrunch AI",
+            "date": "2026-10-26",
+            "headline": "Anthropic officially files for its public debut",
+            "summary": "Anthropic has officially filed for an IPO, revealing soaring revenue, mounting losses, major enterprise adoption, and an unusual governance structure designed to preserve founder control and its AI safety mission.",
+            "tag": "IPO",
+            "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261027-7",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-22",
+            "headline": "Enterprise AI competitive advantage shifts from model capability to infrastructure",
+            "summary": "The next competitive advantage in enterprise AI focuses less on model choice and more on what is built around it. For years, the AI conversation has centered primarily on model capability, including larger context windows and higher benchmark scores.",
+            "tag": "AI_INFRASTRUCTURE",
+            "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261027-9",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-22",
+            "headline": "AI storage costs emerge as a hidden expense beyond GPU infrastructure",
+            "summary": "Executives typically focus on GPUs and power when picturing AI costs, overlooking the back-end data storage required. Much of the data generated from billions of daily prompts, images, and videos needs to be stored after a model responds.",
+            "tag": "AI-VENTURE",
+            "url": "https://www.technologyreview.com/2026/10/22/1146948/ais-hidden-storage-bill-what-inference-leaves-behind/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "ai-venture-research-20261027-14",
+            "source": "arXiv Preprint",
+            "date": "2026-10-26",
+            "headline": "DecisionRAG Replaces Traditional Retrieval With Decision Models",
+            "summary": "Researchers propose DecisionRAG, a method that uses pretrained language models as decision models to jointly evaluate candidate branches in a single forward pass without generating tokens. This approach outperforms dense retrieval with an 8B reranker across multiple benchmarks while achieving fast retrieval times on large corpora.",
+            "tag": "RESEARCH",
+            "url": "http://arxiv.org/abs/2610.35868v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-research-20261027-16",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-22",
+            "headline": "The Foundations of Scalable AI",
+            "summary": "A scalable AI system requires a strong foundation. Data, engineering, platforms, operating models, and governance must converge to work as one. This session from MIT Technology Review’s EmTech Future conference explores what it takes to build that foundation in a highly regulated environment and how a responsible, trustworthy implementation can turn emerging capabilities, including agentic….",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/22/1146103/the-foundations-of-scalable-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261027-17",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-22",
+            "headline": "Making the case for context-aware AI",
+            "summary": "Enterprise AI can generate recommendations, automate tasks, and help organizations make decisions faster. But without an understanding of how a business actually operates, even powerful models can miss the constraints and relationships that determine whether a decision is the right one. As companies look to move AI from experimentation into everyday operations, the challenge ahead….",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/22/1146812/making-the-case-for-context-aware-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261027-6",
+            "source": "The Verge AI",
+            "date": "2026-10-26",
+            "headline": "OpenAI unveils three new science discoveries and academic partnerships",
+            "summary": "OpenAI announced three major discoveries in mathematics, computer science, and physics following its recent release of manuscripts containing math solutions. Unlike previous releases, external experts termed shepherds guided the results in collaboration with the company.",
+            "tag": "AI-VENTURE",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 7.5,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261027-15",
+            "source": "The Verge AI",
+            "date": "2026-10-26",
+            "headline": "Anthropic files S-1 prospectus with SEC to launch Nasdaq IPO",
+            "summary": "Anthropic has filed its S-1 prospectus with the Securities and Exchange Commission to prepare for an initial public offering on the Nasdaq exchange. The maker of Claude intends to trade under the ticker symbol ANT, potentially beating rival OpenAI to the public market.",
+            "tag": "AI VENTURES",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261027-19",
+            "source": "The Verge AI",
+            "date": "2026-10-26",
+            "headline": "Anthropic is burning gas to feed the AI boom",
+            "summary": "As it prepares to go public, Anthropic's S-1 filing makes generative AI's methane dependency glaringly obvious. \"Competition for access to electrical supply and data center locations with adequate power availability is intense.\" In documents filed with the US Securities and Exchange Commission Monday, Anthropic acknowledges that data centers are becoming increasingly reliant on \"natural gas\" […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261027-20",
+            "source": "The Verge AI",
+            "date": "2026-10-26",
+            "headline": "Five weird details from Anthropic’s IPO filing",
+            "summary": "Anthropic has finally filed its S-1 prospectus with the SEC, a document designed to give investors a look under the hood of its business, from how much its executives are making and plans for spending its IPO billions to the risks that could derail its ambitions. At more than 300 pages, there's a lot to […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261027-21",
+            "source": "The Verge AI",
+            "date": "2026-10-26",
+            "headline": "Microsoft offers buyouts to 60,000 employees",
+            "summary": "Microsoft is offering voluntary buyouts to up to 60,000 employees across the US, UK, Canada, and India. In a message to employees, Microsoft chief people officer Amy Coleman writes that this gives staff members \"the opportunity to leave Microsoft with financial support and career planning resources\" as the company looks to trim staff without another […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1018666/microsoft-expands-buyouts-60000-employees-eligible",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261027-1",
+            "source": "FTC Press",
+            "date": "2026-10-22",
+            "headline": "Federal Court Permanently Bans Illegal Debt Relief Operation After FTC Request",
+            "summary": "A federal court permanently banned the operators of an illegal debt relief scheme following FTC allegations that they impersonated government agencies, banks, and credit card companies. The scheme specifically targeted seniors and veterans. The court entered a $106.8 million judgment and ordered the defendants to surrender assets.",
+            "tag": "REGULATION",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/court-permanently-shuts-down-illegal-debt-relief-operation-following-ftc-allegation-schemes",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 8.2,
+              "relevance": 8.5,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261027-2",
+            "source": "FTC Press",
+            "date": "2026-10-26",
+            "headline": "FTC and State Partners Sue Dollar General for Deceptive Pricing",
+            "summary": "The Federal Trade Commission and 20 states have filed a lawsuit against Dollar General Corporation for deceptive pricing practices. The company allegedly charged customers more at the register than the displayed shelf prices, costing consumers millions of dollars.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-state-partners-sue-dollar-general-charging-consumers-more-advertised-many-products",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 8.1
+            }
+          },
+          {
+            "id": "politics-regulatory-20261027-3",
+            "source": "FTC Press",
+            "date": "2026-10-22",
+            "headline": "FTC Sues Defendants Over Government Impersonation Scheme Targeting Travelers",
+            "summary": "The Federal Trade Commission is taking legal action against GovAssist LLC, Entry LLC, and Scott Zuckerman. The agency alleges the defendants deceived consumers seeking passport services through deceptive ads, misleading promises, fake reviews, and government impersonation.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-perpetrators-government-impersonation-scheme-over-deceptive-ads-misleading-promises-fake",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261027-25",
+            "source": "MarketWatch Top",
+            "date": "2026-10-27",
+            "headline": "AI debt trouble could help Fed’s Warsh get his way with fewer rate hikes",
+            "summary": "AI financing has been harder and more expensive to come by as the capital-spending boom comes under more scrutiny.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/ai-debt-trouble-could-help-feds-warsh-get-his-way-with-fewer-rate-hikes-b3dc4525?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "markets-macro-20261027-27",
+            "source": "MarketWatch Top",
+            "date": "2026-10-27",
+            "headline": "Dividend stocks are having an excellent October as tech sector struggles",
+            "summary": "ETFs focused on dividend stocks are seeing a powerful rally in October, adding to huge gains in 2026.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/dividend-stocks-are-having-an-excellent-october-as-tech-sector-struggles-5ae40b02?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261027-4",
+            "source": "arXiv Preprint",
+            "date": "2026-10-26",
+            "headline": "Researchers Map Growth Phases of Tantalum Films Using Temperature and Oxygen",
+            "summary": "Scientists deposited 100 nm tantalum films on c-plane sapphire at varying temperatures and oxygen partial pressures to construct a growth phase map. Without added oxygen, alpha-Ta(110) dominated, while introducing specific oxygen pressures enabled the formation of alpha-Ta(111) and beta-Ta. The results establish oxygen-controlled processing windows for phase- and orientation-selective growth of tantalum films for superconducting devices.",
+            "tag": "SUPERCONDUCTOR",
+            "url": "http://arxiv.org/abs/2610.35768v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 9.2,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "science-frontier-20261027-12",
+            "source": "arXiv Preprint",
+            "date": "2026-10-26",
+            "headline": "Researchers Introduce DAWG Decoder for Fault-Tolerant Quantum Computers",
+            "summary": "Decoding with alternating weighted graph sparsification (DAWG) combines Tanner graph sparsification with ensembling belief-propagation decoders for quantum error correction. The DAWG decoder shows performance similar to Relay belief-propagation and Vibe decoding when paired with a Localized Statistics Decoding post-processor, while calling the post-processor an order of magnitude less frequently. This approach offers a viable low-cost, low-latency belief-propagation-based decoding algorithm requiring simplified hardware resources.",
+            "tag": "QUANTUM",
+            "url": "http://arxiv.org/abs/2610.35735v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "science-frontier-20261027-23",
+            "source": "arXiv Preprint",
+            "date": "2026-10-26",
+            "headline": "Interference-induced dynamical crossovers in quantum walks on disordered square lattices",
+            "summary": "We study discrete-time quantum walks with Fourier, Grover, and Hadamard coin operators on disordered square lattices, alongside classical random walks. Edges in the lattice are absent with a probability, $p$. In this case, both classical and quantum walks exhibit an essentially identical degradation of transport.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.35828v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6
+            }
+          },
+          {
+            "id": "science-frontier-20261027-24",
+            "source": "arXiv Preprint",
+            "date": "2026-10-26",
+            "headline": "Twist-controlled imaginary-time Mpemba effect in quantum spin systems",
+            "summary": "We construct a controllable imaginary-time Mpemba effect in quantum spin systems using spatially modulated local rotations without changing initial bipartite entanglement spectra and correlation magnitudes. This feature unambiguously isolates the redistribution of spectral weights as the sole driver of the anomalous relaxation. Using the compact-boson description, we reveal that these twists act as precise mode selectors: higher-harmonic twists exclusively populate high-energy standing waves, structurally bypassing slow-decaying infrared modes to accelerate convergence.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.35784v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261027-26",
+            "source": "arXiv Preprint",
+            "date": "2026-10-26",
+            "headline": "Complete entropy contraction from conditional hyperboundedness",
+            "summary": "For finite-dimensional quantum channels compatible with a faithful conditional expectation, we show that conditional hyperboundedness and strict GNS contraction together yield a relative entropy contraction. For KMS-symmetric quantum Markov semigroups, a conditional $2\\to q$ hyperboundedness at time $t_0>0$ combined with a GNS gap $λ>0$ implies a modified logarithmic Sobolev constant \\[ α=\\frac{λ(1-2/q)} {12(λt_0+\\log M+1-2/q)},\\] where $M$ is the hyperboundedness constant. As a consequence, completely bounded hyperboundedness over auxiliary systems gives complete versions of entropy contraction with the same rates.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.35863v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [],
+        "voices": [
+          {
+            "id": "culture-voices-20261027-5",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-26",
+            "headline": "Super PAC ad blames U.S. aid to Israel for domestic economic woes",
+            "summary": "An independent political-action committee supporting Michigan Democrat Abdul El-Sayed produced an ad claiming that U.S. aid to Israel causes rising grocery prices and lacks funding for domestic needs. Similar arguments linking foreign aid to domestic economic troubles have been made by figures like Zohran Mamdani and Marjorie Taylor Greene. In reality, U.S. military aid to Israel accounts for a small fraction of the federal budget and is far outweighed by domestic expenditures like grocery and housing costs.",
+            "tag": "POLITICS",
+            "url": "https://www.theatlantic.com/ideas/2026/10/groceries-israel-funding-budget/689151/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.5,
+              "relevance": 8.5,
+              "total": 7.7
+            }
+          },
+          {
+            "id": "culture-voices-20261027-8",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-26",
+            "headline": "Think Tank Proposes Government Public Option to Lower Grocery Prices",
+            "summary": "A new think tank proposal suggests a public option for food purchasing, leveraging government buying power to secure low prices from suppliers and pass savings to consumers. While grocery stores operate on thin profit margins, middlemen in the supply chain retain high profits, creating pricing power imbalances. Implementing this federal program would face major operational hurdles and fierce industry opposition.",
+            "tag": "FOOD_PRICES",
+            "url": "https://www.theatlantic.com/ideas/2026/10/grocery-prices-public-option/689132/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 4.4,
+              "magnitude": 6,
+              "relevance": 9.5,
+              "total": 7
+            }
+          },
+          {
+            "id": "culture-voices-20261027-13",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-26",
+            "headline": "Religious Revival Surges Amid the Collapse of Cuba",
+            "summary": "Decades of severe economic destitution and the accelerating withdrawal of the Cuban state have sparked a profound societal shift, leading citizens to rely heavily on religious organizations for basic survival and charitable aid. Churches, particularly Catholic and Pentecostal congregations, have expanded their presence significantly as public health, infrastructure, and material support systems fail. Meanwhile, widespread public anger and the mass migration of up to a quarter of the population highlight the near-total disintegration of the communist regime's traditional structures.",
+            "tag": "CULTURE",
+            "url": "https://www.theatlantic.com/magazine/2026/12/post-revolutionary-cuba-society-religion/689018/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 2.4,
+              "magnitude": 8.2,
+              "relevance": 8.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "culture-voices-20261027-10",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-26",
+            "headline": "Netanyahu posts AI-generated image of a nuclear-destroyed Tel Aviv ahead of election",
+            "summary": "Facing polls that reduce his chances of remaining prime minister to one in four, Benjamin Netanyahu published an AI-generated image of a nuclear-devastated Tel Aviv on Instagram. The closing election argument framed the vote as a choice between reelecting Netanyahu or facing annihilation, while his opponents and critics accused him of using existential threats to distract from corruption scandals, pre-war warnings, and draft exemptions for ultra-Orthodox students.",
+            "tag": "POLITICS",
+            "url": "https://www.theatlantic.com/ideas/2026/10/israeli-election-benjamin-netanyahu/689143/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "culture-voices-20261027-11",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-25",
+            "headline": "OpenAI's AI models solve landmark mathematical problems, leaving the field in crisis",
+            "summary": "Artificial intelligence models have rapidly solved hundreds of landmark open problems in mathematics, including Navier-Stokes and hundreds of pure math challenges. This technological shift has left mathematicians deeply divided over the value of machine-generated answers versus the human struggle and joy of discovery. While applied mathematicians see potential tools for future progress, pure mathematicians face an existential crisis over the loss of traditional research and understanding.",
+            "tag": "AI_MATH",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.8
+            }
+          }
+        ]
+      }
+    }
+  }
+}
