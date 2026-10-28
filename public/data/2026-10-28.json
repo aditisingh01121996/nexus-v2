@@ -1,0 +1,655 @@
+{
+  "date": "2026-10-28",
+  "label": "Today",
+  "lastUpdated": "2026-10-28T11:48:12.991Z",
+  "agentLog": [
+    {
+      "timestamp": "11:47:26",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 6110160: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:47:26",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:47:32",
+      "module": "SCOUT",
+      "message": "Scouted 116 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:47:32",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:47:32",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 71 off-beat/redundant wires. 45 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:47:32",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:47:32",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:48:12",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 27 items (3 via LLM, 24 via deterministic synthesis; top 15 LLM quota applied, 1 dropped for thin context). Tokens: 4675. Est cost: $0.00084.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:48:12",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:48:13",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (27 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:48:13",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-28 live (27 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261028-8",
+            "source": "TechCrunch AI",
+            "date": "2026-10-27",
+            "headline": "Disruptive raises $10B fund to make big bets on at least 10 companies",
+            "summary": "Disruptive has made headlines in recent years for pouring money into companies like chip startup Groq and the AI voice-generation startup ElevenLabs.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.8,
+              "relevance": 8.8,
+              "total": 7.6
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261028-7",
+            "source": "arXiv Preprint",
+            "date": "2026-10-27",
+            "headline": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+            "summary": "Scientific discovery often begins with an unexpected observation that prompts a new research question. In a world with altered physical laws, can large language models (LLMs) notice unexpected behavior, such as heavier objects falling more slowly, and discover the law through experiments without being told what to investigate? To evaluate this ability, we introduce LongChang, an automated framework that creates simulated worlds with altered physics, where one or more laws differ from ordinary physics.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.37649v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 8.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261028-12",
+            "source": "arXiv Preprint",
+            "date": "2026-10-27",
+            "headline": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+            "summary": "We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small set of learned per-head attention gates. HoS learns how each head should redistribute attention between trusted and untrusted tokens, enabling models to reason over untrusted content without following injected instructions. We evaluate HoS on Llama-3.3-70B-Instruct and GPT-OSS-20B.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.37657v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261028-13",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-22",
+            "headline": "Designing an AI serving harness built to last",
+            "summary": "The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has centered on model capability: bigger models, better reasoning, larger context windows, higher benchmark scores.",
+            "tag": "BENCHMARK",
+            "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261028-14",
+            "source": "arXiv Preprint",
+            "date": "2026-10-27",
+            "headline": "GEPA-Curator: Curated Learning for Self Improving Agents",
+            "summary": "Large Language Models (LLMs) are increasingly used in multi-turn agentic workloads that require sustained interaction with complex environments. Existing reflective prompt optimizers such as GEPA learn from failed rollouts, but agentic failures can also come from prompt weaknesses, harness limitations, stochastic execution, or noisy judges. We argue that such failures may not provide useful learning signal, and may even be harmful; and thus it is essential to curate which tasks are provided to the prompt optimizer for better performance.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.37651v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 9.4,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261028-15",
+            "source": "MIT Tech Review AI",
+            "date": "2026-10-22",
+            "headline": "AI’s hidden storage bill: What inference leaves behind",
+            "summary": "Ask most executives to picture the cost of AI and they’ll likely see GPUs—racks of accelerators with gigawatts of power—and a waitlist for silicon. But that picture leaves something out: Data storage costs. What happens to data after a model responds?",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/10/22/1146948/ais-hidden-storage-bill-what-inference-leaves-behind/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.8
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261028-11",
+            "source": "The Verge AI",
+            "date": "2026-10-26",
+            "headline": "OpenAI announces three big science discoveries and a new way to work with academics",
+            "summary": "Less than a month after its mass release of hundreds of manuscripts that it said contained solutions to long-standing mathematics questions, OpenAI is back with three more \"major\" discoveries in math, computer science, and physics. What's different this time is the choice to have external experts that OpenAI describes as \"shepherds\" guiding the results in […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261028-20",
+            "source": "The Verge AI",
+            "date": "2026-10-27",
+            "headline": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+            "summary": "On Monday, OpenAI announced impressive breakthroughs in mathematics, computer science, and physics, along with what the company says is an evolving approach to communicating its findings. But despite its apparent course correction, researchers who spoke to The Verge are growing increasingly tired of the company's antics. It has been a turbulent few months between OpenAI […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261028-21",
+            "source": "The Verge AI",
+            "date": "2026-10-27",
+            "headline": "Apple is adding an AI chatbot to Pages, Keynote, and Numbers",
+            "summary": "Apple is bringing an AI assistant to its suite of productivity apps, including Keynote, Pages, and Numbers. The assistant, which is built on AI models from Apple and OpenAI, can understand a document's context to perform tasks like designing, animating, and refining slides in Keynote. In Pages, Apple says the AI assistant can draft, restructure, […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261028-22",
+            "source": "The Verge AI",
+            "date": "2026-10-27",
+            "headline": "Anthropic’s elaborate plan to keep Wall Street at bay",
+            "summary": "Anthropic wants to have it both ways. With its impending IPO, it wants to tap the vast riches of the public markets and insists it doesn't want to compromise its core mission of developing AI safely and for the benefit of humanity. But greater model capabilities bring greater risks, and shareholders eager for returns may […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261028-1",
+            "source": "FTC Press",
+            "date": "2026-10-22",
+            "headline": "Federal Court Bans Operators of $106.8 Million Illegal Debt Relief Scheme",
+            "summary": "A federal court permanently banned the operators of an illegal debt relief scheme following Federal Trade Commission allegations. The scheme targeted seniors and veterans by impersonating government agencies, banks, and credit card companies. The court entered a $106.8 million judgment and ordered the defendants to turn over their assets.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/court-permanently-shuts-down-illegal-debt-relief-operation-following-ftc-allegation-schemes",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 8.2,
+              "relevance": 8.8,
+              "total": 8.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261028-3",
+            "source": "FTC Press",
+            "date": "2026-10-27",
+            "headline": "PlayPower Abandons Acquisition of Rival Playground Manufacturer BCI Burke",
+            "summary": "Platinum Equity and its portfolio company PlayPower abandoned their proposed acquisition of rival manufacturer BCI Burke. Federal Trade Commission Bureau of Competition Director Daniel Guarnera issued an official statement following the announcement of the deal's termination.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-bureau-competition-statement-termination-playpowers-acquisition-rival-playground-manufacturer",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.9
+            }
+          },
+          {
+            "id": "politics-regulatory-20261028-4",
+            "source": "FTC Press",
+            "date": "2026-10-26",
+            "headline": "FTC and State Partners Sue Dollar General for Charging Consumers More than Advertised for Many Products",
+            "summary": "The Federal Trade Commission, joined by 20 states, sued Dollar General Corporation for engaging in long-running deceptive pricing practices by routinely charging customers more at the register than the prices displayed on shelves, price tags and advertisements, costing consumers millions of dollars.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-state-partners-sue-dollar-general-charging-consumers-more-advertised-many-products",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261028-5",
+            "source": "FTC Press",
+            "date": "2026-10-22",
+            "headline": "FTC Sues Perpetrators of Government Impersonation Scheme Over Deceptive Ads, Misleading Promises and Fake Reviews",
+            "summary": "Agency alleges corporate and individual defendants deceived travelers seeking passport services by impersonating the federal government The Federal Trade Commission is taking action against GovAssist LLC, Entry LLC and Scott Zuckerman , for their alleged involvement in a government impersonation scheme that deceived consumers.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-sues-perpetrators-government-impersonation-scheme-over-deceptive-ads-misleading-promises-fake",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261028-24",
+            "source": "MarketWatch Top",
+            "date": "2026-10-28",
+            "headline": "Four reasons to start worrying about inflation — including the end of tariff refunds",
+            "summary": "Dennis DeBusschere of 22V Research says companies that previously used tariff refunds to ease cost pressures will increasingly pass on those higher costs to consumers.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/four-reasons-to-start-worrying-about-inflation-including-the-end-of-tariff-refunds-978a5cfd?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          },
+          {
+            "id": "markets-macro-20261028-27",
+            "source": "MarketWatch Top",
+            "date": "2026-10-28",
+            "headline": "A leading Silicon Valley cheerleader just showed all the reasons to be worried about the AI bubble",
+            "summary": "If you needed any further reasons to be worried about the bubble that has inflated the stock market, look no further.",
+            "tag": "MARKETS",
+            "url": "https://www.marketwatch.com/story/a-leading-silicon-valley-cheerleader-just-showed-all-the-reasons-to-be-worried-about-the-ai-bubble-e3b32fe1?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261028-6",
+            "source": "arXiv Preprint",
+            "date": "2026-10-27",
+            "headline": "Optimal quantum discrimination at Liouvillian exceptional points",
+            "summary": "Central to non-Hermitian sensing is the question of whether exceptional points (EPs) can make weak perturbations easier to detect. We show that despite enhanced spectral response, in finite-dimensional Lindblad systems with a unique stationary state and a nonzero relaxation gap, EPs offer no fundamental advantage in how the observation time required for reliable detection of a weak perturbation scales with the perturbation strength. We nevertheless demonstrate that by selectively choosing perturbations that enhance the quantum Fisher information rate, EPs can shorten the observation time needed to reach a predefined detection accuracy relative to a comparable non-EP reference at the same decay rate.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.37660v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 8.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "science-frontier-20261028-10",
+            "source": "ScienceDaily",
+            "date": "2026-10-27",
+            "headline": "James Webb discovers a scorching lava planet with a “giant sunscreen”",
+            "summary": "A scorching lava planet 280 light-years away has surprised astronomers by apparently maintaining a thick atmosphere despite conditions that should have stripped it away billions of years ago. James Webb Space Telescope observations suggest that TOI-561 b reflects about 75% of incoming starlight, possibly because of mineral clouds that act like a giant sunscreen. The planet may also be continually replenishing its atmosphere through gases released from a global ocean of molten rock.",
+            "tag": "AEROSPACE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261026225603.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "science-frontier-20261028-18",
+            "source": "arXiv Preprint",
+            "date": "2026-10-27",
+            "headline": "Dynamical quantum simulations as laboratories for quantum information",
+            "summary": "Dynamical quantum simulations are commonly designed to access a particular response function or correlation function. Yet the underlying protocol prepares a family of many-body states that contains information well beyond the observable for which the simulation was originally designed. In this work, we explore the idea of using these states as laboratories for quantum information.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.37589v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261028-25",
+            "source": "arXiv Preprint",
+            "date": "2026-10-27",
+            "headline": "Classical Verification of Quantum Computation Beyond the Polynomial Hierarchy",
+            "summary": "It is not known whether a classical polynomial-time verifier can verify arbitrary polynomial-time quantum computations with an efficient quantum honest prover without computational assumptions. We show that, relative to a classical oracle, such verification is possible for a language beyond the polynomial hierarchy that is decided exactly in quantum polynomial time. The protocol is public-coin, with perfect completeness and soundness error at most 1/4.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.37635v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261028-26",
+            "source": "arXiv Preprint",
+            "date": "2026-10-27",
+            "headline": "Recovering classical gauge geometry from quantum master constraints",
+            "summary": "Exact normalizable solutions of quantum constraints form a symplectic submanifold of the space of rays, whereas classical first-class constraints define a surface on which the symplectic form is degenerate. We ask how the degenerate directions can be recovered when quantum theory is regarded as fundamental and the constraints are imposed through a single positive master operator. For a nonnegative master function whose zero set is a Morse--Bott critical manifold, the image of the linearized Hamiltonian vector field is the symplectic orthogonal of the zero set, and coisotropy is equivalent to this linearization having square zero.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2610.37493v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261028-23",
+            "source": "Wired Culture",
+            "date": "2026-10-28",
+            "headline": "Pornhub Stars Want to Teach You How to Make Dinner",
+            "summary": "Faced with censorship and anti-porn laws, the adult site is encouraging creators to embrace cooking, gaming, podcasting, and other safe-for-work content.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/adult-video-stars-want-to-teach-you-how-to-make-dinner/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261028-2",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-27",
+            "headline": "Politically Active Christians Neglect Global Health, Refugees, and Disease Research",
+            "summary": "Politically active Christians often focus on cultural flashpoints like abortion and transgender identity while remaining silent on foreign aid cuts, refugee restrictions, and canceled medical research. This selective activism is driven by partisanship, culture war dynamics, and media incentives that prioritize political identity over biblical ethics.",
+            "tag": "FAITH_POLITICS",
+            "url": "https://www.theatlantic.com/ideas/2026/10/midterms-maga-trump-christianity/689170/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.8,
+              "relevance": 8.8,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "culture-voices-20261028-9",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-26",
+            "headline": "Yes, We Have No Bananas",
+            "summary": "Maybe you’ve seen the ad: A man and a woman are loading a shopping cart. The woman tells the man he must return a carton of eggs. “We have to set that $7 aside for killing Palestinians.” The woman explains that grocery prices are rising because the United States gives so much aid to Israel.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/groceries-israel-funding-budget/689151/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.5,
+              "relevance": 6.5,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "culture-voices-20261028-16",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-27",
+            "headline": "The Limits of Trump’s Midterm Trickery",
+            "summary": "For the first time in modern American history, a sitting president is seeking to wield the force of the state to secure an electoral victory for his party. The Trump administration has attempted to undermine the widespread use of mail-in voting; demanded that states hand over voter rolls; threatened to prosecute state and local election officials; refused to rule out the idea of deploying troops or federal agents to polling places; and publicized the dramatic arrests of small numbers of people accused of voting or registering to vote as noncitizens. Many of these efforts have made little headway—either because of the administration’s incompetence, the stubborn lack of factual evidence behind President Trump’s claims of voter fraud, the federal government’s lack of legal authority, or the refusal of courts to go along with Trump’s plans.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/trump-midterms-election-schemes/689177/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "culture-voices-20261028-17",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-26",
+            "headline": "Netanyahu Goes Into Full Panic Mode",
+            "summary": "When the going gets tough, the tough don’t get subtle. Yesterday, with polls casting doubt on his continuing as Israel’s prime minister after Tuesday’s election, Benjamin Netanyahu posted a closing argument on Instagram: an AI-generated image of Tel Aviv destroyed by a nuclear blast, with accompanying text that asked, roughly, Would you prefer to reelect Netanyahu, or be incinerated along with your family? The text—written by the commentator Yuval Bloomberg and reproduced approvingly by Netanyahu—called all of the other campaign issues a “smokescreen,” and accused Netanyahu’s opponents of being so blinded by hatred that they would rather increase their chances of being burned alive than see their country’s political maestro win another election.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/israeli-election-benjamin-netanyahu/689143/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "culture-voices-20261028-19",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-26",
+            "headline": "The Collapse of Cuba",
+            "summary": "Photographs by Moises Saman This article was featured in the One Story to Read Today newsletter. A priest led me up battered stairs to a tiny room at the top of a church. From the window, we gazed down at the decayed colonial villas and scattered trash fires of eastern Havana.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/magazine/2026/12/post-revolutionary-cuba-society-religion/689018/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 2.4,
+              "magnitude": 8.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          }
+        ]
+      }
+    }
+  }
+}
