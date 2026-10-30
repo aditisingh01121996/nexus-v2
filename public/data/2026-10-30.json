@@ -1,0 +1,655 @@
+{
+  "date": "2026-10-30",
+  "label": "Today",
+  "lastUpdated": "2026-10-30T11:50:01.120Z",
+  "agentLog": [
+    {
+      "timestamp": "11:49:15",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit f51b683: \"chore(data): auto-publish daily briefing [2026-10-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:49:15",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:49:21",
+      "module": "SCOUT",
+      "message": "Scouted 118 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:49:21",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:49:21",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 76 off-beat/redundant wires. 42 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:49:21",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:49:21",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:50:01",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 27 items (3 via LLM, 24 via deterministic synthesis; top 15 LLM quota applied, 1 dropped for thin context). Tokens: 4722. Est cost: $0.00086.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:50:01",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:50:01",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (27 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "11:50:01",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-10-30 live (27 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261030-10",
+            "source": "TechCrunch AI",
+            "date": "2026-10-29",
+            "headline": "Rivian expands joint venture with VW to include AI assistant",
+            "summary": "Rivian doesn't disclose if the value of its $5.8 billion joint venture will expand as a result.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.5,
+              "relevance": 7.8,
+              "total": 7.4
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261030-12",
+            "source": "arXiv Preprint",
+            "date": "2026-10-29",
+            "headline": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model",
+            "summary": "Distributionally robust optimization (DRO) hedges data-driven two-stage stochastic programs against error in the distribution estimated from a finite record, and standard ambiguity sets differ in how they treat realizations absent from that record. A divergence ball around the empirical distribution contains only reweightings of the record, whereas a transport ball also contains distributions supported off the record, including on realizations the data-generating process cannot produce, against which the decision is then hedged as well. We instead propose a Kullback-Leibler (KL) ball centered at a density model fitted to the record, the learned nominal, which lets the adversary up-weight costly unobserved realizations in proportion to the probability the model assigns them.",
+            "tag": "RESEARCH",
+            "url": "http://arxiv.org/abs/2610.40644v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 6,
+              "relevance": 8.8,
+              "total": 7.1
+            }
+          },
+          {
+            "id": "ai-venture-research-20261030-14",
+            "source": "arXiv Preprint",
+            "date": "2026-10-29",
+            "headline": "Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering",
+            "summary": "An estimator can be accurate and stable on typical data, yet sensitive to a few possible records. Differentially private mechanisms commonly scale their noise to the worst-case influence of a single record, which lets these records dictate the noise even when the remaining data would allow far less. Removing them first would restore the smaller scale, but the removal must itself be private.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.40654v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261030-22",
+            "source": "arXiv Preprint",
+            "date": "2026-10-29",
+            "headline": "Elucidating the Design Space of LM Data Attribution",
+            "summary": "Data attribution methods for Language Models (LMs) are typically evaluated using downstream tasks like fact retrieval. However, existing evaluations vary multiple dataset properties simultaneously, making it impossible to isolate exactly why an attribution algorithm fails. To diagnose these failures, we explore the design space of LLM data attribution, with a primary focus on evaluation.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.40655v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261030-23",
+            "source": "arXiv Preprint",
+            "date": "2026-10-29",
+            "headline": "Rethinking Neural Thickets Without Weight Perturbations",
+            "summary": "The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a single decoder block already recovers much of the improvement, while keeping the model entirely frozen and adding a random bias to its output logits matches or exceeds full-weight perturbations on most reasoning tasks.",
+            "tag": "REASONING",
+            "url": "http://arxiv.org/abs/2610.40649v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261030-24",
+            "source": "arXiv Preprint",
+            "date": "2026-10-29",
+            "headline": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
+            "summary": "Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from global exchange, while high-frequency detail can be modeled locally. Based on this insight, we introduce SpecSlot, a pixel-space rectified-flow Transformer that decouples output detail from the length of the global attention sequence.",
+            "tag": "ARCHITECTURE",
+            "url": "http://arxiv.org/abs/2610.40647v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261030-17",
+            "source": "The Verge AI",
+            "date": "2026-10-29",
+            "headline": "Anthropic’s business plan: Build God or die trying",
+            "summary": "The Anthropic S-1 seems to have provided the financial justification for the company to spend as much as it possibly can on compute. If you are the kind of person who wonders if Anthropic is doing its level best to build a machine god while convincing Wall Street it's in the business of selling IT […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1021476/anthropic-s-1-compute-recursive",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261030-18",
+            "source": "The Verge AI",
+            "date": "2026-10-29",
+            "headline": "Microsoft’s AI future has fewer jobs",
+            "summary": "To anyone listening closely to what Microsoft CEO Satya Nadella has been saying over the past couple of years, this week felt like the clearest sign yet that AI is about to fundamentally change the size of Microsoft's workforce. Microsoft is now offering voluntary buyouts to around 60,000 employees across the US, UK, Canada, and […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261030-19",
+            "source": "The Verge AI",
+            "date": "2026-10-29",
+            "headline": "Anthropic is asking Wall Street to believe in AGI",
+            "summary": "Today on Decoder, I’m joined by Joey Brookhart, an analyst at the chip and AI research firm SemiAnalysis, to help me dig into the story inside the numbers of the Anthropic IPO filing — a document known as an S-1. Anthropic just filed its S-1 to go public on the Nasdaq, and it could start […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261030-21",
+            "source": "The Verge AI",
+            "date": "2026-10-29",
+            "headline": "AI has come for Arizona’s water",
+            "summary": "A hulking gray giant rises from the desert. Inside, engineers create the force behind our phones and computers and appliances, our streaming services and search engines and chatbots and vibe-coded apps and websites. The complex is simultaneously massive and squat, dwarfed by the mountains that surround it, and it is endless.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261030-1",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC warns 25 healthcare plan marketers against deceptive advertising practices",
+            "summary": "Federal Trade Commission staff are issuing warning letters to 25 healthcare plan marketers and lead generators during open enrollment. The letters caution companies against misleading consumers regarding advertised plan terms. Staff cited prior FTC enforcement actions against alleged violators in the warning letters.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-staff-warn-marketers-healthcare-plans-lead-generators-not-deceive-consumers-about-terms",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 8.5,
+              "relevance": 8.5,
+              "total": 8.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261030-2",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC Removes Imposter Websites and Secures $80 Million in Consumer Redress",
+            "summary": "The Federal Trade Commission released highlights detailing its ongoing actions against impersonation scams since its Impersonation Rule took effect in 2024. The agency disabled 19 FTC-imposter websites and secured over $80 million in consumer redress. These enforcement actions reflect the FTC's targeted efforts to protect consumers from imposter schemes.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-highlights-efforts-combat-imposter-scams-protect-consumers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.4,
+              "relevance": 8.5,
+              "total": 8.6
+            }
+          },
+          {
+            "id": "politics-regulatory-20261030-4",
+            "source": "FTC Press",
+            "date": "2026-10-28",
+            "headline": "FTC Launches Personalized Pricing and Compensation Inquiry",
+            "summary": "Commission orders seek pricing and compensation methodology from major airlines, ride-sharing companies and food-delivery firms The Federal Trade Commission today ordered nine major airlines, ride-sharing companies and food-delivery firms to provide detailed information that will allow the agency to study the use of personal data to set prices and compensation.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-launches-personalized-pricing-compensation-inquiry",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 7.8,
+              "total": 8.2
+            }
+          },
+          {
+            "id": "politics-regulatory-20261030-5",
+            "source": "FTC Press",
+            "date": "2026-10-27",
+            "headline": "FTC Bureau of Competition Statement on Termination of PlayPower’s Acquisition of Rival Playground Manufacturer Burke",
+            "summary": "Federal Trade Commission Bureau of Competition Director Daniel Guarnera issued the following statement in response to the announcement that Platinum Equity and its portfolio company, PlayPower, abandoned the proposed acquisition of BCI Burke following a.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-bureau-competition-statement-termination-playpowers-acquisition-rival-playground-manufacturer",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261030-6",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC and States Take Action Against Toast Inc. over Hidden and Unauthorized Fees, Deceptive Subscription and Cancellation Practices and Other Unlawful Conduct",
+            "summary": "Agencies allege restaurant software and fintech firm deceptively touts costs and “24/7/365” customer support The Federal Trade Commission, the People of the State of California by and through the Los Angeles County Counsel and San Francisco City Attorney, and the Attorneys General of the States of Colorado, Florida, Illinois, Iowa, Nebraska, Oklahoma and Utah, filed a lawsuit today against Toast Inc.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-states-take-action-against-toast-inc-over-hidden-unauthorized-fees-deceptive-subscription",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261030-27",
+            "source": "MarketWatch Top",
+            "date": "2026-10-30",
+            "headline": "Amazon’s and Intel’s stocks are set to plunge. But Wall Street’s October winners may surprise you.",
+            "summary": "A rough month in the technology sector was less spooky in other sections of the stock market.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/amazons-and-intels-stocks-are-set-to-plunge-but-wall-streets-october-winners-may-surprise-you-4d74e4d4?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261030-7",
+            "source": "arXiv Preprint",
+            "date": "2026-10-29",
+            "headline": "Entanglement diagnostics of stochastic-resetting steady states: theory and measurement on superconducting qubits",
+            "summary": "Stochastic resetting drives quantum systems into nonequilibrium stationary states unreachable under uninterrupted unitary evolution, and their entanglement depends on whether the reset history is resolved or averaged over. We study this interplay in the transverse-field Ising chain, deriving closed-form results for two qubits and evaluating chains of up to 12 qubits exactly. In the two-qubit system, these closed-form results show that phase matching between energy eigenstates produces resonances, and their visibility in the stationary state is determined by the symmetry of the reset state.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.40638v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 8.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "science-frontier-20261030-8",
+            "source": "arXiv Preprint",
+            "date": "2026-10-29",
+            "headline": "Left-Handed Transmission Lines for the Dynamical Casimir Effect",
+            "summary": "Left-handed (LH) superconducting transmission lines, built with series capacitors and shunt inductors instead of the series inductors and shunt capacitors of a conventional right-handed (RH) line, have a spectrum with a nonzero lower band edge and modes that become sparse at high frequencies. We study the dynamical Casimir effect in a LH line terminated by a flux-modulated SQUID and compare it with an RH line built from the same elements and with a long coplanar waveguide terminated by the same SQUID. We derive the quantum Hamiltonian and show that the coupling between two modes factorizes into their amplitudes at the SQUID.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.40624v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 7.8,
+              "total": 7.7
+            }
+          },
+          {
+            "id": "science-frontier-20261030-15",
+            "source": "ScienceDaily",
+            "date": "2026-10-29",
+            "headline": "Six popular sugar substitutes linked to faster brain aging",
+            "summary": "A study of nearly 13,000 adults found that people consuming the most artificial sweeteners experienced a 62% faster decline in memory and thinking skills, equivalent to approximately 1.6 additional years of brain aging. Six popular sweeteners were linked to faster cognitive decline, raising concerns about the long-term brain health effects of common sugar substitutes, although causation was not established.",
+            "tag": "SCIENCE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261028234238.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261030-25",
+            "source": "arXiv Preprint",
+            "date": "2026-10-29",
+            "headline": "Reconstructing hidden observables via quantum snapshot thermometry",
+            "summary": "Projective snapshots are a standard readout tool for quantum simulators, but they directly probe only observables that are diagonal in the measurement basis. We show how local equilibration and an independently calibrated equilibrium equation of state can reveal otherwise hidden conserved-density profiles. We demonstrate numerically that such ``quantum snapshot thermometry'' can recover energy fronts and a diffusion constant, distinguish spin transport from energy spreading, and reveal conserved-charge profiles invisible in the initial measurements.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2610.40652v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6
+            }
+          },
+          {
+            "id": "science-frontier-20261030-26",
+            "source": "Phys.org",
+            "date": "2026-10-30",
+            "headline": "Crowding can speed up enzyme reactions—until protein droplets become too packed",
+            "summary": "Our cells are a hotbed of activity, with reactions churning away to keep us alive. But the cytoplasm, where many metabolic reactions take place, is not uniform. Instead, proteins and other molecules cluster together into membraneless compartments, creating distinct, crowded microenvironments for reactions.",
+            "tag": "SCIENCE",
+            "url": "https://phys.org/news/2026-10-crowding-enzyme-reactions-protein-droplets.html",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261030-20",
+            "source": "Wired Culture",
+            "date": "2026-10-28",
+            "headline": "Pornhub Stars Want to Teach You How to Make Dinner",
+            "summary": "Faced with censorship and anti-porn laws, the adult site is encouraging creators to embrace cooking, gaming, podcasting, and other safe-for-work content.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/adult-video-stars-want-to-teach-you-how-to-make-dinner/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261030-3",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-27",
+            "headline": "Politically active Christians ignore global deaths, refugee cuts, and medical research disruptions.",
+            "summary": "Christian leaders frequently prioritize culture war topics while neglecting foreign aid cuts, restricted refugee limits, and disrupted medical research grants. Factors such as partisanship, media incentives, and selective biblical interpretation drive this political selectivity. Realigning Christian engagement requires acknowledging interpretive bias and letting the ethics of Jesus define political priorities.",
+            "tag": "FAITH_POLITICS",
+            "url": "https://www.theatlantic.com/ideas/2026/10/midterms-maga-trump-christianity/689170/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 9.8,
+              "relevance": 8.8,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "culture-voices-20261030-9",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-26",
+            "headline": "Yes, We Have No Bananas",
+            "summary": "Maybe you’ve seen the ad: A man and a woman are loading a shopping cart. The woman tells the man he must return a carton of eggs. “We have to set that $7 aside for killing Palestinians.” The woman explains that grocery prices are rising because the United States gives so much aid to Israel.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/groceries-israel-funding-budget/689151/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.5,
+              "relevance": 6.5,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "culture-voices-20261030-11",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-29",
+            "headline": "Can Democracy Survive the Next Financial Crash?",
+            "summary": "T he bailout clock is ticking. In September, Oracle invoked “force majeure” to delay paying debt on a data center, which led to a drop in the corporation’s stock price. This month, OpenAI significantly cut its revenue projections; CoreWeave, a heavily leveraged data-center company, saw its share price plunge; and investors began racing to buy credit-default swaps to protect their portfolios.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/bubble-bailout-trump-authority/689190/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 4.4,
+              "magnitude": 9,
+              "relevance": 7.8,
+              "total": 7.3
+            }
+          },
+          {
+            "id": "culture-voices-20261030-13",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-27",
+            "headline": "The Limits of Trump’s Midterm Trickery",
+            "summary": "For the first time in modern American history, a sitting president is seeking to wield the force of the state to secure an electoral victory for his party. The Trump administration has attempted to undermine the widespread use of mail-in voting; demanded that states hand over voter rolls; threatened to prosecute state and local election officials; refused to rule out the idea of deploying troops or federal agents to polling places; and publicized the dramatic arrests of small numbers of people accused of voting or registering to vote as noncitizens. Many of these efforts have made little headway—either because of the administration’s incompetence, the stubborn lack of factual evidence behind President Trump’s claims of voter fraud, the federal government’s lack of legal authority, or the refusal of courts to go along with Trump’s plans.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/trump-midterms-election-schemes/689177/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "culture-voices-20261030-16",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-29",
+            "headline": "The Variety Bag Has Ruined Halloween",
+            "summary": "All Halloween candy is the same now. Nothing stands out, apart from the quantity of candy dumped out on the floor back home. Every house seems to buy a variety bag of seemingly random candy, and consequently every stop metes out a little more of the same treats as the previous one did or the next one will.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/trick-or-treating-mixed-candy/689208/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.5
+            }
+          }
+        ]
+      }
+    }
+  }
+}
