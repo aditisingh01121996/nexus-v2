@@ -1,0 +1,695 @@
+{
+  "date": "2026-11-02",
+  "label": "Today",
+  "lastUpdated": "2026-11-02T14:05:40.794Z",
+  "agentLog": [
+    {
+      "timestamp": "14:04:54",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 36ec01b: \"chore(data): auto-publish daily briefing [2026-11-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "14:04:54",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "14:05:02",
+      "module": "SCOUT",
+      "message": "Scouted 109 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "14:05:02",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "14:05:02",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 74 off-beat/redundant wires. 35 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "14:05:02",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "14:05:02",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "14:05:40",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 29 items (4 via LLM, 25 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 1433. Est cost: $0.00040.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "14:05:40",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "14:05:40",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (29 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "14:05:40",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-11-02 live (29 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261102-15",
+            "source": "TechCrunch AI",
+            "date": "2026-10-31",
+            "headline": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
+            "summary": "When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 6,
+              "relevance": 6.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261102-16",
+            "source": "TechCrunch AI",
+            "date": "2026-10-31",
+            "headline": "4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale",
+            "summary": "On November 4 at Boston’s SoWa Power Station, get ready for a full day packed with meaningful networking opportunities, actionable insights, and connections that could change the trajectory of your idea and startup. Register before all prices go up at the door.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261102-20",
+            "source": "TechCrunch AI",
+            "date": "2026-10-31",
+            "headline": "OpenAI reportedly lowers funding target for new round",
+            "summary": "OpenAI’s latest funding round doesn't seem to be living up to expectations.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261102-8",
+            "source": "arXiv Preprint",
+            "date": "2026-10-30",
+            "headline": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
+            "summary": "Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought reasoning for image generation. As a result, existing reasoning-augmented UMMs often fail to inherit the test-time scaling and fine-grained controllability observed in large language models. We attribute this failure to a fundamental modality mismatch: reasoning is performed in a discrete token space, whereas image generation operates in a continuous space.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.42149v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261102-9",
+            "source": "arXiv Preprint",
+            "date": "2026-10-30",
+            "headline": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
+            "summary": "Decision models target structured tasks by directly predicting choices or scores, avoiding autoregressive decoding latency. However, transferring a generative LLM's ranking knowledge to a decision model remains challenging: the teacher expresses preferences through a ranked list of document ID sequences, while the student determines the ranking using scores from the first-token position. To bridge this gap, we introduce DecisionRank, a decision model trained through item-space on-policy distillation (OPD).",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.42128v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.9
+            }
+          },
+          {
+            "id": "ai-venture-research-20261102-11",
+            "source": "MIT Tech Review AI",
+            "date": "2026-11-02",
+            "headline": "Stop counting tokens, start counting what ships",
+            "summary": "When a developer gives an AI agent a coding task, the agent does more than answer once. It plans, generates code, runs tests, and repeats the process to correct errors. A single task can use 10 to 50 times more tokens than a basic chat prompt.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261102-10",
+            "source": "arXiv Preprint",
+            "date": "2026-10-30",
+            "headline": "Hierarchical World Models with Implicit Dynamics",
+            "summary": "Planning with world models enables test-time adaptation for embodied agents, offering superior generalization over direct policy learning. However, long-horizon tasks remain hindered by cumulative errors and search complexity. Existing hierarchical methods often use rigid macro-actions or latent skills, leading to brittle representations and limited fine-grained control.",
+            "tag": "REASONING",
+            "url": "http://arxiv.org/abs/2610.42146v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261102-13",
+            "source": "arXiv Preprint",
+            "date": "2026-10-30",
+            "headline": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+            "summary": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly. Yet today these harnesses are built by hand and redesigned for each new robot or benchmark. We show that harness design can be automated, offering a strong alternative to finetuning on a novel setup.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2610.42141v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261102-17",
+            "source": "The Verge AI",
+            "date": "2026-10-30",
+            "headline": "The biggest names in AI are backing a new way to opt out of scraping",
+            "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can apply their AI training preferences across multiple AI companies, instead of setting them individually. The shared \"policy token\" signal […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261102-21",
+            "source": "The Verge AI",
+            "date": "2026-10-31",
+            "headline": "I built an AI Tamagotchi before Meta could",
+            "summary": "Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But I won't be buying one, because we have Muse Charm at home.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261102-22",
+            "source": "The Verge AI",
+            "date": "2026-10-30",
+            "headline": "Apple Intelligence is finally coming to China with iOS 27.3",
+            "summary": "Apple will launch Apple Intelligence in China with iOS 27.3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelligence features will be available first in an iOS 27.3 beta that's set to launch on November 4th, with a full iOS 27.3 release scheduled for December. This launch doesn't bring […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261102-25",
+            "source": "The Verge AI",
+            "date": "2026-10-30",
+            "headline": "Sam Altman says it’s better for RAM to be in a data center than on your desk",
+            "summary": "Asked about supply chain shortages, like the ongoing RAM shortage, OpenAI CEO Sam Altman said in an interview that it's \"terrible\" to have RAM in personal PCs instead of data centers. During his appearance on the Cheeky Pint podcast, where he also commented on AI's impact on math, Altman said: \"A lot of people want […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261102-1",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC Staff Warn 25 Healthcare Plan Marketers Against Deceptive Advertising",
+            "summary": "Federal Trade Commission staff sent warning letters to 25 companies that market or generate sales leads for healthcare plans. Issued during open enrollment season, the warnings caution companies against deceiving consumers regarding plan terms. The letters explicitly cite previous FTC enforcement actions against alleged violators.",
+            "tag": "FTC_WARNINGS",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-staff-warn-marketers-healthcare-plans-lead-generators-not-deceive-consumers-about-terms",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 8.5,
+              "relevance": 8.5,
+              "total": 8.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261102-2",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC Removes 19 Imposter Websites and Secures $80 Million in Consumer Redress",
+            "summary": "The Federal Trade Commission highlighted its enforcement actions taken since its Impersonation Rule took effect in 2024. The agency shut down 19 FTC-impersonation websites targeting consumers. Additionally, enforcement efforts have yielded more than $80 million in consumer redress.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-highlights-efforts-combat-imposter-scams-protect-consumers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.4,
+              "relevance": 8.5,
+              "total": 8.6
+            }
+          },
+          {
+            "id": "politics-regulatory-20261102-3",
+            "source": "FTC Press",
+            "date": "2026-10-28",
+            "headline": "FTC Orders Nine Major Firms to Reveal Personal Data Pricing Methods",
+            "summary": "The Federal Trade Commission issued orders to nine major airlines, ride-sharing companies, and food-delivery firms requiring detailed information on their practices. The agency aims to study how personal data is utilized to determine consumer pricing and worker compensation.",
+            "tag": "FTC_INQUIRY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-launches-personalized-pricing-compensation-inquiry",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 8.8,
+              "total": 8.3
+            }
+          },
+          {
+            "id": "politics-regulatory-20261102-4",
+            "source": "FTC Press",
+            "date": "2026-10-27",
+            "headline": "PlayPower Abandons Proposed Acquisition of Rival BCI Burke Following FTC Action",
+            "summary": "Platinum Equity and its portfolio company PlayPower have abandoned their proposed acquisition of rival playground manufacturer BCI Burke. FTC Bureau of Competition Director Daniel Guarnera issued an official statement in response to the termination of the deal.",
+            "tag": "ANTITRUST",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-bureau-competition-statement-termination-playpowers-acquisition-rival-playground-manufacturer",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261102-5",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC and States Take Action Against Toast Inc. over Hidden and Unauthorized Fees, Deceptive Subscription and Cancellation Practices and Other Unlawful Conduct",
+            "summary": "Agencies allege restaurant software and fintech firm deceptively touts costs and “24/7/365” customer support The Federal Trade Commission, the People of the State of California by and through the Los Angeles County Counsel and San Francisco City Attorney, and the Attorneys General of the States of Colorado, Florida, Illinois, Iowa, Nebraska, Oklahoma and Utah, filed a lawsuit today against Toast Inc.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-states-take-action-against-toast-inc-over-hidden-unauthorized-fees-deceptive-subscription",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261102-27",
+            "source": "MarketWatch Top",
+            "date": "2026-11-02",
+            "headline": "This is the biggest threat to the AI-powered bull market",
+            "summary": "Blockbuster earnings growth has helped to power the stock market higher in 2026. In 2027, that engine might stall.",
+            "tag": "MARKETS",
+            "url": "https://www.marketwatch.com/story/this-is-the-biggest-threat-to-the-ai-powered-bull-market-e757ca37?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261102-12",
+            "source": "ScienceDaily",
+            "date": "2026-11-02",
+            "headline": "NASA's Hubble and Webb discover ancient worlds that remember their past",
+            "summary": "NASA’s Hubble and James Webb Space Telescopes have uncovered surprising clues about the solar system’s origins by studying 27 tiny, distant objects beyond Neptune. Scientists discovered that these ancient building blocks of planets have remained remarkably unchanged for billions of years, while their unexpected sizes and numbers challenge existing theories of planet formation.",
+            "tag": "AEROSPACE",
+            "url": "https://www.sciencedaily.com/releases/2026/10/261031221209.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261102-26",
+            "source": "Phys.org",
+            "date": "2026-11-02",
+            "headline": "Children can fear snakes and still love nature, new study finds",
+            "summary": "Vanessa Woods' latest research didn't begin in a laboratory or during fieldwork. It began at home, with her own children.",
+            "tag": "SCIENCE",
+            "url": "https://phys.org/news/2026-11-children-snakes-nature.html",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 5.7
+            }
+          },
+          {
+            "id": "science-frontier-20261102-28",
+            "source": "Phys.org",
+            "date": "2026-11-02",
+            "headline": "Ultrathin kagome material opens a route to study unusual quantum states",
+            "summary": "How atoms are arranged inside materials can influence the behavior of electrons and the resulting electronic states. Kagome lattices, repeating arrangements of atoms forming triangles that share corners (with hexagonal spaces between them), have been linked with the emergence of unusual electronic states.",
+            "tag": "PHYSICS",
+            "url": "https://phys.org/news/2026-10-ultrathin-kagome-material-route-unusual.html",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.5
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261102-23",
+            "source": "Wired Culture",
+            "date": "2026-11-02",
+            "headline": "Want to Sign With a Hollywood Agent? Start Making Fun of AI",
+            "summary": "Even as studios incorporate generative tech into film and TV production, comedy content creators have broken through by roasting chatbots.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/comedians-making-fun-of-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          },
+          {
+            "id": "culture-industry-20261102-24",
+            "source": "Wired Culture",
+            "date": "2026-10-28",
+            "headline": "Pornhub Stars Want to Teach You How to Make Dinner",
+            "summary": "Faced with censorship and anti-porn laws, the adult site is encouraging creators to embrace cooking, gaming, podcasting, and other safe-for-work content.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/adult-video-stars-want-to-teach-you-how-to-make-dinner/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          },
+          {
+            "id": "culture-industry-20261102-29",
+            "source": "Ars Technica",
+            "date": "2026-11-02",
+            "headline": "This $48 e-paper display can be whatever you want it to be",
+            "summary": "This DIY e-paper display works in two official ecosystems or on your own server.",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/gadgets/2026/11/this-48-e-paper-display-can-be-whatever-you-want-it-to-be/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.5
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261102-6",
+            "source": "The Atlantic Ideas",
+            "date": "2026-10-31",
+            "headline": "What the Economy Is Sacrificing to AI",
+            "summary": "Over the past four years, Dallas, the beating heart of the U.S. energy economy, has become the beating heart of the U.S. That’s thanks to its cheap land, friendly regulatory posture, liquid labor market, excellent transportation infrastructure, and ample grid connectivity.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/10/ai-data-centers-crowding/689239/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 4.4,
+              "magnitude": 9.8,
+              "relevance": 8.8,
+              "total": 7.7
+            }
+          },
+          {
+            "id": "culture-voices-20261102-7",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-02",
+            "headline": "DOJ’s Try-Anything Approach",
+            "summary": "I n the run-up to the 2024 election, Donald Trump complained that Special Counsel Jack Smith’s detailed overview of the evidence against him in the January 6 case constituted “Election Interference.” The Department of Justice had a policy of not taking any potentially influential action so soon before an election, Trump rightly noted in a social-media post, and Smith, Trump argued more debatably, had just violated those rules. Trump seems a great deal less worried about DOJ’s propriety now. Over just the past few weeks, DOJ has sued multiple states challenging their election processes, charged more than 100 people with alleged voter fraud, and launched a barrage of criminal charges and investigations against Democratic Representative Ilhan Omar, former FBI Director James Comey, and other figures hated by MAGA.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/doj-elections/689238/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.2,
+              "relevance": 7.8,
+              "total": 7.5
+            }
+          },
+          {
+            "id": "culture-voices-20261102-14",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-01",
+            "headline": "I Thought I’d Left Authoritarianism Behind",
+            "summary": "L ate in the summer of 1984 , I met my dying father for what I thought would be our last lunch together. We’d chosen one of his favorite restaurants in downtown Brno, the capital of Moravia in what was then Communist Czechoslovakia. The ceiling fans spun sluggishly in the air; the clatter of plates echoed off the marble walls and high ceilings; cigarette smoke curled above tables where men spoke in whispers.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/escaping-communist-czechoslovakia-america/689232/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 2.5,
+              "relevance": 6.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "culture-voices-20261102-18",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-01",
+            "headline": "Haley Stevens Is Sending the Wrong Message",
+            "summary": "ET on November 1, 2026 Haley Stevens nearly won the Democratic nomination for Senate in Michigan in August, then immediately endorsed the winner, Abdul El-Sayed. She has spent the months since then vacillating, expressing doubts about his campaign while maintaining her support. But last week, her fiancé said that he intends to vote for El-Sayed’s opponent, Mike Rogers, and now she has followed, endorsing the Republican just two days before the election.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/haley-stevens-sending-wrong-message/689250/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "culture-voices-20261102-19",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-01",
+            "headline": "The U.S. Is Bullying Europe Like Never Before",
+            "summary": "At a dinner in Athens in March, Kimberly Guilfoyle, then the U.S. ambassador to Greece, made a statement that elegantly combined arrogance with menace. According to The Wall Street Journal and the Financial Times , Guilfoyle referred to the troubles of Romania’s governing coalition and, with Greek politicians in the room, took credit for its impending collapse: “We can do that to any country we want,” she said.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/trump-europe-guilfoyle-afd-meddling/689226/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ]
+      }
+    }
+  }
+}
