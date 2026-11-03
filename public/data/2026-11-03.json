@@ -1,0 +1,695 @@
+{
+  "date": "2026-11-03",
+  "label": "Today",
+  "lastUpdated": "2026-11-03T13:12:18.054Z",
+  "agentLog": [
+    {
+      "timestamp": "13:11:25",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit e10c087: \"chore(data): auto-publish daily briefing [2026-11-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:11:25",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:11:32",
+      "module": "SCOUT",
+      "message": "Scouted 121 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:11:32",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:11:32",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 78 off-beat/redundant wires. 43 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:11:32",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:11:32",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:12:18",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 29 items (2 via LLM, 27 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 745. Est cost: $0.00021.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:12:18",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:12:18",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (29 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:12:18",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-11-03 live (29 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261103-8",
+            "source": "TechCrunch AI",
+            "date": "2026-11-02",
+            "headline": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
+            "summary": "The one-year-old startup is now valued at $300 million.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 6.5,
+              "relevance": 8.8,
+              "total": 6.9
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261103-9",
+            "source": "MIT Tech Review AI",
+            "date": "2026-11-02",
+            "headline": "Stop counting tokens, start counting what ships",
+            "summary": "When a developer gives an AI agent a coding task, the agent does more than answer once. It plans, generates code, runs tests, and repeats the process to correct errors. A single task can use 10 to 50 times more tokens than a basic chat prompt.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261103-10",
+            "source": "arXiv Preprint",
+            "date": "2026-11-02",
+            "headline": "From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles",
+            "summary": "Chain-of-Thought (CoT) generation has substantially improved the performance of Large Language Models (LLMs) on complex reasoning tasks, including code generation, data analysis, and exam-style question answering. Despite these advances, purely neural LLMs continue to struggle with elementary logical reasoning problems and lack the determinism, soundness, and reliability characteristic of symbolic reasoning systems. Conversely, classical symbolic methods such as SAT solving and exact cover guarantee correctness and completeness, but require problems to be expressed in highly specialized formal encodings, limiting their applicability to natural language inputs.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2611.03641v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-research-20261103-15",
+            "source": "MIT Tech Review AI",
+            "date": "2026-11-03",
+            "headline": "How “reverse game theory” could keep AI agents in check",
+            "summary": "A new approach known as “reverse game theory” aims to control powerful AI models by designing systems that incentivize them to stick to the rules. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human desires—to make sure, in other words, that rogue agents don’t break the law,….",
+            "tag": "REASONING",
+            "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261103-12",
+            "source": "arXiv Preprint",
+            "date": "2026-11-02",
+            "headline": "Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap",
+            "summary": "Muon has recently emerged as a promising optimizer for pretraining large language models, offering a speedup over AdamW in minimizing pretraining loss. However, it remains unclear whether Muon's advantage persists after fine-tuning. In this paper, we study the downstream behavior of Muon and AdamW and uncover a surprising trend: beyond a sufficiently large pretraining data budget, AdamW outperforms Muon after fine-tuning.",
+            "tag": "DATASET",
+            "url": "http://arxiv.org/abs/2611.03633v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261103-21",
+            "source": "arXiv Preprint",
+            "date": "2026-11-02",
+            "headline": "Not All Reasoning Generalizes: A Case Study on Learning Generalizable Reasoning Strategies in RLVR",
+            "summary": "Reinforcement learning with verifiable rewards (RLVR) can enable generalizable improvement for large language model (LLM) reasoning. This paper studies how to incentivize such generalization via reasoning strategies. We study this question with a controllable equation-solving framework: finding multiple inputs x for equations f(x)=y, where f is a non-bijective string function.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2611.03627v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261103-13",
+            "source": "The Verge AI",
+            "date": "2026-11-02",
+            "headline": "OpenAI pitches data center power plants as a way to protect nearby areas",
+            "summary": "In an announcement on Monday, OpenAI says it will pilot its \"Grid Protectors Program\" at an upcoming data center in Effingham County, Georgia, where the company promises to free up to 1,000 megawatts of power during extreme weather or emergencies, enough to power air conditioners in around 700,000 homes. The announcement comes as opposition to […].",
+            "tag": "INFRASTRUCTURE",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261103-14",
+            "source": "The Verge AI",
+            "date": "2026-10-30",
+            "headline": "The biggest names in AI are backing a new way to opt out of scraping",
+            "summary": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With this control, publishers can apply their AI training preferences across multiple AI companies, instead of setting them individually. The shared \"policy token\" signal […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261103-17",
+            "source": "The Verge AI",
+            "date": "2026-11-02",
+            "headline": "Anthropic clamps down on Claude’s AI video game clones",
+            "summary": "Anthropic has updated Claude Code's system prompt to prevent the AI tool from being used to re-create existing video games, as reported by Tom's Hardware. Retro gaming is currently being overrun with AI-made decompilations, recompilations, and ports, but while Anthropic will still let people use Claude Code to make games, it doesn't want people to […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261103-18",
+            "source": "The Verge AI",
+            "date": "2026-10-31",
+            "headline": "I built an AI Tamagotchi before Meta could",
+            "summary": "Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But I won't be buying one, because we have Muse Charm at home.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261103-19",
+            "source": "The Verge AI",
+            "date": "2026-10-30",
+            "headline": "Apple Intelligence is finally coming to China with iOS 27.3",
+            "summary": "Apple will launch Apple Intelligence in China with iOS 27.3, the company announced on its Chinese newsroom website, as reported by MacRumors. The Apple Intelligence features will be available first in an iOS 27.3 beta that's set to launch on November 4th, with a full iOS 27.3 release scheduled for December. This launch doesn't bring […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261103-1",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC Warns 25 Healthcare Marketers and Lead Generators Against Deceptive Advertising",
+            "summary": "Federal Trade Commission staff sent warning letters to 25 companies that market or generate sales leads for healthcare plans during open enrollment season. The letters advise entities not to deceive consumers about advertised terms and cite past FTC enforcement actions against alleged violators.",
+            "tag": "FTC_WARNING",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-staff-warn-marketers-healthcare-plans-lead-generators-not-deceive-consumers-about-terms",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 8.5,
+              "relevance": 8.5,
+              "total": 8.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261103-2",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC Removes Imposter Websites and Secures $80 Million in Consumer Redress",
+            "summary": "The Federal Trade Commission released highlights detailing its ongoing efforts to combat impersonation scams and protect consumers. Since its Impersonation Rule took effect in 2024, the agency has taken down 19 FTC-imposter websites and secured more than $80 million in redress.",
+            "tag": "REGULATION",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-highlights-efforts-combat-imposter-scams-protect-consumers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.4,
+              "relevance": 8.5,
+              "total": 8.6
+            }
+          },
+          {
+            "id": "politics-regulatory-20261103-3",
+            "source": "FTC Press",
+            "date": "2026-10-28",
+            "headline": "FTC Launches Personalized Pricing and Compensation Inquiry",
+            "summary": "Commission orders seek pricing and compensation methodology from major airlines, ride-sharing companies and food-delivery firms The Federal Trade Commission today ordered nine major airlines, ride-sharing companies and food-delivery firms to provide detailed information that will allow the agency to study the use of personal data to set prices and compensation.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-launches-personalized-pricing-compensation-inquiry",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 7.8,
+              "total": 8.2
+            }
+          },
+          {
+            "id": "politics-regulatory-20261103-4",
+            "source": "FTC Press",
+            "date": "2026-10-27",
+            "headline": "FTC Bureau of Competition Statement on Termination of PlayPower’s Acquisition of Rival Playground Manufacturer Burke",
+            "summary": "Federal Trade Commission Bureau of Competition Director Daniel Guarnera issued the following statement in response to the announcement that Platinum Equity and its portfolio company, PlayPower, abandoned the proposed acquisition of BCI Burke following a.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-bureau-competition-statement-termination-playpowers-acquisition-rival-playground-manufacturer",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261103-5",
+            "source": "FTC Press",
+            "date": "2026-11-02",
+            "headline": "FTC, Washington Take Action Against Payment Processor for Deceiving Small Businesses About Costs and Cancellation Terms",
+            "summary": "Riverside Payments falsely promised to save small businesses money on payment-processing services but failed to disclose fees and auto-renewing contracts, complaint alleges Payment processor Riverside Payments Inc., its affiliate Cascade Equipment Leasing LLC and their operators will pay $600,000 to resolve Federal Trade Commission and Washington state allegations that the firms deceived small businesses by falsely promising to save them money on payment processing services and making it nearly impossible to cancel despite offering “risk-free” cancellation.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/ftc-washington-take-action-against-payment-processor-deceiving-small-businesses-about-costs",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261103-26",
+            "source": "MarketWatch Top",
+            "date": "2026-11-03",
+            "headline": "The stock market loves gridlock. But midterm elections won’t resolve two big money fights.",
+            "summary": "Investors hoping for an Election Day lift face a looming government-spending showdown and growing opposition to AI data centers.",
+            "tag": "MARKETS",
+            "url": "https://www.marketwatch.com/story/the-stock-market-loves-gridlock-but-midterm-elections-wont-resolve-two-big-money-fights-97ed4f64?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "markets-macro-20261103-28",
+            "source": "MarketWatch Top",
+            "date": "2026-11-03",
+            "headline": "3 signs cash-strapped consumers are nearing a ‘spend-pocalypse’ that would hurt the economy",
+            "summary": "What happens when they stop spending?",
+            "tag": "MARKETS",
+            "url": "https://www.marketwatch.com/story/3-signs-cash-strapped-consumers-are-nearing-a-spend-pocalypse-that-would-hurt-the-economy-2ab4c3dd?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          },
+          {
+            "id": "markets-macro-20261103-29",
+            "source": "MarketWatch Top",
+            "date": "2026-11-03",
+            "headline": "Wall Street’s most hated stocks are faring far better than its favorites",
+            "summary": "The thrashing that Wall Street’s artificial-intelligence darlings have taken over the past few months has led to an unusual situation in the U.S.",
+            "tag": "EQUITIES",
+            "url": "https://www.marketwatch.com/story/wall-streets-most-hated-stocks-are-faring-far-better-than-its-favorites-4c1d6c68?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261103-22",
+            "source": "arXiv Preprint",
+            "date": "2026-11-02",
+            "headline": "Quantum channel tomography: optimal bounds in the near-boundary regime",
+            "summary": "Quantum channel tomography (also known as quantum process tomography) is a fundamental task in quantum information and quantum computing, aiming to learn the full description of an unknown quantum channel from black-box queries. For channels with input dimension $d_1$, output dimension $d_2$, and Kraus rank at most $r$, [CGO+26] identifies the dilation rate $τ=rd_2/d_1\\geq 1$ as a key parameter governing a Heisenberg-to-classical transition in query complexity. While the optimal bounds in the boundary regime ($τ=1$) and the away-from-boundary regime ($τ\\geq 1+Ω(1)$) are now known, the precise behavior in the near-boundary regime ($1<τ<1+o(1)$) has remained unresolved.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2611.03639v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261103-23",
+            "source": "arXiv Preprint",
+            "date": "2026-11-02",
+            "headline": "Quantum Private Information Retrieval on Forests",
+            "summary": "We consider the problem of graph private information retrieval (PIR) in the quantum setting. We focus on a specific type of graphs, namely the forest graphs. A forest graph is a union of disjoint trees.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2611.03558v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261103-24",
+            "source": "arXiv Preprint",
+            "date": "2026-11-02",
+            "headline": "Quantum tomography on Schwartz space",
+            "summary": "In this work we show that standard results in quantum tomography, which are typically proven in the context of Hilbert spaces, can analogously be established in the theory of Schwartz spaces. In particular, we will see that quantum states are equivalently characterized by their Wigner function, the characteristic of their Wigner function, and the probability distributions for a family of linear combinations of position and momentum. Physically, the latter can be understood as the evolution of its probability distribution in position over time under, for example, free or harmonic evolution.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2611.03521v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261103-25",
+            "source": "arXiv Preprint",
+            "date": "2026-11-02",
+            "headline": "On the Failure Probability of Quantum Leftover Hashing with Bad Seeds",
+            "summary": "We study hashing against quantum adversaries, as used in cryptographic applications, and provide bounds on the probability of failure in practical settings where seeds might be reused and might be non-ideal. Randomness extraction and privacy amplification are key components of quantum cryptographic protocols, such as quantum randomness generation or key distribution, that allow the compression of partially secure raw data into shorter output with high security. To ensure the security of any cryptographic construction that integrates them, it is desirable to establish composable security.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2611.03484v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "science-frontier-20261103-27",
+            "source": "arXiv Preprint",
+            "date": "2026-11-02",
+            "headline": "Spacetime Emergence in the Memory of a Learning Agent",
+            "summary": "We show that the causal structure of spacetime can emerge within the memory of a learning agent performing a quantum information task. We train a model-based reinforcement-learning agent to maximize the quantum mutual information between localized quantum probes interacting with a quantum field in Minkowski spacetime, without directly providing it with information regarding the spacetime metric or causal structure. In learning to accomplish this task, the reinforcement-learning agent constructs an internal predictive model whose planner develops the characteristic null structure of spacetime, allowing us to reconstruct the causal structure of the Minkowski metric with high accuracy.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2611.03596v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261103-20",
+            "source": "Wired Culture",
+            "date": "2026-11-02",
+            "headline": "Want to Sign With a Hollywood Agent? Start Making Fun of AI",
+            "summary": "Even as studios incorporate generative tech into film and TV production, comedy content creators have broken through by roasting chatbots.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/comedians-making-fun-of-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261103-6",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-02",
+            "headline": "DOJ’s Try-Anything Approach",
+            "summary": "I n the run-up to the 2024 election, Donald Trump complained that Special Counsel Jack Smith’s detailed overview of the evidence against him in the January 6 case constituted “Election Interference.” The Department of Justice had a policy of not taking any potentially influential action so soon before an election, Trump rightly noted in a social-media post, and Smith, Trump argued more debatably, had just violated those rules. Trump seems a great deal less worried about DOJ’s propriety now. Over just the past few weeks, DOJ has sued multiple states challenging their election processes, charged more than 100 people with alleged voter fraud, and launched a barrage of criminal charges and investigations against Democratic Representative Ilhan Omar, former FBI Director James Comey, and other figures hated by MAGA.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/doj-elections/689238/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.2,
+              "relevance": 7.8,
+              "total": 7.5
+            }
+          },
+          {
+            "id": "culture-voices-20261103-7",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-03",
+            "headline": "Israel’s Common Ground",
+            "summary": "My most recent visit to Israel overlapped with its election in October, but that was a coincidence. In 10 days of discussions with generals and intelligence officers, entrepreneurs and university students, I was reminded of what Moshe Dayan’s biographer Shabtai Teveth wrote about Israel’s famous one-eyed soldier and diplomat: “His one eye glimmered with an enormous lust for life, his other eye was extinguished beneath the black patch, dead. At times he seemed to symbolize Israel itself, in which life and death are close partners.” I had visited Israel in November 2023, while the horrors of the Hamas onslaught were still fresh—more than 800 civilians and 300 soldiers killed, 251 hostages seized.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/israeli-election-politics-culture/689257/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "culture-voices-20261103-11",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-01",
+            "headline": "I Thought I’d Left Authoritarianism Behind",
+            "summary": "L ate in the summer of 1984 , I met my dying father for what I thought would be our last lunch together. We’d chosen one of his favorite restaurants in downtown Brno, the capital of Moravia in what was then Communist Czechoslovakia. The ceiling fans spun sluggishly in the air; the clatter of plates echoed off the marble walls and high ceilings; cigarette smoke curled above tables where men spoke in whispers.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/escaping-communist-czechoslovakia-america/689232/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 2.5,
+              "relevance": 6.5,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "culture-voices-20261103-16",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-01",
+            "headline": "Haley Stevens Is Sending the Wrong Message",
+            "summary": "ET on November 1, 2026 Haley Stevens nearly won the Democratic nomination for Senate in Michigan in August, then immediately endorsed the winner, Abdul El-Sayed. She has spent the months since then vacillating, expressing doubts about his campaign while maintaining her support. But last week, her fiancé said that he intends to vote for El-Sayed’s opponent, Mike Rogers, and now she has followed, endorsing the Republican just two days before the election.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/haley-stevens-sending-wrong-message/689250/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ]
+      }
+    }
+  }
+}
