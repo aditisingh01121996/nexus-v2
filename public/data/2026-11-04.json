@@ -1,0 +1,675 @@
+{
+  "date": "2026-11-04",
+  "label": "Today",
+  "lastUpdated": "2026-11-04T13:27:08.346Z",
+  "agentLog": [
+    {
+      "timestamp": "13:26:08",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 2dda688: \"chore(data): auto-publish daily briefing [2026-11-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:26:08",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:26:14",
+      "module": "SCOUT",
+      "message": "Scouted 121 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:26:14",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:26:14",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 82 off-beat/redundant wires. 39 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:26:14",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:26:14",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:27:08",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 28 items (1 via LLM, 27 via deterministic synthesis; top 15 LLM quota applied, 2 dropped for thin context). Tokens: 340. Est cost: $0.00009.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:27:08",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:27:08",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (28 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:27:08",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-11-04 live (28 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261104-6",
+            "source": "TechCrunch AI",
+            "date": "2026-11-03",
+            "headline": "AI inference startup Fal doubles its valuation to $16B as demand surges",
+            "summary": "The five-year-old startup raised a $1.3 billion round led by Bessemer.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.8,
+              "relevance": 9.5,
+              "total": 7.7
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261104-8",
+            "source": "TechCrunch AI",
+            "date": "2026-11-03",
+            "headline": "Ted Schlein’s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom",
+            "summary": "Cybersecurity-focused Ballistic Ventures is seeking to raise $360 million for a new flagship fund and another $130 million for a separate investment vehicle.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 8.2,
+              "relevance": 8.8,
+              "total": 7.3
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261104-15",
+            "source": "TechCrunch AI",
+            "date": "2026-11-04",
+            "headline": "TechCrunch Founder Summit 2026: Doors open at 9 a.m. ET in Boston",
+            "summary": "Today is the day to join TechCrunch Founder Summit 2026 in Boston's SoWa Power Station. Register now to join this founder-focused conference today.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261104-11",
+            "source": "arXiv Preprint",
+            "date": "2026-11-03",
+            "headline": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
+            "summary": "Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invariant to changes in embodiment and appearance. Existing latent action models infer actions from visual transitions, but their representations often entangle the underlying action with irrelevant visual variations, limiting transfer across embodiments. We introduce DreamX, which repurposes a pretrained video diffusion model as a universal latent action learner.",
+            "tag": "REASONING",
+            "url": "http://arxiv.org/abs/2611.05377v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261104-12",
+            "source": "MIT Tech Review AI",
+            "date": "2026-11-02",
+            "headline": "Stop counting tokens, start counting what ships",
+            "summary": "When a developer gives an AI agent a coding task, the agent does more than answer once. It plans, generates code, runs tests, and repeats the process to correct errors. A single task can use 10 to 50 times more tokens than a basic chat prompt.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261104-13",
+            "source": "MIT Tech Review AI",
+            "date": "2026-11-03",
+            "headline": "How “reverse game theory” could keep AI agents in check",
+            "summary": "A new approach known as “reverse game theory” aims to control powerful AI models by designing systems that incentivize them to stick to the rules. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human desires—to make sure, in other words, that rogue agents don’t break the law,….",
+            "tag": "REASONING",
+            "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261104-21",
+            "source": "arXiv Preprint",
+            "date": "2026-11-03",
+            "headline": "Reading Why: Born-Measured Attention with Exact Word Evidence on Light and Qubits",
+            "summary": "When a language model answers, we can usually only estimate why. We build a transformer in which every step is a Born measurement - attention $|\\langle q|k\\rangle|^4$ normalised over each row, a measured product in place of the feed-forward nonlinearity, and a Born readout. With its denominators held at their values for the input, each class probability is a polynomial in the word amplitudes, so its integrated-gradient evidence is computed by a finite quadrature with no quadrature error: the words' contributions sum to the class probability above its no-information share, to $10^{-11}$ or better.",
+            "tag": "REASONING",
+            "url": "http://arxiv.org/abs/2611.05355v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.1
+            }
+          },
+          {
+            "id": "ai-venture-research-20261104-22",
+            "source": "arXiv Preprint",
+            "date": "2026-11-03",
+            "headline": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
+            "summary": "Direct Nash Optimization (DNO) aligns a language model to a general preference function by approximating the Nash equilibrium of a two-player preference game. Its practical variant, DNO-Prct, iterates on-policy sampling, LLM-based rating of the samples together with a teacher's gold response, large-margin preference-pair selection and a DPO-style contrastive update. We re-implement DNO-Prct independently and study it on two open-weight instruct models, Llama 3.1 8B Instruct and Mistral 7B Instruct v0.1, with GPT-4o or a larger open-weight model of the same family as the annotator.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2611.05373v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261104-16",
+            "source": "The Verge AI",
+            "date": "2026-11-03",
+            "headline": "Apple starts giving Siri AI access to third-party apps",
+            "summary": "Apple will now let Siri AI perform actions across third-party apps. As part of the iOS 27.3 update rolling out on Tuesday, Apple announced developers can now integrate Siri AI's new features in \"all apps,\" allowing the voice assistant to draw on a user's personal context, process natural language prompts, and use on-screen awareness to […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261104-17",
+            "source": "The Verge AI",
+            "date": "2026-11-03",
+            "headline": "Apple’s latest watchOS beta includes its new always-on Audio Intelligence features",
+            "summary": "Starting today, Siri can tune into the Apple Watch's mic with Audio Intelligence features that are available in the new watchOS 27.3 developer beta rolling out now. The two new additions are Siri Recap, which uses \"ambient listening\" to generate summaries of your conversation, and Live Rewind, which generates text transcripts of the last 15 […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261104-18",
+            "source": "The Verge AI",
+            "date": "2026-11-03",
+            "headline": "OpenAI says ChatGPT is catching up to Google in search",
+            "summary": "In many circles, \"Ask Chat\" has replaced \"Google it,\" and that's reflected in a new announcement from OpenAI: the volume of search queries run through ChatGPT now equals 20 percent of the volume run through Google. Adam Fry, OpenAI's consumer product lead for ChatGPT, made the announcement at a press event on Monday.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261104-20",
+            "source": "The Verge AI",
+            "date": "2026-11-03",
+            "headline": "Those Jeff Bezos hair transplant photos are very fake",
+            "summary": "Amazon founder Jeff Bezos and actor Jason Statham have a distinctive feature in common: They're both famously bald, and that definitely hasn't changed in the last few days. However, there are some images of the two men circulating around X, Threads, and Bluesky in which they both have substantially more hair than their usual shaved […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1025745/fake-jeff-bezos-hair-replacement-photos-debunk",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261104-1",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC Warns 25 Healthcare Marketers Against Deceptive Advertising Practices",
+            "summary": "Federal Trade Commission staff sent warning letters to 25 companies marketing or generating leads for healthcare plans during open enrollment season. The letters cite prior enforcement actions to warn recipients against deceiving consumers about advertised plan terms.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-staff-warn-marketers-healthcare-plans-lead-generators-not-deceive-consumers-about-terms",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 8.5,
+              "relevance": 8.5,
+              "total": 8.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261104-2",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC Highlights Efforts to Combat Imposter Scams and Protect Consumers",
+            "summary": "Agency stopped 19 FTC-impersonation websites and secured more than $80 million in consumer redress The Federal Trade Commission released the following highlights from the agency’s ongoing efforts to combat impersonation scams and protect consumers, including removal of 19 FTC-imposter websites and enforcement actions resulting in more than $80 million in consumer redress since the FTC’s Impersonation Rule went into effect in 2024.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-highlights-efforts-combat-imposter-scams-protect-consumers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.4,
+              "relevance": 8.8,
+              "total": 8.6
+            }
+          },
+          {
+            "id": "politics-regulatory-20261104-3",
+            "source": "FTC Press",
+            "date": "2026-10-28",
+            "headline": "FTC Launches Personalized Pricing and Compensation Inquiry",
+            "summary": "Commission orders seek pricing and compensation methodology from major airlines, ride-sharing companies and food-delivery firms The Federal Trade Commission today ordered nine major airlines, ride-sharing companies and food-delivery firms to provide detailed information that will allow the agency to study the use of personal data to set prices and compensation.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-launches-personalized-pricing-compensation-inquiry",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 7.8,
+              "total": 8.2
+            }
+          },
+          {
+            "id": "politics-regulatory-20261104-4",
+            "source": "FTC Press",
+            "date": "2026-11-02",
+            "headline": "FTC, Washington Take Action Against Payment Processor for Deceiving Small Businesses About Costs and Cancellation Terms",
+            "summary": "Riverside Payments falsely promised to save small businesses money on payment-processing services but failed to disclose fees and auto-renewing contracts, complaint alleges Payment processor Riverside Payments Inc., its affiliate Cascade Equipment Leasing LLC and their operators will pay $600,000 to resolve Federal Trade Commission and Washington state allegations that the firms deceived small businesses by falsely promising to save them money on payment processing services and making it nearly impossible to cancel despite offering “risk-free” cancellation.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/ftc-washington-take-action-against-payment-processor-deceiving-small-businesses-about-costs",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261104-5",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC and States Take Action Against Toast Inc. over Hidden and Unauthorized Fees, Deceptive Subscription and Cancellation Practices and Other Unlawful Conduct",
+            "summary": "Agencies allege restaurant software and fintech firm deceptively touts costs and “24/7/365” customer support The Federal Trade Commission, the People of the State of California by and through the Los Angeles County Counsel and San Francisco City Attorney, and the Attorneys General of the States of Colorado, Florida, Illinois, Iowa, Nebraska, Oklahoma and Utah, filed a lawsuit today against Toast Inc.",
+            "tag": "POLICY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-states-take-action-against-toast-inc-over-hidden-unauthorized-fees-deceptive-subscription",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 7.8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261104-27",
+            "source": "MarketWatch Top",
+            "date": "2026-11-04",
+            "headline": "Think the Fed will be done after two more rate hikes? How Friday’s jobs report may trigger a major market repricing.",
+            "summary": "Unexpectedly hot jobs data could affect the number and timing of future rate hikes.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/think-the-fed-will-be-done-after-two-more-rate-hikes-how-fridays-jobs-report-may-trigger-a-major-market-repricing-6aca874c?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          },
+          {
+            "id": "markets-macro-20261104-28",
+            "source": "MarketWatch Top",
+            "date": "2026-11-04",
+            "headline": "Midterm elections deliver a ‘blue wave.’ The stock market sees green.",
+            "summary": "Wall Street finds reasons to cheer the Democrats’ sweep. Plus: Microsoft’s AI-era buyouts and a retiree’s appetite for a “free lunch.”.",
+            "tag": "MARKETS",
+            "url": "https://www.marketwatch.com/story/midterm-elections-deliver-a-blue-wave-the-stock-market-sees-green-5900a779?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261104-23",
+            "source": "arXiv Preprint",
+            "date": "2026-11-03",
+            "headline": "Interpretable Quantum Photonic Generative Models",
+            "summary": "We propose a physical generative model for learning correlated multivariate data based on homodyne detection of photonic continuous-variable (CV) circuits. We use an $N$-mode photonic circuit in which two-mode squeezing provides correlations, local phase shifts tune the strength and sign of these correlations, and an adjustable interferometer redistributes them across modes. We train the circuit by matching its Pearson correlation matrix to the one obtained from data.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2611.05354v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 4.4,
+              "magnitude": 6,
+              "relevance": 7.8,
+              "total": 6
+            }
+          },
+          {
+            "id": "science-frontier-20261104-24",
+            "source": "arXiv Preprint",
+            "date": "2026-11-03",
+            "headline": "Quantum Error Correction in Nearly Critical Toric Codes",
+            "summary": "We investigate quantum error correction protocols for topological codes deformed away from their stabilizer limits, particularly as they are pushed towards quantum phase transitions into trivial phases. Our focus is primarily on quantum information stored within the ground-state manifold of the transverse-field toric code (TFTC), subjected to independent bit-flip and phase-flip decoherence. Although the transverse field induces strong quantum fluctuations of $m$ anyons in the ground states, we show that projective measurements of the \"bare\" toric code stabilizers can nevertheless be used to construct an efficient decoding algorithm which exhibits a finite threshold to both types of decoherence, even when the transverse field is tuned infinitesimally close to the quantum critical point.",
+            "tag": "PHYSICS",
+            "url": "http://arxiv.org/abs/2611.05375v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6
+            }
+          },
+          {
+            "id": "science-frontier-20261104-25",
+            "source": "arXiv Preprint",
+            "date": "2026-11-03",
+            "headline": "Universal dynamics of quantum phase transitions with fractional long-range interactions",
+            "summary": "The complete statistical characterization of defects generated in a quantum phase transition has mostly been studied in exactly solvable models, and remains little explored in nonintegrable systems such as long-range interacting spin chains. We characterize the full defect counting statistics in a nonintegrable long-range spin chain, the fractional Ising model, by time-dependent variational-principle simulations within the matrix-product-state and matrix-product-operator formalism. Fractional interactions capture emergent multiscale correlations and long-range effects in nature, governed by the order of the underlying fractional derivative.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2611.05273v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6
+            }
+          },
+          {
+            "id": "science-frontier-20261104-26",
+            "source": "arXiv Preprint",
+            "date": "2026-11-03",
+            "headline": "Effective Hamiltonians and non-Hermitian physics",
+            "summary": "Every realistic quantum system is coupled to an environment. Including the environment restores a closed, Hermitian description, but at the cost of an intractably large Hilbert space. The Feshbach--Löwdin projection eliminates the unwanted degrees of freedom exactly, yielding an effective Hamiltonian $H_{\\rm eff}$ on the relevant subspace alone---which \\new{generically becomes non-Hermitian when the eliminated subspace contains an energetically accessible continuum and outgoing boundary conditions are imposed}.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2611.05268v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261104-19",
+            "source": "Wired Culture",
+            "date": "2026-11-02",
+            "headline": "Want to Sign With a Hollywood Agent? Start Making Fun of AI",
+            "summary": "Even as studios incorporate generative tech into film and TV production, comedy content creators have broken through by roasting chatbots.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/comedians-making-fun-of-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261104-7",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-02",
+            "headline": "DOJ’s Try-Anything Approach",
+            "summary": "I n the run-up to the 2024 election, Donald Trump complained that Special Counsel Jack Smith’s detailed overview of the evidence against him in the January 6 case constituted “Election Interference.” The Department of Justice had a policy of not taking any potentially influential action so soon before an election, Trump rightly noted in a social-media post, and Smith, Trump argued more debatably, had just violated those rules. Trump seems a great deal less worried about DOJ’s propriety now. Over just the past few weeks, DOJ has sued multiple states challenging their election processes, charged more than 100 people with alleged voter fraud, and launched a barrage of criminal charges and investigations against Democratic Representative Ilhan Omar, former FBI Director James Comey, and other figures hated by MAGA.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/doj-elections/689238/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.2,
+              "relevance": 7.8,
+              "total": 7.5
+            }
+          },
+          {
+            "id": "culture-voices-20261104-9",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-03",
+            "headline": "Things Are Going to Get Ugly",
+            "summary": "This article was featured in the One Story to Read Today newsletter. Donald Trump won’t be able to cope. If he loses control of one chamber of Congress, never mind both, the world will see a personality collapse and rage meltdown on the scale of the final sequence of the Lord of the Rings .",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/trump-election-results-cope/689260/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "culture-voices-20261104-10",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-03",
+            "headline": "Israel’s Common Ground",
+            "summary": "My most recent visit to Israel overlapped with its election in October, but that was a coincidence. In 10 days of discussions with generals and intelligence officers, entrepreneurs and university students, I was reminded of what Moshe Dayan’s biographer Shabtai Teveth wrote about Israel’s famous one-eyed soldier and diplomat: “His one eye glimmered with an enormous lust for life, his other eye was extinguished beneath the black patch, dead. At times he seemed to symbolize Israel itself, in which life and death are close partners.” I had visited Israel in November 2023, while the horrors of the Hamas onslaught were still fresh—more than 800 civilians and 300 soldiers killed, 251 hostages seized.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/israeli-election-politics-culture/689257/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "culture-voices-20261104-14",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-01",
+            "headline": "Haley Stevens Is Sending the Wrong Message",
+            "summary": "ET on November 1, 2026 Haley Stevens nearly won the Democratic nomination for Senate in Michigan in August, then immediately endorsed the winner, Abdul El-Sayed. She has spent the months since then vacillating, expressing doubts about his campaign while maintaining her support. But last week, her fiancé said that he intends to vote for El-Sayed’s opponent, Mike Rogers, and now she has followed, endorsing the Republican just two days before the election.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/haley-stevens-sending-wrong-message/689250/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ]
+      }
+    }
+  }
+}
