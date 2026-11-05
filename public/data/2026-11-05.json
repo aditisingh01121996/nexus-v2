@@ -1,0 +1,635 @@
+{
+  "date": "2026-11-05",
+  "label": "Today",
+  "lastUpdated": "2026-11-05T13:41:54.719Z",
+  "agentLog": [
+    {
+      "timestamp": "13:40:27",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit 96bec54: \"chore(data): auto-publish daily briefing [2026-11-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:40:27",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:40:33",
+      "module": "SCOUT",
+      "message": "Scouted 111 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:40:33",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:40:33",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 73 off-beat/redundant wires. 38 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:40:33",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:40:33",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:41:54",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 26 items (11 via LLM, 15 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 6334. Est cost: $0.00148.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:41:54",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:41:54",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (26 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:41:54",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-11-05 live (26 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261105-12",
+            "source": "TechCrunch AI",
+            "date": "2026-11-05",
+            "headline": "A YC startup is putting $1M behind five unsolved materials science problems for AI",
+            "summary": "Discovered Materials, a months-old YC startup that uses AI to find chip materials, is offering $200,000 for each solution to five open materials science problems.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 5.2,
+              "relevance": 7.8,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261105-16",
+            "source": "TechCrunch AI",
+            "date": "2026-11-04",
+            "headline": "Nothing CEO says company’s mysterious AI-first device is dropping next month",
+            "summary": "While it's not yet clear what kind of product the smartphone startup is cooking up, Nothing's CEO said the product is designed to leverage AI for productivity gains.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 7.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.3
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261105-11",
+            "source": "MIT Tech Review AI",
+            "date": "2026-11-02",
+            "headline": "AI Agents Consume Significantly More Tokens Than Basic Chat Prompts",
+            "summary": "AI coding agents perform iterative tasks like planning, coding, and testing, using 10 to 50 times more tokens than a basic chat prompt. As these agents become more useful, the number of operational calls increases correspondingly.",
+            "tag": "AI_VENDORS",
+            "url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261105-13",
+            "source": "MIT Tech Review AI",
+            "date": "2026-11-03",
+            "headline": "How “reverse game theory” could keep AI agents in check",
+            "summary": "A new approach known as “reverse game theory” aims to control powerful AI models by designing systems that incentivize them to stick to the rules. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human desires—to make sure, in other words, that rogue agents don’t break the law,….",
+            "tag": "REASONING",
+            "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261105-20",
+            "source": "arXiv Preprint",
+            "date": "2026-11-04",
+            "headline": "FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors",
+            "summary": "Reconstructing full flow fields from sparse sensors requires prior assumptions about unmeasured regions and physical variables. Yet it remains unclear when learned models outperform classical estimators and which aspects of their predictions can be trusted. FlowReconBench evaluates ten learned and five classical methods on three regimes: a laminar cylinder wake across Reynolds numbers, two-dimensional Kolmogorov turbulence and a large-scale three-dimensional (3D) isotropic turbulence.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2611.06912v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261105-21",
+            "source": "arXiv Preprint",
+            "date": "2026-11-04",
+            "headline": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
+            "summary": "Self-Driving Chemical Laboratories (SDCLs) are moving chemical experimentation toward embodied automation, where machines must perceive laboratory scenes, reason about experimental states, and act under physical, procedural, and safety constraints. Although Multimodal Large Language Models (MLLMs) are increasingly considered as embodied brains for such systems, existing laboratory benchmarks mainly focus on safety, anomaly detection, or general scientific understanding, leaving their execution-oriented embodied capabilities underexplored. To fill this gap, we introduce BEAKER, a Benchmark for evaluating Embodied Actionability, Knowledge, Experimentation, and Reasoning in SDCLs.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2611.06911v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261105-22",
+            "source": "arXiv Preprint",
+            "date": "2026-11-04",
+            "headline": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+            "summary": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality alongside correctness. We introduce FrontierPhysics, an end-to-end benchmark with 56 tasks made by 42 physicists based on their own research, covering nine domains across theoretical, computational, and experimental physics.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2611.06910v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261105-17",
+            "source": "The Verge AI",
+            "date": "2026-11-04",
+            "headline": "Qualcomm is betting big on data centers as smartphone sales sink",
+            "summary": "With smartphone sales tanking by around 20 percent compared to 2025, Qualcomm is looking to data centers to help boost its bottom line. During its Q4 2026 earnings call, the company laid out its plans to make a splash in the AI data center business, through partnerships with companies like Amazon and Meta announced earlier […].",
+            "tag": "EARNINGS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261105-18",
+            "source": "The Verge AI",
+            "date": "2026-11-04",
+            "headline": "My therapist thinks I should chuck the Amazon Bee Frontier out a window",
+            "summary": "This is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going to change your life. Opt in for Optimizer here. \"How does that make you feel?\" I get asked this a lot in therapy.",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/column/1026464/optimizer-amazon-bee-frontier-ambient-listening-wearables",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261105-19",
+            "source": "The Verge AI",
+            "date": "2026-11-04",
+            "headline": "ChatGPT will now make you animated GIFs",
+            "summary": "ChatGPT can now create GIFs using a prompt or a photo uploaded to the AI chatbot. The update, which is rolling out alongside OpenAI's new Images 2.6 model, allows you to adjust the GIF's animation speed, edit individual frames, and share it with others. Before this change, ChatGPT couldn't natively generate GIFs in a single […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261105-1",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC Warns Healthcare Plan Marketers Against Deceptive Advertising",
+            "summary": "Federal Trade Commission staff are sending warning letters to 25 companies marketing or generating sales leads for healthcare plans during open enrollment. The letters cite FTC enforcement actions against alleged violators to prevent deceptive practices regarding plan terms.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-staff-warn-marketers-healthcare-plans-lead-generators-not-deceive-consumers-about-terms",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 8.5,
+              "relevance": 9,
+              "total": 8.9
+            }
+          },
+          {
+            "id": "politics-regulatory-20261105-2",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC highlights enforcement actions and consumer redress against impersonation scams",
+            "summary": "The Federal Trade Commission released highlights from its ongoing consumer protection efforts, including the removal of 19 FTC-imposter websites. These enforcement actions have secured over $80 million in consumer redress since the agency's Impersonation Rule took effect in 2024.",
+            "tag": "REGULATION",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-highlights-efforts-combat-imposter-scams-protect-consumers",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 7.4,
+              "relevance": 9,
+              "total": 8.7
+            }
+          },
+          {
+            "id": "politics-regulatory-20261105-4",
+            "source": "FTC Press",
+            "date": "2026-10-29",
+            "headline": "FTC and States Sue Toast Inc. Over Unlawful Fees and Deceptive Practices",
+            "summary": "The FTC and multiple state attorneys general filed a lawsuit against restaurant software firm Toast Inc. The agencies allege the company deceptively touts costs and customer support while engaging in hidden fees and unlawful subscription and cancellation practices.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-states-take-action-against-toast-inc-over-hidden-unauthorized-fees-deceptive-subscription",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 8.1
+            }
+          },
+          {
+            "id": "politics-regulatory-20261105-3",
+            "source": "FTC Press",
+            "date": "2026-11-02",
+            "headline": "FTC and Washington Penalize Riverside Payments $600,000 for Deception",
+            "summary": "Riverside Payments Inc., its affiliate Cascade Equipment Leasing LLC, and their operators will pay $600,000 to resolve allegations from the Federal Trade Commission and Washington state. The complaint states the firms deceived small businesses by falsely promising savings on payment processing while hiding fees, auto-renewing contracts, and blocking cancellations.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/ftc-washington-take-action-against-payment-processor-deceiving-small-businesses-about-costs",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 8
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261105-25",
+            "source": "MarketWatch Top",
+            "date": "2026-11-05",
+            "headline": "Interest rates could go ‘significantly higher’ if oil prices keep climbing — even if the Iran war ends soon",
+            "summary": "Strategists at Bank of America found a dramatic correlation between interest rates and oil prices in the U.S., U.K.",
+            "tag": "COMMODITIES",
+            "url": "https://www.marketwatch.com/story/interest-rates-could-go-significantly-higher-if-oil-prices-keep-climbing-even-if-the-iran-war-ends-soon-e3493498?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261105-7",
+            "source": "ScienceDaily",
+            "date": "2026-11-04",
+            "headline": "New Compound Enhances Muscle Repair Protein to Combat Aging",
+            "summary": "Scientists discovered a compound that transforms a natural muscle-repair protein into a more powerful version called Super HGF. This upgraded protein more than doubles its ability to bind to a key receptor and resists age-related chemical damage. Supported by early mouse experiments, the breakthrough could help preserve strength and combat muscle loss.",
+            "tag": "SCIENCE",
+            "url": "https://www.sciencedaily.com/releases/2026/11/261104005226.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 9,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "science-frontier-20261105-8",
+            "source": "ScienceDaily",
+            "date": "2026-11-04",
+            "headline": "SLAC scientists confirm conclusive proof of altermagnetism",
+            "summary": "Researchers at SLAC have confirmed a third type of magnetism known as altermagnetism using specialized X-rays. This discovery combines stability and efficient information-carrying capabilities, potentially overcoming major current electronic limitations.",
+            "tag": "FRONTIER",
+            "url": "https://www.sciencedaily.com/releases/2026/11/261104012256.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 7
+            }
+          },
+          {
+            "id": "science-frontier-20261105-9",
+            "source": "ScienceDaily",
+            "date": "2026-11-04",
+            "headline": "NASA Seeks Private Proposals to Save and Boost Hubble",
+            "summary": "NASA is exploring private space proposals to boost the declining Hubble Space Telescope into a higher orbit before it potentially falls to Earth by 2033 or 2034. The agency aims to keep the iconic observatory operating or safely dispose of it when its mission ends. Hubble is currently losing altitude after over 35 years of discoveries.",
+            "tag": "SPACE_SCIENCE",
+            "url": "https://www.sciencedaily.com/releases/2026/11/261104012254.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 7
+            }
+          },
+          {
+            "id": "science-frontier-20261105-23",
+            "source": "arXiv Preprint",
+            "date": "2026-11-04",
+            "headline": "3D Printed Monolithic Optomechanical Chassis for an Unbalanced Field-Widened Interferometer",
+            "summary": "Additive manufacturing is increasingly being explored as an approach for producing complex structures for optical hardware. In this work, we present a fully monolithic optomechanical chassis fabricated using laser powder bed fusion additive manufacturing. The structure was fabricated from thermally stable Invar36, a low-thermal-expansion alloy that enables high dimensional stability under varying environmental conditions.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2611.06898v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 4.4,
+              "magnitude": 6,
+              "relevance": 7.8,
+              "total": 6
+            }
+          },
+          {
+            "id": "science-frontier-20261105-24",
+            "source": "arXiv Preprint",
+            "date": "2026-11-04",
+            "headline": "Quantum Algorithms for Molecular Response Functions: Resolvent Kernels, Time-Domain Sampling, Query Lower Bounds with Matched Single-Point Calibers, and a Six-Route Comparison",
+            "summary": "Quantum algorithms for molecular response functions have mostly been studied one route at a time, most prominently the indicator-binning algorithm of Kharazi et al. We compare six routes within one accounting framework and state the conversions between their resource calibers. On the resolvent route the Lorentz-broadened spectrum is exactly a resolvent expectation; at finite gamma two boundary terms, a reversal term and a permanent-dipole pseudo-line, enter a disjoint error budget.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2611.06821v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.8
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261105-6",
+            "source": "Ars Technica",
+            "date": "2026-11-04",
+            "headline": "AMD achieves record revenue as data center doubles while gaming drops",
+            "summary": "AMD reported a record $13.4 billion quarter driven by a doubling of its data center business. Meanwhile, the company's gaming revenue experienced a significant decline of 40 percent.",
+            "tag": "INDUSTRY",
+            "url": "https://arstechnica.com/gadgets/2026/11/amds-record-quarter-data-center-business-doubles-while-gaming-craters/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.8,
+              "relevance": 8.5,
+              "total": 7.7
+            }
+          },
+          {
+            "id": "culture-industry-20261105-26",
+            "source": "Ars Technica",
+            "date": "2026-11-04",
+            "headline": "Big Tech claims voters’ AI backlash is “anti-Trump” not “anti-tech”",
+            "summary": "Tech industry in denial as US overwhelmingly votes to restrict AI, data centers.",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.5
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261105-5",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-04",
+            "headline": "Texas Democrats sweep major state offices in historic election",
+            "summary": "Texas Democrats achieved widespread victories across the state, defeating high-profile Republicans including Ken Paxton and Governor Greg Abbott. Democratic winners included James Talarico, Gina Hinojosa, Vikki Goodwin, Nathan Johnson, and Jon Rosenthal. The election results temporarily halt the state's trajectory as a laboratory for conservative policy experiments following decades of Republican control.",
+            "tag": "POLITICS",
+            "url": "https://www.theatlantic.com/ideas/2026/11/texas-blue-democrats-win/689278/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9.2,
+              "relevance": 9.2,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "culture-voices-20261105-10",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-04",
+            "headline": "J.D. Vance Blames Iran War for Midterm Losses to Position Himself for 2028",
+            "summary": "Following Republican midterm losses, Vice President J.D. Vance has attributed the party's defeat entirely to the Iran war in an effort to distance himself from administration failures while retaining Donald Trump's support. This strategy aims to box out rivals like Marco Rubio by framing foreign policy hawks as responsible for the debacle, aligning with Trump's own criticisms of the conflict. By focusing blame on the war, Vance avoids acknowledging other controversial administration policies such as tariffs, mass deportations, and domestic agendas.",
+            "tag": "POLITICS",
+            "url": "https://www.theatlantic.com/ideas/2026/11/vance-2028-campaign-strategy-change/689291/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.2,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "culture-voices-20261105-14",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-04",
+            "headline": "The End of the Trump Era",
+            "summary": "The Donald Trump era, I mean. It ended yesterday when voters handed control of both houses of Congress to the Democratic Party, along with a clear set of instructions: Stop the madness. Trump will still be president for another two years, of course, and it is unimaginable that he will go gently into lame-duck irrelevance.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/trump-era-republicans-midterms/689292/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "culture-voices-20261105-15",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-04",
+            "headline": "Trump Learns His Orbán Lesson",
+            "summary": "The president of the world’s greatest democracy admires autocratic leaders. He speaks with great affection about Russia’s Vladimir Putin, China’s Xi Jinping, and even North Korea’s Kim Jong Un. But the model that he and his MAGA acolytes have long apparently hoped to emulate was that of former Hungarian Prime Minister Viktor Orbán, who ruled for some 20 years by boring into Hungary’s democratic institutions, including the media and the courts, and either gutting or corrupting them.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/trump-orban-elections/689287/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ]
+      }
+    }
+  }
+}
