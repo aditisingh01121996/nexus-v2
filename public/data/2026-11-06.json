@@ -1,0 +1,675 @@
+{
+  "date": "2026-11-06",
+  "label": "Today",
+  "lastUpdated": "2026-11-06T13:25:04.324Z",
+  "agentLog": [
+    {
+      "timestamp": "13:24:12",
+      "module": "SCOUT",
+      "message": "Pipeline active on commit cf9f6c6: \"chore(data): auto-publish daily briefing [2026-11-\"",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:24:12",
+      "module": "SCOUT",
+      "message": "Initializing ingestion pipeline across 5 beats (strict 7-day recency filter).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:24:22",
+      "module": "SCOUT",
+      "message": "Scouted 115 candidate signals across 5 beats (all within 7-day window).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:24:22",
+      "module": "RANK",
+      "message": "Initiating deduplication & 4-factor scoring heuristics (discriminating deals vs administrative noise).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:24:22",
+      "module": "RANK",
+      "message": "Deduplication & relevance floor dropped 70 off-beat/redundant wires. 45 candidates evaluated.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:24:22",
+      "module": "SYNTH",
+      "message": "Selecting candidates clearing quality floor for synthesis.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:24:22",
+      "module": "SYNTH",
+      "message": "Verified curated models: gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:25:04",
+      "module": "SYNTH",
+      "message": "Synthesis complete for 28 items (6 via LLM, 22 via deterministic synthesis; top 15 LLM quota applied, 0 dropped for thin context). Tokens: 4925. Est cost: $0.00107.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:25:04",
+      "module": "EDITOR",
+      "message": "Computing composite 5-factor scores and executing non-destructive edition merge.",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:25:04",
+      "module": "EDITOR",
+      "message": "Enforced strict 5-item column quotas across all beats (28 total dispatches).",
+      "status": "ok"
+    },
+    {
+      "timestamp": "13:25:04",
+      "module": "PUBLISH",
+      "message": "Artifacts committed to /public/data/. Edition 2026-11-06 live (28 dispatches).",
+      "status": "ok"
+    }
+  ],
+  "beats": {
+    "ai-venture": {
+      "columns": {
+        "venture": [
+          {
+            "id": "ai-venture-venture-20261106-7",
+            "source": "TechCrunch AI",
+            "date": "2026-11-06",
+            "headline": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
+            "summary": "Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 8.8,
+              "relevance": 7.8,
+              "total": 7.2
+            }
+          },
+          {
+            "id": "ai-venture-venture-20261106-12",
+            "source": "TechCrunch AI",
+            "date": "2026-11-06",
+            "headline": "Physicl raises $10M to make the digital world real enough for robots",
+            "summary": "Physicl is trying to solve the sim-to-real gap with a pipeline originally built to market goods online.",
+            "tag": "VENTURE",
+            "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "venture",
+            "scores": {
+              "authority": 7.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 6.5,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          }
+        ],
+        "research": [
+          {
+            "id": "ai-venture-research-20261106-4",
+            "source": "arXiv Preprint",
+            "date": "2026-11-05",
+            "headline": "Researchers Introduce XStack Benchmark for Machine Learning Repository Migration",
+            "summary": "XStack evaluates AI agents on migrating machine learning repositories from PyTorch on NVIDIA GPUs to JAX on Google TPUs. In initial evaluations, Claude Opus 5 passed 75% of migration tasks, while GPT-5.6-sol passed 45% and all other agents scored 40% or lower. The benchmark was released to make progress in cross-framework and hardware migration measurable.",
+            "tag": "ML_BENCHMARKS",
+            "url": "http://arxiv.org/abs/2611.08472v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 9.4,
+              "relevance": 8.8,
+              "total": 7.8
+            }
+          },
+          {
+            "id": "ai-venture-research-20261106-15",
+            "source": "arXiv Preprint",
+            "date": "2026-11-05",
+            "headline": "Scientist World: Grow a Research World for AI-Scientists",
+            "summary": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Scientists, that world is readable but not runnable, so we build Scientist World for them: every research paper becomes an executable environment.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2611.08478v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261106-16",
+            "source": "MIT Tech Review AI",
+            "date": "2026-11-02",
+            "headline": "Stop counting tokens, start counting what ships",
+            "summary": "When a developer gives an AI agent a coding task, the agent does more than answer once. It plans, generates code, runs tests, and repeats the process to correct errors. A single task can use 10 to 50 times more tokens than a basic chat prompt.",
+            "tag": "RESEARCH",
+            "url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "ai-venture-research-20261106-19",
+            "source": "arXiv Preprint",
+            "date": "2026-11-05",
+            "headline": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+            "summary": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation many times to maintain population diversity. We present SwarmEvolve, a framework in which hundreds of low-cost agents per round work in swarms, reason in latent space without decoding to text, and share information by passing KV caches.",
+            "tag": "BENCHMARK",
+            "url": "http://arxiv.org/abs/2611.08483v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 8.5,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          },
+          {
+            "id": "ai-venture-research-20261106-20",
+            "source": "MIT Tech Review AI",
+            "date": "2026-11-03",
+            "headline": "How “reverse game theory” could keep AI agents in check",
+            "summary": "A new approach known as “reverse game theory” aims to control powerful AI models by designing systems that incentivize them to stick to the rules. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human desires—to make sure, in other words, that rogue agents don’t break the law,….",
+            "tag": "REASONING",
+            "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "research",
+            "scores": {
+              "authority": 9,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.4
+            }
+          }
+        ],
+        "titans": [
+          {
+            "id": "ai-venture-titans-20261106-6",
+            "source": "The Verge AI",
+            "date": "2026-11-05",
+            "headline": "Perplexity Launches Work-Focused AI Agents Called Teammates",
+            "summary": "Perplexity introduced always-on AI agents named Teammates to compete with OpenAI and Anthropic in work environments. The agents can assume multiple workplace roles while drawing on existing projects, skills, and memory from Perplexity tools. Teammates also integrate with Perplexity Computer to deploy agents directly on user devices.",
+            "tag": "AI_AGENTS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 6,
+              "relevance": 9.2,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261106-18",
+            "source": "The Verge AI",
+            "date": "2026-11-06",
+            "headline": "OpenAI is stepping back from NDAs for data center projects",
+            "summary": "Following this week's midterms where voters resoundingly voiced their opposition to data center expansion, OpenAI today announced new commitments to communities where it is working on data center projects, including that it won't use non-disclosure agreements (NDAs) with public officials. Many data center projects have come under scrutiny for relying on NDAs to hide discussions […].",
+            "tag": "PARTNERSHIP",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 4.4,
+              "magnitude": 6,
+              "relevance": 7.8,
+              "total": 6.5
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261106-21",
+            "source": "The Verge AI",
+            "date": "2026-11-06",
+            "headline": "Protesters break into Microsoft data center site in Amsterdam",
+            "summary": "Protesters have broken into a construction site of a new Microsoft data center in Amsterdam this morning. Members of the Geef Tegengas group helped organize the protest against the construction of three 85-meter data center towers in the outskirts of Amsterdam. Reuters reports that around 100 people made it into the construction site, with some […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.3
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261106-24",
+            "source": "The Verge AI",
+            "date": "2026-11-05",
+            "headline": "Muse has a voice mode now",
+            "summary": "Meta now lets you have voice conversations with your Muse AI agent in real time, CEO Mark Zuckerberg announced today. The feature has been rolled out to me, and I gave it a spin on the iOS app while writing this article. As you chat with your Muse agent, the avatar at the top of […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          },
+          {
+            "id": "ai-venture-titans-20261106-25",
+            "source": "The Verge AI",
+            "date": "2026-11-05",
+            "headline": "Claude AI can plug directly into your bank account",
+            "summary": "Anthropic has a new pitch for managing your personal finances: let Claude do it instead, with a new Personal Finance feature that connects it to your bank and card accounts via the Plaid bank bridging platform. You can ask the chatbot \"where did my money go this month,\" for example, and it'll create an overview […].",
+            "tag": "TITANS",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "ai-venture",
+            "column": "titans",
+            "scores": {
+              "authority": 7.7,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.1
+            }
+          }
+        ]
+      }
+    },
+    "politics": {
+      "columns": {
+        "regulatory": [
+          {
+            "id": "politics-regulatory-20261106-2",
+            "source": "FTC Press",
+            "date": "2026-11-05",
+            "headline": "FTC and 22 States File Unredacted Complaint Against Amazon Ad Practices",
+            "summary": "Newly unredacted details in a complaint filed by the FTC and 22 states allege Amazon manipulated ad auction results to meet corporate financial targets. The updated filing outlines Amazon's alleged deceptive and unfair practices to secretly inflate online search advertising prices.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/new-details-emerge-amazon-ads-auction-rigging-case",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 9,
+              "total": 8
+            }
+          },
+          {
+            "id": "politics-regulatory-20261106-3",
+            "source": "FTC Press",
+            "date": "2026-11-02",
+            "headline": "Riverside Payments Pays $600,000 to Settle FTC and Washington Deception Charges",
+            "summary": "Riverside Payments Inc., Cascade Equipment Leasing LLC, and their operators agreed to pay $600,000 to resolve joint allegations from the FTC and Washington state. Regulators alleged the firms deceived small businesses by falsely promising payment-processing savings while hiding fees and auto-renewing contracts. The complaint also noted the companies made cancellation nearly impossible despite offering services advertised as risk-free.",
+            "tag": "REGULATORY",
+            "url": "https://www.ftc.gov/news-events/news/press-releases/2026/11/ftc-washington-take-action-against-payment-processor-deceiving-small-businesses-about-costs",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "politics",
+            "column": "regulatory",
+            "scores": {
+              "authority": 9.7,
+              "corroboration": 9.2,
+              "novelty": 7.8,
+              "magnitude": 4.2,
+              "relevance": 8.5,
+              "total": 7.9
+            }
+          }
+        ],
+        "global": [],
+        "voices": []
+      }
+    },
+    "markets": {
+      "columns": {
+        "macro": [
+          {
+            "id": "markets-macro-20261106-28",
+            "source": "MarketWatch Top",
+            "date": "2026-11-06",
+            "headline": "The 2027 tax brackets are out. See what the standard deduction and SALT tax breaks will be.",
+            "summary": "The tax brackets at the heart of Americans’ income-tax bills will be adjusting at a steeper level in 2027 compared to this year, underscoring inflation’s rekindled presence.",
+            "tag": "MACRO",
+            "url": "https://www.marketwatch.com/story/the-2027-tax-brackets-are-out-see-what-the-standard-deduction-and-salt-tax-breaks-will-be-5dd1d293?mod=mw_rss_topstories",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "markets",
+            "column": "macro",
+            "scores": {
+              "authority": 8.4,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 5.6
+            }
+          }
+        ],
+        "company-moves": [],
+        "analysts": []
+      }
+    },
+    "science": {
+      "columns": {
+        "frontier": [
+          {
+            "id": "science-frontier-20261106-9",
+            "source": "ScienceDaily",
+            "date": "2026-11-06",
+            "headline": "NASA’s Swift telescope falls to Earth after nearly 22 years in space",
+            "summary": "After nearly 22 years of exploring the universe’s most violent explosions, NASA’s Swift Observatory has re-entered Earth’s atmosphere over Indonesia. Originally designed to last just two years, the pioneering space telescope transformed our understanding of black holes, exploding stars, and mysterious cosmic outbursts.",
+            "tag": "AEROSPACE",
+            "url": "https://www.sciencedaily.com/releases/2026/11/261105224545.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "science-frontier-20261106-10",
+            "source": "ScienceDaily",
+            "date": "2026-11-04",
+            "headline": "SLAC scientists find conclusive proof of a mysterious third type of magnetism",
+            "summary": "For nearly 90 years, scientists believed magnetism fell into just two categories, but researchers have now confirmed a remarkable third type called altermagnetism. Using specialized X-rays, they uncovered a unique magnetic signature that proves these materials behave differently from conventional magnets. Altermagnets combine stability with the ability to efficiently carry information, potentially overcoming major limitations in today's electronics.",
+            "tag": "PHYSICS",
+            "url": "https://www.sciencedaily.com/releases/2026/11/261104012256.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "science-frontier-20261106-11",
+            "source": "ScienceDaily",
+            "date": "2026-11-04",
+            "headline": "NASA is racing against time to save the Hubble Space Telescope",
+            "summary": "NASA is exploring a daring plan to save the legendary Hubble Space Telescope from its eventual fiery plunge into Earth's atmosphere. After more than 35 years of groundbreaking discoveries, Hubble is slowly losing altitude, and without intervention, it could fall back to Earth as early as 2033 or 2034. To keep the iconic observatory operating, NASA is asking private space companies to propose innovative ways to boost Hubble into a higher orbit, upgrade its capabilities, or safely dispose of it when its mission finally ends.",
+            "tag": "AEROSPACE",
+            "url": "https://www.sciencedaily.com/releases/2026/11/261104012254.htm",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 7.5,
+              "corroboration": 9.2,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.8
+            }
+          },
+          {
+            "id": "science-frontier-20261106-14",
+            "source": "arXiv Preprint",
+            "date": "2026-11-05",
+            "headline": "Quantum Knowledge Distillation: State-of-the-art, Applications and Open Problems",
+            "summary": "Knowledge distillation transfers predictions, representations, or other supervisory information between learning models and is increasingly investigated in quantum machine learning. Its applications extend beyond compression to cross-architecture transfer, circuit approximation, distributed learning, and classical deployment of models trained using quantum-derived supervision. This survey reviews these approaches using two complementary classification axes: teacher-student configuration and the role of quantum resources in the distillation process.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2611.08461v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 9.4,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.6
+            }
+          },
+          {
+            "id": "science-frontier-20261106-26",
+            "source": "arXiv Preprint",
+            "date": "2026-11-05",
+            "headline": "DiffSequence-Q: Diffusion Design with Quantum Assistance for Biologically Active Proteins",
+            "summary": "Designing protein sequences that satisfy both secondary structure requirements and solubility targets remains challenging. We present DiffSequence-Q, a hybrid multinomial diffusion model conditioned on secondary structure at each residue and a continuous solubility target. To introduce quantum auxiliary supervision during training, we employ a quantum neural network (QNN) or quantum Kolmogorov-Arnold network (QKAN) as an auxiliary solubility prediction head over shared Transformer representations.",
+            "tag": "BIOTECH",
+            "url": "http://arxiv.org/abs/2611.08434v1",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "science",
+            "column": "frontier",
+            "scores": {
+              "authority": 8.6,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 9.5,
+              "total": 6.1
+            }
+          }
+        ]
+      }
+    },
+    "culture": {
+      "columns": {
+        "industry": [
+          {
+            "id": "culture-industry-20261106-22",
+            "source": "Wired Culture",
+            "date": "2026-11-06",
+            "headline": "Horny Grandmas Are Having a Moment",
+            "summary": "Creators in their sixties, seventies, and eighties have flooded adult platforms as the demand for mature content has skyrocketed, with some turning to online sex work as a retirement lifeline.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/horny-grandmas-are-having-a-moment/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          },
+          {
+            "id": "culture-industry-20261106-23",
+            "source": "Wired Culture",
+            "date": "2026-11-05",
+            "headline": "Area Man Feels Joy Online for First Time in Years",
+            "summary": "A day after the US midterm elections gave Democrats control of Congress, Onion CEO Ben Collins and comedian Patti Harrison spoke to WIRED about the salve of satire during politically fraught times.",
+            "tag": "REPORT",
+            "url": "https://www.wired.com/story/wired-world-fair-2026-ben-collins-the-onion/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8.1,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 6.5,
+              "total": 6.2
+            }
+          },
+          {
+            "id": "culture-industry-20261106-27",
+            "source": "Ars Technica",
+            "date": "2026-11-05",
+            "headline": "Software squeezes more data out of Webb Telescope for imaging exoplanets",
+            "summary": "Software optimizes a physical model of the telescope to reduce noise.",
+            "tag": "REPORT",
+            "url": "https://arstechnica.com/science/2026/11/getting-software-to-help-block-out-a-star-so-we-can-see-exoplanets/",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "industry",
+            "scores": {
+              "authority": 8,
+              "corroboration": 3,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 5.7
+            }
+          }
+        ],
+        "voices": [
+          {
+            "id": "culture-voices-20261106-1",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-05",
+            "headline": "California Governor Gavin Newsom Commutes All 548 Death Row Sentences",
+            "summary": "California Governor Gavin Newsom announced the commutation of 548 death-row sentences, potentially effecting the largest single reduction of America's death-row population in history. The decision highlights an increasing geographic polarization, as several state executives phase out capital punishment while a small number of red states and the federal government intensify execution efforts. Overall, national support for the death penalty and the number of new annual death sentences have declined significantly over past decades.",
+            "tag": "DEATH_PENALTY",
+            "url": "https://www.theatlantic.com/ideas/2026/11/death-row-commutation-california-newsom/689304/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 7.8,
+              "magnitude": 9.2,
+              "relevance": 8.5,
+              "total": 8.2
+            }
+          },
+          {
+            "id": "culture-voices-20261106-5",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-05",
+            "headline": "Chuck Schumer Prepares for Majority Leader Role After Democratic Election Victories",
+            "summary": "Following Democratic gains in recent elections, Senate Minority Leader Chuck Schumer is poised to return as majority leader. Schumer recruited candidates across key states and helped shift the party's strategy toward cost-of-living issues and anti-corruption messaging. For his upcoming legislative agenda, Schumer has prepared approximately 15 targeted bills focused on lowering everyday costs.",
+            "tag": "US_POLITICS",
+            "url": "https://www.theatlantic.com/ideas/2026/11/midterms-democrats-mississippi-senate/689301/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 9,
+              "relevance": 7.2,
+              "total": 7.4
+            }
+          },
+          {
+            "id": "culture-voices-20261106-8",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-06",
+            "headline": "In Front of Their Noses",
+            "summary": "Truncheon-wielding, balaclava-wearing ICE agents did not swarm the polling stations. The Insurrection Act was not invoked, nor did the president order the 82nd Airborne to lock up Democratic officials. The men in leather trench coats did not slip out of black limousines at midnight to seize the editors of publications that are unfriendly to MAGA and all of its works.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/democrats-midterms-trump-maga/689315/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 9.4,
+              "magnitude": 2.5,
+              "relevance": 7.8,
+              "total": 7
+            }
+          },
+          {
+            "id": "culture-voices-20261106-13",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-04",
+            "headline": "Vance 2028 Is Here",
+            "summary": "Sign up for our newsletter about national security here . Vance’s strategy, since he became the Republican Party’s vice-presidential nominee in 2024, has been for President Trump to coronate him as his successor. “Donald Trump will ultimately decide who’s going to be the Republican nominee,” Vance told Sean Spicer last month, neatly excising the primary electorate from the decision matrix.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/vance-2028-campaign-strategy-change/689291/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 8.8,
+              "total": 6.7
+            }
+          },
+          {
+            "id": "culture-voices-20261106-17",
+            "source": "The Atlantic Ideas",
+            "date": "2026-11-06",
+            "headline": "The Pope Confronts One of His Toughest Political Challenges",
+            "summary": "Less than a month after losing part of a lung, Pope Leo XIV set out this morning on one of the longest and most ambitious trips of his pontificate. Over the course of 11 days and 12 flights, Leo will travel from South America’s Southern Cone to the high Andes and the Amazon Rainforest. Much of the Catholic world will be focused on how its 71-year-old leader, just a few weeks removed from cancer surgery, bears the physical challenge that the trip presents.",
+            "tag": "REPORT",
+            "url": "https://www.theatlantic.com/ideas/2026/11/pope-leo-south-america-right-wing/689316/?utm_source=feed",
+            "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&q=80",
+            "beat": "culture",
+            "column": "voices",
+            "scores": {
+              "authority": 8.8,
+              "corroboration": 6.5,
+              "novelty": 5.2,
+              "magnitude": 4.2,
+              "relevance": 7.8,
+              "total": 6.5
+            }
+          }
+        ]
+      }
+    }
+  }
+}
